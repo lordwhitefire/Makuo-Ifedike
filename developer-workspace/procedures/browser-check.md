@@ -34,17 +34,18 @@ Open `http://localhost:3009/` (redirects to `/andle-portfolio.html`) and go thro
 | 1 | Page title | Browser tab title | `Makuo Ifedike — I build and fix software for small businesses` |
 | 2 | Meta robots | `<head>` | No `noindex` tag present |
 | 3 | About heading | Visible h3/title in about section | `Makuo Ifedike` |
-| 4 | Footer copyright | Footer bottom | `© 2026 Ifedike Victor. Built by whitefire` |
-| 5 | Footer social links | Footer social icons | Twitter: twitter.com/ifedikevictor; LinkedIn: linkedin.com/in/makuoifedike/; WhatsApp: wa.me/2348000000000; Github: github.com/lordwhitefire |
+| 4 | Footer copyright | Footer bottom | `© Makuo Ifedike built by whitefire` (no `Ifedike Victor`, no Whitefire as studio) |
+| 5 | Footer social links | Footer social icons | Twitter: x.com/lwhitefire; LinkedIn: linkedin.com/in/makuoifedike/; Github: github.com/lordwhitefire (no WhatsApp/wa.me) |
 | 6 | My Stack grid | Section where client strip was | Exactly 12 marks with visible labels |
 | 7 | My Stack marks | Grid items | Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, Vercel, Vitest |
 | 8 | My Stack behavior | Grid area | No moving marquee, no client logos |
-| 9 | Portrait | About section image | Owner's portrait (`/images/portrait.png`), transparent background, no Unsplash stock portrait |
-| 10 | Dead links | All `<a href>` on the page | No `index.html`, `projects.html`, `project-details.html`, `blog.html`, `blog-details.html`, `contact.html`, or `href="#"`. WhatsApp `wa.me/2348000000000` is expected (footer link). |
-| 11 | Social links | Footer social icons | Twitter: twitter.com/ifedikevictor; LinkedIn: linkedin.com/in/makuoifedike/; WhatsApp: wa.me/2348000000000; Github: github.com/lordwhitefire |
-| 12 | Placeholder copy | Why-choose cards, hero, about | No stock Andle copy ("Bring nature in your house", "Consulting solutions", etc.) |
-| 13 | Counters | Odometer/counter boxes | No unverified counters (4/2/2 removed) |
-| 14 | Link resolution | Click each remaining link | Each resolves to a real target (no 404 from a clicked link) |
+| 9 | My Stack spacing | Gap between My Stack grid and About section | Tight/reduced spacing (not too large) |
+| 10 | Portrait | About section image | Owner's portrait (`/images/portrait.png`), transparent background, no Unsplash stock portrait |
+| 11 | Counters | Counter boxes | Present: "2 complete & shipped" and "2 in active development" |
+| 12 | Dead links | All `<a href>` on the page | No `index.html`, `projects.html`, `project-details.html`, `blog.html`, `blog-details.html`, `contact.html`, `href="#"`, or `wa.me/` |
+| 13 | Social links | Footer social icons | Twitter: x.com/lwhitefire; LinkedIn: linkedin.com/in/makuoifedike/; Github: github.com/lordwhitefire |
+| 14 | Placeholder copy | Why-choose cards, hero, about | No stock Andle copy ("Bring nature in your house", "Consulting solutions", etc.) |
+| 15 | Link resolution | Click each remaining link | Each resolves to a real target (no 404 from a clicked link) |
 
 ---
 

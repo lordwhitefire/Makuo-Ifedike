@@ -24,9 +24,9 @@
 |----|-------|----------|----------|--------|
 | A1 | Page title | `Makuo Ifedike — I build and fix software for small businesses` | `<title>` text | |
 | A2 | About heading | `Makuo Ifedike` | Visible h3 in about section | |
-| A3 | Footer copyright | `© 2026 Ifedike Victor. Built by whitefire` | Footer text | |
-| A4 | Footer social links | Twitter: twitter.com/ifedikevictor; LinkedIn: linkedin.com/in/makuoifedike/; WhatsApp: wa.me/2348000000000; Github: github.com/lordwhitefire | Footer social `href` values | |
-| A5 | No dead links | No `*.html` hrefs (index/projects/project-details/blog/blog-details/contact), no `href="#"`. `wa.me/2348000000000` expected. | Grep of rendered HTML | |
+| A3 | Footer copyright | `© Makuo Ifedike built by whitefire` (no `Ifedike Victor`, no Whitefire as studio) | Footer text | |
+| A4 | Footer social links | Twitter: x.com/lwhitefire; LinkedIn: linkedin.com/in/makuoifedike/; Github: github.com/lordwhitefire (no WhatsApp/wa.me) | Footer social `href` values | |
+| A5 | No dead links | No `*.html` hrefs, no `href="#"`, no `wa.me/` anywhere | Grep of rendered HTML | |
 
 ---
 
@@ -36,15 +36,16 @@
 |----|-------|----------|----------|--------|
 | B1 | No placeholder copy | No stock Andle copy in why-choose/hero/about | Rendered text | |
 | B2 | No template credit | No "Built on the Andle template" | Footer text | |
-| B3 | No dead links | No `*.html` hrefs, no `href="#"`. `wa.me/2348000000000` expected (footer). | Grep of rendered HTML | |
+| B3 | No dead links | No `*.html` hrefs, no `href="#"`, no `wa.me/` anywhere | Grep of rendered HTML | |
 | B4 | My Stack: 12 marks | Exactly 12 logo marks with labels | Count of grid items | |
 | B5 | My Stack: correct names | Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, Vercel, Vitest | Grid labels | |
 | B6 | My Stack: no marquee | Grid is static, not animated | Visual check | |
 | B7 | My Stack: no client logos | No client logos in the stack section | Visual check | |
-| B8 | Portrait: owner's image | `/images/portrait.png` in about section | `img src` attribute | |
-| B9 | Portrait: no stock | No Unsplash stock portrait URL in about section | Rendered HTML | |
-| B10 | Counters removed | No odometer/counter boxes (4/2/2) | Rendered HTML | |
-| B11 | Link resolution | Every remaining link resolves (no 404 on click) | Clicked-link status codes | |
+| B8 | My Stack spacing | Tight/reduced spacing between My Stack grid and About section | Visual check (no large gap) | |
+| B9 | Portrait: owner's image | `/images/portrait.png` in about section | `img src` attribute | |
+| B10 | Portrait: no stock | No Unsplash stock portrait URL in about section | Rendered HTML | |
+| B11 | Counters present | Counter boxes present: "2 complete & shipped" and "2 in active development" | `data-count-to="2"` present, rendered text visible | |
+| B12 | Link resolution | Every remaining link resolves (no 404 on click) | Clicked-link status codes | |
 
 ---
 
