@@ -1,0 +1,7 @@
+{
+  "ref": "http://localhost:3010/andle-portfolio-inline.html",
+  "build": "http://localhost:3009/andle-portfolio.html",
+  "states": [
+    { "name": "default" }
+  ]
+}
