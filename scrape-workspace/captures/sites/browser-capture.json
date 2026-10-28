@@ -1,0 +1,1997 @@
+[
+  {
+    "name": "cp3-legacy",
+    "url": "https://cp3-legacy.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://cp3-legacy.vercel.app/",
+    "meta": {
+      "title": "CP3 Legacy",
+      "meta": {
+        "description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+        "author": "Ifedike Victor Makuo",
+        "og:title": "CP3 Legacy",
+        "og:description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+        "og:url": "https://cp3-legacy.vercel.app",
+        "og:site_name": "CP3 Legacy",
+        "og:image": "https://cp3-legacy.vercel.app/og-image.png",
+        "twitter:card": "summary_large_image"
+      },
+      "canonical": null,
+      "jsonld": [
+        "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"founder\":{\"@id\":\"#victor\"}},{\"@type\":\"WebSite\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"author\":{\"@id\":\"#victor\"}},{\"@type\":\"Person\",\"@id\":\"#victor\",\"name\":\"Ifedike Victor Makuo\",\"alternateName\":\"lordwhitefire\",\"url\":\"https://github.com/lordwhitefire\",\"sameAs\":[\"https://github.com/lordwhitefire\",\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"],\"knowsAbout\":[\"React\",\"Next.js\",\"Remix\",\"Astro\",\"TypeScript\",\"Tailwind CSS\",\"Sanity CMS\",\"Supabase\",\"Framer Motion\",\"Vitest\",\"Playwright\",\"Sentry\"],\"description\":\"Remote frontend developer from Onitsha, Nigeria. B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025) \u2014 self-taught developer. Targeting remote React/Next.js roles.\"}]}"
+      ],
+      "anchors": [
+        {
+          "href": "https://cp3-legacy.vercel.app/#main-content",
+          "text": "Skip to main content"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "LANGUAGE: EN"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "mailto:victormark2002@gmail.com",
+          "text": "VICTORMARK2002@GMAIL.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+          "text": "HOME"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+          "text": "PLAYER"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-stats.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-bio.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-news.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-gallery.html",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/blog-1.html",
+          "text": "NEWS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Your Bag (8 items)$256,30"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Your Account"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/shop-wishlist.html",
+          "text": "Wishlist 8"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Currency: USD"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "USD"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "EUR"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "GBP"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Language: EN"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "English"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Spanish"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "French"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "German"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Logout"
+        },
+        {
+          "href": "mailto:tryouts@alchemists.com",
+          "text": "tryouts@alchemists.com"
+        },
+        {
+          "href": "mailto:info@alchemists.com",
+          "text": "info@alchemists.com"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "Toggle navigation panel"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CP3 MASTERCLASS LIFTS SPURS PAST WARRIORS IN OT THRILLER"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "639"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "68"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PAUL'S LEADERSHIP KEY TO WEMBANYAMA'S DEVELOPMENT"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "459"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "79"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "SPURS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "HORNETS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CLIPPERS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "ROCKETS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "SUNS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THUNDER"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "ALL-STAR"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "POINT GOD"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "ASSISTS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "STEALS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "MVP"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "HALL OF FAME"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "OLYMPIC GOLD"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "EXPLORE CP3'S JOURNEY"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026 2026-06-28 17490 3490110"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026 2026-06-28 53312 4312132"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026 2026-06-28 17677 367797"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS CHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026 2026-06-28 18873 487393"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM SAN ANTONIO SPURS EARN LA LAKERS COMPARISON, THEY MIGHT FALL\u2026 2026-06-28 14631 563151"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM 'NO LIMIT!' CHRIS PAUL'S CONTINUED VICTOR WEMBANYAMA PRAISE TESTAMENT TO\u2026 2026-06-28 27443 344363"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026 2026-06-28 45783 1783203"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026 2026-06-28 30261 126181"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026 2026-06-28 24851 585171"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026 2026-06-28 29596 5596216"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM SEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY 2026-06-28 50561 1561181"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL SAGA HIGHLIGHTS EVERYTHING THAT\u2019S WRONG WITH THE CLIPPERS\u2026 2026-06-28 51426 242646"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM AFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026 2026-06-28 38297 4297117"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS CHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026 2026-06-28 50465 146585"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "ALL"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "THE TEAM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "PLAYOFFS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "INJURIES"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "THE TEAM CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "PLAYOFFS CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026 VICTOR MAKUO2026-06-28"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "2990"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "100"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "1812"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "22"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "2283"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "93"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS | NEW ORLEANS HORNETS PAUL SKENES (KTL2OSZXLQ) -\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "SEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "READ MORE"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "AFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "1797"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "107"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "2965"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "75"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "3177"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "87"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "3373"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "83"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "SEE ALL POSTS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "3490"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "140"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE FOR THE SPURS - SPORTINGNEWS.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "4312"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "162"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "1783"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "233"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "1261"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "111"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "FULL STATS"
+        },
+        {
+          "href": "https://instagram.com/cp3",
+          "text": "FOLLOW @CP3 ON INSTAGRAM FOLLOWERS"
+        },
+        {
+          "href": "https://twitter.com/CP3",
+          "text": "FOLLOW @CP3 ON TWITTER FOLLOWERS"
+        },
+        {
+          "href": "https://youtube.com/@CP3",
+          "text": "SUBSCRIBE ON YOUTUBE 840 SUBSCRIBERS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "MARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "MSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "BASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "YAHOO SPORTS: ISAIAH THOMAS FACING PUSHBACK ON CHRIS PAUL-SPURS TAKE"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Chris Paul"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "NEWEST"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "MOST COMMENTED"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "POPULAR"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "REGGIE MILLER ARGUED THE SPURS MADE A MISTAKE BY NOT RE-SIGNING CHRIS PAUL - \"JUST AS AN INSURANCE V\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "CHRIS PAUL LANDING SPOTS: LAKERS, ROCKETS, SPURS AMONG POSSIBLE DESTINATIONS FOR PG AFTER TRADE TO R\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Blake Griffin slams Clippers, Steve Ballmer for Chris Paul\u2019s sudden exit - The New York Times"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "5 NBA Preseason Hot Takes That Will Age Well\u2026and 3 That Won't - Bleacher Report"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Chris Paul opens up on \u2018emotional rollercoaster\u2019 of vetoed Lakers trade - New York Post"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "\u201cThe only reason you have fans here is because you got 1980 sex worker prices\u201d \u2013 Gilbert Arenas urge\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Logan and Jake Paul clash after Bad Bunny\u2019s Super Bowl halftime performance - Cleveland.com"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Chris Paul Just Reopened One Of The Most Painful Kobe Bryant Debates On The Pat McAfee Show Giro D'i\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "The Point God is gone but his fingerprints are all over the playoffs - Bright Side Of The Sun"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Chris Paul retires without a ring -- but his career proves he was one of NBA's greatest winners - CB\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "The legacy of the 'Point God': Outstanding career with a controversial goodbye - Flashscore.com"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "Basketball: Two-time Olympic champion Chris Paul signals his retirement - olympics.com"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "How Chris Paul's legacy is embedded in the 2026 NBA playoffs - ESPN"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "BUY TICKETS NOW"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "mailto:victormakuo2002@gmail.com",
+          "text": "VICTORMAKUO2002@GMAIL.COM"
+        },
+        {
+          "href": "mailto:victormakuo2002@gmail.com",
+          "text": "VICTORMAKUO2002@GMAIL.COM"
+        },
+        {
+          "href": "https://facebook.com/CP3",
+          "text": "FACEBOOK"
+        },
+        {
+          "href": "https://twitter.com/CP3",
+          "text": "TWITTER"
+        },
+        {
+          "href": "https://instagram.com/cp3",
+          "text": "INSTAGRAM"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "MARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "MSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": "BASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+          "text": ""
+        },
+        {
+          "href": "https://instagram.com/cp3",
+          "text": "FOLLOW OUR PROFILE"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+          "text": "HOME"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+          "text": "PLAYER"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/alchemists/blog-1.html",
+          "text": "NEWS"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/privacy",
+          "text": "PRIVACY"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "Create Your Account"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "Forgot your password?"
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": "Enter to your account"
+        },
+        {
+          "href": "https://facebook.com/CP3",
+          "text": ""
+        },
+        {
+          "href": "https://twitter.com/CP3",
+          "text": ""
+        },
+        {
+          "href": "https://cp3-legacy.vercel.app/#",
+          "text": ""
+        }
+      ],
+      "h1": [
+        "CP3 LEGACY"
+      ],
+      "h2": [],
+      "bodyText": "Skip to main content\n\nThis site was built by Ifedike Victor Makuo (lordwhitefire). Remote frontend developer \u2014 React, Next.js, TypeScript. GitHub: https://github.com/lordwhitefire. LinkedIn: https://www.linkedin.com/in/makuo-ifedike-216607350/. B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025) \u2014 self-taught developer.\n\nLANGUAGE: EN\nCONTACT US\nVICTORMARK2002@GMAIL.COM\nHOME\nPLAYER\nNEWS\nTHE TEAM\nCP3 MASTERCLASS LIFTS SPURS PAST WARRIORS IN OT THRILLER\n2026-06-27\nChris Paul dropped 24 points and 13 assists as San Antonio edged Golden State 118-112 in overtime, showcasing the veteran leadership that defines his legacy.\nVICTOR MAKUO\n 63968\nPLAYOFFS\nPAUL'S LEADERSHIP KEY TO WEMBANYAMA'S DEVELOPMENT\n2026-06-25\nVictor Wembanyama credits Chris Paul's mentorship for his rapid growth, calling the veteran point guard 'the ultimate teacher' on and off the court.\nVICTOR MAKUO\n 45979\nTAG CLOUD\nPLAYOFFS SPURS HORNETS CLIPPERS ROCKETS SUNS THUNDER ALL-STAR POINT GOD ASSISTS STEALS MVP HALL OF FAME OLYMPIC GOLD\nTHE POINT GOD ERA\nCP3 LEGACY\nCelebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.\nEXPLORE CP3'S JOURNEY \nPrevious\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\n2026-06-28\n17490 3490110\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\n2026-06-28\n53312 4312132\nTHE TEAM\nCHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026\n2026-06-28\n17677 367797\nPLAYOFFS\nCHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026\n2026-06-28\n18873 487393\nTHE TEAM\nSAN ANTONIO SPURS EARN LA LAKERS COMPARISON, THEY MIGHT FALL\u2026\n2026-06-28\n14631 563151\nTHE TEAM\n'NO LIMIT!' CHRIS PAUL'S CONTINUED VICTOR WEMBANYAMA PRAISE TESTAMENT TO\u2026\n2026-06-28\n27443 344363\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\n2026-06-28\n45783 1783203\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026\n2026-06-28\n30261 126181\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026\n2026-06-28\n24851 585171\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026\n2026-06-28\n29596 5596216\nTHE TEAM\nSEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY\n2026-06-28\n50561 1561181\nTHE TEAM\nCHRIS PAUL SAGA HIGHLIGHTS EVERYTHING THAT\u2019S WRONG WITH THE CLIPPERS\u2026\n2026-06-28\n51426 242646\nTHE TEAM\nAFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026\n2026-06-28\n38297 4297117\nPLAYOFFS\nCHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026\n2026-06-28\n50465 146585\nNext\nFEATURED NEWS\nALLTHE TEAMPLAYOFFSINJURIES\nPrevious\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\nVICTOR MAKUO2026-06-28\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026\nVICTOR MAKUO2026-06-28\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026\nVICTOR MAKUO2026-06-28\nNext\nPLAYOFFS\n2026-06-28\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nVICTOR MAKUO\n22490 2990100\nPLAYOFFS\n2026-06-28\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\nIsaiah Thomas believes Chris Paul staying could've won the title for the Spurs sportingnews.com\nVICTOR MAKUO\n18312 181222\nTHE TEAM\n2026-06-28\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketball Network\nVICTOR MAKUO\n30783 228393\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026\n2026-06-28\nHow a retired point guard is leaving his mark on the Western Conference finals San Antonio Express-News\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM\n2026-06-28\nChris Paul Reveals what Makes Spurs\u2019 Victor Wembanyama so Special heavy.com\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS | NEW ORLEANS HORNETS PAUL SKENES (KTL2OSZXLQ) -\u2026\n2026-06-28\nChris Paul | Scoring Highlights | 2009 NBA Playoffs | New Orleans Hornets Paul Skenes (KTl2oSZXlq) Mshale\nTHE TEAM\nSEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY\n2026-06-28\nSee highlights from Chris Paul\u2019s NBA career USA Today\nREAD MORE \nTHE TEAM\n2026-06-28\nAFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026\nVICTOR MAKUO\n33297 1797107\nPLAYOFFS\n2026-06-28\nCHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026\nVICTOR MAKUO\n25465 296575\nTHE TEAM\n2026-06-28\nCHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026\nVICTOR MAKUO\n22677 317787\nPLAYOFFS\n2026-06-28\nCHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026\nVICTOR MAKUO\n13873 337383\nLATEST NEWS\nSEE ALL POSTS\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM\n2026-06-28\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nVICTOR MAKUO\n17490 3490140\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE FOR THE SPURS - SPORTINGNEWS.COM\n2026-06-28\nIsaiah Thomas believes Chris Paul staying could've won the title for the Spurs sportingnews.com\nVICTOR MAKUO\n53312 4312162\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026\n2026-06-28\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketball Network\nVICTOR MAKUO\n45783 1783233\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026\n2026-06-28\nHow a retired point guard is leaving his mark on the Western Conference finals San Antonio Express-News\nVICTOR MAKUO\n30261 1261111\nCP3 MILESTONE SEASONS\nFULL STATS\nSEASON\tPPG\tAPG\tRPG\n\n2005-06 \u00b7 Rookie\nNew Orleans Hornets\n\t16.1\t7.8\t5.1\n\n2006-07 \u00b7 Sophomore\nNew Orleans Hornets\n\t17.3\t8.9\t4.4\n\n2007-08 \u00b7 MVP Race\nNew Orleans Hornets\n\t21.1\t11.6\t4.0\n\n2008-09 \u00b7 Career High PPG\nNew Orleans Hornets\n\t22.8\t11.0\t5.5\n\n2011-12 \u00b7 Traded to LAC\nLA Clippers\n\t19.8\t9.1\t3.6\n\n2013-14 \u00b7 All-Star MVP\nLA Clippers\n\t19.1\t10.7\t4.3\n\n2015-16 \u00b7 Clippers Prime\nLA Clippers\n\t19.5\t10.0\t4.2\n\n2017-18 \u00b7 Rockets 65-17\nHouston Rockets\n\t18.6\t7.9\t5.4\n\n2019-20 \u00b7 OKC Comeback\nOklahoma City Thunder\n\t17.6\t6.7\t5.0\n\n2020-21 \u00b7 NBA Finals\nPhoenix Suns\n\t16.4\t8.9\t4.5\n\n2021-22 \u00b7 Assists Leader\nPhoenix Suns\n\t14.7\t10.8\t4.4\n\nCareer \u00b7 19 Seasons\n17.5 PPG \u00b7 9.4 APG \u00b7 4.5 RPG\n\t17.5\t9.4\t4.5\nFOLLOW @CP3 ON INSTAGRAM\nFOLLOWERS\nFOLLOW @CP3 ON TWITTER\nFOLLOWERS\nSUBSCRIBE ON YOUTUBE\n840 SUBSCRIBERS\nREDDIT CP3\nTHE TEAM\nMARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH\n2026-06-27\nTHE TEAM\nMSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026\n2026-06-27\nTHE TEAM\nBASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026\n2026-06-24\nTHE TEAM\nYAHOO SPORTS: ISAIAH THOMAS FACING PUSHBACK ON CHRIS PAUL-SPURS TAKE\n2026-06-22\n41\nCHRIS\nPAUL\nASSISTS\n9.4\nAVG\nSTEALS\n2.1\nAVG\nBLOCKS\n0.2\nAVG\n FEATURED PLAYER\nLAST GAME RESULTS\nEXPAND STATS\nSAN ANTONIO SPURS VS\nSAN ANTONIO SPURS\nSAN ANTONIO SPURS\n\t\n0 - 0\nFINAL SCORE\n\t\nSCOREBOARD\t1\t2\t3\t4\tT\nSan Antonio Spurs\t0\t0\t0\t0\t0\n\t0\t0\t0\t0\t0\nGAME STATISTICS\nASSISTS\n0\t\n\t5\nREBOUNDS\n0\t\n\t3\nSTEALS\n0\t\n\t2\nGAME MVP\nChris Paul\nPoint Guard\n\t\n0\nPts\n0\nReb\n0\nAst\nTOP TRENDING NEWS\nNEWEST\nMOST COMMENTED\nPOPULAR\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM\n2026-06-28\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026\n2026-06-28\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketbal"
+    }
+  },
+  {
+    "name": "new-portfolio",
+    "url": "https://new-portfolio-eta-rouge.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://new-portfolio-eta-rouge.vercel.app/",
+    "meta": {
+      "title": "FireSage Studio - Web Development & Design",
+      "meta": {
+        "description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+        "og:url": "https://new-portfolio-eta-rouge.vercel.app/",
+        "og:title": "FireSage Studio - Web Development & Design",
+        "og:description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+        "og:image": "https://new-portfolio-eta-rouge.vercel.app/assets/images/og-preview.jpg",
+        "twitter:card": "summary_large_image"
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+          "text": ""
+        },
+        {
+          "href": "javascript:;",
+          "text": ""
+        },
+        {
+          "href": "javascript:;",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+          "text": "HOME"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "ABOUT"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/about.html",
+          "text": "About Us"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/pricing.html",
+          "text": "Pricing"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/projects.html",
+          "text": "PROJECTS"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/contact.html",
+          "text": "CONTACT"
+        },
+        {
+          "href": "https://interior-deco-kappa.vercel.app/",
+          "text": "SEE PROJECT"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/",
+          "text": "SEE PROJECT"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/",
+          "text": "SEE PROJECT"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "PROFRESSIONAL AND DEDICATED"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "MORE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "UNIQUE DESIGN"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "MORE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "AFFORDABLE AND FLEXIABLE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "MORE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "24/7 SUPPORT"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "MORE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#tab1",
+          "text": "ALL"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#tab2",
+          "text": "WEB APPLICATIONS"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#tab3",
+          "text": "E-COMMERCE"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#tab4",
+          "text": "DASHBOARDS"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": "Cubic Villa"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": "OBERO"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": "ABC Financial Bank"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": "B6-No.5 OLA Tower"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+          "text": ""
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Ryan Betthalyn"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Bobs Hanely"
+        },
+        {
+          "href": "mailto:hello@andle.com",
+          "text": ""
+        },
+        {
+          "href": "https://hasthemes.com/",
+          "text": "Firesage Studio"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Twitter"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Behance"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Dribbble"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": "Github"
+        },
+        {
+          "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+          "text": ""
+        }
+      ],
+      "h1": [
+        "Interior Decoration\nWebsite",
+        "My Old\nPortfolio",
+        "Camper Caf\u00e9\nWebsite"
+      ],
+      "h2": [
+        "WHY CHOOSE ME",
+        "WORKS",
+        "FEATURED PROJECTS",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TESTIMONIAL",
+        ""
+      ],
+      "bodyText": "FIRESAGE\nHOME\nABOUT\nPROJECTS\nCONTACT\nLATEST PROJECT\nInterior Decoration\nWebsite\n\nThis is my first multi-page website.\nInspired by Bilal Asghar\u2019s design, I created a responsive\nand user-friendly interface to showcase stylish interior designs.\n\nSEE PROJECT\nPROJECT SHOWCASE\nMy Old\nPortfolio\n\nThis was my very first attempt at showcasing my work.\nLooking back, it reminds me of how far I\u2019ve come as a\nweb developer. My skills have grown, and my designs have evolved\nto be more creative and professional.\n\nSEE PROJECT\nEARLY WORK\nCamper Caf\u00e9\nWebsite\n\nOne of the websites from my early days,\nthis project was for a camper caf\u00e9 restaurant. It showcased the menu\nhighlighted their best dishes, and included a booking system. It was\na stepping stone in my web design journey, helping me\nlearn the basics of creating engaging and user-friendly websites.\n\nSEE PROJECT\nWHY CHOOSE ME\nPROFRESSIONAL AND DEDICATED\n\nAlways committed to delivering excellence..\n\nMORE\nUNIQUE DESIGN\n\nCrafting innovative designs tailored for clients..\n\nMORE\nAFFORDABLE AND FLEXIABLE\n\nDelivering high-quality work within budget.\n\nMORE\n24/7 SUPPORT\n\nAlways available for any assistance needed\n\nMORE\nWORKS\nALL\nWEB APPLICATIONS\nE-COMMERCE\nDASHBOARDS\nResidential\nCubic Villa\nArchitecture\nOBERO\nCommercial\nABC Financial Bank\nInterior\nB6-No.5 OLA Tower\nFEATURED PROJECTS\nTESTIMONIAL\nRyan Betthalyn / Director at Chobham Manor\n\nSed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.\n\nBobs Hanely / Director at Spotify\n\nSed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.\n\n\u00a9 2025 Andle Made with  by Firesage Studio\n\nTwitter\nBehance\nDribbble\nGithub"
+    }
+  },
+  {
+    "name": "eliphany-ng",
+    "url": "https://eliphany-ng.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://eliphany-ng.vercel.app/",
+    "meta": {
+      "title": "Eliphany | Skin-Care Supplements",
+      "meta": {
+        "description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+        "og:url": "https://eliphany-ng.vercel.app/",
+        "og:title": "Eliphany | Skin-Care Supplements",
+        "og:description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+        "og:image": "https://eliphany-ng.vercel.app/logo1.svg",
+        "twitter:card": "summary_large_image",
+        "og:site_name": "Eliphany"
+      },
+      "canonical": "https://eliphany-ng.vercel.app/",
+      "jsonld": [
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Eliphany Skin Care\",\"url\":\"https://eliphany-ng.vercel.app/\",\"logo\":\"https://eliphany-ng.vercel.app/logo.svg\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"+971-XX-XXX-XXXX\",\"contactType\":\"sales\",\"areaServed\":\"AE\",\"availableLanguage\":\"en\"},\"sameAs\":[]}"
+      ],
+      "anchors": [
+        {
+          "href": "https://eliphany-ng.vercel.app/",
+          "text": "Eliphany"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/",
+          "text": "Home"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/shop/1",
+          "text": "Products"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/about/",
+          "text": "About"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/contact/",
+          "text": "Contact"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/",
+          "text": "Home"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/shop/1",
+          "text": "Products"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/about/",
+          "text": "About"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/contact/",
+          "text": "Contact"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/anti-aging",
+          "text": "Anti-Aging"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/anti-aging-products",
+          "text": "Anti-Aging Products"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/body-enhancement",
+          "text": "Body Enhancement"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/butt-hip-growth",
+          "text": "Butt & Hip Growth"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/energy-boosters",
+          "text": "Energy Boosters"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20order",
+          "text": "Order on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-035",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-035",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAhmad%20Tea%20Sleep%20%2B%20ProLife%20Magnesium%E2%80%9D%20(SKU%3A%20product-035).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-010",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-010",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAxis-Y%20Dark%20Spot%20Correcting%20Glow%20Serum%E2%80%9D%20(SKU%3A%20product-010).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-006",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-006",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CPueraria%20Mirifica%20Natural%20Herbs%E2%80%9D%20(SKU%3A%20product-006).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-005",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-005",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CMagic%20Brightening%20Supplement%E2%80%9D%20(SKU%3A%20product-005).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-004",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-004",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CLadies%20Shine%20Advanced%20Supplement%E2%80%9D%20(SKU%3A%20product-004).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-003",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/products/product-003",
+          "text": "View Details \u2192"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CGlutathione%20Gummies%20-%20Skin%20Whitening%20%26%20Anti%20Aging%20Formula%E2%80%9D%20(SKU%3A%20product-003).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+          "text": "Get Price on WhatsApp"
+        },
+        {
+          "href": "https://instagram.com/eliphany.ng",
+          "text": ""
+        },
+        {
+          "href": "https://instagram.com/eliphany.ng",
+          "text": ""
+        },
+        {
+          "href": "https://instagram.com/eliphany.ng",
+          "text": ""
+        },
+        {
+          "href": "https://instagram.com/eliphany.ng",
+          "text": ""
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/",
+          "text": "Eliphany"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20order",
+          "text": "Chat with us"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/anti-aging",
+          "text": "Anti-Aging"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/anti-aging-products",
+          "text": "Anti-Aging Products"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/body-enhancement",
+          "text": "Body Enhancement"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/butt-hip-growth",
+          "text": "Butt & Hip Growth"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/category/energy-boosters",
+          "text": "Energy Boosters"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/about",
+          "text": "About Us"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/contact",
+          "text": "Contact"
+        },
+        {
+          "href": "https://eliphany-ng.vercel.app/privacy-policy",
+          "text": "Privacy Policy"
+        },
+        {
+          "href": "https://wa.me/+2348012345678?text=Hi!%20I%20have%20a%20question%20about%20your%20products.",
+          "text": "WhatsApp Us"
+        }
+      ],
+      "h1": [
+        "Radiant Skin Starts Here"
+      ],
+      "h2": [
+        "New Arrivals",
+        "Follow Us on Instagram"
+      ],
+      "bodyText": "Eliphany\nHome\nProducts\nAbout\nContact\nRadiant Skin Starts Here\n\nPremium supplements, honest prices \u2013 message us on WhatsApp.\n\nOrder on WhatsApp\nNew Arrivals\nNEW\nSupplements\nAhmad Tea Sleep + ProLife Magnesium\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkincare\nAxis-Y Dark Spot Correcting Glow Serum\nView Details \u2192\nGet Price on WhatsApp\nNEW\nHerbal Supplements\nPueraria Mirifica Natural Herbs\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nMagic Brightening Supplement\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nLadies Shine Advanced Supplement\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nGlutathione Gummies - Skin Whitening & Anti Aging Formula\nView Details \u2192\nGet Price on WhatsApp\nFollow Us on Instagram\n\n@eliphany.ng\n\nEliphany\n\nPremium skincare supplements curated for radiant skin. Order instantly via WhatsApp \u2014 delivered across the country.\n\nChat with us\nSHOP\nAnti-Aging\nAnti-Aging Products\nBody Enhancement\nButt & Hip Growth\nEnergy Boosters\nCOMPANY\nAbout Us\nContact\nPrivacy Policy\nWE'RE HERE TO HELP\n\n\u2713\nMon\u2013Sat: 9 AM \u2013 6 PM\n\n\u2713\nSame-day dispatch (before 2 PM)\n\n\u2713\nFree delivery over AED 300\n\nWhatsApp Us\n\n\u00a9 2025 Eliphany. All rights reserved.\n\n\u00b7\n\nMade with \u2665 in Nigeria"
+    },
+    "shot_error": "Page.screenshot: Timeout 40000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+  },
+  {
+    "name": "eliphany-admin",
+    "url": "https://eliphany-admin.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://eliphany-admin.vercel.app/dashboard",
+    "meta": {
+      "title": "React App",
+      "meta": {
+        "description": "Web site created using create-react-app"
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [],
+      "h1": [],
+      "h2": [],
+      "bodyText": ""
+    }
+  },
+  {
+    "name": "admin-demo",
+    "url": "https://admin-demo-seven.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://admin-demo-seven.vercel.app/dashboard",
+    "meta": {
+      "title": "React App",
+      "meta": {
+        "description": "Web site created using create-react-app"
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [],
+      "h1": [],
+      "h2": [],
+      "bodyText": ""
+    }
+  },
+  {
+    "name": "odin-landing-page",
+    "url": "https://odin-landing-page-chi.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://odin-landing-page-chi.vercel.app/",
+    "meta": {
+      "title": "Odin Project Landing Page",
+      "meta": {},
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [],
+      "h1": [],
+      "h2": [
+        "some random information"
+      ],
+      "bodyText": "HEADER LOGO\nheader link1\nheader link2\nheader link3\n\nThis website is awesome\nthis website has some subtext that goes here under the main title it's a smaller font and the color is lower contrast\n\nsignup\nthis is a placeholder for an image\nsome random information\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nThis is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space or maybe people will actually read it. Who knows? All I know is that it looks nice. ~Thor, God of thunder\nsign up\n\ncall to action it's time!\nsign up for our product by clicking that button right over there!\n\ncopyright \u00a9 The odin project 2021"
+    }
+  },
+  {
+    "name": "freecodecamp-project-4",
+    "url": "https://freecodecamp-project-4.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://freecodecamp-project-4.vercel.app/",
+    "meta": {
+      "title": "Rava \u2014 Simple app that we create",
+      "meta": {
+        "description": "Rava \u2014 a simple creative application for beautiful, secure and high-performing digital experiences."
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#home",
+          "text": "Rava"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#home",
+          "text": "Home"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#features",
+          "text": "About"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#testimonials",
+          "text": "Testimonials"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#contact",
+          "text": "Contact us"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#features",
+          "text": "Know us better"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#contact",
+          "text": "Read more"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#contact",
+          "text": "Discover more"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#contact",
+          "text": "More detail"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#",
+          "text": "Facebook"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#",
+          "text": "Instagram"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#",
+          "text": "LinkedIn"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#",
+          "text": "Message"
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/#",
+          "text": "Twitter"
+        }
+      ],
+      "h1": [
+        "Simple app that we create"
+      ],
+      "h2": [
+        "Built with purpose",
+        "People love working with Rava",
+        "More about Rava"
+      ],
+      "bodyText": "Rava\nHome\nAbout\nTestimonials\nContact us\n\nCREATIVE DIGITAL EXPERIENCES\n\nSimple app that we create\n\nThe Rava app is provided by lordwhitefire. You can use it personally or for commercial use; of course, you need to contact us for additional licensing.\n\nKnow us better\n\nWHAT WE DO\n\nBuilt with purpose\n\nThoughtful design, dependable security and high performance come together to create better digital products.\n\n01\nDesign & branding\n\nBy combining cognitive theory and experience design, you can create memorable experiences with a unified system of logos, colours and typography.\n\nRead more\n02\nFully secured\n\nA fully secure attributes-based encryption scheme and attributes-hiding predicate encryption approach for inner product applications.\n\nDiscover more\n03\nHigh performance\n\nA concept within organizational development referring to teams that are highly focused on their goals and achieve superior business results.\n\nMore detail\nBeautiful, simple and easy to use\n\nDue to its widespread use as filler text for layouts, non-readability is of great importance. Human perception is tuned to recognise certain patterns and repetitions in text.\n\nWe build high-performing applications\n\nWe focus on clear structure, thoughtful interaction and performance so your application feels dependable and smooth.\n\nEasy and best solution for your app\n\nA practical combination of design and technology gives your product a clear path from idea to a useful digital experience.\n\nWHAT OUR USERS SAY\n\nPeople love working with Rava\n\nSearch all the open positions on the web, get your own personalised salary estimate and read reviews from companies worldwide.\n\nRava is highly recommended!\nThey are very responsive and never made me wait to hear their concerns. Their team is very understanding, listens and responds with politeness.\nIgboke Somto\n\nManager\n\nRava is highly recommended!\nThey are very responsive and never made me wait to hear their concerns. Their team is very understanding, listens and responds with politeness.\nIfedike Victor\n\nManager\n\nFull name\nEmail address\nYour message\nSend Message Now\n\nLET'S WORK TOGETHER\n\nMore about Rava\n\nRava is a multidisciplinary creative app. We work together to design, create and produce work that we are proud of for folks that we believe in.\n\nWe are available for hire in a wide range of creative disciplines for a variety of jobs, projects and gigs.\n\nCopyright \u00a9 2023 Rava landing page | Designed by lordwhitefire"
+    }
+  },
+  {
+    "name": "freecodecamp2-1",
+    "url": "https://freecodecamp2-1.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://freecodecamp2-1.vercel.app/",
+    "meta": {
+      "title": "Camper Cafe - Restaurant menu",
+      "meta": {
+        "description": "",
+        "author": ""
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://freecodecamp2-1.vercel.app/index.html",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#top",
+          "text": "Home"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#about",
+          "text": "About"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#menu",
+          "text": "Menu"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#chefs",
+          "text": "Chefs"
+        },
+        {
+          "href": "javascript:;",
+          "text": "Features"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Features Page 1"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Features Page 2"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Features Page 3"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Features Page 4"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#reservation",
+          "text": "Contact Us"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#reservation",
+          "text": "Make A Reservation"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "READ MORE"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Order Now"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Order Now"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Order Now"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "Dugec xede maste Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "hdkfj jsi jdig forem ktsum yolor sit amet, hdifhtidbtjt adiptiting ekft."
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "sivatum yfdyhqueue"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "without rufyjm."
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "070-060-06i0"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "090-040-0350"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "victor@company.com"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": "victor@company.com"
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp2-1.vercel.app/#",
+          "text": ""
+        }
+      ],
+      "h1": [],
+      "h2": [
+        "The Best Coffee for you",
+        "Cafe House",
+        "Popular Items",
+        "Today's Special",
+        "Here You Can Make A Reservation Or Just\nwalkin to our cafe"
+      ],
+      "bodyText": "Home\nAbout\nMenu\nChefs\nFeatures\nContact Us\nCamper Cafe\nTHE BEST EXPERIENCE\n\nMake A Reservation\n\nThe Best Coffee for you\nCafe House\n\nThis is victor's page website template from victor's collection Fndimentum\nrhoncus, sem quam semper libero, sit amet adipiscing sem neque sed\nipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.\nMaecena\n\nREAD MORE\n Popular Items\namericano\n\nMaecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.\n\nOrder Now\ncappuccino\n\nMaecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.\n\nOrder Now\nmocha\n\nMaecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque. sed ipsum.\n\nOrder Now\n Today's Special\nDugec xede maste\n\nLorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nhdkfj jsi jdig\n\nforem ktsum yolor sit amet, hdifhtidbtjt adiptiting ekft.\n\nsivatum yfdyhqueue\n\nwithout rufyjm.\n\nContact Us\nHere You Can Make A Reservation Or Just\nwalkin to our cafe\n\nDonec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei\nsollicitudin urna diam, sed commodo purus porta ut.\n\nPhone Numbers\n070-060-06i0\n090-040-0350\n\nEmails\nvictor@company.com\nvictor@company.com\n\nTable Reservation\nNumber Of Guests\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nTime\nBreakfast\nLunch\nDinner\nMake A Reservation\n\n\u00a9 Copyright CAMPER Cafe Co.\nDesign: Victor's page"
+    }
+  },
+  {
+    "name": "tailwind-web-portfolio",
+    "url": "https://tailwind-web-portfolio.vercel.app/",
+    "status": 200,
+    "challenge_seen": false,
+    "final_url": "https://tailwind-web-portfolio.vercel.app/",
+    "meta": {
+      "title": "whitefire's portfolio",
+      "meta": {
+        "description": "whitefire| portfolio | freecodecamp | certification | project |5"
+      },
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://www.linkedin.com/in/victor-m-ifedike-2039a2239",
+          "text": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/victor-m-ifedike-2039a2239",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#home",
+          "text": "Home"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#about",
+          "text": "About me"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#services",
+          "text": "what i do"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#summary",
+          "text": "summary"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#portfolio",
+          "text": "My works"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#contact",
+          "text": "Contact me"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": "Your Profile"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": "git repositories"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": "posts and articles"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": "Certifications"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#home",
+          "text": "Home"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#about",
+          "text": "About me"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#services",
+          "text": "What I do"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#summary",
+          "text": "summary"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#portfolio",
+          "text": "my works"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#contact",
+          "text": "Contact me"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/img/ifedike.pdf",
+          "text": "Download resume"
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/img/ifedike.pdf",
+          "text": "Download Resume"
+        },
+        {
+          "href": "https://interior-deco-kappa.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://feproject.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://odin-landing-page-chi.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp7-1.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp-project-3.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp10-1.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp-project-4.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp-certification-project-1.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://freecodecamp15.vercel.app/",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://tailwind-web-portfolio.vercel.app/#",
+          "text": ""
+        },
+        {
+          "href": "https://www.linkedin.com/in/victor-m-ifedike-2039a2239",
+          "text": ""
+        },
+        {
+          "href": "https://github.com/lordwhitefire",
+          "text": ""
+        },
+        {
+          "href": "https://wa.me/2349051220647",
+          "text": "Chat on WhatsApp"
+        }
+      ],
+      "h1": [
+        "I'm a web developer",
+        "ABOUT ME",
+        "SERVICES",
+        "SUMMARY",
+        "PORTFOLIO"
+      ],
+      "h2": [
+        "Know me more",
+        "My Education",
+        "My Experience",
+        "My skills",
+        "Address"
+      ],
+      "bodyText": "Home\nAbout me\nwhat i do\nsummary\nMy works\nContact me\nView notifications\nOpen user menu\nWelcome\nI'm a web developer\n\nbased in Awka Nigeria\n\nhire me\nABOUT ME\nKnow me more\nHi there I'm IFEDIKE VICTOR a web developer\n\nWith over eight months of experience in creating and engaging responsive webpages.\nMy journey as a web developer began around july 2022 and since then, I have worked on several notable projects including designing a survey form,a tribute page, a document web page,a product landing page and so on.\n\nI am proficient in HTML AND CSS and always strive to stay up-to-date with the latest web development trends and technologies to ensure that my clients receive the best possible solutions for their needs.My goal as a developer is not just to create visually stunning webpages, but to also ensure that they are user-friendly, accessible, and optimized for search engines. In addition to my technical skills, I am a creative problem solver who is always looking for new and innovative ways to tackle challenges. When I am not coding, you can find me reading , hanging out with my friends or watching movies. I look forward to hearing from you and working together to bring your web development projects to life!\n\nNAME:Ifedike victor\n\nDATE OF BIRTH:04 may 2002\n\nNATIONALITY:Nigeria\n\nADDRESS:ifite Awka, Anabra state ,Nigeria\n\nPHONE:(+234)-814-692-7170, (+234)-905-122-0647\n\nEMAIL:victormakuo2002@gmail.com\n\nDownload resume\nSERVICES\nwhat I do\n\n Tribute page\n\" Create a timeless tribute to your loved one with a beautifully designed tribute page. Share their life story, celebrate their accomplishments, and honor their legacy online. Easy to create, and a lasting memorial for family and friends to visit and pay their respects. Start designing your tribute page today.\"\n\n Css forms\n\"Effortlessly create beautiful and responsive CSS forms for all your needs - whether it's a survey, sign-up, or login form. Customizable and easy to integrate into your website, our CSS forms will enhance your user experience and make your website look professional. Start designing your forms today.\"\n\n Document webpage\n\"Transform your documents into stunning web pages with our easy-to-use document web page designer. Create a professional-looking web page from your existing document in minutes. Our platform is user-friendly, customizable, and perfect for creating reports, white papers, and other important documents. Start designing your document web page today.\"\n\n Landing page\n\"Maximize your website's conversions with a custom-designed landing page. Our landing page designer allows you to create a sleek and modern page that is optimized for conversions. With user-friendly features and customizable options, you can showcase your brand and products in the best light possible. Start designing your landing page today.\"\n\n web portfolio\n\"Showcase your skills and accomplishments with a beautifully designed web portfolio. Our platform allows you to create a stunning portfolio website that is customized to your brand and personality. With user-friendly features and customizable options, you can showcase your work and impress potential clients or employers. Start designing your web portfolio today.\"\n\n Web design\n-Eye-catching designs that grab attention. -Fast loading pages for a seamless user experience. -User-friendly navigation to make it easy to find information. -Clear calls to action to drive conversions. -Responsive design to ensure the page looks great on any device.\n\nSUMMARY\nResume\nMy Education\n2019-2023\nChemical Engineering\nNnamdi Azikiwe University\n\nAfter my secondary school I was admitted to the University of Nnamdi Azikiwe to study chemical engineering and currently I am a 300 level student of the chemical engineering department.\nAs a 300-level student in the Chemical Engineering Department, I have gained a strong foundation in core chemical engineering principles and their practical applications. Through various coursework and projects, I have developed critical thinking, problem-solving, and teamwork skills. I am eager to apply my knowledge and skills to real-world challenges in the field of chemical engineering.\n\nMy Experience\n2022-2023\nWeb designer\nW3schools / Freecodecamp Platform\n\neven though I have a few months of experience I believe that time frame is not a measure . With eight months of experience as a web designer, I have honed my skills in creating visually appealing and user-friendly websites. I have expertise in HTML and CSS. I have been exposing myself to different things growing and adapting to any situation . I strive to create unique designs that align with clients' needs and exceed their expectations. I am proud to have done a lot in web design in spite of the time and I believe I will do more\n\nMy skills\n\nHtml\n90%\n\nCss\n90%\n\nJavaScript\n60%\n\nfigma\n60%\n\nTailwind\n60%\n\nGit\n60%\n\nDownload Resume\nPORTFOLIO\nMy Work\n\nnb: some of my work was done is desktop view so ensure to use desktop view if it looks incongruent in the mobile one . Happy viewing\n\nCONTACT\nGet in Touch\nAddress\n\nIfite Awka Anambra State\n\n (+234)-814-692-7170\n\n(+234)-905-122-0647\n\nvictormakuo2002@gmail\n\nFollow me\nSend me a note\n   Send Message\n\ncopyright \u00a9 2023 whitefire All rights Reserved"
+    }
+  },
+  {
+    "name": "github-pages-root",
+    "url": "https://lordwhitefire.github.io/",
+    "status": 404,
+    "challenge_seen": false,
+    "final_url": "https://lordwhitefire.github.io/",
+    "meta": {
+      "title": "Site not found \u00b7 GitHub Pages",
+      "meta": {},
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://help.github.com/pages/",
+          "text": "read the full documentation"
+        },
+        {
+          "href": "https://githubstatus.com/",
+          "text": "GitHub Status"
+        },
+        {
+          "href": "https://twitter.com/githubstatus",
+          "text": "@githubstatus"
+        },
+        {
+          "href": "https://lordwhitefire.github.io/",
+          "text": ""
+        },
+        {
+          "href": "https://lordwhitefire.github.io/",
+          "text": ""
+        }
+      ],
+      "h1": [
+        "404"
+      ],
+      "h2": [],
+      "bodyText": "404\n\nThere isn't a GitHub Pages site here.\n\nIf you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account.\n\nGitHub Status \u2014 @githubstatus"
+    }
+  },
+  {
+    "name": "domain-ifedike-victor",
+    "url": "https://ifedike-victor.vercel.app/",
+    "status": 404,
+    "challenge_seen": false,
+    "final_url": "https://ifedike-victor.vercel.app/",
+    "meta": {
+      "title": "404: NOT_FOUND",
+      "meta": {},
+      "canonical": null,
+      "jsonld": [],
+      "anchors": [
+        {
+          "href": "https://vercel.com/docs/errors/deployment_not_found",
+          "text": "VIEW DOCUMENTATION"
+        }
+      ],
+      "h1": [
+        "This page doesn\u2019t exist"
+      ],
+      "h2": [],
+      "bodyText": "This page doesn\u2019t exist\n\nIt may have been moved, removed, or never existed.\n\n404 DEPLOYMENT_NOT_FOUND\n\ncpt1::vbbkx-1793096816403-9ce2cd7ecb0d\n\nVIEW DOCUMENTATION\nCOPY DEBUG PROMPT"
+    }
+  }
+]

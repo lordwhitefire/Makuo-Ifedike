@@ -1,0 +1,116 @@
+{
+  "interior-deco": {
+    "url": "https://interior-deco-kappa.vercel.app/",
+    "final": "https://interior-deco-kappa.vercel.app/",
+    "status": 200,
+    "title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+    "description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+    "server": "Vercel",
+    "bytes": 70449
+  },
+  "truespec": {
+    "url": "https://truespec-k4y6.vercel.app/",
+    "status": 307,
+    "error": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+  },
+  "athletica": {
+    "url": "https://athletica-blond.vercel.app/",
+    "final": "https://athletica-blond.vercel.app/",
+    "status": 200,
+    "title": "Athletica | Football Store",
+    "description": "The ultimate football store. Shop football boots, goalkeeper gloves, footballs, shin guards, training wear and more.",
+    "server": "Vercel",
+    "bytes": 743585
+  },
+  "cp3-legacy": {
+    "url": "https://cp3-legacy.vercel.app/",
+    "final": "https://cp3-legacy.vercel.app/",
+    "status": 200,
+    "title": "CP3 Legacy",
+    "description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+    "server": "Vercel",
+    "bytes": 110899
+  },
+  "odin-landing-page": {
+    "url": "https://odin-landing-page-chi.vercel.app/",
+    "final": "https://odin-landing-page-chi.vercel.app/",
+    "status": 200,
+    "title": "Odin Project Landing Page",
+    "description": null,
+    "server": "Vercel",
+    "bytes": 2751
+  },
+  "freecodecamp-project-4": {
+    "url": "https://freecodecamp-project-4.vercel.app/",
+    "final": "https://freecodecamp-project-4.vercel.app/",
+    "status": 200,
+    "title": "Rava \u2014 Simple app that we create",
+    "description": "Rava \u2014 a simple creative application for beautiful, secure and high-performing digital experiences.",
+    "server": "Vercel",
+    "bytes": 11785
+  },
+  "new-portfolio": {
+    "url": "https://new-portfolio-eta-rouge.vercel.app/",
+    "final": "https://new-portfolio-eta-rouge.vercel.app/",
+    "status": 200,
+    "title": "FireSage Studio - Web Development & Design",
+    "description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+    "server": "Vercel",
+    "bytes": 65264
+  },
+  "admin-demo": {
+    "url": "https://admin-demo-seven.vercel.app/",
+    "final": "https://admin-demo-seven.vercel.app/",
+    "status": 200,
+    "title": "React App",
+    "description": "Web site created using create-react-app",
+    "server": "Vercel",
+    "bytes": 644
+  },
+  "eliphany-admin": {
+    "url": "https://eliphany-admin.vercel.app/",
+    "final": "https://eliphany-admin.vercel.app/",
+    "status": 200,
+    "title": "React App",
+    "description": "Web site created using create-react-app",
+    "server": "Vercel",
+    "bytes": 644
+  },
+  "eliphany-ng": {
+    "url": "https://eliphany-ng.vercel.app/",
+    "final": "https://eliphany-ng.vercel.app/",
+    "status": 200,
+    "title": "Eliphany | Skin-Care Supplements",
+    "description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+    "server": "Vercel",
+    "bytes": 29616
+  },
+  "eliphany-pages": {
+    "url": "https://lordwhitefire.github.io/eliphany/",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  },
+  "freecodecamp2-1": {
+    "url": "https://freecodecamp2-1.vercel.app/",
+    "final": "https://freecodecamp2-1.vercel.app/",
+    "status": 200,
+    "title": "Camper Cafe - Restaurant menu",
+    "description": "",
+    "server": "Vercel",
+    "bytes": 15707
+  },
+  "tailwind-web-portfolio": {
+    "url": "https://tailwind-web-portfolio.vercel.app/",
+    "final": "https://tailwind-web-portfolio.vercel.app/",
+    "status": 200,
+    "title": "whitefire's portfolio",
+    "description": "whitefire| portfolio | freecodecamp | certification | project |5",
+    "server": "Vercel",
+    "bytes": 25945
+  },
+  "ifedike-victor-domain": {
+    "url": "https://ifedike-victor.vercel.app/",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found"
+  }
+}

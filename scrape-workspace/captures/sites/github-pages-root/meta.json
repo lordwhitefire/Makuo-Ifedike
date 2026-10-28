@@ -1,0 +1,40 @@
+{
+  "name": "github-pages-root",
+  "url": "https://lordwhitefire.github.io/",
+  "status": 404,
+  "challenge_seen": false,
+  "final_url": "https://lordwhitefire.github.io/",
+  "meta": {
+    "title": "Site not found \u00b7 GitHub Pages",
+    "meta": {},
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [
+      {
+        "href": "https://help.github.com/pages/",
+        "text": "read the full documentation"
+      },
+      {
+        "href": "https://githubstatus.com/",
+        "text": "GitHub Status"
+      },
+      {
+        "href": "https://twitter.com/githubstatus",
+        "text": "@githubstatus"
+      },
+      {
+        "href": "https://lordwhitefire.github.io/",
+        "text": ""
+      },
+      {
+        "href": "https://lordwhitefire.github.io/",
+        "text": ""
+      }
+    ],
+    "h1": [
+      "404"
+    ],
+    "h2": [],
+    "bodyText": "404\n\nThere isn't a GitHub Pages site here.\n\nIf you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account.\n\nGitHub Status \u2014 @githubstatus"
+  }
+}

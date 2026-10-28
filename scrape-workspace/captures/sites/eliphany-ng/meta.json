@@ -1,0 +1,226 @@
+{
+  "name": "eliphany-ng",
+  "url": "https://eliphany-ng.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://eliphany-ng.vercel.app/",
+  "meta": {
+    "title": "Eliphany | Skin-Care Supplements",
+    "meta": {
+      "description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+      "og:url": "https://eliphany-ng.vercel.app/",
+      "og:title": "Eliphany | Skin-Care Supplements",
+      "og:description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+      "og:image": "https://eliphany-ng.vercel.app/logo1.svg",
+      "twitter:card": "summary_large_image",
+      "og:site_name": "Eliphany"
+    },
+    "canonical": "https://eliphany-ng.vercel.app/",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Eliphany Skin Care\",\"url\":\"https://eliphany-ng.vercel.app/\",\"logo\":\"https://eliphany-ng.vercel.app/logo.svg\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"+971-XX-XXX-XXXX\",\"contactType\":\"sales\",\"areaServed\":\"AE\",\"availableLanguage\":\"en\"},\"sameAs\":[]}"
+    ],
+    "anchors": [
+      {
+        "href": "https://eliphany-ng.vercel.app/",
+        "text": "Eliphany"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/",
+        "text": "Home"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/shop/1",
+        "text": "Products"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/about/",
+        "text": "About"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/contact/",
+        "text": "Contact"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/",
+        "text": "Home"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/shop/1",
+        "text": "Products"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/about/",
+        "text": "About"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/contact/",
+        "text": "Contact"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/anti-aging",
+        "text": "Anti-Aging"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/anti-aging-products",
+        "text": "Anti-Aging Products"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/body-enhancement",
+        "text": "Body Enhancement"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/butt-hip-growth",
+        "text": "Butt & Hip Growth"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/energy-boosters",
+        "text": "Energy Boosters"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20order",
+        "text": "Order on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-035",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-035",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAhmad%20Tea%20Sleep%20%2B%20ProLife%20Magnesium%E2%80%9D%20(SKU%3A%20product-035).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-010",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-010",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAxis-Y%20Dark%20Spot%20Correcting%20Glow%20Serum%E2%80%9D%20(SKU%3A%20product-010).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-006",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-006",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CPueraria%20Mirifica%20Natural%20Herbs%E2%80%9D%20(SKU%3A%20product-006).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-005",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-005",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CMagic%20Brightening%20Supplement%E2%80%9D%20(SKU%3A%20product-005).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-004",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-004",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CLadies%20Shine%20Advanced%20Supplement%E2%80%9D%20(SKU%3A%20product-004).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-003",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/products/product-003",
+        "text": "View Details \u2192"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CGlutathione%20Gummies%20-%20Skin%20Whitening%20%26%20Anti%20Aging%20Formula%E2%80%9D%20(SKU%3A%20product-003).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "text": "Get Price on WhatsApp"
+      },
+      {
+        "href": "https://instagram.com/eliphany.ng",
+        "text": ""
+      },
+      {
+        "href": "https://instagram.com/eliphany.ng",
+        "text": ""
+      },
+      {
+        "href": "https://instagram.com/eliphany.ng",
+        "text": ""
+      },
+      {
+        "href": "https://instagram.com/eliphany.ng",
+        "text": ""
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/",
+        "text": "Eliphany"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20order",
+        "text": "Chat with us"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/anti-aging",
+        "text": "Anti-Aging"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/anti-aging-products",
+        "text": "Anti-Aging Products"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/body-enhancement",
+        "text": "Body Enhancement"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/butt-hip-growth",
+        "text": "Butt & Hip Growth"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/category/energy-boosters",
+        "text": "Energy Boosters"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/about",
+        "text": "About Us"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/contact",
+        "text": "Contact"
+      },
+      {
+        "href": "https://eliphany-ng.vercel.app/privacy-policy",
+        "text": "Privacy Policy"
+      },
+      {
+        "href": "https://wa.me/+2348012345678?text=Hi!%20I%20have%20a%20question%20about%20your%20products.",
+        "text": "WhatsApp Us"
+      }
+    ],
+    "h1": [
+      "Radiant Skin Starts Here"
+    ],
+    "h2": [
+      "New Arrivals",
+      "Follow Us on Instagram"
+    ],
+    "bodyText": "Eliphany\nHome\nProducts\nAbout\nContact\nRadiant Skin Starts Here\n\nPremium supplements, honest prices \u2013 message us on WhatsApp.\n\nOrder on WhatsApp\nNew Arrivals\nNEW\nSupplements\nAhmad Tea Sleep + ProLife Magnesium\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkincare\nAxis-Y Dark Spot Correcting Glow Serum\nView Details \u2192\nGet Price on WhatsApp\nNEW\nHerbal Supplements\nPueraria Mirifica Natural Herbs\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nMagic Brightening Supplement\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nLadies Shine Advanced Supplement\nView Details \u2192\nGet Price on WhatsApp\nNEW\nSkin Care Supplements\nGlutathione Gummies - Skin Whitening & Anti Aging Formula\nView Details \u2192\nGet Price on WhatsApp\nFollow Us on Instagram\n\n@eliphany.ng\n\nEliphany\n\nPremium skincare supplements curated for radiant skin. Order instantly via WhatsApp \u2014 delivered across the country.\n\nChat with us\nSHOP\nAnti-Aging\nAnti-Aging Products\nBody Enhancement\nButt & Hip Growth\nEnergy Boosters\nCOMPANY\nAbout Us\nContact\nPrivacy Policy\nWE'RE HERE TO HELP\n\n\u2713\nMon\u2013Sat: 9 AM \u2013 6 PM\n\n\u2713\nSame-day dispatch (before 2 PM)\n\n\u2713\nFree delivery over AED 300\n\nWhatsApp Us\n\n\u00a9 2025 Eliphany. All rights reserved.\n\n\u00b7\n\nMade with \u2665 in Nigeria"
+  },
+  "shot_error": "Page.screenshot: Timeout 40000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+}

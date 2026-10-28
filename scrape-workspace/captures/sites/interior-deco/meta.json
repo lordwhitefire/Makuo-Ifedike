@@ -1,0 +1,171 @@
+{
+  "name": "interior-deco",
+  "url": "https://interior-deco-kappa.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://interior-deco-kappa.vercel.app/",
+  "meta": {
+    "title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+    "meta": {
+      "author": "Makuo Ifedike",
+      "description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+      "og:site_name": "Whitefire Interior",
+      "og:title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+      "og:description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+      "og:url": "https://interior-deco-kappa.vercel.app",
+      "og:image": "https://cdn.sanity.io/images/pzhistba/production/5a658a27bf9f81cebbc25319f37dfbd5edcb8d38-1600x896.jpg?h=200&fit=max",
+      "twitter:card": "summary_large_image"
+    },
+    "canonical": "https://interior-deco-kappa.vercel.app/",
+    "jsonld": [
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Whitefire Interior\",\"url\":\"https://interior-deco-kappa.vercel.app\",\"email\":\"hello@whitefireinterior.com\",\"logo\":\"https://interior-deco-kappa.vercel.app/favicon.svg\",\"founder\":{\"@type\":\"Person\",\"name\":\"Makuo Ifedike\",\"email\":\"mifedike@gmail.com\",\"url\":\"https://www.linkedin.com/in/makuo-ifedike-216607350/\",\"sameAs\":[\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"]},\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"email\":\"hello@whitefireinterior.com\",\"areaServed\":\"NL\",\"availableLanguage\":[\"English\",\"Dutch\"]}}",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"Whitefire Interior\",\"description\":\"Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.\",\"url\":\"https://interior-deco-kappa.vercel.app\",\"image\":\"https://interior-deco-kappa.vercel.app/favicon.svg\",\"email\":\"hello@whitefireinterior.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"101 Prinsengracht\",\"addressLocality\":\"Amsterdam\",\"postalCode\":\"1015 HR\",\"addressCountry\":\"NL\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":52.3738,\"longitude\":4.8906},\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"09:00\",\"closes\":\"18:00\"}],\"priceRange\":\"\u20ac\u20ac\",\"founder\":{\"@type\":\"Person\",\"name\":\"Makuo Ifedike\",\"email\":\"mifedike@gmail.com\",\"url\":\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"}}"
+    ],
+    "anchors": [
+      {
+        "href": "https://interior-deco-kappa.vercel.app/",
+        "text": "W WHITEFIRE INTERIOR"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/",
+        "text": "HOME"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/about",
+        "text": "ABOUT"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services",
+        "text": "SERVICES \u2304"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects",
+        "text": "PROJECTS"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/blog",
+        "text": "BLOG"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/team",
+        "text": "TEAM"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/testimonials",
+        "text": "TESTIMONIALS"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/faq",
+        "text": "FAQ"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/contact",
+        "text": "CONTACT"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/contact",
+        "text": "GET IN TOUCH"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects",
+        "text": "VIEW OUR PROJECTS"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/#showreel",
+        "text": "PLAY SHOWREEL"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/living-spaces",
+        "text": "Living Spaces Warm, layered living rooms designed for everyday comfort \u2014 from Malibu oceanfront to a Norwegian lakeside "
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/kitchens-dining",
+        "text": "Kitchens & Dining Considered kitchens that balance craftsmanship, storage, and the ritual of gathering."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/bedrooms-retreats",
+        "text": "Bedrooms & Retreats Calm, restorative retreats \u2014 coastal, alpine, and urban bedrooms designed for deep rest."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/workspaces",
+        "text": "Workspaces Productive, people-first workplaces \u2014 from tech HQs to micro home offices."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/hospitality-retail",
+        "text": "Hospitality & Retail Memorable hospitality and retail interiors that turn visitors into regulars."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/boutique-transitional",
+        "text": "Boutique & Transitional Refined transitional interiors with brass, marble, and velvet detailing."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/minimalist-scandinavian",
+        "text": "Minimalist & Scandinavian Quiet, material-led spaces rooted in simplicity, light, and natural texture."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/services/compact-micro-spaces",
+        "text": "Compact & Micro Spaces Smart, space-efficient design for micro lofts and compact homes."
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/about",
+        "text": "ABOUT OUR STUDIO"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects",
+        "text": "VIEW ALL PROJECTS"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects/copenhagen-nordhavn-showroom",
+        "text": "Copenhagen Nordhavn Showroom NORDHAVN, COPENHAGEN"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects/sydney-harbour-cowork",
+        "text": "Sydney Harbour Co-Working Loft THE ROCKS, SYDNEY"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects/norwegian-lakeside-cabin",
+        "text": "Norwegian Lakeside Cabin GEILO, NORWAY"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects/melbourne-laneway-cafe",
+        "text": "Melbourne Laneway Caf\u00e9 HOSIER LANE, MELBOURNE"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/projects/soho-maison-lobby",
+        "text": "Soho Maison Boutique Lobby SOHO, LONDON"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/blog",
+        "text": "VIEW ALL ARTICLES"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/blog/bold-patterns-balanced-spaces-in-kitchens",
+        "text": "KITCHEN DESIGN Bold Patterns, Balanced Spaces in Kitchens May 6, 2024 \u2022 5 min read"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/blog/how-to-style-shelves-like-a-designer",
+        "text": "DESIGN ADVICE How to Style Shelves Like a Designer March 7, 2024 \u2022 5 min read"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/blog/creating-a-restful-retreat-bedroom-design-tips",
+        "text": "BEDROOM DESIGN Creating a Restful Retreat: Bedroom Design Tips March 28, 2024 \u2022 4 min read"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/privacy",
+        "text": "PRIVACY POLICY"
+      }
+    ],
+    "h1": [
+      "Designing Spaces.\nElevating Lives."
+    ],
+    "h2": [
+      "Comprehensive Interior Design Services",
+      "Where Aesthetics Meet Function",
+      "What Our Clients Are Saying",
+      "Spaces We're Proud Of",
+      "Latest Articles",
+      "Design Inspiration\nStraight to Your Inbox"
+    ],
+    "bodyText": "W\nWHITEFIRE\nINTERIOR\nHOME\nABOUT\nSERVICES\n\u2304\nPROJECTS\nBLOG\nTEAM\nTESTIMONIALS\nFAQ\nCONTACT\nGET IN TOUCH\n\nLUXURY INTERIOR DESIGN STUDIO\n\nDesigning Spaces.\nElevating Lives.\n\nWe create timeless, functional and beautiful spaces that reflect who you are.\n\nVIEW OUR PROJECTS\nPLAY SHOWREEL\n\nWHAT WE DO\n\nComprehensive Interior Design Services\nLiving Spaces\n\nWarm, layered living rooms designed for everyday comfort \u2014 from Malibu oceanfront to a Norwegian lakeside cabin.\n\nKitchens & Dining\n\nConsidered kitchens that balance craftsmanship, storage, and the ritual of gathering.\n\nBedrooms & Retreats\n\nCalm, restorative retreats \u2014 coastal, alpine, and urban bedrooms designed for deep rest.\n\nWorkspaces\n\nProductive, people-first workplaces \u2014 from tech HQs to micro home offices.\n\nHospitality & Retail\n\nMemorable hospitality and retail interiors that turn visitors into regulars.\n\nBoutique & Transitional\n\nRefined transitional interiors with brass, marble, and velvet detailing.\n\nMinimalist & Scandinavian\n\nQuiet, material-led spaces rooted in simplicity, light, and natural texture.\n\nCompact & Micro Spaces\n\nSmart, space-efficient design for micro lofts and compact homes.\n\nSTYLISH SPACES\n\nWhere Aesthetics Meet Function\n\nWe believe that great design is more than beautiful spaces. It's about creating environments that inspire, support, and elevate everyday living.\n\nABOUT OUR STUDIO\n\nCLIENTS LOVE US\n\nWhat Our Clients Are Saying\n\u201c\n\nTwelve white cubes float like thoughts in a 6 m void. The light well breathes with the day, concrete warms underfoot, and every sculpture finds its perfect shadow. Artists cry on opening night. This isn\u2019t a showroom\u2014it\u2019s a cathedral of light.\n\n\u2014 Freja Nielsen\n\nNordhavn, Copenhagen\n\n120 founders now fight over the 12 m table at sunrise. The moss wall eats our CO\u2082, the harbour ferries wave hello, and the Wi-Fi never drops\u2014even when the Opera House lights up. We signed the lease sight-unseen after one render. Best blind date ever.\n\n\u2014 Haruto & Zoe Chen\n\nThe Rocks, Sydney\n\nWe wanted a cabin that disappears into the forest yet hugs us when the wind howls. Now the black pine drinks the snowlight, the stove sings, and the 9-metre window frames auroras like living art. We ski in, kick off boots, and the room is already warm. Hygge isn\u2019t a word here; it\u2019s the air we breathe.\n\n\u2014 Frida & Lars Berg\n\nGeilo, Norway\n\nWe open at 6 a.m.; the bar flips down like a drawbridge and the laneway becomes ours. Rooftop basil hits the pesto at 8. By 10 the queue snakes around the corner, yet the 3 a.m. curfew is never broken\u2014the bar simply flips up and becomes street art. Zero waste, zero noise, 100 % magic.\n\n\u2014 Luca Moretti\n\nHosier Lane, Melbourne\n\nGuests walk in and forget they\u2019re in a 1.8 m hallway. The brass river turns midnight into champagne hour, velvet swallows jet-lag, and the scent of fig leaf makes every arrival feel like a homecoming. We\u2019re fully booked before the paint dries.\n\n\u2014 Camille Dubois\n\nSoho, London\n\nWe tore the wall down and the Pacific moved in. Coffee at sunrise, wine at sunset\u2014every hour the room changes color with the sea. Friends walk in and literally gasp. This isn\u2019t a living room; it\u2019s a front-row seat to the universe.\n\n\u2014 Sienna Vega\n\nMalibu, CA\n\nTRUSTED BY LEADING BRANDS\n\nFEATURED PROJECTS\n\nSpaces We're Proud Of\nVIEW ALL PROJECTS\nCopenhagen Nordhavn Showroom\n\nNORDHAVN, COPENHAGEN\n\nSydney Harbour Co-Working Loft\n\nTHE ROCKS, SYDNEY\n\nNorwegian Lakeside Cabin\n\nGEILO, NORWAY\n\nMelbourne Laneway Caf\u00e9\n\nHOSIER LANE, MELBOURNE\n\nSoho Maison Boutique Lobby\n\nSOHO, LONDON\n\n350+\n\nProjects Completed\n\n98%\n\nClient Satisfaction\n\n12+\n\nYears of Experience\n\n20+\n\nDesign Awards\n\nINSIGHTS & IDEAS\n\nLatest Articles\nVIEW ALL ARTICLES\n\nKITCHEN DESIGN\n\nBold Patterns, Balanced Spaces in Kitchens\n\nMay 6, 2024 \u2022 5 min read\n\nDESIGN ADVICE\n\nHow to Style Shelves Like a Designer\n\nMarch 7, 2024 \u2022 5 min read\n\nBEDROOM DESIGN\n\nCreating a Restful Retreat: Bedroom Design Tips\n\nMarch 28, 2024 \u2022 4 min read\n\nJOIN OUR COMMUNITY\n\nDesign Inspiration\nStraight to Your Inbox\n\nGet the latest trends, project updates and exclusive design tips delivered to your inbox.\n\nWebsite\nEmail address\nSUBSCRIBE\nI agree to receive design inspiration and updates from Whitefire Interior. Unsubscribe anytime.\n\nWe respect your privacy. Read our Privacy Policy. Unsubscribe anytime.\n\nWhitefire Interior\n\nINTERIOR DESIGN STUDIO\n\nPRIVACY POLICY"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "name": "truespec",
+  "url": "https://truespec-k4y6.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://truespec-k4y6.vercel.app/",
+  "meta": {
+    "title": "TrueSpec \u2014 cars you can trust",
+    "meta": {
+      "description": "A Nigerian vehicle-import showroom: browse, judge a car completely, chat on WhatsApp."
+    },
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [
+      {
+        "href": "https://truespec-k4y6.vercel.app/",
+        "text": "TRUESPEC"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/#",
+        "text": "Instagram"
+      },
+      {
+        "href": "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question.",
+        "text": "Chat on WhatsApp"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1005",
+        "text": "2021 BMW X5 XDRIVE40I \u20a688.0M DOORSTEP PRICE Available now. Shipping, clearing and delivery included."
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1003",
+        "text": "2020 LEXUS RX 350 F SPORT \u20a652.0M DOORSTEP PRICE Available now. Shipping, clearing and delivery included."
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1008",
+        "text": "2022 TOYOTA RAV4 PRIME SE \u20a645.5M DOORSTEP PRICE Available now. Shipping, clearing and delivery included."
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1001",
+        "text": "TOYOTA CAMRY 2021 \u20a634,500,000 31,000 km Obsidian black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1003",
+        "text": "LEXUS RX 350 2020 \u20a652,000,000 41,000 km Sonic grey"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1005",
+        "text": "BMW X5 2021 \u20a688,000,000 34,000 km Alpine white"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1007",
+        "text": "HONDA ACCORD 2021 \u20a638,000,000 29,000 km Graphite"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1008",
+        "text": "SPECIAL TOYOTA RAV4 PRIME 2022 \u20a650,900,000 \u20a645,500,000 Special 12,000 km Wind chill pearl"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1011",
+        "text": "SPECIAL MERCEDES-BENZ C 300 2018 \u20a633,000,000 \u20a629,500,000 Special 71,000 km Obsidian black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1012",
+        "text": "BMW X3 2019 \u20a641,000,000 58,000 km Santorini black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1019",
+        "text": "LANDED LEXUS RX 350 2019 \u20a644,500,000 Landed 64,000 km Celestial silver"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1020",
+        "text": "LANDED HONDA CR-V 2020 \u20a636,000,000 Landed 48,000 km Platinum white"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1023",
+        "text": "SPECIAL MERCEDES-BENZ E 350 2020 \u20a652,500,000 \u20a648,000,000 Special 39,000 km Obsidian black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1033",
+        "text": "TS-FLOW-1792145622497 FLOW2 2020 \u20a65,000,000 12,000 km Black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1035",
+        "text": "TS-FLOW-1792145803583 FLOW2 2020 \u20a65,000,000 12,000 km Black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/inventory",
+        "text": "SHOW ALL 19 CARS"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/#cars",
+        "text": "ALL AVAILABLE"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1001",
+        "text": "TOYOTA CAMRY 2021 \u20a634,500,000 31,000 km Obsidian black"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1003",
+        "text": "LEXUS RX 350 2020 \u20a652,000,000 41,000 km Sonic grey"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/car/TS-1005",
+        "text": "BMW X5 2021 \u20a688,000,000 34,000 km Alpine white"
+      },
+      {
+        "href": "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question.",
+        "text": "CHAT WITH US"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/#",
+        "text": "Instagram"
+      },
+      {
+        "href": "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question.",
+        "text": "WhatsApp"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/#",
+        "text": "Facebook"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/#",
+        "text": "YouTube"
+      },
+      {
+        "href": "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question.",
+        "text": "WhatsApp us"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/privacy",
+        "text": "Privacy notice"
+      },
+      {
+        "href": "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question.",
+        "text": "Chat on WhatsApp"
+      },
+      {
+        "href": "https://truespec-k4y6.vercel.app/privacy",
+        "text": "Read the full privacy notice"
+      }
+    ],
+    "h1": [],
+    "h2": [
+      "2021 BMW\nX5 XDRIVE40I",
+      "2020 LEXUS\nRX 350 F SPORT",
+      "2022 TOYOTA\nRAV4 PRIME SE",
+      "What are you after?",
+      "TRUESPEC INVENTORY",
+      "FEATURED CARS",
+      "WHY CHOOSE US",
+      "VEHICLE IMPORTS\nDONE RIGHT",
+      "",
+      "Before you go to WhatsApp"
+    ],
+    "bodyText": "TRUESPEC\nImported from the USA\nDelivered anywhere in Nigeria\nVISITS BY APPOINTMENT\nWHATSAPP\n+2348146927170\nCHAT HOURS\nMon - Sat, 9AM - 6PM\nNew on the lot: 2019 Lexus RX 350 350 \u2014 landed this year\nNext to land: 2021 Range Rover Sport HSE \u2014 Expected arrival: November\nBiggest drop: 2022 Toyota RAV4 Prime SE \u2014 was \u20a650,900,000, now \u20a645,500,000\nOne doorstep price \u2014 shipping, clearing and delivery included.\nChat on WhatsApp\n2021 BMW\nX5 XDRIVE40I\n\u20a688.0M\nDOORSTEP PRICE\n\nAvailable now. Shipping, clearing and delivery included.\n\n2020 LEXUS\nRX 350 F SPORT\n\u20a652.0M\nDOORSTEP PRICE\n\nAvailable now. Shipping, clearing and delivery included.\n\n2022 TOYOTA\nRAV4 PRIME SE\n\u20a645.5M\nDOORSTEP PRICE\n\nAvailable now. Shipping, clearing and delivery included.\n\nTRUESPEC INVENTORY\nAVAILABLE 13 CARS \u00b7 OF WHICH 3 NEW ARRIVALS\nAVAILABLE\nON ORDER\nLANDED THIS YEAR\n\nTOYOTA CAMRY 2021\n\u20a634,500,000\n31,000 km\nObsidian black\nLEXUS RX 350 2020\n\u20a652,000,000\n41,000 km\nSonic grey\nBMW X5 2021\n\u20a688,000,000\n34,000 km\nAlpine white\nHONDA ACCORD 2021\n\u20a638,000,000\n29,000 km\nGraphite\nSPECIAL\nTOYOTA RAV4 PRIME 2022\n\u20a650,900,000\n\u20a645,500,000\nSpecial\n12,000 km\nWind chill pearl\nSPECIAL\nMERCEDES-BENZ C 300 2018\n\u20a633,000,000\n\u20a629,500,000\nSpecial\n71,000 km\nObsidian black\nBMW X3 2019\n\u20a641,000,000\n58,000 km\nSantorini black\nLANDED\nLEXUS RX 350 2019\n\u20a644,500,000\nLanded\n64,000 km\nCelestial silver\nLANDED\nHONDA CR-V 2020\n\u20a636,000,000\nLanded\n48,000 km\nPlatinum white\nSPECIAL\nMERCEDES-BENZ E 350 2020\n\u20a652,500,000\n\u20a648,000,000\nSpecial\n39,000 km\nObsidian black\nTS-FLOW-1792145622497 FLOW2 2020\n\u20a65,000,000\n12,000 km\nBlack\nTS-FLOW-1792145803583 FLOW2 2020\n\u20a65,000,000\n12,000 km\nBlack\nPrev\n1\n2\nNext\nSHOW ALL 19 CARS\nAre you looking for a car?\n\nOur cars are delivered fully cleared with all requirements completed. We deliver your car wherever you are in Nigeria.\n\nWant a car you cannot see here?\n\nTell us the make, model and year. We source it in the USA, ship it and clear it for you. Send us a message to start.\n\nFEATURED CARS\nALL AVAILABLE\nTOYOTA CAMRY 2021\n\u20a634,500,000\n31,000 km\nObsidian black\nLEXUS RX 350 2020\n\u20a652,000,000\n41,000 km\nSonic grey\nBMW X5 2021\n\u20a688,000,000\n34,000 km\nAlpine white\nWHY CHOOSE US\nONE DOORSTEP PRICE\n\nShipping, clearing and delivery are already included in every price.\n\nSHIPPED FROM THE USA\n\nWe buy, ship and clear your car so you never deal with the port.\n\nWIDE RANGE OF BRANDS\n\nToyota, Lexus, Mercedes-Benz, BMW and more, all imported fresh.\n\nTALK TO US DIRECTLY\n\nMessage us on WhatsApp about any car and get a reply from the owner.\n\nCHAT WITH US\nVEHICLE IMPORTS\nDONE RIGHT\n\nTrueSpec Automotive brings quality vehicles from the USA to Nigeria. Every car you see here is either in stock, on its way, or landed this year. Choose a car, message us on WhatsApp and we handle the shipping and clearing until it reaches your door.\n\nTRUESPEC AUTOMOTIVE\n\nWe import and deliver quality vehicles from the USA. One honest doorstep price on every car.\n\nPHOTO GALLERY\nHOW BUYING WORKS\n1. Pick a car or ask for one\n2. Chat with us on WhatsApp\n3. We ship, clear and deliver\nSOCIAL NETWORK\nCHAT WITH US\nWhatsApp us\nCHAT HOURS\n\nMon - Fri: 09:00AM - 06:00PM\nSaturday: 10:00AM - 04:00PM\nSunday: Closed\n\nVIEWING\n\nCars can be viewed by appointment once they have landed. Message us to book a time.\n\nDELIVERY\n\nWe deliver to your door anywhere in Nigeria. Delivery is included in the price.\n\n\u00a9 2026 TrueSpec Automotive. All rights reserved.\nPrivacy notice \u00b7 Imported from the USA"
+  }
+}

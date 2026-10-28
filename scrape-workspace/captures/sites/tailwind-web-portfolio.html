@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale:1.0" />
+    <meta name="description" content="whitefire| portfolio | freecodecamp | certification | project |5" />
+    <title >whitefire's portfolio</title>   <link rel="stylesheet" href="output.css" />
+  </head>
+  <body >
+<nav class="fixed top-0 left-0 right-0 bg-neutral-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-shrink-0 items-center">
+ <a href="https://www.linkedin.com/in/victor-m-ifedike-2039a2239">
+          <img class="block h-8 w-auto lg:hidden" src="img/linkedIn.svg" alt="Your Company"></a>
+ <a href="https://www.linkedin.com/in/victor-m-ifedike-2039a2239">
+          <img class="hidden h-8 w-auto lg:block" src="img/linkedIn.svg" alt="Your Company"></a>
+        </div>
+        <div class="hidden sm:ml-6 sm:block" >
+          <div class="flex space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#home" class="hover:bg-gray-700 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+            <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About me</a>
+            <a href="#services" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">what i do</a>
+            <a href="#summary" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">summary</a>
+            <a href="#portfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">My works</a>
+            <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact me</a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <button type="button" class="rounded-full bg-neutral-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+          <span class="sr-only">View notifications</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+          </svg>
+        </button>
+
+        <!-- Profile dropdown -->
+        <div class="relative ml-3">
+          <div>
+            <button type="button" class="flex rounded-full bg-neutral-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="menu-butto" aria-expanded="false" aria-haspopup="true">
+              <span class="sr-only">Open user menu</span>
+              <img class="h-8 w-8 rounded-full" src="img/profile_pics.png" alt="">
+            </button>
+          </div>
+
+          <!--
+            Dropdown menu, show/hide based on menu state.
+
+            Entering: "transition ease-out duration-100"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+          -->
+          <div class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1" id="men">
+            <!-- Active: "bg-gray-100", Not Active: "" -->
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">git repositories</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">posts and articles</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Certifications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+<div class="hidden sm:hidden" id="menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#home" class="hover:bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+      <a href="#about" class="hover:bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">About me</a>
+      <a href="#services" class="hover:bg-gray-700 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">What I do</a>
+      <a href="#summary" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">summary</a>
+      <a href="#portfolio" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">my works</a>
+      <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact me</a>
+    </div>
+  </div>
+</nav>
+    <main >
+      <!-- section 1 the banner -->
+      <div class="w-screen h-screen background" id="home">
+        <div class="w-screen h-screen bg-neutral-950/75 flex justify-center items-center">
+        <div class="text-neutral-200 text-center MyCustomFont">
+          <h3 class="text-xl font-medium">Welcome</h3>
+          <h1 class="text-3xl  font-medium">I'm a web developer</h1>
+          <p >based in Awka Nigeria</p>
+          <button class="mt-1 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 shadow-md bg-gradient-to-br from-white/[.6] via-gray-200/[.3] to-white/[.3] hover:to-gray-300/[.3] transition-colors duration-300">hire me</button>
+      
+
+        </div>
+        </div>
+      </div>
+      <!-- the about me section -->
+      <div id="about"class=" py-10 w-screen mx-auto bg-neutral-100" >
+        <h1 class="MyCustomFont font-extrabold text-5xl text-center text-neutral-900/[.1]">ABOUT ME </h1>
+        <div class="flex flex-col items-center mx-auto w-[80vw] text-neutral-700 -mt-6">
+          <h2 class="text-2xl">Know me more</h2>
+          <hr class="h-0.5 w-24 bg-neutral-900  rounded-md -mt-1 mb-4"/>
+          <h3 class="text-3xl text-center font-medium">Hi there I'm <span class="uppercase "> Ifedike Victor</span> a web developer</h3>
+          <p > 
+<span class="text-4xl ">W</span >ith over eight months  of experience in creating and engaging responsive webpages.<br /> My journey as a web developer began around july 2022 and since then, I have worked on several notable  projects including designing a survey form,a tribute page, a document web page,a product landing page and so on.<br /></p >
+<p class="mt-4">
+I am proficient in HTML AND CSS and always strive to stay up-to-date with the latest web development trends and technologies to ensure that my clients receive the best possible solutions for their needs.My goal as a developer is not just to create visually stunning webpages, but to also ensure that they are user-friendly, accessible, and optimized for search engines.
+In addition to my technical skills, I am a creative problem solver who is always looking for new and innovative ways to tackle challenges.
+When I am not coding, you can find me reading , hanging out with my friends or watching movies. I look forward to hearing from you and working together to bring your web development projects to life!
+          </p>
+          </div>
+          <div class="w-[90vw] mx-auto mt-4">
+          <p ><span class="uppercase font-medium">name:</span>Ifedike victor</p>
+          <p ><span class="uppercase font-medium">date of birth:</span>04 may 2002</p>
+  <p ><span class="uppercase font-medium">nationality:</span>Nigeria</p>
+  <p ><span class="uppercase font-medium">address:</span>ifite Awka, Anabra state ,Nigeria</p>
+  <p ><span class="uppercase font-medium">phone:</span>(+234)-814-692-7170, (+234)-905-122-0647</p>
+  <p ><span class="uppercase font-medium">email:</span>victormakuo2002@gmail.com </p>
+<button class="mt-4 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 shadow-md bg-gradient-to-br from-black/[.6] via-gray-800/[.3] to-black/[.3] hover:to-gray-900/[.3] transition-colors duration-300 text-neutral-100"><a href="img/ifedike.pdf"  >Download resume</a></button>
+        </div>
+       
+      </div>
+      <!-- the my services section -->
+      <div id="services"class="w-screen bg-neutral-100 text-neutral-700">
+        <h1 class="MyCustomFont font-extrabold text-5xl text-center text-neutral-900/[.1]">SERVICES</h1>
+ <h3 class="text-2xl text-center -mt-6">what I do</h3>
+        <hr class="h-0.5 w-24 bg-neutral-900  rounded-md -mt-1 mb-4 mx-auto"/>
+        <div class="flex flex-wrap w-[80vw] mx-auto mt-8 justify-around sm:gap-y-1">
+ 
+          <p class="mb-4 sm:basis-1/2 sm:max-w-[30vw] ">
+            <span class="block font-medium text-xl">
+            <img src="img/tribute.svg"class="inline h-8" />
+             Tribute page</span>
+" Create a timeless tribute to your loved one with a beautifully designed tribute page. Share their life story, celebrate their accomplishments, and honor their legacy online. Easy to create, and a lasting memorial for family and friends to visit and pay their respects. Start designing your tribute page today."
+          </p>
+          <p class="mb-4 sm:basis-1/2 sm:max-w-[30vw] "><span class="block font-medium text-xl">
+            <img src="img/forms.svg" class="inline h-8"/>
+            Css forms</span>
+"Effortlessly create beautiful and responsive CSS forms for all your needs - whether it's a survey, sign-up, or login form. Customizable and easy to integrate into your website, our CSS forms will enhance your user experience and make your website look professional. Start designing your forms today."
+          </p>
+          <p class="mb-4 sm:basis-1/2 sm:max-w-[30vw] " >
+            <span class="block font-mediun text-xl">
+            <img src="img/document.svg" class="inline h-8"/>
+            Document webpage</span>
+"Transform your documents into stunning web pages with our easy-to-use document web page designer. Create a professional-looking web page from your existing document in minutes. Our platform is user-friendly, customizable, and perfect for creating reports, white papers, and other important documents. Start designing your document web page today."
+          </p>
+          <p class="mb-4 sm:basis-1/2 sm:max-w-[30vw]">
+            <span class="block font-medium text-xl">
+            <img src="img/landing.svg" class="inline h-8" />
+            Landing page</span>
+"Maximize your website's conversions with a custom-designed landing page. Our landing page designer allows you to create a sleek and modern page that is optimized for conversions. With user-friendly features and customizable options, you can showcase your brand and products in the best light possible. Start designing your landing page today."
+          </p>
+          <p class="mb-4 sm:basis-1/2 sm:max-w-[30vw]">
+            <span class="block font-medium text-xl">
+            <img src="img/portfolio.svg" class="inline h-8" />
+            web portfolio</span>
+"Showcase your skills and accomplishments with a beautifully designed web portfolio. Our platform allows you to create a stunning portfolio website that is customized to your brand and personality. With user-friendly features and customizable options, you can showcase your work and impress potential clients or employers. Start designing your web portfolio today."
+          </p>
+          <p class="mb-12 sm:basis-1/2 sm:max-w-[30vw]">
+            <span class="block font-medium text-xl">
+           <img src="img/webdesign.svg" class="inline h-8"/>
+           Web design</span>
+-Eye-catching designs that grab attention.
+-Fast loading pages for a seamless user experience.
+-User-friendly navigation to make it easy to find information.
+-Clear calls to action to drive conversions.
+-Responsive design to ensure the page looks great on any device.
+          </p>
+        </div>
+      </div>
+      <!-- the summary section -->
+      <div id="summary"class="w-screen bg-neutral-100 text-neutral-700 pb-10">
+        <h1 class="MyCustomFont font-extrabold text-5xl text-center text-neutral-900/[.1]">SUMMARY</h1>
+        <h3 class="text-2xl text-center -mt-6">Resume</h3>
+        <hr class="h-0.5 w-24 bg-neutral-900  rounded-md -mt-1 mb-4 mx-auto"/>
+        <!-- resume division -->
+        <div class="flex flex-wrap w-[85vw] mx-auto justify-around sm:gap-x-3 mt-12">
+          <!-- education division -->
+          <div class="sm:basis-1/2 sm:max-w-[35vw]">
+            <h2 class="text-2xl text-center">My Education</h2>
+            <div class="shadow-lg bg-white px-8 py-8 mt-2 rounded-md">
+              <span class="bg-neutral-700 text-neutral-100 px-3 py-1 rounded-md inline-block">2019-2023</span>
+             <h4 class="text-2xl mt-4">Chemical Engineering</h4>
+              <h5 class="text-xl mt-4">Nnamdi Azikiwe University </h5>
+              <p class="mt-4">
+                After my secondary school I was admitted to the University of Nnamdi Azikiwe to study chemical engineering and  currently I am a 300 level student of the chemical engineering department.<br />
+As a 300-level student in the Chemical Engineering Department, I have gained a strong foundation in core chemical engineering principles and their practical applications. Through various coursework and projects, I have developed critical thinking, problem-solving, and teamwork skills. I am eager to apply my knowledge and skills to real-world challenges in the field of chemical engineering.
+              </p>
+            </div>
+          </div>
+          <!-- experience division -->
+          <div class="mt-12 sm:basis-1/2 sm:mt-0 sm:max-w-[35vw]">
+            <h2 class="text-2xl text-center">My Experience</h2>
+            <div class="shadow-lg bg-white px-8 py-8 mt-2 sm:pb-14 rounded-md">
+              <span class="bg-neutral-700 text-neutral-100 px-3 py-1 rounded-md inline-block">2022-2023</span>
+              <h4 class="text-2xl mt-4">Web designer</h4>
+              <h5 class="text-xl mt-4">W3schools / Freecodecamp Platform</h5>
+              <p class="mt-4">
+                even though I have a few months of experience I believe that time frame is not a measure .
+With eight months of experience as a web designer, I have honed my skills in creating visually appealing and user-friendly websites. I have expertise in HTML and CSS.
+                I have been exposing myself to different things growing and adapting to any situation .
+I strive to create unique designs that align with clients' needs and exceed their expectations.
+                I am proud to have  done a lot in web design in spite of the time and I believe I will do more
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skills w-[78vw] mx-auto mt-12 sm:flex sm:flex-wrap  sm:gap-x-3 justify-between gap-y-4">
+          <h2 class="text-2xl font-medium Customblock">My skills</h2>
+          <!-- bar -->
+          <div class=" sm:w-1/3 mb-2">
+            <p class="flex justify-between mb-2 max-w-[15rem] "><span>Html</span> <span >90%</span></p>
+      <!-- skill -bar-->
+<div class="h-2 w-[15rem] bg-white rounded-md border ">
+  <div id="bar1" class="h-2 w-[13.5rem] bg-neutral-700 rounded-md"></div>
+  </div>
+          </div>
+          <div class=" sm:w-1/3 mb-2">
+            <p class="flex justify-between mb-2 max-w-[15rem]"><span >Css</span> <span >90%</span></p>
+            <!-- skillbar -->
+<div class="h-2 w-[15rem] bg-white rounded-md border">
+  <div id="bar2" class="h-2 w-[13.5rem] bg-neutral-700 rounded-md "></div>
+</div>
+          </div>
+          <div class="sm:w-1/3  mb-2">
+            <p class="flex justify-between mb-2 max-w-[15rem]"><span >JavaScript</span> <span >60%</span></p>
+            <!-- skillbar -->
+<div class="h-2 w-[15rem] bg-white rounded-md border">
+  <div id="bar3" class="h-2 w-[9rem] bg-neutral-700 rounded-md"></div>
+</div>
+          </div>
+          <div class="sm:w-1/3 mb-2">
+            <p class="flex justify-between mb-2 max-w-[15rem]"><span >figma</span> <span >60%</span></p>
+            <!-- skillbar -->
+<div class="h-2 w-[15rem] bg-white rounded-md border">
+  <div id="bar4" class="h-2 w-[9rem] bg-neutral-700 rounded-md"></div>
+</div>
+          </div>
+          <div class=" sm:w-1/3 mb-2">
+            <p class="flex justify-between mb-2 max-w-[15rem]"><span >Tailwind</span> <span >60%</span></p>
+            <!-- skillbar -->
+<div class="h-2 w-[15rem] bg-white rounded-md border">
+  <div id="bar5" class="h-2 w-[9rem] bg-neutral-700 rounded-md"></div>
+</div>
+          </div>
+          <div class="sm:w-1/3">
+            <p class="flex justify-between mb-2 max-w-[15rem]"><span >Git</span> <span >60%</span></p>
+            <!-- skillbar -->
+<div class="h-2 w-[15rem] bg-white rounded-md border">
+  <div id="bar6" class="h-2 w-[9rem] bg-neutral-700 rounded-md"></div>
+</div>
+          </div>
+
+        </div>
+        <button class="block mt-8 mx-auto px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 shadow-md bg-gradient-to-br from-black/[.6] via-gray-800/[.3] to-black/[.3] hover:to-gray-900/[.3] transition-colors duration-300 text-neutral-100">
+<a href="img/ifedike.pdf"  >
+        Download Resume
+        </a></button>
+</div>
+<!-- the portfolio section -->
+<div id="portfolio"class="w-screen bg-neutral-200 text-neutral-700 py-4 ">
+        <h1 class="MyCustomFont font-extrabold text-5xl text-center text-neutral-900/[.1]">PORTFOLIO</h1>
+        <h3 class="text-2xl text-center -mt-6">My Work</h3>
+        <hr class="h-0.5 w-24 bg-neutral-900  rounded-md -mt-1 mb-4 mx-auto"/>
+        
+        <div class="w-[95vw] mx-auto sm:flex sm:flex-wrap sm:gap-y-3 sm:justify-around">
+<p class="mb-4 font-medium sm:Customblock"> nb: some of my work was done is desktop view so ensure to use desktop view if it looks incongruent in the mobile one . Happy viewing</p>
+ <a href="https://interior-deco-kappa.vercel.app">
+  <img src="img/deco.jpg" class="w-[95vw] rounded-md mb-4 "/>
+  </a> 
+  <a href="https://feproject.vercel.app/">
+        <img src="img/Odin1.jpg" class="w-[95vw] rounded-md mb-4 sm:w-[40vw]"/></a>
+        <a href="https://odin-landing-page-chi.vercel.app/">
+          <img src="img/Odin2.jpg" class="w-[95vw] rounded-md mb-4 sm:w-[40vw]"/></a>
+        <a href="https://freecodecamp7-1.vercel.app/">
+          <img src="img/img4.png" class="  
+w-[95vw] rounded-md mb-4 sm:w-[40vw] sm:-mt-[13rem]"/></a>
+          <a href="https://freecodecamp-project-3.vercel.app/">
+          <img src="img/img5.png" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] "/></a>
+        <a href="https://freecodecamp10-1.vercel.app/">
+          <img src="img/img6.png" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] sm:-mt-[13rem]"/></a>
+          <a href="https://freecodecamp-project-4.vercel.app/">
+          <img src="img/img7.png" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw]" /></a>
+          <a href="https://freecodecamp-certification-project-1.vercel.app/">
+          <img src="img/img8.png" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] sm:-mt-[7rem]"/></a>
+          <a href="https://freecodecamp15.vercel.app/">
+          <img src="img/img9.png" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw]"/></a>
+          <a href="#">
+          <img  <img src="https://drive.google.com/uc?export=view&id=1DJFqqwPVjA7fQM37F7Yp9_LQkFC4RKOw" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] "/></a>
+          <a href="#">
+          <img   src="https://drive.google.com/uc?export=view&id=1DV07EwPPBwXsNEJL-OaxDtdiyKgXX_SJ" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] "/></a>
+          <a href="#">
+          <img   src="https://drive.google.com/uc?export=view&id=1D_8xhey3_voucJQPbXe3KnIY8DnC5Yf0" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] "/></a>
+          <a href="#">
+          <img  src="https://drive.google.com/uc?export=view&id=1DsG4ZBcU9T9heznt0qtwCvoZc4p3c8hU" class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] "/></a>
+          <a href="#">
+<video class="
+w-[95vw] rounded-md mb-4 sm:w-[40vw] " autoplay muted loop>
+      <source src="https://drive.google.com/uc?export=view&id=1DFFOu9nak9500lK-zblMcRnqEFahwobK" type="video/mp4">
+   </video>
+</a>
+        </div>
+</div>
+<!-- the contact section -->
+<div id="contact"class="screen bg-neutral-100 text-neutral-700 pt-16">
+     <h1 class="MyCustomFont font-extrabold text-5xl text-center text-neutral-900/[.1]">CONTACT</h1>
+        <h3 class="text-2xl text-center -mt-6">Get in Touch</h3>
+        <hr class="h-0.5 w-24 bg-neutral-900  rounded-md -mt-1 mb-4 mx-auto"/>
+        <div class="touch flex flex-col items-center sm:flex-row sm:pb-12 sm:justify-around sm:pt-4">
+          <!-- address -->
+          <div class=" flex flex-col items-center w-[15rem] sm:w-[20rem] mt-8 order-last sm:order-first sm:mt-0 ">
+            <h2 class="text-xl  text-center font-medium ">Address</h2>
+            <p class="mt-2 sm:mb-4">
+              Ifite Awka Anambra State</p>
+            <p class="mt-2"><img src="img/Telephone.svg" class="inline mr-1" /> (+234)-814-692-7170</p>
+            <p class="mt-2"><img src="img/Telephone.svg" class="inline mr-1"/>(+234)-905-122-0647</p>
+            <p class="mt-2"><img src="img/message.svg"class="inline mr-1"/>victormakuo2002@gmail</p>
+            <h4 class="text-2xl font-medium mt-2 sm:mt-4">Follow me</h4>
+            <div class="flex mt-4 pb-16 gap-x-3">
+ <a href="https://www.linkedin.com/in/victor-m-ifedike-2039a2239"> <img src="img/linkedin1.svg" /></a>
+ <a href="https://github.com/lordwhitefire"><img src="img/github1.svg" /></a>
+<a aria-label="Chat on WhatsApp" href="https://wa.me/2349051220647"><img src="img/whatsapp.svg" /></a>
+            </div>
+          </div>
+          <!-- form -->
+          <div class="order-first sm:order-last">
+    <form class=" w-[20rem] sm:w-[25rem]">
+            <legend class="text-2xl text-center sm:text-left">Send me a note</legend>
+            <input name="name" placeholder="Name" type="name"class="w-full px-4 py-2 mb-3 mt-6 sm:mt-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500::placeholder text-gray-500 italic"/>
+            <input name="email" placeholder="Email" type="email"class="w-full px-4 py-2 mb-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500::placeholder text-gray-500 italic"/>
+            <textarea name="message" placeholder="Tell us more about your needs"class="w-full px-4 pb-16 mb-3 pt-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500::placeholder text-gray-500 italic"></textarea>
+            <button class="mt-4 mx-auto px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 shadow-md bg-gradient-to-br from-black/[.6] via-gray-800/[.3] to-black/[.3] hover:to-gray-900/[.3] transition-colors duration-300 text-neutral-100">Send Message </button>
+          </form>
+          </div>
+        </div>
+</div>
+</main>
+<footer class="py-8 ">
+  <p class="text-center">copyright © 2023 <span class="text-green-500"s>whitefire</span> All rights Reserved</p>
+</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+    
+</html>

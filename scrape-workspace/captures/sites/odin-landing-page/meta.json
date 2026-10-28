@@ -1,0 +1,19 @@
+{
+  "name": "odin-landing-page",
+  "url": "https://odin-landing-page-chi.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://odin-landing-page-chi.vercel.app/",
+  "meta": {
+    "title": "Odin Project Landing Page",
+    "meta": {},
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [],
+    "h1": [],
+    "h2": [
+      "some random information"
+    ],
+    "bodyText": "HEADER LOGO\nheader link1\nheader link2\nheader link3\n\nThis website is awesome\nthis website has some subtext that goes here under the main title it's a smaller font and the color is lower contrast\n\nsignup\nthis is a placeholder for an image\nsome random information\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nthis is some subtext under an illustration or image\n\nThis is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space or maybe people will actually read it. Who knows? All I know is that it looks nice. ~Thor, God of thunder\nsign up\n\ncall to action it's time!\nsign up for our product by clicking that button right over there!\n\ncopyright \u00a9 The odin project 2021"
+  }
+}

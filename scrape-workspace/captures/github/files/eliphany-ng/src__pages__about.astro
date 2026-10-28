@@ -1,0 +1,83 @@
+---
+import Layout from '../components/layouts/Layout.astro';
+import { sanityClient, urlFor } from '../lib/sanity';
+
+const query = `*[_type == "aboutSettings"][0]`;
+const aboutSettings = await sanityClient.fetch(query);
+
+const pageTitle = aboutSettings?.pageTitle || 'About Us | Eliphany';
+const heroTitle = aboutSettings?.heroTitle || 'About Eliphany';
+const introText = aboutSettings?.introText || [];
+const founderImage = aboutSettings?.founderImage;
+
+
+// Helper function to serialize portable text without React
+function serializePortableText(blocks) {
+  if (!blocks || !Array.isArray(blocks)) return [];
+  
+  return blocks.map(block => {
+    if (block._type !== 'block' || !block.children) return '';
+    
+    return block.children
+      .filter(child => child._type === 'span')
+      .map(span => span.text)
+      .join('');
+  }).filter(text => text.length > 0);
+}
+
+const paragraphs = serializePortableText(introText);
+
+const floatingButton = await sanityClient.fetch(`*[_type == "whatsappButton" && _id == "floatingWpButton"][0]`);
+const floatingUrl = floatingButton?.isActive 
+  ? `https://wa.me/${floatingButton.phoneNumber}?text=${encodeURIComponent(floatingButton.preMessage)}`
+  : null;
+
+const whatsappButtonText = floatingButton?.text || 'Chat on WhatsApp';
+console.log('FLOATING BUTTON DATA (About Button):', floatingButton);
+---
+
+<Layout title={pageTitle} description="Learn why we curate premium skin-care supplements and how to reach us on WhatsApp.">
+  <section class="py-16 px-4 max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">{heroTitle}</h1>
+
+    <div class="grid md:grid-cols-3 gap-8 items-start">
+      <div class="md:col-span-2 space-y-4 text-gray-700">
+        {paragraphs.length > 0 ? (
+          paragraphs.map((text, index) => (
+            <p key={index} class="mb-4">{text}</p>
+          ))
+        ) : (
+          /* Fallback content */
+          <>
+            <p class="mb-4">Eliphany was born from a simple belief: healthy, radiant skin should be accessible, honest, and fuss-free.</p>
+            <p class="mb-4">Every product you see here has been tested by our team, approved by dermatologists we trust, and priced transparently.</p>
+            <p class="mb-4">Based in Dubai, we ship across the UAE within 24h and reply to every WhatsApp query in under two hours.</p>
+          </>
+        )}
+      </div>
+
+      <figure class="rounded-2xl overflow-hidden shadow-lg">
+        <img
+          src={founderImage ? urlFor(founderImage).url() : 'https://picsum.photos/seed/about-portrait/400/500'}
+          alt="Founder portrait – replace this image"
+          class="w-full h-full object-cover"
+        />
+      </figure>
+    </div>
+
+    <div class="mt-12 text-center">
+      {floatingUrl && (
+        <a
+            href={floatingUrl}
+            class="btn-whatsapp inline-flex items-center gap-2"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <span>{whatsappButtonText}</span>
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-2.3 4.7H7.628c-.704 0-1.277-.573-1.277-1.277V5.277C6.351 4.573 6.924 4 7.628 4h8.744c.704 0 1.277.573 1.277 1.277v12.146c0 .704-.573 1.277-1.277 1.277"/>
+        </svg>
+      </a>
+    )}
+    </div>
+  </section>
+</Layout>

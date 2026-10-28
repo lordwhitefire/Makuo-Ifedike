@@ -1,0 +1,626 @@
+{
+  "generated_at": "2026-10-27T10:28:30Z",
+  "browser_captures": {
+    "admin-demo": {
+      "url": "https://admin-demo-seven.vercel.app/",
+      "final_url": "https://admin-demo-seven.vercel.app/dashboard",
+      "status": 200,
+      "title": "React App",
+      "canonical": null,
+      "meta": {
+        "description": "Web site created using create-react-app"
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "athletica": {
+      "url": "https://athletica-blond.vercel.app/",
+      "final_url": "https://athletica-blond.vercel.app/",
+      "status": 200,
+      "title": "Athletica | Football Store",
+      "canonical": null,
+      "meta": {
+        "description": "The ultimate football store. Shop football boots, goalkeeper gloves, footballs, shin guards, training wear and more."
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [
+        "https://athletica-blond.vercel.app/",
+        "https://athletica-blond.vercel.app/#",
+        "https://athletica-blond.vercel.app/#main-content",
+        "https://athletica-blond.vercel.app/account",
+        "https://athletica-blond.vercel.app/adidas-predator-elite-ft-ag",
+        "https://athletica-blond.vercel.app/adidas-predator-league-ll-fg-silver",
+        "https://athletica-blond.vercel.app/adidas-predator-league-ll-fg-white-solar-pink",
+        "https://athletica-blond.vercel.app/adidas-predator-league-mg-white-light-green",
+        "https://athletica-blond.vercel.app/adidas-predator-pro-fg-blue",
+        "https://athletica-blond.vercel.app/adidas-predator-pro-fg-silver",
+        "https://athletica-blond.vercel.app/adidas-predator-pro-ft-ag-black",
+        "https://athletica-blond.vercel.app/adidas-x-crazyfast-1-fg-white-fluorescent-yellow",
+        "https://athletica-blond.vercel.app/adidas-x-speedportal-3-ll-fg-light-blue",
+        "https://athletica-blond.vercel.app/apparel",
+        "https://athletica-blond.vercel.app/balls",
+        "https://athletica-blond.vercel.app/bench1-430706",
+        "https://athletica-blond.vercel.app/bench1-430954",
+        "https://athletica-blond.vercel.app/bench1-460957",
+        "https://athletica-blond.vercel.app/bench1-466969",
+        "https://athletica-blond.vercel.app/boots",
+        "https://athletica-blond.vercel.app/boots/adidas",
+        "https://athletica-blond.vercel.app/boots/adidas/f50",
+        "https://athletica-blond.vercel.app/boots/adidas/predator",
+        "https://athletica-blond.vercel.app/boots/nike/phantom",
+        "https://athletica-blond.vercel.app/clothing",
+        "https://athletica-blond.vercel.app/cookies",
+        "https://athletica-blond.vercel.app/football-boots",
+        "https://athletica-blond.vercel.app/football-boots-fg-mercurial-vapor-fg-elite-mercurial-vapor-15-elite-fg",
+        "https://athletica-blond.vercel.app/goalkeeper-gloves",
+        "https://athletica-blond.vercel.app/https://athletica-blond.vercel.app/admin/products/new",
+        "https://athletica-blond.vercel.app/https://www.amazon.com/Adidas-Predator-Fold-Over-Football-Unisex-Adult/dp/B0FXH2S6XT?ref_=pb_hm_dp&th=1&psc=1",
+        "https://athletica-blond.vercel.app/https://www.amazon.com/PUMA-Future-Ultimate-Ground-Soccer/dp/B0H9V5JBYK/ref=ast_sto_dp_puis?th=1&psc=1",
+        "https://athletica-blond.vercel.app/https://www.amazon.com/PUMA-Stellar-Premier-Official-Football/dp/B0H31LCNGQ/ref=ast_sto_dp_puis?th=1",
+        "https://athletica-blond.vercel.app/https://www.amazon.com/adidas-Arsenal-Jersey-White-Regular/dp/B0HBKQXPVM/ref=pd_sbs_d_sccl_1_6/136-2445145-0063060?pd_rd_w=76Mtz&content-id=amzn1.sym.aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_p=aa738fbd-ad05-4d11-aae2-04b598db6305&pf_rd_r=14J3HHYNW3F37GZJEAYM&pd_rd_wg=RcGDl&pd_rd_r=1380a20a-391d-4268-a9a0-e0ff95fa9ac8&pd_rd_i=B0HBKQXPVM&psc=1",
+        "https://athletica-blond.vercel.app/https://www.amazon.com/adidas-Madrid-Third-Jersey-Regular/dp/B0FN655XF8/ref=sr_1_4?crid=2MENK6O6PGYMD&dib=eyJ2IjoiMSJ9.seh0Be050AcD0LOeQwgiipCdD3Ik5GSeqeRDx7R_xKLTDaBu_KMFkkyIQG84Pz0Hs2ez5mPl_uoFvLTivDAupyaZ1mWOCx17z9Gnj5BxyrxrRAKX1-Ij5cOZO2fcRfjNv_CsXESihhNi24Iu5EffPVOtMEKLQypNg5UZm48aAvkXa5EkC38M0TJdP2cu19v_EIPLcESkZC40J2YsCnSCh16nTyxPI6Pr8dws3n1w2H9rZWUugxXr9n3jIfBmbp3iGwjSYyAgSik2eK8fBwSot6HoGPVNonGelt7a875c6Yw.uyKUQmDYfEllvS8U1NSVtHaBjRGS-W8rPluBa91V16E&dib_tag=se&keywords=real+madrid+jersey+26%2F27&qid=1788086126&sprefix=Real+Madrid+%2Caps%2C769&sr=8-4",
+        "https://athletica-blond.vercel.app/indoor-shoes",
+        "https://athletica-blond.vercel.app/jerseys",
+        "https://athletica-blond.vercel.app/kits",
+        "https://athletica-blond.vercel.app/login",
+        "https://athletica-blond.vercel.app/multi-stud-boots",
+        "https://athletica-blond.vercel.app/orders",
+        "https://athletica-blond.vercel.app/other-products",
+        "https://athletica-blond.vercel.app/privacy-policy",
+        "https://athletica-blond.vercel.app/register",
+        "https://athletica-blond.vercel.app/returns",
+        "https://athletica-blond.vercel.app/shin-guards",
+        "https://athletica-blond.vercel.app/socks",
+        "https://athletica-blond.vercel.app/terms"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "cp3-legacy": {
+      "url": "https://cp3-legacy.vercel.app/",
+      "final_url": "https://cp3-legacy.vercel.app/",
+      "status": 200,
+      "title": "CP3 Legacy",
+      "canonical": null,
+      "meta": {
+        "description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+        "author": "Ifedike Victor Makuo",
+        "og:title": "CP3 Legacy",
+        "og:description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+        "og:url": "https://cp3-legacy.vercel.app",
+        "og:site_name": "CP3 Legacy",
+        "og:image": "https://cp3-legacy.vercel.app/og-image.png",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonld_count": 1,
+      "jsonld": [
+        "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"founder\":{\"@id\":\"#victor\"}},{\"@type\":\"WebSite\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"author\":{\"@id\":\"#victor\"}},{\"@type\":\"Person\",\"@id\":\"#victor\",\"name\":\"Ifedike Victor Makuo\",\"alternateName\":\"lordwhitefire\",\"url\":\"https://github.com/lordwhitefire\",\"sameAs\":[\"https://github.com/lordwhitefire\",\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"],\"knowsAbout\":[\"React\",\"Next.js\",\"Remix\",\"Astro\",\"TypeScript\",\"Tailwind CSS\",\"Sanity CMS\",\"Supabase\",\"Framer Motion\",\"Vitest\",\"Playwright\",\"Sentry\"],\"description\":\"Remote frontend developer from Onitsha, Nigeria. B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025) \u2014 self-taught developer. Targeting remote React/Next.js roles.\"}]}"
+      ],
+      "h1": [
+        "CP3 LEGACY"
+      ],
+      "links": [
+        "https://cp3-legacy.vercel.app/#",
+        "https://cp3-legacy.vercel.app/#main-content",
+        "https://cp3-legacy.vercel.app/alchemists/blog-1.html",
+        "https://cp3-legacy.vercel.app/alchemists/index.html",
+        "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "https://cp3-legacy.vercel.app/alchemists/player-bio.html",
+        "https://cp3-legacy.vercel.app/alchemists/player-gallery.html",
+        "https://cp3-legacy.vercel.app/alchemists/player-news.html",
+        "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+        "https://cp3-legacy.vercel.app/alchemists/player-stats.html",
+        "https://cp3-legacy.vercel.app/alchemists/shop-wishlist.html",
+        "https://cp3-legacy.vercel.app/privacy",
+        "https://facebook.com/CP3",
+        "https://instagram.com/cp3",
+        "https://twitter.com/CP3",
+        "https://youtube.com/@CP3",
+        "mailto:info@alchemists.com",
+        "mailto:tryouts@alchemists.com",
+        "mailto:victormakuo2002@gmail.com",
+        "mailto:victormark2002@gmail.com"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "domain-ifedike-victor": {
+      "url": "https://ifedike-victor.vercel.app/",
+      "final_url": "https://ifedike-victor.vercel.app/",
+      "status": 404,
+      "title": "404: NOT_FOUND",
+      "canonical": null,
+      "meta": {},
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [
+        "This page doesn\u2019t exist"
+      ],
+      "links": [
+        "https://vercel.com/docs/errors/deployment_not_found"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "eliphany-admin": {
+      "url": "https://eliphany-admin.vercel.app/",
+      "final_url": "https://eliphany-admin.vercel.app/dashboard",
+      "status": 200,
+      "title": "React App",
+      "canonical": null,
+      "meta": {
+        "description": "Web site created using create-react-app"
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "eliphany-ng": {
+      "url": "https://eliphany-ng.vercel.app/",
+      "final_url": "https://eliphany-ng.vercel.app/",
+      "status": 200,
+      "title": "Eliphany | Skin-Care Supplements",
+      "canonical": "https://eliphany-ng.vercel.app/",
+      "meta": {
+        "description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+        "og:url": "https://eliphany-ng.vercel.app/",
+        "og:title": "Eliphany | Skin-Care Supplements",
+        "og:description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+        "og:image": "https://eliphany-ng.vercel.app/logo1.svg",
+        "twitter:card": "summary_large_image",
+        "og:site_name": "Eliphany"
+      },
+      "jsonld_count": 1,
+      "jsonld": [
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Eliphany Skin Care\",\"url\":\"https://eliphany-ng.vercel.app/\",\"logo\":\"https://eliphany-ng.vercel.app/logo.svg\",\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"+971-XX-XXX-XXXX\",\"contactType\":\"sales\",\"areaServed\":\"AE\",\"availableLanguage\":\"en\"},\"sameAs\":[]}"
+      ],
+      "h1": [
+        "Radiant Skin Starts Here"
+      ],
+      "links": [
+        "https://eliphany-ng.vercel.app/",
+        "https://eliphany-ng.vercel.app/about",
+        "https://eliphany-ng.vercel.app/about/",
+        "https://eliphany-ng.vercel.app/category/anti-aging",
+        "https://eliphany-ng.vercel.app/category/anti-aging-products",
+        "https://eliphany-ng.vercel.app/category/body-enhancement",
+        "https://eliphany-ng.vercel.app/category/butt-hip-growth",
+        "https://eliphany-ng.vercel.app/category/energy-boosters",
+        "https://eliphany-ng.vercel.app/contact",
+        "https://eliphany-ng.vercel.app/contact/",
+        "https://eliphany-ng.vercel.app/privacy-policy",
+        "https://eliphany-ng.vercel.app/products/product-003",
+        "https://eliphany-ng.vercel.app/products/product-004",
+        "https://eliphany-ng.vercel.app/products/product-005",
+        "https://eliphany-ng.vercel.app/products/product-006",
+        "https://eliphany-ng.vercel.app/products/product-010",
+        "https://eliphany-ng.vercel.app/products/product-035",
+        "https://eliphany-ng.vercel.app/shop/1",
+        "https://instagram.com/eliphany.ng",
+        "https://wa.me/+2348012345678?text=Hi!%20I%20have%20a%20question%20about%20your%20products.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%20saw%20your%20website%20and%20I%27d%20like%20to%20order",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAhmad%20Tea%20Sleep%20%2B%20ProLife%20Magnesium%E2%80%9D%20(SKU%3A%20product-035).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CAxis-Y%20Dark%20Spot%20Correcting%20Glow%20Serum%E2%80%9D%20(SKU%3A%20product-010).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CGlutathione%20Gummies%20-%20Skin%20Whitening%20%26%20Anti%20Aging%20Formula%E2%80%9D%20(SKU%3A%20product-003).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CLadies%20Shine%20Advanced%20Supplement%E2%80%9D%20(SKU%3A%20product-004).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CMagic%20Brightening%20Supplement%E2%80%9D%20(SKU%3A%20product-005).%20Please%20let%20me%20know%20the%20price%20and%20availability.",
+        "https://wa.me/+2348012345678?text=Hi!%20I%E2%80%99m%20interested%20in%20%E2%80%9CPueraria%20Mirifica%20Natural%20Herbs%E2%80%9D%20(SKU%3A%20product-006).%20Please%20let%20me%20know%20the%20price%20and%20availability."
+      ],
+      "screenshots": []
+    },
+    "freecodecamp-project-4": {
+      "url": "https://freecodecamp-project-4.vercel.app/",
+      "final_url": "https://freecodecamp-project-4.vercel.app/",
+      "status": 200,
+      "title": "Rava \u2014 Simple app that we create",
+      "canonical": null,
+      "meta": {
+        "description": "Rava \u2014 a simple creative application for beautiful, secure and high-performing digital experiences."
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [
+        "Simple app that we create"
+      ],
+      "links": [
+        "https://freecodecamp-project-4.vercel.app/#",
+        "https://freecodecamp-project-4.vercel.app/#contact",
+        "https://freecodecamp-project-4.vercel.app/#features",
+        "https://freecodecamp-project-4.vercel.app/#home",
+        "https://freecodecamp-project-4.vercel.app/#testimonials"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "freecodecamp2-1": {
+      "url": "https://freecodecamp2-1.vercel.app/",
+      "final_url": "https://freecodecamp2-1.vercel.app/",
+      "status": 200,
+      "title": "Camper Cafe - Restaurant menu",
+      "canonical": null,
+      "meta": {
+        "description": "",
+        "author": ""
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [
+        "https://freecodecamp2-1.vercel.app/#",
+        "https://freecodecamp2-1.vercel.app/#about",
+        "https://freecodecamp2-1.vercel.app/#chefs",
+        "https://freecodecamp2-1.vercel.app/#menu",
+        "https://freecodecamp2-1.vercel.app/#reservation",
+        "https://freecodecamp2-1.vercel.app/#top",
+        "https://freecodecamp2-1.vercel.app/index.html",
+        "javascript:;"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "github-pages-root": {
+      "url": "https://lordwhitefire.github.io/",
+      "final_url": "https://lordwhitefire.github.io/",
+      "status": 404,
+      "title": "Site not found \u00b7 GitHub Pages",
+      "canonical": null,
+      "meta": {},
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [
+        "404"
+      ],
+      "links": [
+        "https://githubstatus.com/",
+        "https://help.github.com/pages/",
+        "https://lordwhitefire.github.io/",
+        "https://twitter.com/githubstatus"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "interior-deco": {
+      "url": "https://interior-deco-kappa.vercel.app/",
+      "final_url": "https://interior-deco-kappa.vercel.app/",
+      "status": 200,
+      "title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+      "canonical": "https://interior-deco-kappa.vercel.app/",
+      "meta": {
+        "author": "Makuo Ifedike",
+        "description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+        "og:site_name": "Whitefire Interior",
+        "og:title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+        "og:description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+        "og:url": "https://interior-deco-kappa.vercel.app",
+        "og:image": "https://cdn.sanity.io/images/pzhistba/production/5a658a27bf9f81cebbc25319f37dfbd5edcb8d38-1600x896.jpg?h=200&fit=max",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonld_count": 2,
+      "jsonld": [
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Whitefire Interior\",\"url\":\"https://interior-deco-kappa.vercel.app\",\"email\":\"hello@whitefireinterior.com\",\"logo\":\"https://interior-deco-kappa.vercel.app/favicon.svg\",\"founder\":{\"@type\":\"Person\",\"name\":\"Makuo Ifedike\",\"email\":\"mifedike@gmail.com\",\"url\":\"https://www.linkedin.com/in/makuo-ifedike-216607350/\",\"sameAs\":[\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"]},\"contactPoint\":{\"@type\":\"ContactPoint\",\"contactType\":\"customer service\",\"email\":\"hello@whitefireinterior.com\",\"areaServed\":\"NL\",\"availableLanguage\":[\"English\",\"Dutch\"]}}",
+        "{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"Whitefire Interior\",\"description\":\"Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.\",\"url\":\"https://interior-deco-kappa.vercel.app\",\"image\":\"https://interior-deco-kappa.vercel.app/favicon.svg\",\"email\":\"hello@whitefireinterior.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"101 Prinsengracht\",\"addressLocality\":\"Amsterdam\",\"postalCode\":\"1015 HR\",\"addressCountry\":\"NL\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":52.3738,\"longitude\":4.8906},\"openingHoursSpecification\":[{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"09:00\",\"closes\":\"18:00\"}],\"priceRange\":\"\u20ac\u20ac\",\"founder\":{\"@type\":\"Person\",\"name\":\"Makuo Ifedike\",\"email\":\"mifedike@gmail.com\",\"url\":\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"}}"
+      ],
+      "h1": [
+        "Designing Spaces.\nElevating Lives."
+      ],
+      "links": [
+        "https://interior-deco-kappa.vercel.app/",
+        "https://interior-deco-kappa.vercel.app/#showreel",
+        "https://interior-deco-kappa.vercel.app/about",
+        "https://interior-deco-kappa.vercel.app/blog",
+        "https://interior-deco-kappa.vercel.app/blog/bold-patterns-balanced-spaces-in-kitchens",
+        "https://interior-deco-kappa.vercel.app/blog/creating-a-restful-retreat-bedroom-design-tips",
+        "https://interior-deco-kappa.vercel.app/blog/how-to-style-shelves-like-a-designer",
+        "https://interior-deco-kappa.vercel.app/contact",
+        "https://interior-deco-kappa.vercel.app/faq",
+        "https://interior-deco-kappa.vercel.app/privacy",
+        "https://interior-deco-kappa.vercel.app/projects",
+        "https://interior-deco-kappa.vercel.app/projects/copenhagen-nordhavn-showroom",
+        "https://interior-deco-kappa.vercel.app/projects/melbourne-laneway-cafe",
+        "https://interior-deco-kappa.vercel.app/projects/norwegian-lakeside-cabin",
+        "https://interior-deco-kappa.vercel.app/projects/soho-maison-lobby",
+        "https://interior-deco-kappa.vercel.app/projects/sydney-harbour-cowork",
+        "https://interior-deco-kappa.vercel.app/services",
+        "https://interior-deco-kappa.vercel.app/services/bedrooms-retreats",
+        "https://interior-deco-kappa.vercel.app/services/boutique-transitional",
+        "https://interior-deco-kappa.vercel.app/services/compact-micro-spaces",
+        "https://interior-deco-kappa.vercel.app/services/hospitality-retail",
+        "https://interior-deco-kappa.vercel.app/services/kitchens-dining",
+        "https://interior-deco-kappa.vercel.app/services/living-spaces",
+        "https://interior-deco-kappa.vercel.app/services/minimalist-scandinavian",
+        "https://interior-deco-kappa.vercel.app/services/workspaces",
+        "https://interior-deco-kappa.vercel.app/team",
+        "https://interior-deco-kappa.vercel.app/testimonials"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "new-portfolio": {
+      "url": "https://new-portfolio-eta-rouge.vercel.app/",
+      "final_url": "https://new-portfolio-eta-rouge.vercel.app/",
+      "status": 200,
+      "title": "FireSage Studio - Web Development & Design",
+      "canonical": null,
+      "meta": {
+        "description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+        "og:url": "https://new-portfolio-eta-rouge.vercel.app/",
+        "og:title": "FireSage Studio - Web Development & Design",
+        "og:description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+        "og:image": "https://new-portfolio-eta-rouge.vercel.app/assets/images/og-preview.jpg",
+        "twitter:card": "summary_large_image"
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [
+        "Interior Decoration\nWebsite",
+        "My Old\nPortfolio",
+        "Camper Caf\u00e9\nWebsite"
+      ],
+      "links": [
+        "https://freecodecamp2-1.vercel.app/",
+        "https://hasthemes.com/",
+        "https://interior-deco-kappa.vercel.app/",
+        "https://new-portfolio-eta-rouge.vercel.app/#",
+        "https://new-portfolio-eta-rouge.vercel.app/#tab1",
+        "https://new-portfolio-eta-rouge.vercel.app/#tab2",
+        "https://new-portfolio-eta-rouge.vercel.app/#tab3",
+        "https://new-portfolio-eta-rouge.vercel.app/#tab4",
+        "https://new-portfolio-eta-rouge.vercel.app/about.html",
+        "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "https://new-portfolio-eta-rouge.vercel.app/contact.html",
+        "https://new-portfolio-eta-rouge.vercel.app/index.html",
+        "https://new-portfolio-eta-rouge.vercel.app/pricing.html",
+        "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "https://new-portfolio-eta-rouge.vercel.app/projects.html",
+        "https://tailwind-web-portfolio.vercel.app/",
+        "javascript:;",
+        "mailto:hello@andle.com"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "odin-landing-page": {
+      "url": "https://odin-landing-page-chi.vercel.app/",
+      "final_url": "https://odin-landing-page-chi.vercel.app/",
+      "status": 200,
+      "title": "Odin Project Landing Page",
+      "canonical": null,
+      "meta": {},
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "tailwind-web-portfolio": {
+      "url": "https://tailwind-web-portfolio.vercel.app/",
+      "final_url": "https://tailwind-web-portfolio.vercel.app/",
+      "status": 200,
+      "title": "whitefire's portfolio",
+      "canonical": null,
+      "meta": {
+        "description": "whitefire| portfolio | freecodecamp | certification | project |5"
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [
+        "I'm a web developer",
+        "ABOUT ME",
+        "SERVICES",
+        "SUMMARY",
+        "PORTFOLIO"
+      ],
+      "links": [
+        "https://feproject.vercel.app/",
+        "https://freecodecamp-certification-project-1.vercel.app/",
+        "https://freecodecamp-project-3.vercel.app/",
+        "https://freecodecamp-project-4.vercel.app/",
+        "https://freecodecamp10-1.vercel.app/",
+        "https://freecodecamp15.vercel.app/",
+        "https://freecodecamp7-1.vercel.app/",
+        "https://github.com/lordwhitefire",
+        "https://interior-deco-kappa.vercel.app/",
+        "https://odin-landing-page-chi.vercel.app/",
+        "https://tailwind-web-portfolio.vercel.app/#",
+        "https://tailwind-web-portfolio.vercel.app/#about",
+        "https://tailwind-web-portfolio.vercel.app/#contact",
+        "https://tailwind-web-portfolio.vercel.app/#home",
+        "https://tailwind-web-portfolio.vercel.app/#portfolio",
+        "https://tailwind-web-portfolio.vercel.app/#services",
+        "https://tailwind-web-portfolio.vercel.app/#summary",
+        "https://tailwind-web-portfolio.vercel.app/img/ifedike.pdf",
+        "https://wa.me/2349051220647",
+        "https://www.linkedin.com/in/victor-m-ifedike-2039a2239"
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    },
+    "truespec": {
+      "url": "https://truespec-k4y6.vercel.app/",
+      "final_url": "https://truespec-k4y6.vercel.app/",
+      "status": 200,
+      "title": "TrueSpec \u2014 cars you can trust",
+      "canonical": null,
+      "meta": {
+        "description": "A Nigerian vehicle-import showroom: browse, judge a car completely, chat on WhatsApp."
+      },
+      "jsonld_count": 0,
+      "jsonld": [],
+      "h1": [],
+      "links": [
+        "https://truespec-k4y6.vercel.app/",
+        "https://truespec-k4y6.vercel.app/#",
+        "https://truespec-k4y6.vercel.app/#cars",
+        "https://truespec-k4y6.vercel.app/car/TS-1001",
+        "https://truespec-k4y6.vercel.app/car/TS-1003",
+        "https://truespec-k4y6.vercel.app/car/TS-1005",
+        "https://truespec-k4y6.vercel.app/car/TS-1007",
+        "https://truespec-k4y6.vercel.app/car/TS-1008",
+        "https://truespec-k4y6.vercel.app/car/TS-1011",
+        "https://truespec-k4y6.vercel.app/car/TS-1012",
+        "https://truespec-k4y6.vercel.app/car/TS-1019",
+        "https://truespec-k4y6.vercel.app/car/TS-1020",
+        "https://truespec-k4y6.vercel.app/car/TS-1023",
+        "https://truespec-k4y6.vercel.app/car/TS-1033",
+        "https://truespec-k4y6.vercel.app/car/TS-1035",
+        "https://truespec-k4y6.vercel.app/inventory",
+        "https://truespec-k4y6.vercel.app/privacy",
+        "https://wa.me/2348146927170?text=Hello%20TrueSpec%2C%20I%20have%20a%20question."
+      ],
+      "screenshots": [
+        "viewport.png",
+        "full.png"
+      ]
+    }
+  },
+  "curl_status": {
+    "interior-deco": {
+      "url": "https://interior-deco-kappa.vercel.app/",
+      "final": "https://interior-deco-kappa.vercel.app/",
+      "status": 200,
+      "title": "Whitefire Interior \u2014 Amsterdam Interior Design Studio",
+      "description": "Whitefire Interior \u2014 an Amsterdam interior design studio creating beautiful, functional spaces for homes and businesses.",
+      "server": "Vercel",
+      "bytes": 70449
+    },
+    "truespec": {
+      "url": "https://truespec-k4y6.vercel.app/",
+      "status": 307,
+      "error": "HTTP Error 307: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nTemporary Redirect"
+    },
+    "athletica": {
+      "url": "https://athletica-blond.vercel.app/",
+      "final": "https://athletica-blond.vercel.app/",
+      "status": 200,
+      "title": "Athletica | Football Store",
+      "description": "The ultimate football store. Shop football boots, goalkeeper gloves, footballs, shin guards, training wear and more.",
+      "server": "Vercel",
+      "bytes": 743585
+    },
+    "cp3-legacy": {
+      "url": "https://cp3-legacy.vercel.app/",
+      "final": "https://cp3-legacy.vercel.app/",
+      "status": 200,
+      "title": "CP3 Legacy",
+      "description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+      "server": "Vercel",
+      "bytes": 110899
+    },
+    "odin-landing-page": {
+      "url": "https://odin-landing-page-chi.vercel.app/",
+      "final": "https://odin-landing-page-chi.vercel.app/",
+      "status": 200,
+      "title": "Odin Project Landing Page",
+      "description": null,
+      "server": "Vercel",
+      "bytes": 2751
+    },
+    "freecodecamp-project-4": {
+      "url": "https://freecodecamp-project-4.vercel.app/",
+      "final": "https://freecodecamp-project-4.vercel.app/",
+      "status": 200,
+      "title": "Rava \u2014 Simple app that we create",
+      "description": "Rava \u2014 a simple creative application for beautiful, secure and high-performing digital experiences.",
+      "server": "Vercel",
+      "bytes": 11785
+    },
+    "new-portfolio": {
+      "url": "https://new-portfolio-eta-rouge.vercel.app/",
+      "final": "https://new-portfolio-eta-rouge.vercel.app/",
+      "status": 200,
+      "title": "FireSage Studio - Web Development & Design",
+      "description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+      "server": "Vercel",
+      "bytes": 65264
+    },
+    "admin-demo": {
+      "url": "https://admin-demo-seven.vercel.app/",
+      "final": "https://admin-demo-seven.vercel.app/",
+      "status": 200,
+      "title": "React App",
+      "description": "Web site created using create-react-app",
+      "server": "Vercel",
+      "bytes": 644
+    },
+    "eliphany-admin": {
+      "url": "https://eliphany-admin.vercel.app/",
+      "final": "https://eliphany-admin.vercel.app/",
+      "status": 200,
+      "title": "React App",
+      "description": "Web site created using create-react-app",
+      "server": "Vercel",
+      "bytes": 644
+    },
+    "eliphany-ng": {
+      "url": "https://eliphany-ng.vercel.app/",
+      "final": "https://eliphany-ng.vercel.app/",
+      "status": 200,
+      "title": "Eliphany | Skin-Care Supplements",
+      "description": "Curated skin-care supplements \u2013 contact us on WhatsApp for orders.",
+      "server": "Vercel",
+      "bytes": 29616
+    },
+    "eliphany-pages": {
+      "url": "https://lordwhitefire.github.io/eliphany/",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    "freecodecamp2-1": {
+      "url": "https://freecodecamp2-1.vercel.app/",
+      "final": "https://freecodecamp2-1.vercel.app/",
+      "status": 200,
+      "title": "Camper Cafe - Restaurant menu",
+      "description": "",
+      "server": "Vercel",
+      "bytes": 15707
+    },
+    "tailwind-web-portfolio": {
+      "url": "https://tailwind-web-portfolio.vercel.app/",
+      "final": "https://tailwind-web-portfolio.vercel.app/",
+      "status": 200,
+      "title": "whitefire's portfolio",
+      "description": "whitefire| portfolio | freecodecamp | certification | project |5",
+      "server": "Vercel",
+      "bytes": 25945
+    },
+    "ifedike-victor-domain": {
+      "url": "https://ifedike-victor.vercel.app/",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    }
+  }
+}

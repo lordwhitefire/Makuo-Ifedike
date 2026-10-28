@@ -1,0 +1,19 @@
+{
+  "name": "eliphany-admin",
+  "url": "https://eliphany-admin.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://eliphany-admin.vercel.app/dashboard",
+  "meta": {
+    "title": "React App",
+    "meta": {
+      "description": "Web site created using create-react-app"
+    },
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [],
+    "h1": [],
+    "h2": [],
+    "bodyText": ""
+  }
+}

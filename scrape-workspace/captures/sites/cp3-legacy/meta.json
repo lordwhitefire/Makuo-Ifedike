@@ -1,0 +1,879 @@
+{
+  "name": "cp3-legacy",
+  "url": "https://cp3-legacy.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://cp3-legacy.vercel.app/",
+  "meta": {
+    "title": "CP3 Legacy",
+    "meta": {
+      "description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+      "author": "Ifedike Victor Makuo",
+      "og:title": "CP3 Legacy",
+      "og:description": "Celebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.",
+      "og:url": "https://cp3-legacy.vercel.app",
+      "og:site_name": "CP3 Legacy",
+      "og:image": "https://cp3-legacy.vercel.app/og-image.png",
+      "twitter:card": "summary_large_image"
+    },
+    "canonical": null,
+    "jsonld": [
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"founder\":{\"@id\":\"#victor\"}},{\"@type\":\"WebSite\",\"name\":\"CP3 Legacy\",\"url\":\"https://cp3-legacy.vercel.app\",\"author\":{\"@id\":\"#victor\"}},{\"@type\":\"Person\",\"@id\":\"#victor\",\"name\":\"Ifedike Victor Makuo\",\"alternateName\":\"lordwhitefire\",\"url\":\"https://github.com/lordwhitefire\",\"sameAs\":[\"https://github.com/lordwhitefire\",\"https://www.linkedin.com/in/makuo-ifedike-216607350/\"],\"knowsAbout\":[\"React\",\"Next.js\",\"Remix\",\"Astro\",\"TypeScript\",\"Tailwind CSS\",\"Sanity CMS\",\"Supabase\",\"Framer Motion\",\"Vitest\",\"Playwright\",\"Sentry\"],\"description\":\"Remote frontend developer from Onitsha, Nigeria. B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025) \u2014 self-taught developer. Targeting remote React/Next.js roles.\"}]}"
+    ],
+    "anchors": [
+      {
+        "href": "https://cp3-legacy.vercel.app/#main-content",
+        "text": "Skip to main content"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "LANGUAGE: EN"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "mailto:victormark2002@gmail.com",
+        "text": "VICTORMARK2002@GMAIL.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+        "text": "HOME"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+        "text": "PLAYER"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-stats.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-bio.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-news.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-gallery.html",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/blog-1.html",
+        "text": "NEWS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Your Bag (8 items)$256,30"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Your Account"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/shop-wishlist.html",
+        "text": "Wishlist 8"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Currency: USD"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "USD"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "EUR"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "GBP"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Language: EN"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "English"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Spanish"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "French"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "German"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Logout"
+      },
+      {
+        "href": "mailto:tryouts@alchemists.com",
+        "text": "tryouts@alchemists.com"
+      },
+      {
+        "href": "mailto:info@alchemists.com",
+        "text": "info@alchemists.com"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "Toggle navigation panel"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CP3 MASTERCLASS LIFTS SPURS PAST WARRIORS IN OT THRILLER"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "639"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "68"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PAUL'S LEADERSHIP KEY TO WEMBANYAMA'S DEVELOPMENT"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "459"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "79"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "SPURS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "HORNETS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CLIPPERS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "ROCKETS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "SUNS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THUNDER"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "ALL-STAR"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "POINT GOD"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "ASSISTS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "STEALS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "MVP"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "HALL OF FAME"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "OLYMPIC GOLD"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "EXPLORE CP3'S JOURNEY"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026 2026-06-28 17490 3490110"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026 2026-06-28 53312 4312132"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026 2026-06-28 17677 367797"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS CHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026 2026-06-28 18873 487393"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM SAN ANTONIO SPURS EARN LA LAKERS COMPARISON, THEY MIGHT FALL\u2026 2026-06-28 14631 563151"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM 'NO LIMIT!' CHRIS PAUL'S CONTINUED VICTOR WEMBANYAMA PRAISE TESTAMENT TO\u2026 2026-06-28 27443 344363"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026 2026-06-28 45783 1783203"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026 2026-06-28 30261 126181"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026 2026-06-28 24851 585171"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026 2026-06-28 29596 5596216"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM SEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY 2026-06-28 50561 1561181"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL SAGA HIGHLIGHTS EVERYTHING THAT\u2019S WRONG WITH THE CLIPPERS\u2026 2026-06-28 51426 242646"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM AFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026 2026-06-28 38297 4297117"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS CHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026 2026-06-28 50465 146585"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "ALL"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "THE TEAM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "PLAYOFFS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "INJURIES"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "THE TEAM CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "PLAYOFFS CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026 VICTOR MAKUO2026-06-28"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "2990"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "100"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "1812"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "22"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "2283"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "93"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS | NEW ORLEANS HORNETS PAUL SKENES (KTL2OSZXLQ) -\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "SEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "READ MORE"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "AFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "1797"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "107"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "2965"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "75"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "3177"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "87"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "3373"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "83"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "SEE ALL POSTS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "3490"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "140"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "ISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE FOR THE SPURS - SPORTINGNEWS.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "4312"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "162"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "1783"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "233"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "HOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "1261"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "111"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "FULL STATS"
+      },
+      {
+        "href": "https://instagram.com/cp3",
+        "text": "FOLLOW @CP3 ON INSTAGRAM FOLLOWERS"
+      },
+      {
+        "href": "https://twitter.com/CP3",
+        "text": "FOLLOW @CP3 ON TWITTER FOLLOWERS"
+      },
+      {
+        "href": "https://youtube.com/@CP3",
+        "text": "SUBSCRIBE ON YOUTUBE 840 SUBSCRIBERS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "MARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "MSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "BASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "YAHOO SPORTS: ISAIAH THOMAS FACING PUSHBACK ON CHRIS PAUL-SPURS TAKE"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Chris Paul"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "NEWEST"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "MOST COMMENTED"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "POPULAR"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "NBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "REGGIE MILLER ARGUED THE SPURS MADE A MISTAKE BY NOT RE-SIGNING CHRIS PAUL - \"JUST AS AN INSURANCE V\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "CHRIS PAUL LANDING SPOTS: LAKERS, ROCKETS, SPURS AMONG POSSIBLE DESTINATIONS FOR PG AFTER TRADE TO R\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Blake Griffin slams Clippers, Steve Ballmer for Chris Paul\u2019s sudden exit - The New York Times"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "5 NBA Preseason Hot Takes That Will Age Well\u2026and 3 That Won't - Bleacher Report"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Chris Paul opens up on \u2018emotional rollercoaster\u2019 of vetoed Lakers trade - New York Post"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "\u201cThe only reason you have fans here is because you got 1980 sex worker prices\u201d \u2013 Gilbert Arenas urge\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Logan and Jake Paul clash after Bad Bunny\u2019s Super Bowl halftime performance - Cleveland.com"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Chris Paul Just Reopened One Of The Most Painful Kobe Bryant Debates On The Pat McAfee Show Giro D'i\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "The Point God is gone but his fingerprints are all over the playoffs - Bright Side Of The Sun"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Chris Paul retires without a ring -- but his career proves he was one of NBA's greatest winners - CB\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "The legacy of the 'Point God': Outstanding career with a controversial goodbye - Flashscore.com"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "Basketball: Two-time Olympic champion Chris Paul signals his retirement - olympics.com"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "How Chris Paul's legacy is embedded in the 2026 NBA playoffs - ESPN"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "BUY TICKETS NOW"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "mailto:victormakuo2002@gmail.com",
+        "text": "VICTORMAKUO2002@GMAIL.COM"
+      },
+      {
+        "href": "mailto:victormakuo2002@gmail.com",
+        "text": "VICTORMAKUO2002@GMAIL.COM"
+      },
+      {
+        "href": "https://facebook.com/CP3",
+        "text": "FACEBOOK"
+      },
+      {
+        "href": "https://twitter.com/CP3",
+        "text": "TWITTER"
+      },
+      {
+        "href": "https://instagram.com/cp3",
+        "text": "INSTAGRAM"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "MARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "MSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": "BASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html#",
+        "text": ""
+      },
+      {
+        "href": "https://instagram.com/cp3",
+        "text": "FOLLOW OUR PROFILE"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/index.html",
+        "text": "HOME"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/player-overview.html",
+        "text": "PLAYER"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/alchemists/blog-1.html",
+        "text": "NEWS"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/privacy",
+        "text": "PRIVACY"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "Create Your Account"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "Forgot your password?"
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": "Enter to your account"
+      },
+      {
+        "href": "https://facebook.com/CP3",
+        "text": ""
+      },
+      {
+        "href": "https://twitter.com/CP3",
+        "text": ""
+      },
+      {
+        "href": "https://cp3-legacy.vercel.app/#",
+        "text": ""
+      }
+    ],
+    "h1": [
+      "CP3 LEGACY"
+    ],
+    "h2": [],
+    "bodyText": "Skip to main content\n\nThis site was built by Ifedike Victor Makuo (lordwhitefire). Remote frontend developer \u2014 React, Next.js, TypeScript. GitHub: https://github.com/lordwhitefire. LinkedIn: https://www.linkedin.com/in/makuo-ifedike-216607350/. B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025) \u2014 self-taught developer.\n\nLANGUAGE: EN\nCONTACT US\nVICTORMARK2002@GMAIL.COM\nHOME\nPLAYER\nNEWS\nTHE TEAM\nCP3 MASTERCLASS LIFTS SPURS PAST WARRIORS IN OT THRILLER\n2026-06-27\nChris Paul dropped 24 points and 13 assists as San Antonio edged Golden State 118-112 in overtime, showcasing the veteran leadership that defines his legacy.\nVICTOR MAKUO\n 63968\nPLAYOFFS\nPAUL'S LEADERSHIP KEY TO WEMBANYAMA'S DEVELOPMENT\n2026-06-25\nVictor Wembanyama credits Chris Paul's mentorship for his rapid growth, calling the veteran point guard 'the ultimate teacher' on and off the court.\nVICTOR MAKUO\n 45979\nTAG CLOUD\nPLAYOFFS SPURS HORNETS CLIPPERS ROCKETS SUNS THUNDER ALL-STAR POINT GOD ASSISTS STEALS MVP HALL OF FAME OLYMPIC GOLD\nTHE POINT GOD ERA\nCP3 LEGACY\nCelebrating 19 seasons of greatness \u2014 from Wake Forest to the Hall of Fame. Welcome to the ultimate Chris Paul fan destination.\nEXPLORE CP3'S JOURNEY \nPrevious\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\n2026-06-28\n17490 3490110\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\n2026-06-28\n53312 4312132\nTHE TEAM\nCHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026\n2026-06-28\n17677 367797\nPLAYOFFS\nCHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026\n2026-06-28\n18873 487393\nTHE TEAM\nSAN ANTONIO SPURS EARN LA LAKERS COMPARISON, THEY MIGHT FALL\u2026\n2026-06-28\n14631 563151\nTHE TEAM\n'NO LIMIT!' CHRIS PAUL'S CONTINUED VICTOR WEMBANYAMA PRAISE TESTAMENT TO\u2026\n2026-06-28\n27443 344363\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\n2026-06-28\n45783 1783203\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026\n2026-06-28\n30261 126181\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026\n2026-06-28\n24851 585171\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026\n2026-06-28\n29596 5596216\nTHE TEAM\nSEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY\n2026-06-28\n50561 1561181\nTHE TEAM\nCHRIS PAUL SAGA HIGHLIGHTS EVERYTHING THAT\u2019S WRONG WITH THE CLIPPERS\u2026\n2026-06-28\n51426 242646\nTHE TEAM\nAFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026\n2026-06-28\n38297 4297117\nPLAYOFFS\nCHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026\n2026-06-28\n50465 146585\nNext\nFEATURED NEWS\nALLTHE TEAMPLAYOFFSINJURIES\nPrevious\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\nVICTOR MAKUO2026-06-28\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON\u2026\nVICTOR MAKUO2026-06-28\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL\u2026\nVICTOR MAKUO2026-06-28\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS |\u2026\nVICTOR MAKUO2026-06-28\nNext\nPLAYOFFS\n2026-06-28\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR\u2026\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nVICTOR MAKUO\n22490 2990100\nPLAYOFFS\n2026-06-28\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE\u2026\nIsaiah Thomas believes Chris Paul staying could've won the title for the Spurs sportingnews.com\nVICTOR MAKUO\n18312 181222\nTHE TEAM\n2026-06-28\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS:\u2026\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketball Network\nVICTOR MAKUO\n30783 228393\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026\n2026-06-28\nHow a retired point guard is leaving his mark on the Western Conference finals San Antonio Express-News\nTHE TEAM\nCHRIS PAUL REVEALS WHAT MAKES SPURS\u2019 VICTOR WEMBANYAMA SO SPECIAL - HEAVY.COM\n2026-06-28\nChris Paul Reveals what Makes Spurs\u2019 Victor Wembanyama so Special heavy.com\nPLAYOFFS\nCHRIS PAUL | SCORING HIGHLIGHTS | 2009 NBA PLAYOFFS | NEW ORLEANS HORNETS PAUL SKENES (KTL2OSZXLQ) -\u2026\n2026-06-28\nChris Paul | Scoring Highlights | 2009 NBA Playoffs | New Orleans Hornets Paul Skenes (KTl2oSZXlq) Mshale\nTHE TEAM\nSEE HIGHLIGHTS FROM CHRIS PAUL\u2019S NBA CAREER - USA TODAY\n2026-06-28\nSee highlights from Chris Paul\u2019s NBA career USA Today\nREAD MORE \nTHE TEAM\n2026-06-28\nAFTER A LEGENDARY 21-SEASON NBA CAREER, SUPERSTAR POINT GUARD CHRIS\u2026\nVICTOR MAKUO\n33297 1797107\nPLAYOFFS\n2026-06-28\nCHRIS PAUL | ISOLATION SCORING HIGHLIGHTS | PHOENIX SUNS |\u2026\nVICTOR MAKUO\n25465 296575\nTHE TEAM\n2026-06-28\nCHRIS PAUL: FROM RIVAL TO FOREVER RESPECTED SPUR - POUNDING\u2026\nVICTOR MAKUO\n22677 317787\nPLAYOFFS\n2026-06-28\nCHRIS PAUL'S FIT WILL DETERMINE THE CLIPPERS' TITLE HOPES -\u2026\nVICTOR MAKUO\n13873 337383\nLATEST NEWS\nSEE ALL POSTS\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM\n2026-06-28\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nVICTOR MAKUO\n17490 3490140\nPLAYOFFS\nISAIAH THOMAS BELIEVES CHRIS PAUL STAYING COULD'VE WON THE TITLE FOR THE SPURS - SPORTINGNEWS.COM\n2026-06-28\nIsaiah Thomas believes Chris Paul staying could've won the title for the Spurs sportingnews.com\nVICTOR MAKUO\n53312 4312162\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026\n2026-06-28\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketball Network\nVICTOR MAKUO\n45783 1783233\nPLAYOFFS\nHOW A RETIRED POINT GUARD IS LEAVING HIS MARK ON THE WESTERN CONFERENCE FINALS - SAN ANTONIO EXPRESS\u2026\n2026-06-28\nHow a retired point guard is leaving his mark on the Western Conference finals San Antonio Express-News\nVICTOR MAKUO\n30261 1261111\nCP3 MILESTONE SEASONS\nFULL STATS\nSEASON\tPPG\tAPG\tRPG\n\n2005-06 \u00b7 Rookie\nNew Orleans Hornets\n\t16.1\t7.8\t5.1\n\n2006-07 \u00b7 Sophomore\nNew Orleans Hornets\n\t17.3\t8.9\t4.4\n\n2007-08 \u00b7 MVP Race\nNew Orleans Hornets\n\t21.1\t11.6\t4.0\n\n2008-09 \u00b7 Career High PPG\nNew Orleans Hornets\n\t22.8\t11.0\t5.5\n\n2011-12 \u00b7 Traded to LAC\nLA Clippers\n\t19.8\t9.1\t3.6\n\n2013-14 \u00b7 All-Star MVP\nLA Clippers\n\t19.1\t10.7\t4.3\n\n2015-16 \u00b7 Clippers Prime\nLA Clippers\n\t19.5\t10.0\t4.2\n\n2017-18 \u00b7 Rockets 65-17\nHouston Rockets\n\t18.6\t7.9\t5.4\n\n2019-20 \u00b7 OKC Comeback\nOklahoma City Thunder\n\t17.6\t6.7\t5.0\n\n2020-21 \u00b7 NBA Finals\nPhoenix Suns\n\t16.4\t8.9\t4.5\n\n2021-22 \u00b7 Assists Leader\nPhoenix Suns\n\t14.7\t10.8\t4.4\n\nCareer \u00b7 19 Seasons\n17.5 PPG \u00b7 9.4 APG \u00b7 4.5 RPG\n\t17.5\t9.4\t4.5\nFOLLOW @CP3 ON INSTAGRAM\nFOLLOWERS\nFOLLOW @CP3 ON TWITTER\nFOLLOWERS\nSUBSCRIBE ON YOUTUBE\n840 SUBSCRIBERS\nREDDIT CP3\nTHE TEAM\nMARCA: CHRIS PAUL JR. TURNS HEADS AT NIKE ELITE 100, SHOWING HE'S CARVING OUT HIS OWN PATH\n2026-06-27\nTHE TEAM\nMSHALE: CHRIS PAUL CAN ONLY LAUGH FINDING OUT HOW EASY IT IS TO LOB TO VICTOR WEMBANYAMA SPURS VS TI\u2026\n2026-06-27\nTHE TEAM\nBASKETBALL NETWORK: ADAM SILVER CLARIFIES WHY CHRIS PAUL'S TRADE TO THE L.A. LAKERS WAS VETOED: \"DAV\u2026\n2026-06-24\nTHE TEAM\nYAHOO SPORTS: ISAIAH THOMAS FACING PUSHBACK ON CHRIS PAUL-SPURS TAKE\n2026-06-22\n41\nCHRIS\nPAUL\nASSISTS\n9.4\nAVG\nSTEALS\n2.1\nAVG\nBLOCKS\n0.2\nAVG\n FEATURED PLAYER\nLAST GAME RESULTS\nEXPAND STATS\nSAN ANTONIO SPURS VS\nSAN ANTONIO SPURS\nSAN ANTONIO SPURS\n\t\n0 - 0\nFINAL SCORE\n\t\nSCOREBOARD\t1\t2\t3\t4\tT\nSan Antonio Spurs\t0\t0\t0\t0\t0\n\t0\t0\t0\t0\t0\nGAME STATISTICS\nASSISTS\n0\t\n\t5\nREBOUNDS\n0\t\n\t3\nSTEALS\n0\t\n\t2\nGAME MVP\nChris Paul\nPoint Guard\n\t\n0\nPts\n0\nReb\n0\nAst\nTOP TRENDING NEWS\nNEWEST\nMOST COMMENTED\nPOPULAR\nPLAYOFFS\nNBA LEGEND SAYS SPURS SHOULD HAVE SIGNED CHRIS PAUL FOR NBA FINALS - BASKETNEWS.COM\n2026-06-28\nNBA Legend says Spurs should have signed Chris Paul for NBA Finals BasketNews.com\nTHE TEAM\nCHRIS PAUL IS NOT SURPRISED BY THE SAN ANTONIO SPURS: \u201cIT AIN\u2019T JUST WEMBANYAMA\u201d - BASKETBALL NETWOR\u2026\n2026-06-28\nChris Paul is not surprised by the San Antonio Spurs: \u201cIt ain\u2019t just Wembanyama\u201d Basketbal"
+  }
+}

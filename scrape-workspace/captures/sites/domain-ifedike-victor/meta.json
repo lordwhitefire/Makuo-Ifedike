@@ -1,0 +1,24 @@
+{
+  "name": "domain-ifedike-victor",
+  "url": "https://ifedike-victor.vercel.app/",
+  "status": 404,
+  "challenge_seen": false,
+  "final_url": "https://ifedike-victor.vercel.app/",
+  "meta": {
+    "title": "404: NOT_FOUND",
+    "meta": {},
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [
+      {
+        "href": "https://vercel.com/docs/errors/deployment_not_found",
+        "text": "VIEW DOCUMENTATION"
+      }
+    ],
+    "h1": [
+      "This page doesn\u2019t exist"
+    ],
+    "h2": [],
+    "bodyText": "This page doesn\u2019t exist\n\nIt may have been moved, removed, or never existed.\n\n404 DEPLOYMENT_NOT_FOUND\n\ncpt1::vbbkx-1793096816403-9ce2cd7ecb0d\n\nVIEW DOCUMENTATION\nCOPY DEBUG PROMPT"
+  }
+}

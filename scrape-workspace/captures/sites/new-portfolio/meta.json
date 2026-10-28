@@ -1,0 +1,368 @@
+{
+  "name": "new-portfolio",
+  "url": "https://new-portfolio-eta-rouge.vercel.app/",
+  "status": 200,
+  "challenge_seen": false,
+  "final_url": "https://new-portfolio-eta-rouge.vercel.app/",
+  "meta": {
+    "title": "FireSage Studio - Web Development & Design",
+    "meta": {
+      "description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+      "og:url": "https://new-portfolio-eta-rouge.vercel.app/",
+      "og:title": "FireSage Studio - Web Development & Design",
+      "og:description": "Professional web development studio specializing in e-commerce, web applications, and dashboards. Building high-quality, user-focused projects.",
+      "og:image": "https://new-portfolio-eta-rouge.vercel.app/assets/images/og-preview.jpg",
+      "twitter:card": "summary_large_image"
+    },
+    "canonical": null,
+    "jsonld": [],
+    "anchors": [
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+        "text": ""
+      },
+      {
+        "href": "javascript:;",
+        "text": ""
+      },
+      {
+        "href": "javascript:;",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/index.html",
+        "text": "HOME"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "ABOUT"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/about.html",
+        "text": "About Us"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/pricing.html",
+        "text": "Pricing"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/projects.html",
+        "text": "PROJECTS"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/contact.html",
+        "text": "CONTACT"
+      },
+      {
+        "href": "https://interior-deco-kappa.vercel.app/",
+        "text": "SEE PROJECT"
+      },
+      {
+        "href": "https://tailwind-web-portfolio.vercel.app/",
+        "text": "SEE PROJECT"
+      },
+      {
+        "href": "https://freecodecamp2-1.vercel.app/",
+        "text": "SEE PROJECT"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "PROFRESSIONAL AND DEDICATED"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "MORE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "UNIQUE DESIGN"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "MORE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "AFFORDABLE AND FLEXIABLE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "MORE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "24/7 SUPPORT"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "MORE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#tab1",
+        "text": "ALL"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#tab2",
+        "text": "WEB APPLICATIONS"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#tab3",
+        "text": "E-COMMERCE"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#tab4",
+        "text": "DASHBOARDS"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": "Cubic Villa"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": "OBERO"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": "ABC Financial Bank"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": "B6-No.5 OLA Tower"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/project-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/blog-details.html",
+        "text": ""
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Ryan Betthalyn"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Bobs Hanely"
+      },
+      {
+        "href": "mailto:hello@andle.com",
+        "text": ""
+      },
+      {
+        "href": "https://hasthemes.com/",
+        "text": "Firesage Studio"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Twitter"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Behance"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Dribbble"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": "Github"
+      },
+      {
+        "href": "https://new-portfolio-eta-rouge.vercel.app/#",
+        "text": ""
+      }
+    ],
+    "h1": [
+      "Interior Decoration\nWebsite",
+      "My Old\nPortfolio",
+      "Camper Caf\u00e9\nWebsite"
+    ],
+    "h2": [
+      "WHY CHOOSE ME",
+      "WORKS",
+      "FEATURED PROJECTS",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TESTIMONIAL",
+      ""
+    ],
+    "bodyText": "FIRESAGE\nHOME\nABOUT\nPROJECTS\nCONTACT\nLATEST PROJECT\nInterior Decoration\nWebsite\n\nThis is my first multi-page website.\nInspired by Bilal Asghar\u2019s design, I created a responsive\nand user-friendly interface to showcase stylish interior designs.\n\nSEE PROJECT\nPROJECT SHOWCASE\nMy Old\nPortfolio\n\nThis was my very first attempt at showcasing my work.\nLooking back, it reminds me of how far I\u2019ve come as a\nweb developer. My skills have grown, and my designs have evolved\nto be more creative and professional.\n\nSEE PROJECT\nEARLY WORK\nCamper Caf\u00e9\nWebsite\n\nOne of the websites from my early days,\nthis project was for a camper caf\u00e9 restaurant. It showcased the menu\nhighlighted their best dishes, and included a booking system. It was\na stepping stone in my web design journey, helping me\nlearn the basics of creating engaging and user-friendly websites.\n\nSEE PROJECT\nWHY CHOOSE ME\nPROFRESSIONAL AND DEDICATED\n\nAlways committed to delivering excellence..\n\nMORE\nUNIQUE DESIGN\n\nCrafting innovative designs tailored for clients..\n\nMORE\nAFFORDABLE AND FLEXIABLE\n\nDelivering high-quality work within budget.\n\nMORE\n24/7 SUPPORT\n\nAlways available for any assistance needed\n\nMORE\nWORKS\nALL\nWEB APPLICATIONS\nE-COMMERCE\nDASHBOARDS\nResidential\nCubic Villa\nArchitecture\nOBERO\nCommercial\nABC Financial Bank\nInterior\nB6-No.5 OLA Tower\nFEATURED PROJECTS\nTESTIMONIAL\nRyan Betthalyn / Director at Chobham Manor\n\nSed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.\n\nBobs Hanely / Director at Spotify\n\nSed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.\n\n\u00a9 2025 Andle Made with  by Firesage Studio\n\nTwitter\nBehance\nDribbble\nGithub"
+  }
+}
