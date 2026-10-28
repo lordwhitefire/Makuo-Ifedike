@@ -36,10 +36,10 @@ Open `http://localhost:3009/` (redirects to `/andle-portfolio.html`) and go thro
 | 3 | About heading | Visible h3/title in about section | `Makuo Ifedike` |
 | 4 | Footer copyright | Footer bottom | `© Makuo Ifedike built by whitefire` (no `Ifedike Victor`, no Whitefire as studio) |
 | 5 | Footer social links | Footer social icons | Twitter: x.com/lwhitefire; LinkedIn: linkedin.com/in/makuoifedike/; Github: github.com/lordwhitefire (no WhatsApp/wa.me) |
-| 6 | My Stack grid | Section where client strip was | Exactly 12 marks with visible labels |
-| 7 | My Stack marks | Grid items | Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, Vercel, Vitest |
+| 6 | My Stack grid | Section where client strip was | Exactly 8 marks with visible labels |
+| 7 | My Stack marks | Grid items | Next.js, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Clerk, Vitest |
 | 8 | My Stack behavior | Grid area | No moving marquee, no client logos |
-| 9 | My Stack spacing | Gap between My Stack grid and About section | Tight/reduced spacing (not too large) |
+| 9 | My Stack spacing | Gap between My Stack grid and About section | Left padding on section (`padding-left: 30px`), not flush to edge |
 | 10 | Portrait | About section image | Owner's portrait (`/images/portrait.png`), transparent background, no Unsplash stock portrait |
 | 11 | Counters | Counter boxes | Present: "2 complete & shipped" and "2 in active development" |
 | 12 | Dead links | All `<a href>` on the page | No `index.html`, `projects.html`, `project-details.html`, `blog.html`, `blog-details.html`, `contact.html`, `href="#"`, or `wa.me/` |

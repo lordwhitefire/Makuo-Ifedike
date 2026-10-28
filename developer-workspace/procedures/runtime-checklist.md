@@ -37,11 +37,11 @@
 | B1 | No placeholder copy | No stock Andle copy in why-choose/hero/about | Rendered text | |
 | B2 | No template credit | No "Built on the Andle template" | Footer text | |
 | B3 | No dead links | No `*.html` hrefs, no `href="#"`, no `wa.me/` anywhere | Grep of rendered HTML | |
-| B4 | My Stack: 12 marks | Exactly 12 logo marks with labels | Count of grid items | |
-| B5 | My Stack: correct names | Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, Vercel, Vitest | Grid labels | |
+| B4 | My Stack: 8 marks | Exactly 8 logo marks with labels | Count of grid items | |
+| B5 | My Stack: correct names | Next.js, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Clerk, Vitest | Grid labels | |
 | B6 | My Stack: no marquee | Grid is static, not animated | Visual check | |
 | B7 | My Stack: no client logos | No client logos in the stack section | Visual check | |
-| B8 | My Stack spacing | Tight/reduced spacing between My Stack grid and About section | Visual check (no large gap) | |
+| B8 | My Stack spacing | Left padding on section (`padding-left: 30px`), not flush to edge | Visual check / inline style | |
 | B9 | Portrait: owner's image | `/images/portrait.png` in about section | `img src` attribute | |
 | B10 | Portrait: no stock | No Unsplash stock portrait URL in about section | Rendered HTML | |
 | B11 | Counters present | Counter boxes present: "2 complete & shipped" and "2 in active development" | `data-count-to="2"` present, rendered text visible | |
