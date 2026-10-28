@@ -4,10 +4,10 @@ Plain list of the individual pieces of work needed so the real project catches u
 
 ## 1. Truth pass
 
-- [ ] Remove placeholder copy, stock client strip, stock portrait, dead links, template credit
-- [ ] Replace client strip with My Stack grid (no client logos, no marquee)
-- [ ] Unify identity to Makuo Ifedike; drop Whitefire and Ifedike Victor as display names
-- [ ] Confirm noindex intent before going public
+- [x] Remove placeholder copy, stock client strip, stock portrait, dead links, template credit
+- [x] Replace client strip with My Stack grid (no client logos, no marquee)
+- [x] Unify identity to Makuo Ifedike; drop Whitefire and Ifedike Victor as display names
+- [x] Confirm noindex intent before going public
 
 ## 2. System foundation
 
