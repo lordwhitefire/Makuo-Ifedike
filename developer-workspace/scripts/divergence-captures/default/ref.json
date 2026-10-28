@@ -1,14 +1,14 @@
 {
-  "url": "http://localhost:3010/andle-portfolio-inline.html",
-  "title": "Ifedike Victor — Software, fixed.",
+  "url": "http://localhost:3211/andle-portfolio.html",
+  "title": "Makuo Ifedike — I build and fix software for small businesses",
   "lang": "en",
   "viewport": [
     1200,
     800
   ],
   "scroll": [
-    4818,
-    4818
+    4757,
+    4757
   ],
   "body": {
     "tag": "body",
@@ -110,7 +110,7 @@
         "hidden": false,
         "box": [
           1185,
-          4003
+          3943
         ],
         "style": {
           "display": "block",
@@ -122,7 +122,7 @@
           "float": "left",
           "clear": "none",
           "width": "1185px",
-          "height": "4003.34px",
+          "height": "3942.92px",
           "minWidth": "0px",
           "maxWidth": "none",
           "minHeight": "0px",
@@ -4698,7 +4698,7 @@
                   {
                     "tag": "div",
                     "role": "generic",
-                    "id": "swiper-wrapper-bd967fafbaf46b51",
+                    "id": "swiper-wrapper-b62d02e8564b7281",
                     "cls": [
                       "swiper-wrapper"
                     ],
@@ -5348,7 +5348,7 @@
                                     "cls": [
                                       "engagement-time-greeting"
                                     ],
-                                    "name": "Good afternoon. Software, fixed.",
+                                    "name": "Good evening. Software, fixed.",
                                     "hidden": true,
                                     "box": [
                                       1155,
@@ -5432,7 +5432,7 @@
                                       "aspectRatio": "auto"
                                     },
                                     "children": [],
-                                    "text": "Good afternoon. Software, fixed."
+                                    "text": "Good evening. Software, fixed."
                                   },
                                   {
                                     "tag": "h4",
@@ -11380,7 +11380,7 @@
             "hidden": false,
             "box": [
               1185,
-              728
+              668
             ],
             "style": {
               "display": "block",
@@ -11392,7 +11392,7 @@
               "float": "left",
               "clear": "none",
               "width": "1185px",
-              "height": "728.109px",
+              "height": "667.688px",
               "minWidth": "0px",
               "maxWidth": "none",
               "minHeight": "0px",
@@ -11465,13 +11465,14 @@
                 "role": "generic",
                 "id": null,
                 "cls": [
-                  "client-section"
+                  "client-section",
+                  "my-stack-section"
                 ],
                 "name": "",
                 "hidden": false,
                 "box": [
                   1185,
-                  236
+                  175
                 ],
                 "style": {
                   "display": "block",
@@ -11483,7 +11484,7 @@
                   "float": "none",
                   "clear": "none",
                   "width": "1185px",
-                  "height": "235.562px",
+                  "height": "175.141px",
                   "minWidth": "0px",
                   "maxWidth": "none",
                   "minHeight": "0px",
@@ -11496,7 +11497,7 @@
                   "paddingTop": "0px",
                   "paddingRight": "0px",
                   "paddingBottom": "0px",
-                  "paddingLeft": "0px",
+                  "paddingLeft": "30px",
                   "borderTopWidth": "0px",
                   "borderRightWidth": "0px",
                   "borderBottomWidth": "0px",
@@ -11561,8 +11562,8 @@
                     "name": "",
                     "hidden": false,
                     "box": [
-                      1185,
-                      236
+                      1155,
+                      175
                     ],
                     "style": {
                       "display": "block",
@@ -11573,8 +11574,8 @@
                       "left": "auto",
                       "float": "none",
                       "clear": "none",
-                      "width": "1185px",
-                      "height": "235.562px",
+                      "width": "1155px",
+                      "height": "175.141px",
                       "minWidth": "0px",
                       "maxWidth": "1200px",
                       "minHeight": "0px",
@@ -11652,8 +11653,8 @@
                         "name": "",
                         "hidden": false,
                         "box": [
-                          1155,
-                          236
+                          1125,
+                          175
                         ],
                         "style": {
                           "display": "block",
@@ -11664,8 +11665,8 @@
                           "left": "auto",
                           "float": "none",
                           "clear": "none",
-                          "width": "1155px",
-                          "height": "235.562px",
+                          "width": "1125px",
+                          "height": "175.141px",
                           "minWidth": "0px",
                           "maxWidth": "none",
                           "minHeight": "0px",
@@ -11746,8 +11747,8 @@
                             "name": "",
                             "hidden": false,
                             "box": [
-                              1155,
-                              85
+                              1125,
+                              24
                             ],
                             "style": {
                               "display": "block",
@@ -11758,8 +11759,8 @@
                               "left": "0px",
                               "float": "none",
                               "clear": "none",
-                              "width": "1155px",
-                              "height": "84.5625px",
+                              "width": "1125px",
+                              "height": "24.1406px",
                               "minWidth": "0px",
                               "maxWidth": "none",
                               "minHeight": "0px",
@@ -11830,15 +11831,15 @@
                               {
                                 "tag": "div",
                                 "role": "generic",
-                                "id": "swiper-wrapper-862ecfe5ae764aa10",
+                                "id": "swiper-wrapper-81424123d8dbcace",
                                 "cls": [
                                   "swiper-wrapper"
                                 ],
                                 "name": "",
                                 "hidden": false,
                                 "box": [
-                                  1155,
-                                  85
+                                  1125,
+                                  24
                                 ],
                                 "style": {
                                   "display": "flex",
@@ -11849,8 +11850,8 @@
                                   "left": "0px",
                                   "float": "none",
                                   "clear": "none",
-                                  "width": "1155px",
-                                  "height": "84.5625px",
+                                  "width": "1125px",
+                                  "height": "24.1406px",
                                   "minWidth": "0px",
                                   "maxWidth": "none",
                                   "minHeight": "0px",
@@ -11929,8 +11930,8 @@
                                     "name": "1 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -11941,8 +11942,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -12020,8 +12021,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -12032,8 +12033,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -12109,7 +12110,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              60,
                                               20
                                             ],
                                             "style": {
@@ -12192,14 +12193,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Next.js",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  60,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -12210,8 +12211,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "60.0469px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -12297,8 +12298,8 @@
                                     "name": "2 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -12309,8 +12310,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -12388,8 +12389,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -12400,8 +12401,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -12477,7 +12478,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              90,
                                               20
                                             ],
                                             "style": {
@@ -12560,14 +12561,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "TypeScript",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  90,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -12578,8 +12579,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "89.5469px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -12664,8 +12665,8 @@
                                     "name": "3 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -12676,8 +12677,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -12755,8 +12756,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -12767,8 +12768,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -12844,7 +12845,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              104,
                                               20
                                             ],
                                             "style": {
@@ -12927,14 +12928,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Tailwind CSS",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  104,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -12945,8 +12946,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "104.266px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -13031,8 +13032,8 @@
                                     "name": "4 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -13043,8 +13044,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -13122,8 +13123,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -13134,8 +13135,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -13211,7 +13212,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              59,
                                               20
                                             ],
                                             "style": {
@@ -13294,14 +13295,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Sanity",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  59,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -13312,8 +13313,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "59.0781px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -13398,8 +13399,8 @@
                                     "name": "5 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -13410,8 +13411,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -13489,8 +13490,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -13501,8 +13502,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -13578,7 +13579,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              87,
                                               20
                                             ],
                                             "style": {
@@ -13661,14 +13662,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Supabase",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  87,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -13679,8 +13680,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "87.0312px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -13765,8 +13766,8 @@
                                     "name": "6 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -13777,8 +13778,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -13856,8 +13857,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -13868,8 +13869,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -13945,7 +13946,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              116,
                                               20
                                             ],
                                             "style": {
@@ -14028,14 +14029,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Neon Postgres",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  116,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -14046,8 +14047,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "116.328px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -14132,8 +14133,8 @@
                                     "name": "7 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -14144,8 +14145,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -14223,8 +14224,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -14235,8 +14236,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -14312,7 +14313,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              51,
                                               20
                                             ],
                                             "style": {
@@ -14395,14 +14396,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Clerk",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  51,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -14413,8 +14414,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "51.375px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -14499,8 +14500,8 @@
                                     "name": "8 / 8",
                                     "hidden": false,
                                     "box": [
-                                      199,
-                                      85
+                                      193,
+                                      24
                                     ],
                                     "style": {
                                       "display": "block",
@@ -14511,8 +14512,8 @@
                                       "left": "0px",
                                       "float": "none",
                                       "clear": "none",
-                                      "width": "199px",
-                                      "height": "84.5625px",
+                                      "width": "193px",
+                                      "height": "24.1406px",
                                       "minWidth": "auto",
                                       "maxWidth": "none",
                                       "minHeight": "auto",
@@ -14590,8 +14591,8 @@
                                         "name": "",
                                         "hidden": false,
                                         "box": [
-                                          199,
-                                          85
+                                          193,
+                                          24
                                         ],
                                         "style": {
                                           "display": "block",
@@ -14602,8 +14603,8 @@
                                           "left": "auto",
                                           "float": "none",
                                           "clear": "none",
-                                          "width": "199px",
-                                          "height": "84.5625px",
+                                          "width": "193px",
+                                          "height": "24.1406px",
                                           "minWidth": "0px",
                                           "maxWidth": "none",
                                           "minHeight": "0px",
@@ -14679,7 +14680,7 @@
                                             "name": "",
                                             "hidden": false,
                                             "box": [
-                                              199,
+                                              55,
                                               20
                                             ],
                                             "style": {
@@ -14762,14 +14763,14 @@
                                             "children": [
                                               {
                                                 "tag": "img",
-                                                "role": "presentation",
+                                                "role": "img",
                                                 "id": null,
                                                 "cls": [],
-                                                "name": "",
+                                                "name": "Vitest",
                                                 "hidden": false,
                                                 "box": [
-                                                  199,
-                                                  85
+                                                  55,
+                                                  24
                                                 ],
                                                 "style": {
                                                   "display": "inline",
@@ -14780,8 +14781,8 @@
                                                   "left": "auto",
                                                   "float": "none",
                                                   "clear": "none",
-                                                  "width": "198.969px",
-                                                  "height": "84.5625px",
+                                                  "width": "55.0938px",
+                                                  "height": "23.9844px",
                                                   "minWidth": "0px",
                                                   "maxWidth": "100%",
                                                   "minHeight": "0px",
@@ -14875,8 +14876,8 @@
                                   "display": "block",
                                   "position": "absolute",
                                   "top": "0px",
-                                  "right": "1155px",
-                                  "bottom": "84.5625px",
+                                  "right": "1125px",
+                                  "bottom": "24.1406px",
                                   "left": "0px",
                                   "float": "none",
                                   "clear": "none",
@@ -15100,7 +15101,7 @@
                       "borderTopLeftRadius": "0px",
                       "borderRadius": "0px",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "backgroundImage": "url(\"https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&h=1300&q=80\")",
+                      "backgroundImage": "url(\"http://localhost:3211/images/portrait.png\")",
                       "color": "rgba(255, 255, 255, 0.75)",
                       "opacity": "1",
                       "visibility": "visible",
@@ -15518,7 +15519,7 @@
                                     "cls": [
                                       "title"
                                     ],
-                                    "name": "Ifedike Victor",
+                                    "name": "Makuo Ifedike",
                                     "hidden": true,
                                     "box": [
                                       563,
@@ -15602,7 +15603,7 @@
                                       "aspectRatio": "auto"
                                     },
                                     "children": [],
-                                    "text": "Ifedike Victor"
+                                    "text": "Makuo Ifedike"
                                   },
                                   {
                                     "tag": "p",
@@ -25783,7 +25784,7 @@
                           "backgroundColor": "rgba(0, 0, 0, 0)",
                           "backgroundImage": "none",
                           "color": "rgba(255, 255, 255, 0.75)",
-                          "opacity": "0.732183",
+                          "opacity": "1",
                           "visibility": "visible",
                           "flexDirection": "row",
                           "flexWrap": "nowrap",
@@ -25814,7 +25815,7 @@
                           "overflowX": "visible",
                           "overflowY": "visible",
                           "zIndex": "auto",
-                          "transform": "matrix(1, 0, 0, 1, 0, 5.35635)",
+                          "transform": "none",
                           "transitionDuration": "0.3s",
                           "boxShadow": "none",
                           "outlineStyle": "none",
@@ -26011,7 +26012,7 @@
                                   {
                                     "tag": "div",
                                     "role": "generic",
-                                    "id": "swiper-wrapper-17865b590a3109e10f",
+                                    "id": "swiper-wrapper-f29b44d39ab33124",
                                     "cls": [
                                       "swiper-wrapper"
                                     ],
@@ -37338,7 +37339,7 @@
                                   {
                                     "tag": "div",
                                     "role": "generic",
-                                    "id": "swiper-wrapper-191142be6a1468109",
+                                    "id": "swiper-wrapper-870d064aeb82ded3",
                                     "cls": [
                                       "swiper-wrapper"
                                     ],
@@ -48665,7 +48666,7 @@
                                   {
                                     "tag": "div",
                                     "role": "generic",
-                                    "id": "swiper-wrapper-102537fabfa5910cc7",
+                                    "id": "swiper-wrapper-4e5de7ac6a488a5c",
                                     "cls": [
                                       "swiper-wrapper"
                                     ],
@@ -59992,7 +59993,7 @@
                                   {
                                     "tag": "div",
                                     "role": "generic",
-                                    "id": "swiper-wrapper-7381b6384c84f073",
+                                    "id": "swiper-wrapper-935ac3cc699e3c50",
                                     "cls": [
                                       "swiper-wrapper"
                                     ],
@@ -75237,7 +75238,7 @@
                     "name": "",
                     "hidden": false,
                     "box": [
-                      341,
+                      229,
                       47
                     ],
                     "style": {
@@ -75249,7 +75250,7 @@
                       "left": "auto",
                       "float": "none",
                       "clear": "none",
-                      "width": "341.406px",
+                      "width": "229.328px",
                       "height": "47.4219px",
                       "minWidth": "auto",
                       "maxWidth": "none",
@@ -75323,10 +75324,10 @@
                         "role": "generic",
                         "id": null,
                         "cls": [],
-                        "name": "",
+                        "name": "© Makuo Ifedike built by whitefire",
                         "hidden": false,
                         "box": [
-                          341,
+                          229,
                           24
                         ],
                         "style": {
@@ -75338,7 +75339,7 @@
                           "left": "auto",
                           "float": "none",
                           "clear": "none",
-                          "width": "341.406px",
+                          "width": "229.328px",
                           "height": "23.9844px",
                           "minWidth": "0px",
                           "maxWidth": "none",
@@ -75406,99 +75407,8 @@
                           "order": "0",
                           "aspectRatio": "auto"
                         },
-                        "children": [
-                          {
-                            "tag": "span",
-                            "role": "generic",
-                            "id": null,
-                            "cls": [],
-                            "name": "Ifedike Victor",
-                            "hidden": false,
-                            "box": [
-                              90,
-                              20
-                            ],
-                            "style": {
-                              "display": "inline",
-                              "position": "static",
-                              "top": "auto",
-                              "right": "auto",
-                              "bottom": "auto",
-                              "left": "auto",
-                              "float": "none",
-                              "clear": "none",
-                              "width": "auto",
-                              "height": "auto",
-                              "minWidth": "0px",
-                              "maxWidth": "none",
-                              "minHeight": "0px",
-                              "maxHeight": "none",
-                              "boxSizing": "border-box",
-                              "marginTop": "0px",
-                              "marginRight": "0px",
-                              "marginBottom": "0px",
-                              "marginLeft": "0px",
-                              "paddingTop": "0px",
-                              "paddingRight": "0px",
-                              "paddingBottom": "0px",
-                              "paddingLeft": "0px",
-                              "borderTopWidth": "0px",
-                              "borderRightWidth": "0px",
-                              "borderBottomWidth": "0px",
-                              "borderLeftWidth": "0px",
-                              "borderTopStyle": "none",
-                              "borderStyle": "none",
-                              "borderTopColor": "rgb(255, 255, 255)",
-                              "borderColor": "rgb(255, 255, 255)",
-                              "borderTopLeftRadius": "0px",
-                              "borderRadius": "0px",
-                              "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "backgroundImage": "none",
-                              "color": "rgb(255, 255, 255)",
-                              "opacity": "1",
-                              "visibility": "visible",
-                              "flexDirection": "row",
-                              "flexWrap": "nowrap",
-                              "justifyContent": "normal",
-                              "alignItems": "normal",
-                              "alignSelf": "auto",
-                              "flexGrow": "0",
-                              "flexShrink": "1",
-                              "flexBasis": "auto",
-                              "gap": "normal",
-                              "rowGap": "normal",
-                              "columnGap": "normal",
-                              "gridTemplateColumns": "none",
-                              "gridTemplateRows": "none",
-                              "gridAutoFlow": "row",
-                              "fontFamily": "Poppins, sans-serif",
-                              "fontSize": "14px",
-                              "fontWeight": "400",
-                              "fontStyle": "normal",
-                              "lineHeight": "23.996px",
-                              "letterSpacing": "normal",
-                              "textAlign": "start",
-                              "textTransform": "none",
-                              "textDecorationLine": "none",
-                              "whiteSpace": "normal",
-                              "textOverflow": "clip",
-                              "overflow": "visible",
-                              "overflowX": "visible",
-                              "overflowY": "visible",
-                              "zIndex": "auto",
-                              "transform": "none",
-                              "transitionDuration": "0s",
-                              "boxShadow": "none",
-                              "outlineStyle": "none",
-                              "cursor": "auto",
-                              "pointerEvents": "auto",
-                              "order": "0",
-                              "aspectRatio": "auto"
-                            },
-                            "children": [],
-                            "text": "Ifedike Victor"
-                          }
-                        ]
+                        "children": [],
+                        "text": "© Makuo Ifedike built by whitefire"
                       }
                     ]
                   },
@@ -75512,7 +75422,7 @@
                     "name": "",
                     "hidden": false,
                     "box": [
-                      359,
+                      241,
                       47
                     ],
                     "style": {
@@ -75524,7 +75434,7 @@
                       "left": "auto",
                       "float": "none",
                       "clear": "none",
-                      "width": "359.281px",
+                      "width": "241.016px",
                       "height": "47.4219px",
                       "minWidth": "auto",
                       "maxWidth": "none",
@@ -75603,7 +75513,7 @@
                         "name": "",
                         "hidden": false,
                         "box": [
-                          359,
+                          241,
                           27
                         ],
                         "style": {
@@ -75615,7 +75525,7 @@
                           "left": "auto",
                           "float": "none",
                           "clear": "none",
-                          "width": "359.281px",
+                          "width": "241.016px",
                           "height": "27.4219px",
                           "minWidth": "0px",
                           "maxWidth": "none",
@@ -75962,7 +75872,7 @@
                                 "role": "link",
                                 "id": null,
                                 "cls": [
-                                  "behance"
+                                  "linkedin"
                                 ],
                                 "name": "LinkedIn",
                                 "hidden": false,
@@ -76000,13 +75910,13 @@
                                   "borderLeftWidth": "0px",
                                   "borderTopStyle": "none",
                                   "borderStyle": "none",
-                                  "borderTopColor": "rgb(0, 102, 255)",
-                                  "borderColor": "rgb(0, 102, 255)",
+                                  "borderTopColor": "rgba(255, 255, 255, 0.75)",
+                                  "borderColor": "rgba(255, 255, 255, 0.75)",
                                   "borderTopLeftRadius": "0px",
                                   "borderRadius": "0px",
                                   "backgroundColor": "rgba(0, 0, 0, 0)",
                                   "backgroundImage": "none",
-                                  "color": "rgb(0, 102, 255)",
+                                  "color": "rgba(255, 255, 255, 0.75)",
                                   "opacity": "1",
                                   "visibility": "visible",
                                   "flexDirection": "row",
@@ -76049,190 +75959,6 @@
                                 },
                                 "children": [],
                                 "text": "LinkedIn"
-                              }
-                            ]
-                          },
-                          {
-                            "tag": "li",
-                            "role": "listitem",
-                            "id": null,
-                            "cls": [],
-                            "name": "",
-                            "hidden": false,
-                            "box": [
-                              83,
-                              27
-                            ],
-                            "style": {
-                              "display": "list-item",
-                              "position": "static",
-                              "top": "auto",
-                              "right": "auto",
-                              "bottom": "auto",
-                              "left": "auto",
-                              "float": "none",
-                              "clear": "none",
-                              "width": "83.2656px",
-                              "height": "27.4219px",
-                              "minWidth": "auto",
-                              "maxWidth": "none",
-                              "minHeight": "auto",
-                              "maxHeight": "none",
-                              "boxSizing": "border-box",
-                              "marginTop": "0px",
-                              "marginRight": "0px",
-                              "marginBottom": "0px",
-                              "marginLeft": "35px",
-                              "paddingTop": "0px",
-                              "paddingRight": "0px",
-                              "paddingBottom": "0px",
-                              "paddingLeft": "0px",
-                              "borderTopWidth": "0px",
-                              "borderRightWidth": "0px",
-                              "borderBottomWidth": "0px",
-                              "borderLeftWidth": "0px",
-                              "borderTopStyle": "none",
-                              "borderStyle": "none",
-                              "borderTopColor": "rgba(255, 255, 255, 0.75)",
-                              "borderColor": "rgba(255, 255, 255, 0.75)",
-                              "borderTopLeftRadius": "0px",
-                              "borderRadius": "0px",
-                              "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "backgroundImage": "none",
-                              "color": "rgba(255, 255, 255, 0.75)",
-                              "opacity": "1",
-                              "visibility": "visible",
-                              "flexDirection": "row",
-                              "flexWrap": "nowrap",
-                              "justifyContent": "normal",
-                              "alignItems": "normal",
-                              "alignSelf": "auto",
-                              "flexGrow": "0",
-                              "flexShrink": "1",
-                              "flexBasis": "auto",
-                              "gap": "normal",
-                              "rowGap": "normal",
-                              "columnGap": "normal",
-                              "gridTemplateColumns": "none",
-                              "gridTemplateRows": "none",
-                              "gridAutoFlow": "row",
-                              "fontFamily": "Poppins, sans-serif",
-                              "fontSize": "14px",
-                              "fontWeight": "400",
-                              "fontStyle": "normal",
-                              "lineHeight": "23.996px",
-                              "letterSpacing": "normal",
-                              "textAlign": "start",
-                              "textTransform": "none",
-                              "textDecorationLine": "none",
-                              "whiteSpace": "normal",
-                              "textOverflow": "clip",
-                              "overflow": "visible",
-                              "overflowX": "visible",
-                              "overflowY": "visible",
-                              "zIndex": "auto",
-                              "transform": "none",
-                              "transitionDuration": "0s",
-                              "boxShadow": "none",
-                              "outlineStyle": "none",
-                              "cursor": "auto",
-                              "pointerEvents": "auto",
-                              "order": "0",
-                              "aspectRatio": "auto"
-                            },
-                            "children": [
-                              {
-                                "tag": "a",
-                                "role": "link",
-                                "id": null,
-                                "cls": [
-                                  "dribbble"
-                                ],
-                                "name": "WhatsApp",
-                                "hidden": false,
-                                "box": [
-                                  83,
-                                  23
-                                ],
-                                "style": {
-                                  "display": "inline",
-                                  "position": "static",
-                                  "top": "auto",
-                                  "right": "auto",
-                                  "bottom": "auto",
-                                  "left": "auto",
-                                  "float": "none",
-                                  "clear": "none",
-                                  "width": "auto",
-                                  "height": "auto",
-                                  "minWidth": "0px",
-                                  "maxWidth": "none",
-                                  "minHeight": "0px",
-                                  "maxHeight": "none",
-                                  "boxSizing": "border-box",
-                                  "marginTop": "0px",
-                                  "marginRight": "0px",
-                                  "marginBottom": "0px",
-                                  "marginLeft": "0px",
-                                  "paddingTop": "0px",
-                                  "paddingRight": "0px",
-                                  "paddingBottom": "0px",
-                                  "paddingLeft": "0px",
-                                  "borderTopWidth": "0px",
-                                  "borderRightWidth": "0px",
-                                  "borderBottomWidth": "0px",
-                                  "borderLeftWidth": "0px",
-                                  "borderTopStyle": "none",
-                                  "borderStyle": "none",
-                                  "borderTopColor": "rgb(255, 0, 102)",
-                                  "borderColor": "rgb(255, 0, 102)",
-                                  "borderTopLeftRadius": "0px",
-                                  "borderRadius": "0px",
-                                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                                  "backgroundImage": "none",
-                                  "color": "rgb(255, 0, 102)",
-                                  "opacity": "1",
-                                  "visibility": "visible",
-                                  "flexDirection": "row",
-                                  "flexWrap": "nowrap",
-                                  "justifyContent": "normal",
-                                  "alignItems": "normal",
-                                  "alignSelf": "auto",
-                                  "flexGrow": "0",
-                                  "flexShrink": "1",
-                                  "flexBasis": "auto",
-                                  "gap": "normal",
-                                  "rowGap": "normal",
-                                  "columnGap": "normal",
-                                  "gridTemplateColumns": "none",
-                                  "gridTemplateRows": "none",
-                                  "gridAutoFlow": "row",
-                                  "fontFamily": "Poppins, sans-serif",
-                                  "fontSize": "16px",
-                                  "fontWeight": "400",
-                                  "fontStyle": "normal",
-                                  "lineHeight": "27.424px",
-                                  "letterSpacing": "normal",
-                                  "textAlign": "start",
-                                  "textTransform": "none",
-                                  "textDecorationLine": "none",
-                                  "whiteSpace": "normal",
-                                  "textOverflow": "clip",
-                                  "overflow": "visible",
-                                  "overflowX": "visible",
-                                  "overflowY": "visible",
-                                  "zIndex": "auto",
-                                  "transform": "none",
-                                  "transitionDuration": "0.3s",
-                                  "boxShadow": "none",
-                                  "outlineStyle": "none",
-                                  "cursor": "pointer",
-                                  "pointerEvents": "auto",
-                                  "order": "0",
-                                  "aspectRatio": "auto"
-                                },
-                                "children": [],
-                                "text": "WhatsApp"
                               }
                             ]
                           },
@@ -77639,7 +77365,7 @@
       "id": null,
       "box": [
         1185,
-        4003
+        3943
       ],
       "hidden": false,
       "cls": [
@@ -78295,7 +78021,7 @@
       "path": "body/0:div/3:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-bd967fafbaf46b51",
+      "id": "swiper-wrapper-b62d02e8564b7281",
       "box": [
         1185,
         820
@@ -79304,7 +79030,7 @@
       "id": null,
       "box": [
         1185,
-        728
+        668
       ],
       "hidden": false,
       "cls": [
@@ -79320,11 +79046,12 @@
       "id": null,
       "box": [
         1185,
-        236
+        175
       ],
       "hidden": false,
       "cls": [
-        "client-section"
+        "client-section",
+        "my-stack-section"
       ]
     },
     {
@@ -79333,8 +79060,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        1185,
-        236
+        1155,
+        175
       ],
       "hidden": false,
       "cls": [
@@ -79347,8 +79074,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        1155,
-        236
+        1125,
+        175
       ],
       "hidden": false,
       "cls": [
@@ -79361,8 +79088,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        1155,
-        85
+        1125,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79376,10 +79103,10 @@
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-862ecfe5ae764aa10",
+      "id": "swiper-wrapper-81424123d8dbcace",
       "box": [
-        1155,
-        85
+        1125,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79392,8 +79119,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79407,8 +79134,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79421,7 +79148,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        60,
         20
       ],
       "hidden": false,
@@ -79430,11 +79157,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/0:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        60,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79445,8 +79172,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79460,8 +79187,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79474,7 +79201,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        90,
         20
       ],
       "hidden": false,
@@ -79483,11 +79210,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/1:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        90,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79498,8 +79225,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79512,8 +79239,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79526,7 +79253,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        104,
         20
       ],
       "hidden": false,
@@ -79535,11 +79262,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/2:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        104,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79550,8 +79277,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79564,8 +79291,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79578,7 +79305,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        59,
         20
       ],
       "hidden": false,
@@ -79587,11 +79314,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/3:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        59,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79602,8 +79329,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79616,8 +79343,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79630,7 +79357,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        87,
         20
       ],
       "hidden": false,
@@ -79639,11 +79366,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/4:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        87,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79654,8 +79381,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79668,8 +79395,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79682,7 +79409,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        116,
         20
       ],
       "hidden": false,
@@ -79691,11 +79418,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/5:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        116,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79706,8 +79433,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79720,8 +79447,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79734,7 +79461,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        51,
         20
       ],
       "hidden": false,
@@ -79743,11 +79470,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/6:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        51,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -79758,8 +79485,8 @@
       "role": "group",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79772,8 +79499,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        199,
-        85
+        193,
+        24
       ],
       "hidden": false,
       "cls": [
@@ -79786,7 +79513,7 @@
       "role": "link",
       "id": null,
       "box": [
-        199,
+        55,
         20
       ],
       "hidden": false,
@@ -79795,11 +79522,11 @@
     {
       "path": "body/0:div/4:div/0:div/0:div/0:div/0:div/0:div/7:div/0:div/0:a/0:img",
       "tag": "img",
-      "role": "presentation",
+      "role": "img",
       "id": null,
       "box": [
-        199,
-        85
+        55,
+        24
       ],
       "hidden": false,
       "cls": []
@@ -81489,7 +81216,7 @@
       "path": "body/0:div/6:div/1:div/0:div/0:div/0:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-17865b590a3109e10f",
+      "id": "swiper-wrapper-f29b44d39ab33124",
       "box": [
         1185,
         448
@@ -83197,7 +82924,7 @@
       "path": "body/0:div/6:div/1:div/0:div/1:div/0:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-191142be6a1468109",
+      "id": "swiper-wrapper-870d064aeb82ded3",
       "box": [
         1185,
         448
@@ -84905,7 +84632,7 @@
       "path": "body/0:div/6:div/1:div/0:div/2:div/0:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-102537fabfa5910cc7",
+      "id": "swiper-wrapper-4e5de7ac6a488a5c",
       "box": [
         1185,
         448
@@ -86613,7 +86340,7 @@
       "path": "body/0:div/6:div/1:div/0:div/3:div/0:div/0:div/0:div",
       "tag": "div",
       "role": "generic",
-      "id": "swiper-wrapper-7381b6384c84f073",
+      "id": "swiper-wrapper-935ac3cc699e3c50",
       "box": [
         1185,
         448
@@ -88908,7 +88635,7 @@
       "role": "generic",
       "id": null,
       "box": [
-        341,
+        229,
         47
       ],
       "hidden": false,
@@ -88922,20 +88649,8 @@
       "role": "generic",
       "id": null,
       "box": [
-        341,
+        229,
         24
-      ],
-      "hidden": false,
-      "cls": []
-    },
-    {
-      "path": "body/1:div/0:div/1:div/0:div/0:p/0:span",
-      "tag": "span",
-      "role": "generic",
-      "id": null,
-      "box": [
-        90,
-        20
       ],
       "hidden": false,
       "cls": []
@@ -88946,7 +88661,7 @@
       "role": "generic",
       "id": null,
       "box": [
-        359,
+        241,
         47
       ],
       "hidden": false,
@@ -88960,7 +88675,7 @@
       "role": "list",
       "id": null,
       "box": [
-        359,
+        241,
         27
       ],
       "hidden": false,
@@ -89017,37 +88732,11 @@
       ],
       "hidden": false,
       "cls": [
-        "behance"
+        "linkedin"
       ]
     },
     {
       "path": "body/1:div/0:div/1:div/1:div/0:ul/2:li",
-      "tag": "li",
-      "role": "listitem",
-      "id": null,
-      "box": [
-        83,
-        27
-      ],
-      "hidden": false,
-      "cls": []
-    },
-    {
-      "path": "body/1:div/0:div/1:div/1:div/0:ul/2:li/0:a",
-      "tag": "a",
-      "role": "link",
-      "id": null,
-      "box": [
-        83,
-        23
-      ],
-      "hidden": false,
-      "cls": [
-        "dribbble"
-      ]
-    },
-    {
-      "path": "body/1:div/0:div/1:div/1:div/0:ul/3:li",
       "tag": "li",
       "role": "listitem",
       "id": null,
@@ -89059,7 +88748,7 @@
       "cls": []
     },
     {
-      "path": "body/1:div/0:div/1:div/1:div/0:ul/3:li/0:a",
+      "path": "body/1:div/0:div/1:div/1:div/0:ul/2:li/0:a",
       "tag": "a",
       "role": "link",
       "id": null,
@@ -102925,12 +102614,6 @@
     {
       "tag": "a",
       "role": "link",
-      "name": "WhatsApp",
-      "hidden": false
-    },
-    {
-      "tag": "a",
-      "role": "link",
       "name": "Github",
       "hidden": false
     },
@@ -103158,7 +102841,7 @@
       "name": ""
     }
   ],
-  "a11y": "- link:\n  - /url: index.html\n- link \"\":\n  - /url: javascript:;\n- link \"\":\n  - /url: javascript:;\n- link \"Logo\":\n  - /url: index.html\n  - img \"Logo\"\n- list:\n  - listitem:\n    - link \"Home\":\n      - /url: \"#top\"\n  - listitem:\n    - link \"Work\":\n      - /url: \"#work\"\n  - listitem:\n    - link \"About\":\n      - /url: \"#about\"\n  - listitem:\n    - link \"Contact\":\n      - /url: \"#contact\"\n- listitem:\n  - link \"Project\":\n    - /url: \"#\"\n- listitem:\n  - link \"Blog\":\n    - /url: \"#\"\n- listitem:\n  - link \"Contact\":\n    - /url: contact.html\n- group \"1 / 5\":\n  - text: Good afternoon. Software, fixed.\n  - heading \"Affiliate platform — in preview\" [level=4]\n  - heading \"Athletica\" [level=1]\n  - paragraph: Being built for a client. Visitors land on a product page, click through to Amazon. Live preview while the affiliate loop is being finished.\n  - link \"See project\":\n    - /url: https://athletica-blond.vercel.app/\n- group \"2 / 5\":\n  - heading \"Marketing site — live\" [level=4]\n  - heading \"Interior-deco\" [level=1]\n  - paragraph: A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.\n  - link \"See project\":\n    - /url: https://interior-deco-kappa.vercel.app/\n- group \"3 / 5\":\n  - heading \"Inventory app + public site — live\" [level=4]\n  - heading \"Truespec\" [level=1]\n  - paragraph: Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.\n  - link \"See project\":\n    - /url: https://truespec-k4y6.vercel.app/\n- group \"4 / 5\":\n  - heading \"Affiliate platform — in preview\" [level=4]\n  - heading \"Athletica\" [level=1]\n  - paragraph: Being built for a client. Visitors land on a product page, click through to Amazon. Live preview while the affiliate loop is being finished.\n  - link \"See project\":\n    - /url: https://athletica-blond.vercel.app/\n- group \"5 / 5\":\n  - heading \"Marketing site — live\" [level=4]\n  - heading \"Interior-deco\" [level=1]\n  - paragraph: A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.\n  - link \"See project\":\n    - /url: https://interior-deco-kappa.vercel.app/\n- button \"Next slide\": \n- button \"Previous slide\": \n- list:\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n- group \"1 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"2 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"3 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"4 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"5 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"6 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"7 / 8\":\n  - link:\n    - /url: \"#\"\n- group \"8 / 8\":\n  - link:\n    - /url: \"#\"\n- heading \"why choose me\" [level=2]\n- heading \"Work\" [level=2]\n- tablist:\n  - listitem:\n    - tab \"All\" [selected]\n  - listitem:\n    - tab \"marketing site\"\n  - listitem:\n    - tab \"web app\"\n  - listitem:\n    - tab \"in-progress\"\n- tabpanel:\n  - group \"1 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"2 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"3 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"4 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - group \"5 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"6 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"7 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"8 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - group \"9 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"10 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"11 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"12 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - button \"Previous slide\"\n  - button \"Next slide\"\n- heading \"Milestones\" [level=2]\n- paragraph: © 2026 Ifedike Victor. Built on the Andle template.\n- list:\n  - listitem:\n    - link \"Twitter\":\n      - /url: https://twitter.com/ifedikevictor\n  - listitem:\n    - link \"LinkedIn\":\n      - /url: https://linkedin.com/in/ifedike-victor\n  - listitem:\n    - link \"WhatsApp\":\n      - /url: https://wa.me/2348000000000\n  - listitem:\n    - link \"Github\":\n      - /url: https://github.com/lordwhitefire",
+  "a11y": "- link:\n  - /url: index.html\n- link \"\":\n  - /url: javascript:;\n- link \"\":\n  - /url: javascript:;\n- link \"Logo\":\n  - /url: index.html\n  - img \"Logo\"\n- list:\n  - listitem:\n    - link \"Home\":\n      - /url: \"#top\"\n  - listitem:\n    - link \"Work\":\n      - /url: \"#work\"\n  - listitem:\n    - link \"About\":\n      - /url: \"#about\"\n  - listitem:\n    - link \"Contact\":\n      - /url: \"#contact\"\n- listitem:\n  - link \"Project\":\n    - /url: \"#\"\n- listitem:\n  - link \"Blog\":\n    - /url: \"#\"\n- listitem:\n  - link \"Contact\":\n    - /url: contact.html\n- group \"1 / 5\":\n  - text: Good evening. Software, fixed.\n  - heading \"Affiliate platform — in preview\" [level=4]\n  - heading \"Athletica\" [level=1]\n  - paragraph: Being built for a client. Visitors land on a product page, click through to Amazon. Live preview while the affiliate loop is being finished.\n  - link \"See project\":\n    - /url: https://athletica-blond.vercel.app/\n- group \"2 / 5\":\n  - heading \"Marketing site — live\" [level=4]\n  - heading \"Interior-deco\" [level=1]\n  - paragraph: A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.\n  - link \"See project\":\n    - /url: https://interior-deco-kappa.vercel.app/\n- group \"3 / 5\":\n  - heading \"Inventory app + public site — live\" [level=4]\n  - heading \"Truespec\" [level=1]\n  - paragraph: Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.\n  - link \"See project\":\n    - /url: https://truespec-k4y6.vercel.app/\n- group \"4 / 5\":\n  - heading \"Affiliate platform — in preview\" [level=4]\n  - heading \"Athletica\" [level=1]\n  - paragraph: Being built for a client. Visitors land on a product page, click through to Amazon. Live preview while the affiliate loop is being finished.\n  - link \"See project\":\n    - /url: https://athletica-blond.vercel.app/\n- group \"5 / 5\":\n  - heading \"Marketing site — live\" [level=4]\n  - heading \"Interior-deco\" [level=1]\n  - paragraph: A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.\n  - link \"See project\":\n    - /url: https://interior-deco-kappa.vercel.app/\n- button \"Next slide\": \n- button \"Previous slide\": \n- list:\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n  - listitem:\n    - link \"\":\n      - /url: \"#\"\n- group \"1 / 8\":\n  - link \"Next.js\":\n    - /url: \"#\"\n    - img \"Next.js\"\n- group \"2 / 8\":\n  - link \"TypeScript\":\n    - /url: \"#\"\n    - img \"TypeScript\"\n- group \"3 / 8\":\n  - link \"Tailwind CSS\":\n    - /url: \"#\"\n    - img \"Tailwind CSS\"\n- group \"4 / 8\":\n  - link \"Sanity\":\n    - /url: \"#\"\n    - img \"Sanity\"\n- group \"5 / 8\":\n  - link \"Supabase\":\n    - /url: \"#\"\n    - img \"Supabase\"\n- group \"6 / 8\":\n  - link \"Neon Postgres\":\n    - /url: \"#\"\n    - img \"Neon Postgres\"\n- group \"7 / 8\":\n  - link \"Clerk\":\n    - /url: \"#\"\n    - img \"Clerk\"\n- group \"8 / 8\":\n  - link \"Vitest\":\n    - /url: \"#\"\n    - img \"Vitest\"\n- heading \"why choose me\" [level=2]\n- heading \"Work\" [level=2]\n- tablist:\n  - listitem:\n    - tab \"All\" [selected]\n  - listitem:\n    - tab \"marketing site\"\n  - listitem:\n    - tab \"web app\"\n  - listitem:\n    - tab \"in-progress\"\n- tabpanel:\n  - group \"1 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"2 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"3 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"4 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - group \"5 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"6 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"7 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"8 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - group \"9 / 12\":\n    - link \"Interior-deco\":\n      - /url: project-details.html\n      - img \"Interior-deco\"\n    - heading \"Marketing site\" [level=4]\n    - heading \"Interior-deco\" [level=3]:\n      - link \"Interior-deco\":\n        - /url: https://interior-deco-kappa.vercel.app/\n  - group \"10 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"Web app\" [level=4]\n    - heading \"Truespec\" [level=3]:\n      - link \"Truespec\":\n        - /url: https://truespec-k4y6.vercel.app/\n  - group \"11 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"Athletica\" [level=3]:\n      - link \"Athletica\":\n        - /url: https://athletica-blond.vercel.app/\n  - group \"12 / 12\":\n    - link \"Product\":\n      - /url: project-details.html\n      - img \"Product\"\n    - heading \"In progress\" [level=4]\n    - heading \"CP3-legacy\" [level=3]:\n      - link \"CP3-legacy\":\n        - /url: https://cp3-legacy.vercel.app/\n  - button \"Previous slide\"\n  - button \"Next slide\"\n- heading \"Milestones\" [level=2]\n- paragraph: © Makuo Ifedike built by whitefire\n- list:\n  - listitem:\n    - link \"Twitter\":\n      - /url: https://x.com/lwhitefire\n  - listitem:\n    - link \"LinkedIn\":\n      - /url: https://www.linkedin.com/in/makuoifedike/\n  - listitem:\n    - link \"Github\":\n      - /url: https://github.com/lordwhitefire\n- dialog \"Quick routing question\":\n  - text: Ifedike\n  - button \"Dismiss\": ×\n  - paragraph: \"Hey — quick question: are you here for a marketing site, a web app, or fixing something that's broken?\"\n  - link \"See the work\":\n    - /url: \"#work\"\n  - link \"About me\":\n    - /url: \"#about\"\n  - link \"Talk\":\n    - /url: \"#contact\"",
   "side": "ref",
   "state": "default",
   "actions": {

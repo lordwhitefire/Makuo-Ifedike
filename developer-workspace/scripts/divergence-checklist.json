@@ -1,6 +1,6 @@
 {
-  "ref": "http://localhost:3010/andle-portfolio-inline.html",
-  "build": "http://localhost:3009/andle-portfolio.html",
+  "ref": "http://localhost:3211/andle-portfolio.html",
+  "build": "http://localhost:3009/",
   "states": [
     { "name": "default", "actions": [{ "resize": [1200, 800] }] }
   ]
