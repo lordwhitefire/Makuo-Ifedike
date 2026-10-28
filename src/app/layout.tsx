@@ -23,29 +23,29 @@ const zillaSlab = Zilla_Slab({
 });
 
 export const metadata: Metadata = {
-  title: "Whitefire — Web apps & marketing sites, built for clients",
+  title: "Makuo Ifedike — I build and fix software for small businesses",
   description:
-    "Portfolio of Whitefire — full-stack work for clients: marketing sites, inventory platforms, and in-progress product builds.",
+    "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build marketing sites, web apps, and fix slow or half-built systems for small businesses.",
   keywords: [
-    "Whitefire",
+    "Makuo Ifedike",
     "portfolio",
     "web developer",
     "Next.js",
     "marketing sites",
-    "inventory app",
+    "web apps",
   ],
-  authors: [{ name: "Whitefire" }],
+  authors: [{ name: "Makuo Ifedike" }],
   openGraph: {
-    title: "Whitefire — Web apps & marketing sites, built for clients",
+    title: "Makuo Ifedike — I build and fix software for small businesses",
     description:
-      "Selected work: Interior-deco marketing site, Truespec inventory app, plus in-progress builds.",
+      "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build marketing sites, web apps, and fix slow or half-built systems for small businesses.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Whitefire — Portfolio",
+    title: "Makuo Ifedike — Portfolio",
     description:
-      "Selected work: marketing sites, inventory apps, and in-progress product builds.",
+      "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022.",
   },
 };
 
