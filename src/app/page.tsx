@@ -135,30 +135,31 @@ export default function Home() {
       {/* My Stack */}
       <section id="my-stack" className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight">My Stack</h2>
-            <p className="text-muted-foreground mt-4">
-              Tools and technologies I build with
-            </p>
+          <div className="client-section" style={{ paddingLeft: 30 }}>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight">My Stack</h2>
+              <p className="text-muted-foreground mt-4">
+                Tools and technologies I build with
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+              {stacks.map((s) => (
+                <div
+                  key={s.name}
+                  className="flex flex-col items-center justify-center p-4 rounded-lg border border-border hover:border-primary/50 transition-colors group"
+                >
+                  <img
+                    src={`/logos/${s.src}.svg`}
+                    alt={s.name}
+                    width="56"
+                    height="56"
+                    className="group-hover:scale-110 transition-transform"
+                  />
+                  <span className="mt-2 text-sm font-medium">{s.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
-            {stacks.map((s) => (
-              <div
-                key={s.name}
-                className="flex flex-col items-center justify-center p-4 rounded-lg border border-border hover:border-primary/50 transition-colors group"
-              >
-                <img
-                  src={`/logos/${s.src}.svg`}
-                  alt={s.name}
-                  width="56"
-                  height="56"
-                  className="group-hover:scale-110 transition-transform"
-                />
-                <span className="mt-2 text-sm font-medium">{s.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* About */}
