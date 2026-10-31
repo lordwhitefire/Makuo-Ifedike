@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design system — mirror of the reference (andle-portfolio).
+   Dark theme, Poppins base / Inter paragraphs / Zilla Slab display.
+   ------------------------------------------------------------------ */
+
+@theme inline {
+  --color-background: #141414;
+  --color-foreground: rgba(255, 255, 255, 0.75);
+
+  --color-card: #090909;
+  --color-card-foreground: rgba(255, 255, 255, 0.75);
+
+  --color-primary: #89715b;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #1c1c1c;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #1c1c1c;
+  --color-muted-foreground: rgba(255, 255, 255, 0.5);
+
+  --color-accent: #1c1c1c;
+  --color-accent-foreground: #ffffff;
+
+  --color-border: rgba(255, 255, 255, 0.35);
+  --color-input: rgba(255, 255, 255, 0.35);
+  --color-ring: #89715b;
+
+  --font-sans: var(--font-poppins);
+  --font-inter: var(--font-inter);
+  --font-display: var(--font-zilla);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-poppins), sans-serif;
+    font-size: 14px;
+    line-height: 1.714;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Reference display headings: Zilla Slab 700. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-zilla), serif;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}

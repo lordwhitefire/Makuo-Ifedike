@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HeroCarousel from "@/components/HeroCarousel";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -54,8 +55,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur border-b border-border">
-        <div className="container mx-auto px-4 py-4">
+      <header className="fixed top-0 w-full z-50 bg-transparent">
+        <div className="mx-auto w-full max-w-[1185px] px-4 py-[53px]">
           <div className="flex justify-between items-center">
             <div className="text-xl font-bold tracking-tighter">
               Makuo Ifedike
@@ -104,40 +105,15 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-b from-background/90 to-background overflow-hidden">
-        <div className="container mx-auto px-4 text-center z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-            Makuo Ifedike
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I build and fix software for small businesses. Slow, half-built, or
-            nobody-knows-how-it-works software — that&apos;s the work I take on.
-            One person, start to finish. No jargon to hide behind.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="#work"
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors"
-            >
-              See the work
-            </Link>
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-input bg-background hover:bg-accent rounded-md font-medium transition-colors"
-            >
-              Talk
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Hero — featured-projects showreel (reference treatment) */}
+      <HeroCarousel />
 
       {/* My Stack */}
       <section id="my-stack" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="client-section" style={{ paddingLeft: 30 }}>
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight">My Stack</h2>
+              <h2 className="font-sans text-sm font-normal tracking-normal text-foreground">My Stack</h2>
               <p className="text-muted-foreground mt-4">
                 Tools and technologies I build with
               </p>
@@ -164,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-20 bg-muted/50">
+      <section id="about" className="py-[120px] bg-card">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -175,10 +151,10 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold tracking-tight mb-4">
+              <h3 className="font-display text-5xl font-bold text-primary mb-4">
                 Makuo Ifedike
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              </h3>
+              <p className="font-sans text-xl text-white mb-6">
                 I build and fix software for small businesses.
               </p>
               <p className="mb-6">
@@ -194,10 +170,10 @@ export default function Home() {
       </section>
 
       {/* Why Choose */}
-      <section id="why-choose" className="py-20 bg-background">
+      <section id="why-choose" className="py-[120px] bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight">Why Choose Me</h2>
+            <h2 className="font-display text-[52px] font-bold leading-none text-primary">Why Choose Me</h2>
             <p className="text-muted-foreground mt-4">
               What I bring to every project
             </p>
@@ -225,7 +201,7 @@ export default function Home() {
                 key={item.title}
                 className="p-6 rounded-lg border border-border hover:border-primary/50 transition-colors"
               >
-                <h3 className="font-semibold mb-2">{item.title}</h3>
+                <h3 className="font-sans text-xl font-semibold text-white mb-2">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
@@ -233,9 +209,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Counters */}
-      <section id="counters" className="py-20 bg-muted/50">
+      {/* Milestones */}
+      <section id="counters" className="py-[120px] bg-background">
         <div className="container mx-auto px-4">
+          <h2 className="font-display text-[52px] font-bold leading-none text-primary text-center mb-8">
+            Milestones
+          </h2>
           <div className="grid md:grid-cols-2 gap-12">
             {[
               { number: "2", label: "complete & shipped" },
@@ -245,8 +224,8 @@ export default function Home() {
                 key={item.label}
                 className="flex flex-col items-center justify-center p-8 rounded-xl border border-border bg-background"
               >
-                <span className="text-4xl font-bold">{item.number}</span>
-                <span className="mt-2 text-sm text-muted-foreground">
+                <span className="font-display text-4xl font-bold text-foreground/50">{item.number}</span>
+                <span className="mt-2 font-sans text-sm text-foreground">
                   {item.label}
                 </span>
               </div>
@@ -256,10 +235,10 @@ export default function Home() {
       </section>
 
       {/* Work */}
-      <section id="work" className="py-20 bg-background">
+      <section id="work" className="py-[120px] bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight">Work</h2>
+            <h2 className="font-sans text-sm font-normal tracking-normal text-foreground">Work</h2>
             <p className="text-muted-foreground mt-4">
               Selected projects
             </p>
@@ -273,16 +252,16 @@ export default function Home() {
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="p-4">
-                  <h3 className="font-semibold mb-1">{p.name}</h3>
-                  <p className="text-xs text-primary font-medium">{p.category}</p>
-                  <p className="text-sm text-muted-foreground mt-2 line-clamp-3">
+                  <h3 className="font-sans text-xl font-semibold text-white mb-1">{p.name}</h3>
+                  <p className="font-sans text-sm text-foreground">{p.category}</p>
+                  <p className="font-sans text-sm text-foreground mt-2 line-clamp-3">
                     {p.description}
                   </p>
                   <a
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 text-sm font-medium text-primary hover:underline"
+                    className="mt-4 inline-block font-display text-xl font-bold text-white hover:text-primary transition-colors"
                   >
                     See project →
                   </a>
@@ -293,39 +272,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer id="contact" className="py-16 bg-background border-t border-border">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="text-sm text-muted-foreground">
+      {/* Contact + Footer — reference treatment */}
+      <footer id="contact" className="bg-card">
+        <div className="mx-auto w-full max-w-[1185px] px-4 pt-[275px] pb-[195px] text-center">
+          <h4 className="mb-2 font-inter text-2xl font-normal text-foreground/50">
+            Let&rsquo;s work together
+          </h4>
+          <a
+            href="mailto:mifedike@gmail.com"
+            className="font-display text-[clamp(36px,6vw,60px)] font-bold leading-[1.2] text-primary"
+          >
+            mifedike@gmail.com
+          </a>
+        </div>
+        <div className="mx-auto w-full max-w-[1185px] px-4 pt-[20px] pb-[70px]">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-border pt-[20px]">
+            <p className="font-sans text-sm text-foreground">
               © Makuo Ifedike built by whitefire
             </p>
-            <div className="flex space-x-6 text-sm">
-              <a
-                href="https://github.com/lordwhitefire"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                Github
-              </a>
-              <a
-                href="https://x.com/lwhitefire"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://www.linkedin.com/in/makuoifedike/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                LinkedIn
-              </a>
-            </div>
+            <ul className="flex space-x-6 font-sans text-base">
+              <li>
+                <a
+                  href="https://x.com/lwhitefire"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#00ccff] transition-colors"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/makuoifedike/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/lordwhitefire"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground transition-colors"
+                >
+                  Github
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </footer>

@@ -51,4 +51,7 @@ prompt
 
 server.log
 # Skills directory
+
+developer-workspace/scripts/developer-workspace/
+
 /skills/
