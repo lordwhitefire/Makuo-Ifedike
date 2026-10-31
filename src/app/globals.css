@@ -52,3 +52,46 @@
     color: #ffffff;
   }
 }
+
+/* About text — reference wow.js fadeInRight (2s, .5s delay) */
+[data-reveal-state="hidden"] {
+  opacity: 0;
+  transform: translateX(100%);
+}
+[data-reveal-state="shown"] {
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 2s ease 0.5s,
+    transform 2s ease 0.5s;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal-state="hidden"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* About section — reference .section-padding rhythm */
+.about-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .about-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) {
+  .about-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

@@ -1,5 +1,7 @@
-import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
+import SiteNav from "@/components/SiteNav";
+import TechStrip from "@/components/TechStrip";
+import Reveal from "@/components/Reveal";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -20,7 +22,7 @@ const projects = [
       "A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.",
     url: "https://interior-deco-kappa.vercel.app/",
     image:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2ea9131?auto=format&fit=crop&w=480&h=730&q=80",
+      "/projects/work/interior-deco.png",
   },
   {
     name: "Truespec",
@@ -29,7 +31,7 @@ const projects = [
       "Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.",
     url: "https://truespec-k4y6.vercel.app/",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=480&h=730&q=80",
+      "/projects/work/truespec.png",
   },
   {
     name: "Athletica",
@@ -38,7 +40,7 @@ const projects = [
       "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
     url: "https://athletica-blond.vercel.app/",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=480&h=730&q=80",
+      "/projects/work/athletica.png",
   },
   {
     name: "CP3-legacy",
@@ -47,7 +49,7 @@ const projects = [
       "Chris Paul fan site / sports experience: news, player overview, full statistics, biography, gallery, shop, account and wishlist.",
     url: "https://cp3-legacy.vercel.app/",
     image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=480&h=730&q=80",
+      "/projects/work/cp3-legacy.png",
   },
 ];
 
@@ -61,46 +63,7 @@ export default function Home() {
             <div className="text-xl font-bold tracking-tighter">
               Makuo Ifedike
             </div>
-            <nav className="hidden md:flex space-x-8 text-sm">
-              <Link href="/" className="hover:text-primary/80 transition-colors">
-                Home
-              </Link>
-              <Link href="#work" className="hover:text-primary/80 transition-colors">
-                Work
-              </Link>
-              <Link href="#about" className="hover:text-primary/80 transition-colors">
-                About
-              </Link>
-              <Link href="#contact" className="hover:text-primary/80 transition-colors">
-                Contact
-              </Link>
-            </nav>
-            <div className="flex space-x-4 text-sm">
-              <a
-                href="https://github.com/lordwhitefire"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                Github
-              </a>
-              <a
-                href="https://x.com/lwhitefire"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://www.linkedin.com/in/makuoifedike/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary/80 transition-colors"
-              >
-                LinkedIn
-              </a>
-            </div>
+            <SiteNav />
           </div>
         </div>
       </header>
@@ -108,66 +71,51 @@ export default function Home() {
       {/* Hero — featured-projects showreel (reference treatment) */}
       <HeroCarousel />
 
-      {/* My Stack */}
-      <section id="my-stack" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="client-section" style={{ paddingLeft: 30 }}>
-            <div className="text-center mb-16">
-              <h2 className="font-sans text-sm font-normal tracking-normal text-foreground">My Stack</h2>
-              <p className="text-muted-foreground mt-4">
-                Tools and technologies I build with
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
-              {stacks.map((s) => (
-                <div
-                  key={s.name}
-                  className="flex flex-col items-center justify-center p-4 rounded-lg border border-border hover:border-primary/50 transition-colors group"
-                >
-                  <img
-                    src={`/logos/${s.src}.svg`}
-                    alt={s.name}
-                    width="56"
-                    height="56"
-                    className="group-hover:scale-110 transition-transform"
-                  />
-                  <span className="mt-2 text-sm font-medium">{s.name}</span>
-                </div>
-              ))}
+      {/* Reference dark wrapper: stack + about share #090909, so the stack
+          hairline stays visible where the about section overlaps it */}
+      <div className="bg-card">
+      {/* My Stack — reference: bare logo strip, no heading */}
+      <section id="my-stack" aria-label="My Stack" className="relative z-[2] pl-[30px]">
+        <div className="mx-auto w-full max-w-[1155px] px-[15px]">
+          <div className="border-b border-white/15 py-[75px]">
+            <TechStrip stacks={stacks} />
+          </div>
+        </div>
+      </section>
+
+      {/* About — reference treatment: plain image block left, text right half */}
+      <section
+        id="about"
+        className="about-padding relative -mb-[5px] -mt-[15px] overflow-x-clip"
+      >
+        <div
+          aria-hidden="true"
+          className="relative mx-auto mb-10 h-[323px] w-[320px] bg-[url('/images/portrait.png')] bg-contain bg-no-repeat bg-[position:100%_100%] min-[576px]:h-[545px] min-[576px]:w-[540px] md:h-[727px] md:w-[720px] lg:absolute lg:bottom-0 lg:left-0 lg:mb-0 lg:h-[595px] lg:w-1/2"
+        />
+        <div className="mx-auto w-full max-w-[1185px]">
+          <div className="flex justify-end">
+            <div className="w-full px-[15px] lg:w-1/2">
+              <Reveal>
+                <h3 className="font-display text-[28px] font-bold uppercase leading-[1.2] text-primary min-[576px]:text-[48px]">
+                  Makuo Ifedike
+                </h3>
+                <p className="mb-[25px] mt-9 font-sans text-base leading-8 text-white min-[576px]:text-xl">
+                  I build and fix software for small businesses.
+                </p>
+                <p className="mb-[25px] mt-[25px] font-sans text-sm leading-6 text-white">
+                  If something is slow, half-built, or nobody knows how it works
+                  anymore — that&apos;s the work I take on.
+                </p>
+                <p className="mb-[25px] mt-[25px] font-sans text-sm leading-6 text-white">
+                  One person, start to finish. No jargon to hide behind.
+                </p>
+              </Reveal>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About */}
-      <section id="about" className="py-[120px] bg-card">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <img
-                src="/images/portrait.png"
-                alt="Makuo Ifedike"
-                className="w-full max-w-md rounded-lg shadow-lg border border-border"
-              />
-            </div>
-            <div>
-              <h3 className="font-display text-5xl font-bold text-primary mb-4">
-                Makuo Ifedike
-              </h3>
-              <p className="font-sans text-xl text-white mb-6">
-                I build and fix software for small businesses.
-              </p>
-              <p className="mb-6">
-                If something is slow, half-built, or nobody knows how it works
-                anymore — that&apos;s the work I take on.
-              </p>
-              <p className="mb-6">
-                One person, start to finish. No jargon to hide behind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Why Choose */}
       <section id="why-choose" className="py-[120px] bg-background">
