@@ -159,3 +159,35 @@ run whenever a project ships a visible change.
   Work cards — the same 404 URL the reference uses.
 - Owner-directed deviations, left as-is: hero showreel (4 screenshot slides, autoplay,
   counter, eyebrow, gradient + hairline grid), Athletica localhost link (TODO deploy).
+
+## 2026-10-31 — Approved items #1–#12 executed (hero #13 untouched)
+
+All twelve approved convergence items were built and verified at runtime on `:3009` at
+1200×800. Verification was by measured values (not assumption); the stale-server trap
+(an old `bun` process holding :3009 while a fresh build sat on disk) was fixed by
+`/tmp/opencode/restart3009.sh`, which kills the exact listener PID, builds, copies
+static+public into `.next/standalone/`, then starts and confirms the new PID.
+
+| # | Item | Verified build values |
+|---|------|-----------------------|
+| 1 | Sticky header, text logo kept | transparent/149px at top → `rgb(17,17,17)` #111 / 87px scrolled; inner padding 53→22 |
+| 2 | Nav drawer x | opens at **x=885**, 300 wide (right edge = 1185 content width) |
+| 3 | Escape-to-close removed | Escape leaves drawer open (x stays 885) |
+| 4 | Why-Choose icons + More + bronze active fill | 4 SVGs, 4 "More →"; hovered card `rgb(137,113,91)`, last hovered stays active, moves on new hover |
+| 5 | Why-Choose counter row | 3 counters 4/2/2, 50px/600 `#89715b`; labels PROJECTS LIVE / COMPLETE & SHIPPED / IN ACTIVE DEVELOPMENT, 16px/600 uppercase white-75; hairline rgba(255,255,255,.15), padding-top 70 |
+| 6 | Milestones year rows | 2022/2025/2026, sub-labels Founded/Growth/Today, titles, links `#about`/`#work`/external, 3 columns |
+| 7 | Work tabs + carousel + 52px heading | heading 52px/700 bronze Zilla; 4 tabs; 2 arrows; 4 cards per view at 216px; bronze hover panel opacity 0→1 |
+| 8 | Footer hover states | mail #89715b→#fff; Twitter #00ccff→#89715b; LinkedIn/Github white-75→#89715b |
+| 9 | Back-to-top | hidden at top; 50×50 #090909 z28, bottom 50 / right 50 (layout), 35×35 at ≤575; visible >600px; hover #89715b; click → 0 in 1500ms |
+| 10 | wow reveals | 10 Reveal nodes; Why-Choose 2s delays .3/.5/.7/.9; Milestones 1.5s .3/.5/.7; footer h4 2s/.3 + mail 2s/.5; About fadeInRight 2s/.5; hidden until scrolled |
+| 11 | Odometer | each `.odometer` observed individually; 4/2/2 counters 0→4/2/2; year rows 0→2022/2025/2026 |
+| 12 | Engagement layer ×9 | bubble 3s/340px/#1a1613/z9999, auto-dismiss 14s; returning msg; greeting on Athletica only; 50% banner 1185×68/z9998; 45s idle panel 340px/z9999; exit modal 440px/z10000 + Escape; 60 confetti + 8s toast; 4 work tooltips; LinkedIn/Twitter referrer branch |
+
+**Structural fix:** section order was Why-Choose → Milestones → Work; the reference is
+Why-Choose → Work → Milestones → Contact. The two sections were swapped so the runtime
+order now matches: Hero → About → Why-Choose (1500, 808) → Work (2308, 887) →
+Milestones (3195, 554) → Contact (3749, 717); page height 4466 (hero still 800, the
+owner-approved deviation).
+
+**Not exercised:** nothing in the twelve is unverified. The referrer branch was exercised
+with a LinkedIn referer (`document.referrer` set, bubble showed the LinkedIn opener).

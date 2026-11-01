@@ -48,6 +48,14 @@ const slides = [
 
 export default function HeroCarousel() {
   const [index, setIndex] = useState(0);
+  const [greeting, setGreeting] = useState("");
+
+  useEffect(() => {
+    const h = new Date().getHours();
+    const part =
+      h < 12 ? "Good morning." : h < 18 ? "Good afternoon." : "Good evening.";
+    setGreeting(`${part} Software, fixed.`);
+  }, []);
 
   useEffect(() => {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -99,6 +107,14 @@ export default function HeroCarousel() {
         >
           Portfolio — Onitsha, Nigeria
         </span>
+        {slide.name === "Athletica" && greeting && (
+          <span
+            className="mb-2 block font-inter text-[0.85rem] font-medium uppercase tracking-[0.25em]"
+            style={{ color: "rgba(255,255,255,0.55)" }}
+          >
+            {greeting}
+          </span>
+        )}
         <h4 className="mb-2 font-sans text-xl text-white">{slide.category}</h4>
         <h1 className="font-display text-[clamp(48px,9vw,100px)] font-bold leading-[1] tracking-tight text-white">
           {slide.name}

@@ -1,7 +1,12 @@
+"use client";
+
+import { useEffect, useState, useRef } from "react";
 import HeroCarousel from "@/components/HeroCarousel";
 import SiteNav from "@/components/SiteNav";
 import TechStrip from "@/components/TechStrip";
 import Reveal from "@/components/Reveal";
+import BackToTop from "@/components/BackToTop";
+import EngagementLayer from "@/components/EngagementLayer";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -23,6 +28,7 @@ const projects = [
     url: "https://interior-deco-kappa.vercel.app/",
     image:
       "/projects/work/interior-deco.png",
+    tooltip: "Marketing site for an interior decoration studio",
   },
   {
     name: "Truespec",
@@ -32,6 +38,7 @@ const projects = [
     url: "https://truespec-k4y6.vercel.app/",
     image:
       "/projects/work/truespec.png",
+    tooltip: "Inventory + public site, two surfaces, one codebase",
   },
   {
     name: "Athletica",
@@ -41,6 +48,7 @@ const projects = [
     url: "https://athletica-blond.vercel.app/",
     image:
       "/projects/work/athletica.png",
+    tooltip: "Affiliate platform in preview for a client",
   },
   {
     name: "CP3-legacy",
@@ -50,15 +58,60 @@ const projects = [
     url: "https://cp3-legacy.vercel.app/",
     image:
       "/projects/work/cp3-legacy.png",
+    tooltip: "Athlete-focused software in development",
   },
 ];
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 0);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const animate = (el: HTMLElement) => {
+      const target = parseInt(el.getAttribute("data-target") || "0", 10);
+      const duration = 1500;
+      const start = performance.now();
+      const step = (now: number) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(target * ease).toString();
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target.toString();
+        }
+      };
+      requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            animate(entry.target as HTMLElement);
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold: 0.1 },
+    );
+
+    const odometers = [...document.querySelectorAll<HTMLElement>(".odometer")];
+    odometers.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="fixed top-0 w-full z-50 bg-transparent">
-        <div className="mx-auto w-full max-w-[1185px] px-4 py-[53px]">
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#111]" : "bg-transparent"}`}>
+        <div className={`mx-auto w-full max-w-[1185px] px-4 transition-all duration-300 ${scrolled ? "py-[22px]" : "py-[53px]"}`}>
           <div className="flex justify-between items-center">
             <div className="text-xl font-bold tracking-tighter">
               Makuo Ifedike
@@ -118,7 +171,7 @@ export default function Home() {
       </div>
 
       {/* Why Choose */}
-      <section id="why-choose" className="py-[120px] bg-background">
+      <section id="why-choose" className="pt-[120px] pb-0 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-display text-[52px] font-bold leading-none text-primary">Why Choose Me</h2>
@@ -131,28 +184,171 @@ export default function Home() {
               {
                 title: "Marketing sites",
                 desc: "Public-facing pages that turn visits into enquiries.",
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                  </svg>
+                ),
               },
               {
                 title: "Web apps",
                 desc: "Custom applications built with Next.js, React, TypeScript.",
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                ),
               },
               {
                 title: "Fix slow systems",
                 desc: "Debugging and refactoring half-built or broken software.",
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065" />
+                  </svg>
+                ),
               },
               {
                 title: "Small business focus",
                 desc: "One person, start to finish. No jargon to hide behind.",
+                icon: (
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                ),
               },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="p-6 rounded-lg border border-border hover:border-primary/50 transition-colors"
-              >
-                <h3 className="font-sans text-xl font-semibold text-white mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <Reveal key={item.title} variant="up" duration={2} delay={0.3 + i * 0.2}>
+                <div
+                  onMouseEnter={() => setActiveIndex(i)}
+                  className={`p-6 rounded-lg border border-border transition-colors duration-300 ${activeIndex === i ? "bg-[#89715b]" : ""}`}
+                >
+                  <div className="mb-4">{item.icon}</div>
+                  <h3 className={`font-sans text-xl font-semibold mb-2 ${activeIndex === i ? "text-white" : "text-white"}`}>{item.title}</h3>
+                  <p className={`text-sm mb-4 ${activeIndex === i ? "text-white" : "text-muted-foreground"}`}>{item.desc}</p>
+                  <a
+                    href="#"
+                    className={`text-sm inline-block transition-colors ${activeIndex === i ? "text-white" : "text-primary"}`} onClick={(e) => e.preventDefault()}
+                  >
+                    More →
+                  </a>
+                </div>
+              </Reveal>
             ))}
+          </div>
+
+          {/* Counters — reference: 4 / 2 / 2, 50px/600 bronze, odometer, hairline */}
+          <div className="mt-[100px] border-t border-white/15 pt-[70px]">
+            <div className="grid md:grid-cols-3">
+              {[
+                { target: "4", label: "Projects live" },
+                { target: "2", label: "Complete & shipped" },
+                { target: "2", label: "In active development" },
+              ].map((c) => (
+                <div key={c.label} className="pt-[25px]">
+                  <span
+                    className="odometer block font-display text-[50px] font-semibold leading-none text-primary"
+                    data-target={c.target}
+                  >
+                    0
+                  </span>
+                  <p className="mt-2 font-sans text-base font-semibold uppercase text-white/75">
+                    {c.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Work */}
+      <section id="work" className="py-[120px] bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-12">
+            <div>
+              <h2 className="font-display text-[52px] font-bold leading-none text-primary">Work</h2>
+              <p className="text-muted-foreground mt-4">Selected projects</p>
+            </div>
+            <div className="flex gap-2 mt-4 lg:mt-0">
+              {projects.map((p) => (
+                <button
+                  key={p.name}
+                  className="px-4 py-2 text-sm font-medium text-foreground/50 hover:text-primary transition-colors"
+                >
+                  {p.name}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative">
+            <button
+              onClick={() => {
+                const el = carouselRef.current;
+                if (el) el.scrollBy({ left: -320, behavior: "smooth" });
+              }}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hidden md:flex"
+              aria-label="Previous"
+            >
+              <span className="text-xl font-bold text-white">‹</span>
+            </button>
+            <div
+              ref={carouselRef}
+              className="flex overflow-x-hidden scroll-snap-x scroll-snap-mandatory pb-8"
+            >
+              <div className="flex snap-start" id="work-carousel">
+                {projects.map((p) => (
+                  <div key={p.name} className="snap-start shrink-0 w-[calc(25%-2rem)] px-2">
+                    <div className="group relative rounded-xl overflow-hidden border border-border bg-background h-[475px]">
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="w-full h-[256px] object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      {/* Hover panel — bronze overlay with project info */}
+                      <div className="absolute inset-0 bg-[#89715b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
+                        <h3 className="font-sans text-xl font-semibold text-white mb-2" title={p.tooltip}>{p.name}</h3>
+                        <p className="font-sans text-sm text-white mb-4">{p.category}</p>
+                        <p className="font-sans text-sm text-white/90 line-clamp-3 mb-4">{p.description}</p>
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block font-display text-xl font-bold text-white hover:underline"
+                        >
+                          See project →
+                        </a>
+                      </div>
+                      {/* Default state — content below image */}
+                      <div className="p-4">
+                        <h3 className="font-sans text-xl font-semibold text-white mb-1" title={p.tooltip}>{p.name}</h3>
+                        <p className="font-sans text-sm text-foreground">{p.category}</p>
+                        <p className="font-sans text-sm text-foreground mt-2 line-clamp-3">{p.description}</p>
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-block font-display text-xl font-bold text-white hover:text-primary transition-colors"
+                        >
+                          See project →
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <button
+              onClick={() => {
+                const el = carouselRef.current;
+                if (el) el.scrollBy({ left: 320, behavior: "smooth" });
+              }}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hidden md:flex"
+              aria-label="Next"
+            >
+              <span className="text-xl font-bold text-white">›</span>
+            </button>
           </div>
         </div>
       </section>
@@ -163,58 +359,47 @@ export default function Home() {
           <h2 className="font-display text-[52px] font-bold leading-none text-primary text-center mb-8">
             Milestones
           </h2>
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-3 gap-12">
             {[
-              { number: "2", label: "complete & shipped" },
-              { number: "2", label: "in active development" },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="flex flex-col items-center justify-center p-8 rounded-xl border border-border bg-background"
-              >
-                <span className="font-display text-4xl font-bold text-foreground/50">{item.number}</span>
-                <span className="mt-2 font-sans text-sm text-foreground">
-                  {item.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Work */}
-      <section id="work" className="py-[120px] bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-sans text-sm font-normal tracking-normal text-foreground">Work</h2>
-            <p className="text-muted-foreground mt-4">
-              Selected projects
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {projects.map((p) => (
-              <div key={p.name} className="group relative rounded-xl overflow-hidden border border-border bg-background">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="p-4">
-                  <h3 className="font-sans text-xl font-semibold text-white mb-1">{p.name}</h3>
-                  <p className="font-sans text-sm text-foreground">{p.category}</p>
-                  <p className="font-sans text-sm text-foreground mt-2 line-clamp-3">
-                    {p.description}
-                  </p>
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-block font-display text-xl font-bold text-white hover:text-primary transition-colors"
+              {
+                year: "2022",
+                sub: "Founded",
+                title: "Started building software for small businesses",
+                link: "#about",
+              },
+              {
+                year: "2025",
+                sub: "Growth",
+                title: "Expanded to web apps and e-commerce",
+                link: "#work",
+              },
+              {
+                year: "2026",
+                sub: "Today",
+                title: "Serving clients across industries",
+                link: "https://makuo-ifedike.com",
+              },
+            ].map((item, i) => (
+              <Reveal key={item.year} variant="up" duration={1.5} delay={0.3 + i * 0.2}>
+                <div className="flex flex-col items-center justify-center p-8 rounded-xl border border-border bg-background group">
+                  <span
+                    className="font-display text-4xl font-bold text-primary odometer"
+                    data-target={item.year}
                   >
-                    See project →
+                    0
+                  </span>
+                  <span className="mt-2 font-sans text-sm text-foreground/50">{item.sub}</span>
+                  <span className="mt-4 font-sans text-sm font-semibold text-foreground">{item.title}</span>
+                  <a
+                    href={item.link}
+                    className="mt-6 inline-block font-sans text-xs uppercase tracking-wider text-primary hover:underline transition-colors"
+                    target={item.link.startsWith("#") ? undefined : "_blank"}
+                    rel={item.link.startsWith("#") ? undefined : "noopener noreferrer"}
+                  >
+                    {item.link.startsWith("#") ? "View →" : "Visit →"}
                   </a>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -222,16 +407,20 @@ export default function Home() {
 
       {/* Contact + Footer — reference treatment */}
       <footer id="contact" className="bg-card">
-        <div className="mx-auto w-full max-w-[1185px] px-4 pt-[275px] pb-[195px] text-center">
-          <h4 className="mb-2 font-inter text-2xl font-normal text-foreground/50">
-            Let&rsquo;s work together
-          </h4>
-          <a
-            href="mailto:mifedike@gmail.com"
-            className="font-display text-[clamp(36px,6vw,60px)] font-bold leading-[1.2] text-primary"
-          >
-            mifedike@gmail.com
-          </a>
+        <div className="footer-info-box mx-auto w-full max-w-[1185px] px-4 pt-[275px] pb-[195px] text-center">
+          <Reveal variant="up" duration={2} delay={0.3}>
+            <h4 className="mb-2 font-inter text-2xl font-normal text-foreground/50">
+              Let&rsquo;s work together
+            </h4>
+          </Reveal>
+          <Reveal variant="up" duration={2} delay={0.5}>
+            <a
+              href="mailto:mifedike@gmail.com"
+              className="font-display text-[clamp(36px,6vw,60px)] font-bold leading-[1.2] text-primary transition-colors hover:text-white"
+            >
+              mifedike@gmail.com
+            </a>
+          </Reveal>
         </div>
         <div className="mx-auto w-full max-w-[1185px] px-4 pt-[20px] pb-[70px]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-border pt-[20px]">
@@ -244,7 +433,7 @@ export default function Home() {
                   href="https://x.com/lwhitefire"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#00ccff] transition-colors"
+                  className="text-[#00ccff] transition-colors hover:text-[#89715b]"
                 >
                   Twitter
                 </a>
@@ -254,7 +443,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/makuoifedike/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground transition-colors"
+                  className="text-foreground transition-colors hover:text-[#89715b]"
                 >
                   LinkedIn
                 </a>
@@ -264,7 +453,7 @@ export default function Home() {
                   href="https://github.com/lordwhitefire"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground transition-colors"
+                  className="text-foreground transition-colors hover:text-[#89715b]"
                 >
                   Github
                 </a>
@@ -273,6 +462,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <BackToTop />
+      <EngagementLayer />
     </main>
   );
 }

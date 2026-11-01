@@ -56,18 +56,29 @@
 /* About text — reference wow.js fadeInRight (2s, .5s delay) */
 [data-reveal-state="hidden"] {
   opacity: 0;
+  visibility: hidden;
+}
+[data-reveal][data-variant="up"][data-reveal-state="hidden"] {
+  transform: translateY(30px);
+}
+[data-reveal][data-variant="right"][data-reveal-state="hidden"] {
   transform: translateX(100%);
+}
+[data-reveal][data-variant="left"][data-reveal-state="hidden"] {
+  transform: translateX(-100%);
 }
 [data-reveal-state="shown"] {
   opacity: 1;
-  transform: translateX(0);
+  visibility: visible;
+  transform: none;
   transition:
-    opacity 2s ease 0.5s,
-    transform 2s ease 0.5s;
+    opacity var(--reveal-duration, 2s) ease var(--reveal-delay, 0.5s),
+    transform var(--reveal-duration, 2s) ease var(--reveal-delay, 0.5s);
 }
 @media (prefers-reduced-motion: reduce) {
   [data-reveal-state="hidden"] {
     opacity: 1;
+    visibility: visible;
     transform: none;
   }
 }
@@ -94,4 +105,21 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
+
+/* Engagement layer — confetti fall (#7) */
+@keyframes eng-fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+.eng-confetti-piece {
+  animation-name: eng-fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }

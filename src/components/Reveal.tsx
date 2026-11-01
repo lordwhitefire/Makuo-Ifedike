@@ -2,13 +2,30 @@
 
 import { useLayoutEffect, useRef } from "react";
 
+type RevealProps = {
+  children: React.ReactNode;
+  /** wow.js animation family: fadeInUp / fadeInRight / fadeInLeft */
+  variant?: "up" | "right" | "left";
+  /** seconds */
+  duration?: number;
+  /** seconds */
+  delay?: number;
+  className?: string;
+};
+
 /**
- * Scroll reveal — the reference's About text uses wow.js `fadeInRight`
- * (2s, 0.5s delay, slides in from 100% right). This reproduces it with an
- * IntersectionObserver on a stationary wrapper, and does nothing when the
- * user prefers reduced motion.
+ * Scroll reveal — reproduces the reference's wow.js reveals with an
+ * IntersectionObserver (offset 0, once). Each element starts hidden
+ * (`visibility: hidden`, like wow.js) and animates in when it enters view.
+ * Does nothing when the user prefers reduced motion.
  */
-export default function Reveal({ children }: { children: React.ReactNode }) {
+export default function Reveal({
+  children,
+  variant = "right",
+  duration = 2,
+  delay = 0.5,
+  className,
+}: RevealProps) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
 
@@ -36,8 +53,18 @@ export default function Reveal({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <div ref={wrapRef}>
-      <div ref={innerRef} data-reveal>
+    <div ref={wrapRef} className={className}>
+      <div
+        ref={innerRef}
+        data-reveal
+        data-variant={variant}
+        style={
+          {
+            "--reveal-duration": `${duration}s`,
+            "--reveal-delay": `${delay}s`,
+          } as React.CSSProperties
+        }
+      >
         {children}
       </div>
     </div>

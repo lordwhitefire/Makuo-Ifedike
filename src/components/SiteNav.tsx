@@ -22,14 +22,6 @@ export default function SiteNav() {
   const firstRender = useRef(true);
 
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, []);
-
-  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -79,7 +71,7 @@ export default function SiteNav() {
         aria-modal="true"
         aria-label="Site menu"
         inert={!open}
-        className={`fixed right-0 top-0 z-[1130] h-full w-[300px] max-w-full bg-white transition-transform duration-700 ease ${
+        className={`fixed right-[15px] top-0 z-[1130] h-full w-[300px] max-w-full bg-white transition-transform duration-700 ease ${
           open ? "translate-x-0 delay-500" : "translate-x-[101%]"
         }`}
       >
