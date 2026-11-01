@@ -45,8 +45,8 @@ export default function SiteNav() {
         aria-label="Open menu"
         aria-expanded={open}
         aria-controls="site-drawer"
-        onClick={() => setOpen(true)}
-        className="flex h-[43px] w-[23px] flex-col items-center justify-center gap-[5px] text-foreground"
+        disabled
+        className="flex h-[43px] w-[23px] flex-col items-center justify-center gap-[5px] text-foreground opacity-0 pointer-events-none select-none"
       >
         <span className="block h-[1.5px] w-[23px] bg-current" />
         <span className="block h-[1.5px] w-[23px] bg-current" />
