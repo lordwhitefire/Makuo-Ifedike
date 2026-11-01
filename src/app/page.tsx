@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import HeroCarousel from "@/components/HeroCarousel";
 import SiteNav from "@/components/SiteNav";
 import TechStrip from "@/components/TechStrip";
 import Reveal from "@/components/Reveal";
 import BackToTop from "@/components/BackToTop";
 import EngagementLayer from "@/components/EngagementLayer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -26,6 +28,7 @@ const projects = [
     description:
       "A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.",
     url: "https://interior-deco-kappa.vercel.app/",
+    thumbUrl: "https://interior-deco-kappa.vercel.app/",
     image:
       "/projects/work/interior-deco.png",
     tooltip: "Marketing site for an interior decoration studio",
@@ -36,6 +39,7 @@ const projects = [
     description:
       "Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.",
     url: "https://truespec-k4y6.vercel.app/",
+    thumbUrl: "https://truespec-k4y6.vercel.app/",
     image:
       "/projects/work/truespec.png",
     tooltip: "Inventory + public site, two surfaces, one codebase",
@@ -46,6 +50,8 @@ const projects = [
     description:
       "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
     url: "https://athletica-blond.vercel.app/",
+    thumbUrl:
+      "http://localhost:3011/product/adidas-predator-elite-ft-fg-white-light-green",
     image:
       "/projects/work/athletica.png",
     tooltip: "Affiliate platform in preview for a client",
@@ -56,16 +62,19 @@ const projects = [
     description:
       "Chris Paul fan site / sports experience: news, player overview, full statistics, biography, gallery, shop, account and wishlist.",
     url: "https://cp3-legacy.vercel.app/",
+    thumbUrl: "https://cp3-legacy.vercel.app/",
     image:
       "/projects/work/cp3-legacy.png",
     tooltip: "Athlete-focused software in development",
   },
 ];
 
+const workTabs = ["All", "marketing site", "web app", "in-progress"];
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(1);
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const [activeWorkTab, setActiveWorkTab] = useState(0);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -102,9 +111,58 @@ export default function Home() {
       { threshold: 0.1 },
     );
 
-    const odometers = [...document.querySelectorAll<HTMLElement>(".odometer")];
+    // Counter digits use the reference odometer library; the year rows keep
+    // the build's own count-up.
+    const odometers = [...document.querySelectorAll<HTMLElement>(".odometer:not(.count)")];
     odometers.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    let observer: IntersectionObserver | null = null;
+    const els = [...document.querySelectorAll<HTMLElement>(".count.odometer")];
+    if (!els.length) return;
+
+    import("odometer").then((mod) => {
+      if (cancelled) return;
+      type OdometerCtor = new (options: Record<string, unknown>) => {
+        update: (value: number) => void;
+      };
+      const Odometer = ((mod as unknown as { default?: OdometerCtor }).default ??
+        mod) as unknown as OdometerCtor;
+      const items = els.map((el) => {
+        const target = Number(el.dataset.target ?? "0");
+        el.textContent = "0";
+        const odometer = new Odometer({
+          el,
+          value: 0,
+          format: "d",
+          duration: 2000,
+        });
+        return { el, odometer, target };
+      });
+
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            const item = items.find((i) => i.el === entry.target);
+            if (item) {
+              item.odometer.update(item.target);
+              observer?.unobserve(entry.target);
+            }
+          }
+        },
+        { threshold: 0.1 },
+      );
+      items.forEach((item) => observer!.observe(item.el));
+    });
+
+    return () => {
+      cancelled = true;
+      observer?.disconnect();
+    };
   }, []);
 
   return (
@@ -237,19 +295,26 @@ export default function Home() {
                 { target: "4", line1: "projects", line2: "live" },
                 { target: "2", line1: "complete &", line2: "shipped" },
                 { target: "2", line1: "in active", line2: "development" },
-              ].map((c) => (
-                <div key={`${c.line1}-${c.line2}`} className="counter-box">
-                  <div className="counter-count">
-                    <span className="count odometer" data-target={c.target}>
-                      0
-                    </span>
+              ].map((c, i) => (
+                <Reveal
+                  key={`${c.line1}-${c.line2}`}
+                  variant="up"
+                  duration={2}
+                  delay={0.3 + i * 0.3}
+                >
+                  <div className="counter-box">
+                    <div className="counter-count">
+                      <span className="count odometer" data-target={c.target}>
+                        0
+                      </span>
+                    </div>
+                    <div className="counter-content">
+                      <p>
+                        {c.line1} <br /> {c.line2}
+                      </p>
+                    </div>
                   </div>
-                  <div className="counter-content">
-                    <p>
-                      {c.line1} <br /> {c.line2}
-                    </p>
-                  </div>
-                </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -257,145 +322,139 @@ export default function Home() {
       </section>
 
       {/* Work */}
-      <section id="work" className="py-[120px] bg-background">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between mb-12">
-            <div>
-              <h2 className="font-display text-[52px] font-bold leading-none text-primary">Work</h2>
-              <p className="text-muted-foreground mt-4">Selected projects</p>
+      <section id="work" className="work-section">
+        <div className="work-container">
+          <div className="work-header">
+            <div className="work-title-col">
+              <h2 className="work-title">Work</h2>
             </div>
-            <div className="flex gap-2 mt-4 lg:mt-0">
-              {projects.map((p) => (
-                <button
-                  key={p.name}
-                  className="px-4 py-2 text-sm font-medium text-foreground/50 hover:text-primary transition-colors"
-                >
-                  {p.name}
-                </button>
-              ))}
+            <div className="work-tabs-col">
+              <ul className="work-tabs">
+                {workTabs.map((tab, i) => (
+                  <li key={tab} className="work-tab-item">
+                    <button
+                      type="button"
+                      className={`work-tab${activeWorkTab === i ? " active" : ""}`}
+                      onClick={() => setActiveWorkTab(i)}
+                    >
+                      {tab}
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
+        </div>
 
-          <div className="relative">
-            <button
-              onClick={() => {
-                const el = carouselRef.current;
-                if (el) el.scrollBy({ left: -320, behavior: "smooth" });
+        <div className="work-tab-content">
+          <div key={activeWorkTab} className="work-pane">
+            <Swiper
+              modules={[Navigation]}
+              navigation
+              loop
+              slidesPerView={4}
+              spaceBetween={1}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 2 },
+                992: { slidesPerView: 3 },
+                1200: { slidesPerView: 4 },
               }}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hidden md:flex"
-              aria-label="Previous"
+              className="work-carousel"
             >
-              <span className="text-xl font-bold text-white">‹</span>
-            </button>
-            <div
-              ref={carouselRef}
-              className="flex overflow-x-hidden scroll-snap-x scroll-snap-mandatory pb-8"
-            >
-              <div className="flex snap-start" id="work-carousel">
-                {projects.map((p) => (
-                  <div key={p.name} className="snap-start shrink-0 w-[calc(25%-2rem)] px-2">
-                    <div className="group relative rounded-xl overflow-hidden border border-border bg-background h-[475px]">
-                      <img
-                        src={p.image}
-                        alt={p.name}
-                        className="w-full h-[256px] object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      {/* Hover panel — bronze overlay with project info */}
-                      <div className="absolute inset-0 bg-[#89715b]/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
-                        <h3 className="font-sans text-xl font-semibold text-white mb-2" title={p.tooltip}>{p.name}</h3>
-                        <p className="font-sans text-sm text-white mb-4">{p.category}</p>
-                        <p className="font-sans text-sm text-white/90 line-clamp-3 mb-4">{p.description}</p>
-                        <a
-                          href={p.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-block font-display text-xl font-bold text-white hover:underline"
-                        >
-                          See project →
-                        </a>
+              {[0, 1, 2].flatMap((copy) =>
+                projects.map((p) => (
+                  <SwiperSlide key={`${p.name}-${copy}`}>
+                    <article className="work-card">
+                      <a
+                        className="work-card-thumb"
+                        href={p.thumbUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={p.tooltip}
+                      >
+                        <img className="work-card-img" src={p.image} alt={p.name} />
+                        <span className="work-card-overlay" />
+                      </a>
+                      <div className="work-card-content">
+                        <p className="work-card-subtitle">{p.category}</p>
+                        <h3 className="work-card-title">
+                          <a href={p.url} target="_blank" rel="noopener noreferrer" title={p.tooltip}>
+                            {p.name}
+                          </a>
+                        </h3>
                       </div>
-                      {/* Default state — content below image */}
-                      <div className="p-4">
-                        <h3 className="font-sans text-xl font-semibold text-white mb-1" title={p.tooltip}>{p.name}</h3>
-                        <p className="font-sans text-sm text-foreground">{p.category}</p>
-                        <p className="font-sans text-sm text-foreground mt-2 line-clamp-3">{p.description}</p>
-                        <a
-                          href={p.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="mt-4 inline-block font-display text-xl font-bold text-white hover:text-primary transition-colors"
-                        >
-                          See project →
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <button
-              onClick={() => {
-                const el = carouselRef.current;
-                if (el) el.scrollBy({ left: 320, behavior: "smooth" });
-              }}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors hidden md:flex"
-              aria-label="Next"
-            >
-              <span className="text-xl font-bold text-white">›</span>
-            </button>
+                    </article>
+                  </SwiperSlide>
+                ))
+              )}
+            </Swiper>
           </div>
         </div>
       </section>
 
-      {/* Milestones */}
-      <section id="counters" className="py-[120px] bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="font-display text-[52px] font-bold leading-none text-primary text-center mb-8">
-            Milestones
-          </h2>
-          <div className="grid md:grid-cols-3 gap-12">
-            {[
-              {
-                year: "2022",
-                sub: "Founded",
-                title: "Started building software for small businesses",
-                link: "#about",
-              },
-              {
-                year: "2025",
-                sub: "Growth",
-                title: "Expanded to web apps and e-commerce",
-                link: "#work",
-              },
-              {
-                year: "2026",
-                sub: "Today",
-                title: "Serving clients across industries",
-                link: "https://makuo-ifedike.com",
-              },
-            ].map((item, i) => (
-              <Reveal key={item.year} variant="up" duration={1.5} delay={0.3 + i * 0.2}>
-                <div className="flex flex-col items-center justify-center p-8 rounded-xl border border-border bg-background group">
-                  <span
-                    className="font-display text-4xl font-bold text-primary odometer"
-                    data-target={item.year}
-                  >
-                    0
-                  </span>
-                  <span className="mt-2 font-sans text-sm text-foreground/50">{item.sub}</span>
-                  <span className="mt-4 font-sans text-sm font-semibold text-foreground">{item.title}</span>
-                  <a
-                    href={item.link}
-                    className="mt-6 inline-block font-sans text-xs uppercase tracking-wider text-primary hover:underline transition-colors"
-                    target={item.link.startsWith("#") ? undefined : "_blank"}
-                    rel={item.link.startsWith("#") ? undefined : "noopener noreferrer"}
-                  >
-                    {item.link.startsWith("#") ? "View →" : "Visit →"}
-                  </a>
-                </div>
-              </Reveal>
-            ))}
+      {/* Milestones — reference Achieved section */}
+      <section id="counters" className="py-[120px] mt-[-5px] mb-[-10px] bg-background">
+        <div className="max-w-[1155px] mx-auto px-[15px]">
+          <div className="section-title text-center mb-5">
+            <h2 className="title font-display text-[52px] font-bold leading-[1.2] text-primary text-uppercase">
+              Milestones
+            </h2>
           </div>
+          {[
+            {
+              year: "2022",
+              sub: "Started",
+              subColor: "text-[#89715b]",
+              before: "Started writing code. ",
+              after: "No degree, no bootcamp.",
+              link: "#about",
+            },
+            {
+              year: "2025",
+              sub: "Production",
+              subColor: "text-[#f58344]",
+              before: "First site in production — ",
+              after: "Lighthouse 99 performance, 100 SEO.",
+              link: "https://interior-deco-kappa.vercel.app/",
+            },
+            {
+              year: "2026",
+              sub: "Build",
+              subColor: "text-[#feae01]",
+              before: "Built a complete dealership system alone in five weeks: ",
+              after: "26 database migrations, back office, auth, PDF enquiries.",
+              link: "#work",
+            },
+          ].map((item, i) => (
+            <Reveal key={item.year} variant="up" duration={1.5} delay={0.3 + i * 0.2}>
+              <div className="achieved-year pt-[57px]">
+                <div className="row flex flex-col md:flex-row items-start gap-[30px]">
+                  <div className="year-text min-w-[266px] flex-shrink-0 mt-[30px]">
+                    <p className="font-inter text-[18px] font-normal text-white odometer" data-target={item.year}>
+                      0
+                    </p>
+                  </div>
+                  <div className="achieved-item flex-1 mt-[30px]">
+                    <span className={`sub-title text-[18px] font-normal font-inter ${item.subColor} mt-[30px]`}>
+                      {item.sub}
+                    </span>
+                    <h2 className="title mt-[30px]">
+                      <a
+                        href={item.link}
+                        className="font-display text-[36px] font-bold leading-[1.2] text-[rgba(255,255,255,0.5)] hover:text-white transition-colors duration-300"
+                        target={item.link.startsWith("#") ? undefined : "_blank"}
+                        rel={item.link.startsWith("#") ? undefined : "noopener noreferrer"}
+                      >
+                        {item.before}<span className="text-white">{item.after}</span>
+                      </a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

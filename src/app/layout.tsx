@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins, Zilla_Slab } from "next/font/google";
 import "./globals.css";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const inter = Inter({
   variable: "--font-inter",

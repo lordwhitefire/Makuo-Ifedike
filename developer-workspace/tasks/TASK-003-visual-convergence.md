@@ -38,7 +38,7 @@ values against the reference map plus the owner's eyes.
 
 ## Remaining gaps (not yet done — structural, larger than styling)
 
-- Work section: reference is a looping swiper carousel of project cards; build is a static grid.
+- Work section: rebuilt to the reference's tabbed Swiper on 2026-11-01 (see the Work entry below); the old static-grid note is historical.
 - Why-choose cards: reference has an icon + "More" link per card; build is text-only (approved).
 - Header: reference header rhythm (144px, transparent over hero) partially converged.
 - Section inner widths use `container` (Tailwind defaults) vs reference's fixed 1155px.
@@ -213,4 +213,63 @@ Fonts vendored at `public/fonts/fa-solid-900.woff2` and `public/fonts/icofont.wo
 Section height 808→822; Work 2308→2322; Contact 3749→3763; page 4466→4480.
 
 Open: card 3 uses the reference `credit-card` glyph for "Fix slow systems" (reference
-order kept); swap only if the owner asks. Change uncommitted pending instruction.
+order kept); swap only if the owner asks. Committed as `7bd0b08`.
+
+## 2026-11-01 — Counter behavior matches the reference
+
+Owner: "yes i want the build to be like the reference" (the counters). The geometry
+already matched; the behavior did not.
+
+- Counter boxes wrapped in `Reveal` (`up`, 2s, delays .3/.6/.9) — the reference's
+  `wow fadeInUp` delays/duration. `Reveal`'s `up` hidden distance changed 30→20px to
+  match `@keyframes fadeInUp`.
+- Counter digits now use the reference's odometer library (`odometer@0.4.8`, dynamic
+  import, `format: "d"`, duration 2000) on an IntersectionObserver. Year rows keep the
+  build's count-up (#11) via `.odometer:not(.count)`.
+- `.count` line-height 1 (50px); odometer theme CSS added; `src/types/odometer.d.ts`.
+
+Verified at 1200×800 on :3009: hidden → shown; odometer `odometer-animating-up
+odometer-animating` with moving ribbon; final 4/2/2; boxes 365×81 at x15/410/805;
+number 28×56, Helvetica Neue 50/600/50 bronze; section y1500 h822; years 2022/2025/2026;
+no console/request errors; build + TypeScript pass. Report:
+`reports/2026-11-01-counter-reference-behavior-report.md`.
+
+Dependency added (`odometer@0.4.8`); not committed. Reference Milestones years are
+static while the build's year rows animate (approved #11) — left as-is.
+
+## 2026-11-01 — Work reference rebuild (tabs + Swiper, descriptions dropped)
+
+Owner ruling: rebuild Work to the reference; "drop the descriptions if reference has no
+description." Copy kept: build project names, categories, real links, captured 444×512
+screenshots. Descriptions and "See project →" removed; tooltips kept.
+
+- `src/app/page.tsx` — Work markup replaced: header (title + four reference tabs), a
+  Swiper carousel (12 slides = 4 projects × 3 loop copies), cards with full-bleed image,
+  bottom content (category subtitle + project title link), dark hover panel. Tabs do not
+  filter; clicking one replays the pane's `fadeInUp` 0.8s. `carouselRef` removed.
+- `src/app/globals.css` — Work-scoped CSS: reference section padding, 1200/15 container,
+  296px title column + 9-col tabs, tab underline, 68px content gap, 296×449 cards,
+  136px content, `#141414` hover panel, 1px white-35 gaps, 40×40 arrows at 10→70.
+- `src/app/layout.tsx` — `swiper/css` + `swiper/css/navigation`.
+- `package.json` / `package-lock.json` — added `swiper@11.2.10`.
+
+| Check | Build value | Reference |
+|-------|-------------|-----------|
+| Section | y2322, 1185×704, `padding:120px 0 0`, transparent | y2292, 1185×733, `padding:120px 0 0`, `margin-top:-50px`, transparent |
+| Heading | x15, 296×62, Zilla 52/700/1.2, `rgb(137,113,91)`, uppercase | y2438; build y2442 |
+| Tabs | x311, 859×40; All / marketing site / web app / in-progress; 16/600 uppercase; All active; underline | same; build y2469 exact |
+| Carousel | x0, 1185×449, `rgba(255,255,255,.35)`; 12 slides; 4 visible 296×449 at x0/297/593/890 | 1185×448; cards 296×449 at x0/297/594/891 |
+| Card content | 136px, p30; subtitle 14/400 white; title 34/600 white; title link | same |
+| Card hover | panel `#141414` 0→136px .6s; title `#89715b`; subtitle white-75; image overlay black-35 | same |
+| Arrows | 40×40 at 10/10 → 70/70 on carousel hover; bg `#333`; 30px swiper-icons; hover `#89715b` | same |
+| Tabs behaviour | no filtering; pane `fadeInUp` .8s; finishes opacity 1 | same |
+| Next section | y3026 | y3020 |
+| Errors | no console/request errors; no horizontal overflow; images 444×512 load | — |
+
+Visible content aligns within 1–4px. Remaining Work differences: no `-50px` section
+overlap, so the section box starts 30px later and is 29px shorter; the title sits 4px
+later; the gap from the Why-Choose counters is 120px vs the reference's 96px. The
+Why-Choose section is still `#090909` vs the reference's `#141414` (pre-existing), so
+the Work top boundary shows a section-background seam. Not changed in this task.
+
+Report: `reports/2026-11-01-work-reference-rebuild-report.md`. Not committed/pushed.
