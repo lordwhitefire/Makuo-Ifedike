@@ -191,3 +191,26 @@ owner-approved deviation).
 
 **Not exercised:** nothing in the twelve is unverified. The referrer branch was exercised
 with a LinkedIn referer (`document.referrer` set, bubble showed the LinkedIn opener).
+
+## 2026-11-01 — Why-Choose reference visuals (build copy kept)
+
+Owner ruling: copy = build, visuals = reference. Rebuilt the Why-Choose section and its
+counters to reference geometry on `:3009` at 1200×800.
+
+| Check | Build value | Reference |
+|-------|-------------|-----------|
+| Section | y1500, 1185×822 | y1520, 1185×822 (20px upstream offset) |
+| Heading | x15, 1155×62, 52/700/1.2, `rgb(137,113,91)`, uppercase, left | same |
+| Cards | 290×330 at x14/303/592/880, `#090909`, 1px `#313131`, p30, radius 0 | same |
+| Default active | card 2, border bronze, `::before` scaleX(1), white icon | same |
+| Hover | moves active; persists after mouse leaves | same |
+| Icons | FA6 solid bullhorn; IcoFont ruler-compass-alt, credit-card, live-support; 48px | same glyphs |
+| More | 14/600 white uppercase, mt35, no arrow | same |
+| Counters | 365×81 at x15/410/805; 50/600 Helvetica Neue bronze; labels 16/600/1.4 two-line; 4/2/2 | same |
+| Errors | none (build, TypeScript, console, requests) | — |
+
+Fonts vendored at `public/fonts/fa-solid-900.woff2` and `public/fonts/icofont.woff2`.
+Section height 808→822; Work 2308→2322; Contact 3749→3763; page 4466→4480.
+
+Open: card 3 uses the reference `credit-card` glyph for "Fix slow systems" (reference
+order kept); swap only if the owner asks. Change uncommitted pending instruction.

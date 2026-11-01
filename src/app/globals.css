@@ -123,3 +123,297 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+
+/* ------------------------------------------------------------------
+   Why-Choose — reference geometry, build copy.
+   Ported from public/andle-portfolio.html §4.3.
+   ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("/fonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IcoFont";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/fonts/icofont.woff2") format("woff2");
+}
+
+#why-choose {
+  padding-top: 160px;
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  #why-choose { padding-top: 120px; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #why-choose { padding-top: 100px; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #why-choose { padding-top: 80px; }
+}
+@media (max-width: 767px) {
+  #why-choose { padding-top: 60px; }
+}
+
+#why-choose .wc-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#why-choose .why-choose-section {
+  margin-top: -0.9375rem;
+}
+
+#why-choose .section-title .title {
+  margin: 0 0 8px;
+  font-family: var(--font-zilla), serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #89715b;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  #why-choose .section-title .title { font-size: 40px; }
+}
+@media (max-width: 575px) {
+  #why-choose .section-title .title { font-size: 28px; }
+}
+
+#why-choose .why-choose-wrapper {
+  padding-top: 65px;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #why-choose .why-choose-wrapper { padding-bottom: 80px; }
+}
+@media (max-width: 767px) {
+  #why-choose .why-choose-wrapper { padding-bottom: 60px; }
+}
+
+#why-choose .wc-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#why-choose .wc-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 576px) {
+  #why-choose .wc-row-cols-4 > * { width: 50%; }
+}
+@media (min-width: 992px) {
+  #why-choose .wc-row-cols-4 > * { width: 25%; }
+}
+#why-choose .wc-row-cols-3 {
+  column-gap: 30px;
+}
+#why-choose .wc-row-cols-3 > * {
+  width: calc((100% - 60px) / 3);
+}
+@media (max-width: 575px) {
+  #why-choose .wc-row-cols-3 > * { width: 100%; }
+}
+
+#why-choose .service-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 330px;
+  margin-left: -1px;
+  padding: 30px;
+  background-color: #090909;
+  border: 1px solid #313131;
+  border-radius: 0;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #why-choose .service-box { padding: 25px; }
+}
+@media (max-width: 575px) {
+  #why-choose .service-box {
+    margin-left: 0;
+    margin-top: -1px;
+  }
+}
+#why-choose .service-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #89715b;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: all 0.3s ease 0s;
+}
+
+#why-choose .service-box .box-content .title {
+  margin: 0 0 8px;
+  font-family: var(--font-zilla), serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.75);
+}
+#why-choose .service-box .box-content .title a {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.5;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #why-choose .service-box .box-content .title a { font-size: 16px; }
+}
+@media (max-width: 767px) {
+  #why-choose .service-box .box-content .title a { font-size: 18px; }
+}
+
+#why-choose .service-box .box-content p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.714;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.3s ease 0s;
+}
+
+#why-choose .service-box .box-icon .wc-icon {
+  display: block;
+  font-size: 48px;
+  line-height: 1;
+  font-style: normal;
+  color: #89715b;
+  transition: all 0.3s ease 0s;
+}
+#why-choose .service-box .box-icon .wc-icon.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+#why-choose .service-box .box-icon .wc-icon.icofont {
+  font-family: "IcoFont";
+  font-weight: 400;
+}
+#why-choose .service-box .box-icon .wc-icon.fa-bullhorn::before {
+  content: "\f0a1";
+}
+#why-choose .service-box .box-icon .wc-icon.icofont-ruler-compass-alt::before {
+  content: "\ebfc";
+}
+#why-choose .service-box .box-icon .wc-icon.icofont-credit-card::before {
+  content: "\eef4";
+}
+#why-choose .service-box .box-icon .wc-icon.icofont-live-support::before {
+  content: "\ef77";
+}
+
+#why-choose .service-box .box-icon .more {
+  display: inline-block;
+  margin-top: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+
+#why-choose .service-box.active {
+  border-color: #89715b;
+}
+#why-choose .service-box.active::before {
+  transform: scaleX(1);
+}
+#why-choose .service-box.active .box-content p {
+  color: #fff;
+}
+#why-choose .service-box.active .box-icon .wc-icon {
+  color: #fff;
+}
+
+#why-choose .counter-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 70px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #why-choose .counter-section { padding-top: 50px; }
+}
+@media (max-width: 767px) {
+  #why-choose .counter-section { padding-top: 30px; }
+}
+
+#why-choose .counter-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+@media (max-width: 767px) {
+  #why-choose .counter-box { display: block; }
+}
+@media (max-width: 575px) {
+  #why-choose .counter-box { display: flex; }
+}
+
+#why-choose .counter-box .counter-count .count {
+  display: inline-block;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.12;
+  color: #89715b;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #why-choose .counter-box .counter-count .count { font-size: 30px; }
+}
+@media (max-width: 767px) {
+  #why-choose .counter-box .counter-count .count { font-size: 40px; }
+}
+
+#why-choose .counter-box .counter-content {
+  padding-left: 25px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #why-choose .counter-box .counter-content { padding-left: 10px; }
+}
+@media (max-width: 767px) {
+  #why-choose .counter-box .counter-content {
+    padding-left: 0;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 575px) {
+  #why-choose .counter-box .counter-content {
+    padding-top: 0;
+    padding-left: 20px;
+  }
+}
+
+#why-choose .counter-box .counter-content p {
+  display: inline-block;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  #why-choose .counter-box .counter-content p { font-size: 14px; }
+}

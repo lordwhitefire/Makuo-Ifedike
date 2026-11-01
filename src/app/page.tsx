@@ -64,7 +64,7 @@ const projects = [
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(1);
   const carouselRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
@@ -170,91 +170,85 @@ export default function Home() {
 
       </div>
 
-      {/* Why Choose */}
-      <section id="why-choose" className="pt-[120px] pb-0 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-display text-[52px] font-bold leading-none text-primary">Why Choose Me</h2>
-            <p className="text-muted-foreground mt-4">
-              What I bring to every project
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Marketing sites",
-                desc: "Public-facing pages that turn visits into enquiries.",
-                icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-                  </svg>
-                ),
-              },
-              {
-                title: "Web apps",
-                desc: "Custom applications built with Next.js, React, TypeScript.",
-                icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                ),
-              },
-              {
-                title: "Fix slow systems",
-                desc: "Debugging and refactoring half-built or broken software.",
-                icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065" />
-                  </svg>
-                ),
-              },
-              {
-                title: "Small business focus",
-                desc: "One person, start to finish. No jargon to hide behind.",
-                icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                ),
-              },
-            ].map((item, i) => (
-              <Reveal key={item.title} variant="up" duration={2} delay={0.3 + i * 0.2}>
-                <div
-                  onMouseEnter={() => setActiveIndex(i)}
-                  className={`p-6 rounded-lg border border-border transition-colors duration-300 ${activeIndex === i ? "bg-[#89715b]" : ""}`}
-                >
-                  <div className="mb-4">{item.icon}</div>
-                  <h3 className={`font-sans text-xl font-semibold mb-2 ${activeIndex === i ? "text-white" : "text-white"}`}>{item.title}</h3>
-                  <p className={`text-sm mb-4 ${activeIndex === i ? "text-white" : "text-muted-foreground"}`}>{item.desc}</p>
-                  <a
-                    href="#"
-                    className={`text-sm inline-block transition-colors ${activeIndex === i ? "text-white" : "text-primary"}`} onClick={(e) => e.preventDefault()}
-                  >
-                    More →
-                  </a>
-                </div>
-              </Reveal>
-            ))}
+      {/* Why Choose — reference geometry, build copy */}
+      <section id="why-choose" className="bg-background">
+        <div className="wc-container">
+          <div className="why-choose-section">
+            <div className="section-title">
+              <h2 className="title">why choose me</h2>
+            </div>
+            <div className="why-choose-wrapper">
+              <div className="wc-row wc-row-cols-4">
+                {[
+                  {
+                    title: "Marketing sites",
+                    desc: "Public-facing pages that turn visits into enquiries.",
+                    icon: "fas fa-bullhorn",
+                  },
+                  {
+                    title: "Web apps",
+                    desc: "Custom applications built with Next.js, React, TypeScript.",
+                    icon: "icofont icofont-ruler-compass-alt",
+                  },
+                  {
+                    title: "Fix slow systems",
+                    desc: "Debugging and refactoring half-built or broken software.",
+                    icon: "icofont icofont-credit-card",
+                  },
+                  {
+                    title: "Small business focus",
+                    desc: "One person, start to finish. No jargon to hide behind.",
+                    icon: "icofont icofont-live-support",
+                  },
+                ].map((item, i) => (
+                  <Reveal key={item.title} variant="up" duration={2} delay={0.3 + i * 0.2}>
+                    <div
+                      className={`service-box${activeIndex === i ? " active" : ""}`}
+                      onMouseEnter={() => setActiveIndex(i)}
+                    >
+                      <div className="box-content">
+                        <h4 className="title">
+                          <a href="#" onClick={(e) => e.preventDefault()}>
+                            {item.title}
+                          </a>
+                        </h4>
+                        <p>{item.desc}</p>
+                      </div>
+                      <div className="box-icon">
+                        <i className={`wc-icon ${item.icon}`} aria-hidden="true" />
+                        <a
+                          href="#"
+                          className="more"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          More
+                        </a>
+                      </div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* Counters — reference: 4 / 2 / 2, 50px/600 bronze, odometer, hairline */}
-          <div className="mt-[100px] border-t border-white/15 pt-[70px]">
-            <div className="grid md:grid-cols-3">
+          <div className="counter-section">
+            <div className="wc-row wc-row-cols-3">
               {[
-                { target: "4", label: "Projects live" },
-                { target: "2", label: "Complete & shipped" },
-                { target: "2", label: "In active development" },
+                { target: "4", line1: "projects", line2: "live" },
+                { target: "2", line1: "complete &", line2: "shipped" },
+                { target: "2", line1: "in active", line2: "development" },
               ].map((c) => (
-                <div key={c.label} className="pt-[25px]">
-                  <span
-                    className="odometer block font-display text-[50px] font-semibold leading-none text-primary"
-                    data-target={c.target}
-                  >
-                    0
-                  </span>
-                  <p className="mt-2 font-sans text-base font-semibold uppercase text-white/75">
-                    {c.label}
-                  </p>
+                <div key={`${c.line1}-${c.line2}`} className="counter-box">
+                  <div className="counter-count">
+                    <span className="count odometer" data-target={c.target}>
+                      0
+                    </span>
+                  </div>
+                  <div className="counter-content">
+                    <p>
+                      {c.line1} <br /> {c.line2}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
