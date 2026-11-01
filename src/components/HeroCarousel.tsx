@@ -94,11 +94,6 @@ export default function HeroCarousel() {
         <span className="absolute top-0 h-full w-px bg-white/[0.35]" style={{ left: "75%" }} />
       </div>
 
-      {/* Slide counter */}
-      <div className="absolute right-4 top-24 z-10 font-sans text-sm text-foreground md:right-8">
-        {index + 1} / {slides.length}
-      </div>
-
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-[1185px] px-4 pb-[140px]">
         <span
