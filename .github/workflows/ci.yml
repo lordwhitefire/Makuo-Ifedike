@@ -40,6 +40,9 @@ jobs:
       - name: Type check
         run: npx tsc --noEmit
 
+      - name: Validate content
+        run: npm run validate:content
+
       - name: Link check
         run: |
           PORT=3000 NODE_ENV=production node .next/standalone/server.js &
