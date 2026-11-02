@@ -2,49 +2,14 @@
 
 import { useEffect, useState } from "react";
 
+import { projects, displayOrder } from "@/content/projects";
+
 /**
  * Hero — featured-projects showreel (reference treatment).
  * Four slides, cycling full-bleed screenshots of the real work.
- *
- * TODO(deploy): the Athletica slide uses a LOCAL dev URL — the product page runs on
- * localhost:3011 and is not deployed anywhere yet. Replace with the production URL
- * before any deploy, or visitors will hit a dead link.
+ * Reads from the shared project records; slide order/images are identical
+ * to the reference treatment (zero visual change).
  */
-
-const slides = [
-  {
-    name: "Interior-deco",
-    category: "Marketing site",
-    description:
-      "A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.",
-    image: "/projects/interior-deco.png",
-    url: "https://interior-deco-kappa.vercel.app/",
-  },
-  {
-    name: "Truespec",
-    category: "Web app",
-    description:
-      "Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.",
-    image: "/projects/truespec.png",
-    url: "https://truespec-k4y6.vercel.app/",
-  },
-  {
-    name: "Athletica",
-    category: "Football store",
-    description:
-      "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
-    image: "/projects/athletica.png",
-    url: "http://localhost:3011/product/adidas-predator-elite-ft-fg-white-light-green",
-  },
-  {
-    name: "CP3-legacy",
-    category: "Fan site / sports experience",
-    description:
-      "Chris Paul fan site / sports experience: news, player overview, full statistics, biography, gallery, shop, account and wishlist.",
-    image: "/projects/cp3-legacy.png",
-    url: "https://cp3-legacy.vercel.app/",
-  },
-];
 
 export default function HeroCarousel() {
   const [index, setIndex] = useState(0);
@@ -61,13 +26,13 @@ export default function HeroCarousel() {
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) return;
     const t = setInterval(
-      () => setIndex((i) => (i + 1) % slides.length),
+      () => setIndex((i) => (i + 1) % displayOrder.length),
       5500,
     );
     return () => clearInterval(t);
   }, []);
 
-  const slide = slides[index];
+  const slide = projects[displayOrder[index]];
 
   return (
     <section
@@ -75,16 +40,19 @@ export default function HeroCarousel() {
       className="relative flex h-screen min-h-[700px] flex-col justify-end overflow-hidden"
     >
       {/* Full-bleed project screenshots */}
-      {slides.map((s, i) => (
-        <div
-          key={s.image}
-          aria-hidden={i !== index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-            i === index ? "opacity-100" : "opacity-0"
-          }`}
-          style={{ backgroundImage: `url(${s.image})` }}
-        />
-      ))}
+      {displayOrder.map((slug, i) => {
+        const s = projects[slug];
+        return (
+          <div
+            key={slug}
+            aria-hidden={i !== index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ backgroundImage: `url(${s.images.hero})` }}
+          />
+        );
+      })}
       <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
 
       {/* Hairline grid at 25% / 50% / 75% */}
@@ -118,8 +86,8 @@ export default function HeroCarousel() {
           {slide.description}
         </p>
         <a
-          href={slide.url}
-          target={slide.url.startsWith("http://localhost") ? "_self" : "_blank"}
+          href={slide.liveUrl}
+          target={slide.liveUrl.startsWith("http://localhost") ? "_self" : "_blank"}
           rel="noopener noreferrer"
           className="mt-10 inline-block font-display text-xl font-bold text-white transition-colors hover:text-primary"
         >

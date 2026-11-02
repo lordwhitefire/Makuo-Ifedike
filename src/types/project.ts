@@ -35,6 +35,8 @@ export interface Project {
     card: string;
     hero: string;
   };
+  tooltip: string;
+  description: string;
   testimonial: string | null;
   caseStudy: ProjectCaseStudy;
 }

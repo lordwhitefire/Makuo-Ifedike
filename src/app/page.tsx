@@ -9,6 +9,8 @@ import BackToTop from "@/components/BackToTop";
 import EngagementLayer from "@/components/EngagementLayer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { projects, displayOrder } from "@/content/projects";
+import { identity } from "@/content/identity";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -19,54 +21,6 @@ const stacks = [
   { name: "Neon Postgres", src: "neon" },
   { name: "Clerk", src: "clerk" },
   { name: "Vitest", src: "vitest" },
-];
-
-const projects = [
-  {
-    name: "Interior-deco",
-    category: "Marketing site",
-    description:
-      "A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.",
-    url: "https://interior-deco-kappa.vercel.app/",
-    thumbUrl: "https://interior-deco-kappa.vercel.app/",
-    image:
-      "/projects/work/interior-deco.png",
-    tooltip: "Marketing site for an interior decoration studio",
-  },
-  {
-    name: "Truespec",
-    category: "Web app",
-    description:
-      "Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.",
-    url: "https://truespec-k4y6.vercel.app/",
-    thumbUrl: "https://truespec-k4y6.vercel.app/",
-    image:
-      "/projects/work/truespec.png",
-    tooltip: "Inventory + public site, two surfaces, one codebase",
-  },
-  {
-    name: "Athletica",
-    category: "Football store",
-    description:
-      "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
-    url: "https://athletica-blond.vercel.app/",
-    thumbUrl:
-      "http://localhost:3011/product/adidas-predator-elite-ft-fg-white-light-green",
-    image:
-      "/projects/work/athletica.png",
-    tooltip: "Affiliate platform in preview for a client",
-  },
-  {
-    name: "CP3-legacy",
-    category: "Fan site / sports experience",
-    description:
-      "Chris Paul fan site / sports experience: news, player overview, full statistics, biography, gallery, shop, account and wishlist.",
-    url: "https://cp3-legacy.vercel.app/",
-    thumbUrl: "https://cp3-legacy.vercel.app/",
-    image:
-      "/projects/work/cp3-legacy.png",
-    tooltip: "Athlete-focused software in development",
-  },
 ];
 
 const workTabs = ["All", "marketing site", "web app", "in-progress"];
@@ -208,7 +162,7 @@ export default function Home() {
             <div className="w-full px-[15px] lg:w-1/2">
               <Reveal>
                 <h3 className="font-display text-[28px] font-bold uppercase leading-[1.2] text-primary min-[576px]:text-[48px]">
-                  Makuo Ifedike
+                  {identity.name}
                 </h3>
                 <p className="mb-[25px] mt-9 font-sans text-base leading-8 text-white min-[576px]:text-xl">
                   I build and fix software for small businesses.
@@ -364,30 +318,33 @@ export default function Home() {
               className="work-carousel"
             >
               {[0, 1, 2].flatMap((copy) =>
-                projects.map((p) => (
-                  <SwiperSlide key={`${p.name}-${copy}`}>
-                    <article className="work-card">
-                      <a
-                        className="work-card-thumb"
-                        href={p.thumbUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title={p.tooltip}
-                      >
-                        <img className="work-card-img" src={p.image} alt={p.name} />
-                        <span className="work-card-overlay" />
-                      </a>
-                      <div className="work-card-content">
-                        <p className="work-card-subtitle">{p.category}</p>
-                        <h3 className="work-card-title">
-                          <a href={p.url} target="_blank" rel="noopener noreferrer" title={p.tooltip}>
-                            {p.name}
-                          </a>
-                        </h3>
-                      </div>
-                    </article>
-                  </SwiperSlide>
-                ))
+                displayOrder.map((slug) => {
+                  const p = projects[slug];
+                  return (
+                    <SwiperSlide key={`${p.name}-${copy}`}>
+                      <article className="work-card">
+                        <a
+                          className="work-card-thumb"
+                          href={p.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={p.tooltip}
+                        >
+                          <img className="work-card-img" src={p.images.card} alt={p.name} />
+                          <span className="work-card-overlay" />
+                        </a>
+                        <div className="work-card-content">
+                          <p className="work-card-subtitle">{p.category}</p>
+                          <h3 className="work-card-title">
+                            <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" title={p.tooltip}>
+                              {p.name}
+                            </a>
+                          </h3>
+                        </div>
+                      </article>
+                    </SwiperSlide>
+                  );
+                })
               )}
             </Swiper>
           </div>
@@ -468,10 +425,10 @@ export default function Home() {
           </Reveal>
           <Reveal variant="up" duration={2} delay={0.5}>
             <a
-              href="mailto:mifedike@gmail.com"
+              href={`mailto:${identity.email}`}
               className="font-display text-[clamp(36px,6vw,60px)] font-bold leading-[1.2] text-primary transition-colors hover:text-white"
             >
-              mifedike@gmail.com
+              {identity.email}
             </a>
           </Reveal>
         </div>
