@@ -14,6 +14,9 @@ export const projects: Record<ProjectSlug, Project> = {
     summary:
       "Public showroom plus a single-owner private office for inventory, enquiries, costs and profit — for a Nigerian vehicle-import business.",
     category: "Web app",
+    description:
+      "Inventory management on the inside, public catalogue on the outside. Two surfaces, one codebase, no admin friction.",
+    tooltip: "Inventory + public site, two surfaces, one codebase",
     filter: "web-app",
     status: "live",
     featured: true,
@@ -52,6 +55,9 @@ export const projects: Record<ProjectSlug, Project> = {
     slug: "interior-deco",
     summary: "CMS-driven marketing website for the Whitefire Interior brand.",
     category: "Marketing site",
+    description:
+      "A marketing site for an interior decoration studio. Brand-led layout, public pages, structured to turn visits into enquiries.",
+    tooltip: "Marketing site for an interior decoration studio",
     filter: "marketing-site",
     status: "live",
     featured: false,
@@ -86,6 +92,9 @@ export const projects: Record<ProjectSlug, Project> = {
     summary:
       "Football store and affiliate commerce platform built for a friend's affiliate business — client work, not the owner's own product.",
     category: "Football store",
+    description:
+      "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
+    tooltip: "Affiliate platform in preview for a client",
     filter: "web-app",
     status: "in-progress",
     featured: false,
@@ -126,6 +135,9 @@ export const projects: Record<ProjectSlug, Project> = {
     summary:
       "Chris Paul fan site / sports experience — news, statistics, biography, gallery, shop, account and wishlist.",
     category: "Fan site / sports experience",
+    description:
+      "Chris Paul fan site / sports experience: news, player overview, full statistics, biography, gallery, shop, account and wishlist.",
+    tooltip: "Athlete-focused software in development",
     filter: "web-app",
     status: "in-progress",
     featured: false,
