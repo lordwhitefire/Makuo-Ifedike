@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Install, typecheck, build, link check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        # `next build` also enforces the TypeScript check because
+        # next.config.ts has typescript.ignoreBuildErrors: false.
+        run: npm run build
+
+      - name: Type check
+        run: npx tsc --noEmit
+
+      - name: Link check
+        run: |
+          PORT=3000 NODE_ENV=production node .next/standalone/server.js &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:3000/ >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+
+          # Crawl the built app; only internal links are checked so flaky
+          # third-party sites cannot fail CI.
+          npx --yes linkinator@6 http://localhost:3000 \
+            --recurse \
+            --skip "^(?!http://localhost:3000)" \
+            --verbosity error
