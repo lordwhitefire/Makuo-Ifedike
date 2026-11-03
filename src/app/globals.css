@@ -769,3 +769,14 @@
     padding-top: 0;
   }
 }
+
+/* Hide the page scrollbar while keeping the page scrollable. */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
