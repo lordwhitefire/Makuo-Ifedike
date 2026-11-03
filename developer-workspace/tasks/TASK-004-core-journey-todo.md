@@ -4,15 +4,15 @@
 
 ## Phase 1 — Form journey
 
-- [ ] Task 0: Plan, brief, notes, baseline commit
-- [ ] Task 1: Hide engagement, remove card tooltips, add contact launcher + privacy + honest 503
+- [x] Task 0: Plan, brief, notes, baseline commit
+- [x] Task 1: Hide engagement, remove card tooltips, add contact launcher + privacy + honest 503
 - [ ] Task 2: Inquiry model, validation, adapters, env example, wire route
 
 ### Checkpoint A
-- [ ] Form opens, validates, submits (503 with fallback when unconfigured)
-- [ ] `/privacy` loads
-- [ ] No engagement prompt renders
-- [ ] Typecheck and build pass
+- [x] Form opens, validates, submits (503 with fallback when unconfigured)
+- [x] `/privacy` loads
+- [x] No engagement prompt renders
+- [x] Typecheck and build pass
 
 ## Phase 2 — Visible data + discovery
 

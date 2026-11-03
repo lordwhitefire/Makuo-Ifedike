@@ -7,6 +7,7 @@ import TechStrip from "@/components/TechStrip";
 import Reveal from "@/components/Reveal";
 import BackToTop from "@/components/BackToTop";
 import EngagementLayer from "@/components/EngagementLayer";
+import ContactLauncher from "@/components/ContactLauncher";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { projects, displayOrder } from "@/content/projects";
@@ -328,7 +329,6 @@ export default function Home() {
                           href={p.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          title={p.tooltip}
                         >
                           <img className="work-card-img" src={p.images.card} alt={p.name} />
                           <span className="work-card-overlay" />
@@ -336,7 +336,7 @@ export default function Home() {
                         <div className="work-card-content">
                           <p className="work-card-subtitle">{p.category}</p>
                           <h3 className="work-card-title">
-                            <a href={p.liveUrl} target="_blank" rel="noopener noreferrer" title={p.tooltip}>
+                            <a href={p.liveUrl} target="_blank" rel="noopener noreferrer">
                               {p.name}
                             </a>
                           </h3>
@@ -474,6 +474,7 @@ export default function Home() {
       </footer>
       <BackToTop />
       <EngagementLayer />
+      <ContactLauncher />
     </main>
   );
 }

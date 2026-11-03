@@ -11,7 +11,7 @@ import { useEffect, useRef, useState } from "react";
  *  5. 45s-idle panel (once per session)
  *  6. exit-intent modal (once per session, Escape closes)
  *  7. footer confetti + toast (footer-info-box 60% visible)
- *  8. work-card title tooltips (added in page.tsx)
+ *  8. work-card title tooltips (removed from page.tsx in TASK-004)
  *  9. referrer-aware bubble opener
  *
  * Persistence matches the reference:
@@ -44,7 +44,14 @@ type Piece = {
   rot: number;
 };
 
-export default function EngagementLayer() {
+/**
+ * Owner switch (TASK-004 Q24/Q26): every prompt is hidden for now.
+ * The inner component and all of its code stay intact — flipping this to
+ * true brings the whole engagement layer back exactly as it was.
+ */
+const ENGAGEMENT_ENABLED = false;
+
+function EngagementLayerInner() {
   const [bubbleVisible, setBubbleVisible] = useState(false);
   const [bubbleMessage, setBubbleMessage] = useState(BUBBLE_DEFAULT);
   const [bannerVisible, setBannerVisible] = useState(false);
@@ -372,4 +379,9 @@ export default function EngagementLayer() {
       </div>
     </>
   );
+}
+
+export default function EngagementLayer() {
+  if (!ENGAGEMENT_ENABLED) return null;
+  return <EngagementLayerInner />;
 }
