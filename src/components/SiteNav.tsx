@@ -72,7 +72,7 @@ export default function SiteNav() {
         aria-label="Site menu"
         inert={!open}
         className={`fixed right-[15px] top-0 z-[1130] h-full w-[300px] max-w-full bg-white transition-transform duration-700 ease ${
-          open ? "translate-x-0 delay-500" : "translate-x-[101%]"
+          open ? "translate-x-0 delay-500" : "translate-x-[calc(101%+15px)]"
         }`}
       >
         <button
