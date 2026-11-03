@@ -363,6 +363,12 @@ export default function Home() {
                       href={p.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() =>
+                        trackEvent("outbound_project_click", {
+                          project: p.slug,
+                          url: p.liveUrl,
+                        })
+                      }
                     >
                       <img className="work-card-img" src={p.images.card} alt={p.name} />
                       <span className="work-card-overlay" />
@@ -370,7 +376,17 @@ export default function Home() {
                     <div className="work-card-content">
                       <p className="work-card-subtitle">{p.category}</p>
                       <h3 className="work-card-title">
-                        <a href={p.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={p.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() =>
+                            trackEvent("outbound_project_click", {
+                              project: p.slug,
+                              url: p.liveUrl,
+                            })
+                          }
+                        >
                           {p.name}
                         </a>
                       </h3>
