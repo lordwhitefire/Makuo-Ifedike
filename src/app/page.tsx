@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HeroCarousel from "@/components/HeroCarousel";
 import SiteNav from "@/components/SiteNav";
 import TechStrip from "@/components/TechStrip";
@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { WORK_TABS, filterProjects, type WorkTabId } from "@/lib/project-filters";
 import { identity } from "@/content/identity";
+import { trackEvent } from "@/lib/analytics";
 
 const stacks = [
   { name: "Next.js", src: "nextdotjs" },
@@ -29,6 +30,7 @@ export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number | null>(1);
   const [activeWorkTab, setActiveWorkTab] = useState<WorkTabId>("all");
   const visibleProjects = filterProjects(activeWorkTab);
+  const viewedProjects = useRef<Set<string>>(new Set());
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -118,6 +120,32 @@ export default function Home() {
       observer?.disconnect();
     };
   }, []);
+
+  // project_view — once per project slug per page load, when a card becomes
+  // at least half visible. Re-runs when the Work filter changes so newly
+  // rendered cards are observed; the ref keeps de-duplication across filters.
+  useEffect(() => {
+    const cards = [
+      ...document.querySelectorAll<HTMLElement>(".work-card[data-project]"),
+    ];
+    if (!cards.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const slug = (entry.target as HTMLElement).dataset.project;
+          if (!slug || viewedProjects.current.has(slug)) continue;
+          viewedProjects.current.add(slug);
+          trackEvent("project_view", { project: slug });
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, [activeWorkTab]);
 
   return (
     <main className="min-h-screen bg-background text-foreground">
