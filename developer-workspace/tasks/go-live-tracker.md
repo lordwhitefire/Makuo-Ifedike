@@ -40,6 +40,7 @@ Four submissions:
 long idle period, with a network-level `fetch failed` (no HTTP response). Runs where the
 connection was fresh or recently used succeeded. Consistent with a stale keep-alive
 socket in Node's fetch; `sendResend` has no retry. Not fixed — awaiting owner direction.
+**Full record:** `developer-workspace/reports/owner-email-send-failure.md`.
 
 Sheet readback (`'Portfolio Inquiries'!A1:K`): 2 data rows (`144f3c5a`, `591a9817`),
 11 columns each, `consent=yes`, `status=new`. A header row was added on 2026-11-03
