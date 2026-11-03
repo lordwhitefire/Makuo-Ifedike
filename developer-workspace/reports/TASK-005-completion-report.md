@@ -87,6 +87,11 @@ Attached the running Chrome to the deployed site and captured the actual network
 
 ## Not verified (honest reporting)
 
+**In plain terms:** "not exercised" means the event has not been triggered on the live site
+and watched arriving at Vercel. It is not a defect — both events are wired exactly like the
+four that were confirmed. They stay unproven until a real visitor submits the form
+(`inquiry_submit`) or clicks a live project link (`outbound_project_click`).
+
 - **`inquiry_submit` live** — not exercised on the deployed site; proving it requires a real submission through the deployed form (which performs real sends).
 - **`outbound_project_click` live** — not exercised; the check navigates away to a third-party site. Verified locally only.
 - **Vercel env keys** — not observable from outside. The honeypot probe short-circuits before any adapter config check. A valid submission would return `503` (keys absent) or `200` with `delivered` (keys present); the live runs above prove the keys were present on 2026-11-03.
