@@ -56,3 +56,12 @@ server.log
 developer-workspace/scripts/developer-workspace/
 
 /skills/
+
+# personal data exports — never commit
+Complete_LinkedInDataExport_*.zip
+Complete_LinkedInDataExport_*/
+twitter-*/
+twitter-*.zip
+
+# local browser tool cache
+.playwright-cli/
