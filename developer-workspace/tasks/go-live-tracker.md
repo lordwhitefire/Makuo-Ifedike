@@ -35,11 +35,12 @@ Four submissions:
 | 2 | 18:24:05 | `144f3c5a-1e34-4afd-b47a-ef9dfc6d5d0b` | google-sheets, whatsapp, auto-reply | owner-email `fetch failed` |
 | 3 | 18:24:56 | `591a9817-c7e5-4b7d-968f-6956a440441d` | **all four** | clean |
 | 4 | 18:43:02 | `646bc516-134b-447a-ae64-f4eb703497b8` | google-sheets, whatsapp, auto-reply | owner-email `fetch failed` again |
+| 5 | 23:07:24 | `201e9168-b9d7-480e-afd3-d64d1aca2fbf` | **all four** | after retry fix; first attempt succeeded, no retry fired |
 
-**Known flakiness — owner-email.** 2 of 4 runs failed on the first Resend call after a
-long idle period, with a network-level `fetch failed` (no HTTP response). Runs where the
-connection was fresh or recently used succeeded. Consistent with a stale keep-alive
-socket in Node's fetch; `sendResend` has no retry. Not fixed — awaiting owner direction.
+**Known flakiness — owner-email.** 2 of 5 runs failed on a Resend call with a network-level
+`fetch failed` (no HTTP response). Fixed 2026-11-03: `sendResend` now retries twice on
+transient network errors and sends an `Idempotency-Key` so retries cannot duplicate.
+Happy path re-verified; the retry branch has not yet fired in a live failure.
 **Full record:** `developer-workspace/reports/owner-email-send-failure.md`.
 
 Sheet readback (`'Portfolio Inquiries'!A1:K`): 2 data rows (`144f3c5a`, `591a9817`),
@@ -70,3 +71,4 @@ Note: local runs only prove dispatch. `@vercel/analytics` dev mode logs and send
 - **2026-11-03 17:29Z** — step 4 released and fired once; `200`, 3/4 adapters delivered (`owner-email`, `whatsapp`, `auto-reply`); Sheets rejected tab name `Portfolio Inquiries` because the workbook's only tab is `Sheet1`; awaiting rename authorization.
 - **2026-11-03 18:24Z** — owner renamed the tab; re-runs at 18:24:05 and 18:24:56 delivered Sheets; the 18:24:56 run delivered all four (`google-sheets`, `owner-email`, `whatsapp`, `auto-reply`); 2 rows read back from the sheet. Step 4 complete.
 - **2026-11-03 18:43Z** — header row added; test run `646bc516` delivered sheets + whatsapp + auto-reply, owner-email failed with `fetch failed` (2nd such failure). Pattern recorded: first Resend call after idle. Awaiting direction on a retry fix.
+- **2026-11-03 23:07Z** — retry fix applied to `sendResend` (2 retries on transient network errors) plus `Idempotency-Key`; tsc + build pass; run `201e9168` delivered all four on the first attempt, so the retry branch itself is still unexercised.

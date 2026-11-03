@@ -1,7 +1,7 @@
 # Failure record — owner-email send fails intermittently with `fetch failed`
 
 **Recorded:** 2026-11-03
-**Status:** open — not fixed, awaiting owner direction
+**Status:** fix applied 2026-11-03 — happy path verified; retry path not yet exercised
 **Component:** `sendResend()` / `sendOwnerEmail()` in `src/lib/inquiries/adapters.ts`
 **Severity:** medium — a real inquiry can arrive without its email notification
 **Plan:** `developer-workspace/plans/go-live-keys-plan.md` (step 4)
@@ -91,7 +91,33 @@ confirmed diagnosis.
   succeeds, asserting exactly one retry occurs. The project has no test framework, so
   this would be a standalone script rather than a suite test.
 
-## Decision needed
+## Fix applied — 2026-11-03
 
-Apply the retry fix? It is a ~10-line change confined to `sendResend`. Until then the
-failure stands as recorded here.
+`sendResend()` in `src/lib/inquiries/adapters.ts` now:
+
+1. Retries up to **2 times** after a transient network error (delays 250 ms, 750 ms),
+   via `isTransientNetworkError()` — matches `fetch failed`, `socket hang up`, and cause
+   codes `ECONNRESET`, `ECONNREFUSED`, `ETIMEDOUT`, `ENOTFOUND`, `EAI_AGAIN`, `EPIPE`.
+   HTTP errors are never retried.
+2. Sends an `Idempotency-Key` header (`{inquiry.id}:owner-email` and
+   `{inquiry.id}:auto-reply`) so a retry cannot produce a duplicate email. Confirmed in
+   Resend's current API reference (unique per request, expires after 24 h, max 256 chars).
+3. Logs `[inquiries] resend attempt N failed: … — retrying in Nms` when it retries.
+
+## Verification
+
+- `npx tsc --noEmit` — pass.
+- `npx next build` — pass.
+- Live submission `201e9168-b9d7-480e-afd3-d64d1aca2fbf` at `2026-11-03T23:07:24Z`
+  returned `delivered: ["google-sheets","owner-email","whatsapp","auto-reply"]`, and the
+  row was read back from the sheet. The `Idempotency-Key` header was therefore accepted by
+  the live Resend API on both calls.
+- **The retry path was not exercised.** That run followed a 4.4-hour idle gap and succeeded
+  on the first attempt — the failure did not reproduce. The change is proven not to break
+  the happy path; the retry branch has not yet run against a real transient failure.
+
+## Remaining gap
+
+To prove the retry branch, either wait for a natural recurrence (previously 2 of 5 runs) or
+exercise it deterministically with a `fetch` stub that throws once then succeeds. Until
+then this record stays open with the fix in place.

@@ -164,37 +164,81 @@ async function appendToSheet(inquiry: Inquiry): Promise<void> {
   }
 }
 
+const RESEND_RETRY_DELAYS_MS = [250, 750];
+
+function isTransientNetworkError(error: unknown): boolean {
+  if (!(error instanceof Error)) return false;
+  if (error.name === "AbortError" || error.name === "TimeoutError") return true;
+  const cause = (error as { cause?: { code?: string } }).cause;
+  if (
+    cause?.code &&
+    /^(ECONNRESET|ECONNREFUSED|ETIMEDOUT|ENOTFOUND|EAI_AGAIN|EPIPE)$/.test(
+      cause.code,
+    )
+  ) {
+    return true;
+  }
+  return /fetch failed|socket hang up|network/i.test(error.message);
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function sendResend(input: {
   to: string;
   subject: string;
   text: string;
   replyTo?: string;
+  idempotencyKey?: string;
 }): Promise<void> {
   const apiKey = env("RESEND_API_KEY")!;
   const from = env("INQUIRY_FROM_EMAIL")!;
-
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${apiKey}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      from,
-      to: [input.to],
-      subject: input.subject,
-      text: input.text,
-      ...(input.replyTo ? { reply_to: input.replyTo } : {}),
-    }),
+  const body = JSON.stringify({
+    from,
+    to: [input.to],
+    subject: input.subject,
+    text: input.text,
+    ...(input.replyTo ? { reply_to: input.replyTo } : {}),
   });
 
-  if (!response.ok) {
-    const detail = await response.text().catch(() => "");
-    throw new Error(
-      `Resend failed (${response.status})${
-        detail ? `: ${detail.slice(0, 200)}` : ""
-      }`,
-    );
+  for (let attempt = 0; ; attempt += 1) {
+    let response: Response;
+    try {
+      response = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          authorization: `Bearer ${apiKey}`,
+          "content-type": "application/json",
+          ...(input.idempotencyKey
+            ? { "Idempotency-Key": input.idempotencyKey }
+            : {}),
+        },
+        body,
+      });
+    } catch (error) {
+      const retryDelay = RESEND_RETRY_DELAYS_MS[attempt];
+      if (retryDelay === undefined || !isTransientNetworkError(error)) {
+        throw error;
+      }
+      console.warn(
+        `[inquiries] resend attempt ${attempt + 1} failed: ${
+          error instanceof Error ? error.message : String(error)
+        } — retrying in ${retryDelay}ms`,
+      );
+      await sleep(retryDelay);
+      continue;
+    }
+
+    if (!response.ok) {
+      const detail = await response.text().catch(() => "");
+      throw new Error(
+        `Resend failed (${response.status})${
+          detail ? `: ${detail.slice(0, 200)}` : ""
+        }`,
+      );
+    }
+    return;
   }
 }
 
@@ -204,6 +248,7 @@ async function sendOwnerEmail(inquiry: Inquiry): Promise<void> {
     subject: `[PORTFOLIO] New inquiry — ${singleLine(inquiry.name)}`,
     text: ownerText(inquiry),
     replyTo: inquiry.email,
+    idempotencyKey: `${inquiry.id}:owner-email`,
   });
 }
 
@@ -213,6 +258,7 @@ async function sendAutoReply(inquiry: Inquiry): Promise<void> {
     subject: "Your inquiry — Makuo Ifedike",
     text: autoReplyText(inquiry),
     replyTo: env("INQUIRY_OWNER_EMAIL"),
+    idempotencyKey: `${inquiry.id}:auto-reply`,
   });
 }
 
