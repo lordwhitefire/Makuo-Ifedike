@@ -4,6 +4,7 @@ import "./globals.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import { identity } from "@/content/identity";
+import { buildStructuredData } from "@/content/structured-data";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -77,6 +78,11 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredDataJson = JSON.stringify(buildStructuredData()).replace(
+  /</g,
+  "\\u003c",
+);
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -84,6 +90,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredDataJson }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${poppins.variable} ${zillaSlab.variable} antialiased bg-background text-foreground`}
       >

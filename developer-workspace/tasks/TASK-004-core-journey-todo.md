@@ -18,18 +18,18 @@
 
 - [x] Task 3: Real work filters, one card per view
 - [x] Task 4: SEO metadata, 404, robots, sitemap
-- [ ] Task 5: JSON-LD graph and llms.txt
+- [x] Task 5: JSON-LD graph and llms.txt
 
 ### Checkpoint B
 - [x] Filters verified in browser
 - [x] 404 / robots / sitemap verified
-- [ ] JSON-LD parses with 7 nodes
-- [ ] llms.txt verified
-- [ ] Typecheck and build pass
+- [x] JSON-LD parses with 7 nodes
+- [x] llms.txt verified
+- [x] Typecheck and build pass
 
 ## Phase 3 — Gate
 
-- [ ] Task 6: Content validator checks
+- [x] Task 6: Content validator checks
 - [ ] Task 7: Full verification + honest report
 
 ### Final

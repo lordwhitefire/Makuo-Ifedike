@@ -197,5 +197,68 @@ Behaviour:
 - Build route list still shows the internal `/_not-found`; the custom `not-found.tsx` is what
   the dev server serves for unmatched URLs.
 
+## Task 5 — JSON-LD @graph and /llms.txt
+
+Date: 2026-11-03
+
+Files changed:
+- `src/content/structured-data.ts` — new; builds a 7-node `@graph` from `identity.ts` +
+  `projects.ts`: Person, WebSite, ProfilePage, Truespec (SoftwareApplication), Athletica
+  (SoftwareApplication), Interior-deco (CreativeWork), CP3-legacy (CreativeWork).
+  - Person node via `buildPersonJsonLd()` from identity (no `@context` — the graph owns it);
+    legalName/alternateName carry Victor Makuo Ifedike; name is Makuo Ifedike.
+  - Every project node: creator/author → Person @id; description built only from
+    caseStudy.problem + caseStudy.approach (no outcome, no digits); dateCreated from
+    `dates.created`; Status additionalProperty = Live / In progress.
+  - Truespec + Interior-deco = Live; Athletica + CP3-legacy = In progress.
+- `src/app/layout.tsx` — renders one invisible `<script type="application/ld+json">` in `<head>`
+  with `JSON.stringify(...).replace(/</g, "\\u003c")` per the Next JSON-LD guide.
+- `public/llms.txt` — new; bio, About me, Profiles, My stack, Featured work (4 projects),
+  Full project inventory, Site; corrected statuses (Athletica/CP3-legacy In progress);
+  canonical domain only; no ifedikemakuo.
+
+Behaviour (verified live on dev server):
+- Exactly one `<script type="application/ld+json">` in `<head>` (0 in body).
+- Graph length 7; types Person, WebSite, ProfilePage, SoftwareApplication x2, CreativeWork x2.
+- Person name Makuo Ifedike; legalName Victor Makuo Ifedike; alternateName carries Victor
+  Makuo Ifedike.
+- Every project creator points to Person @id.
+- Athletica + CP3-legacy = In progress; Truespec + Interior-deco = Live.
+- All four descriptions digit-free (no outcome numbers).
+- `/llms.txt` returns `200 text/plain; charset=UTF-8`; contains bio, stack, featured work,
+  inventory, all four projects, corrected statuses.
+- `grep -rn "ifedikemakuo" src public` → none.
+
+### Verification
+
+- `npx tsc --noEmit` pass; `npm run validate:content` pass (now 16 checks incl. JSON-LD +
+  llms.txt); `npx next build` pass.
+- Dev server: extracted JSON-LD and `JSON.parse`d it; asserted 7 nodes, creators, statuses,
+  digit-free descriptions.
+- `curl /llms.txt` → 200, required sections present.
+- `grep` for `ifedikemakuo` → none.
+
+### Not verified / known issues
+
+- Live structured-data rendering for unmatched routes beyond home/404/privacy: not separately
+  checked (graph is injected in the root layout, so it applies app-wide).
+- Rich Results Test / Schema Markup Validator not run (no external tooling assumed).
+
+## Task 6 — Content validator checks
+
+Date: 2026-11-03
+
+`scripts/validate-content.mjs` extended from 10 to 16 checks:
+- 11. structured-data.ts defines exactly one `@graph`.
+- 12. structured-data.ts `@graph` contains all 7 expected node ids.
+- 13. structured-data.ts uses `https://schema.org` context and covers all four slugs.
+- 14. layout.tsx renders exactly one `application/ld+json` script tag and builds from
+  `src/content/structured-data.ts`.
+- 15. public/llms.txt exists with bio/stack/featured/inventory sections, all four projects,
+  corrected statuses, no stray domain.
+- 16. `ifedikemakuo.vercel.app` absent from src and public text assets.
+
+`validate-content: ALL CHECKS PASSED`.
+
 
 

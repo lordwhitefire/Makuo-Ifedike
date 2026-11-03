@@ -1,0 +1,52 @@
+# Makuo Ifedike — Portfolio
+
+I find real problems and build working solutions fast. I look for people stuck on a real workflow problem, then design and build a functional prototype, usually in days, so you can see exactly how it would work before committing to anything. My core stack: React, Next.js, Remix, TypeScript, and Tailwind CSS on the frontend, with Supabase and Sanity CMS for backend and content. Most of what I build is fully working, not just a visual mockup. Two live projects I built and shipped myself: Interior Decorators, a 30-page design agency site built to show what a premium interior decoration website should look like — CMS-driven, fast, and accessible: https://interior-deco-kappa.vercel.app — and Truespec, a dealership system for a Nigerian vehicle-import business: https://truespec-k4y6.vercel.app. I also built Athletica, a product showcase platform for an Amazon affiliate marketer who was losing sales to DM-based selling. Customers browse a real catalog, pick sizes, and build a cart. The Amazon affiliate handoff is the final piece, still in development. The owner manages everything from a drag-and-drop admin panel: https://athletica-blond.vercel.app I work independently and I'm currently building custom tools for teams and founders who have a specific workflow problem worth solving. If that's you, let's talk.
+
+## About me
+
+- **Name:** Makuo Ifedike (legal name: Victor Makuo Ifedike)
+- **Location:** Onitsha and Awka, Anambra State, Nigeria
+- **Work email:** mifedike@gmail.com
+- **Building for the web since:** July 2022
+- **X bio:** Web Developer | BOS Brigade (x.com/lwhitefire, account created July 2024)
+- **Education:** B.Eng Chemical Engineering, Nnamdi Azikiwe University (Aug 2019–Aug 2025)
+- **Headline:** Frontend Engineer at Athletica — Freelance
+- **Certifications:** Responsive Web Design, freeCodeCamp (Mar 2023)
+- **Languages:** Hindi (elementary proficiency); Korean, German, French (listed, level unstated)
+- **One-line:** Self-taught developer in Onitsha, Anambra State, Nigeria, building for the web since July 2022 with Next.js, Remix, TypeScript, Sanity and Postgres. X: @lwhitefire.
+
+## Profiles
+
+- GitHub: https://github.com/lordwhitefire
+- X: https://x.com/lwhitefire (bio: "Web Developer | BOS Brigade"; website field links to the old FireSage Studio template site — the canonical site is https://makuo-ifedike.vercel.app/)
+- LinkedIn: https://www.linkedin.com/in/makuoifedike/
+
+## My stack
+
+Systems Design, React.js, TypeScript, Next.js, Node.js, React Remix, Framer Motion, Lighthouse, Playwriting, React Testing Library, Web Accessibility, PostgreSQL, REST APIs, Sanity CMS, Python / FastAPI, Context Management, Prompt Engineering, Multi-agent Systems, Workflow Automation, LLM Orchestration, AI Product Engineering, Event-driven, HTML, CSS, JavaScript
+
+Stack evidenced in public repositories and LinkedIn profile.
+
+## Featured work (4 projects)
+
+- **Truespec** — Dealership system: public showroom + private office for a Nigerian vehicle-import business. Live — flagship. https://truespec-k4y6.vercel.app/ — https://github.com/lordwhitefire/truespec
+- **Athletica** — Football store and affiliate commerce platform built for a friend's affiliate business. In progress. https://athletica-blond.vercel.app/ — https://github.com/lordwhitefire/athletica
+- **Interior-deco** — CMS-driven marketing site for the Whitefire Interior brand. Live. https://interior-deco-kappa.vercel.app/ — https://github.com/lordwhitefire/interior-deco
+- **CP3-legacy** — Chris Paul fan site / sports experience. In progress. https://cp3-legacy.vercel.app/ — https://github.com/lordwhitefire/cp3-legacy
+
+Whitefire Interior is the Interior-deco project's brand, not the owner's studio and not a confirmed client engagement. CP3-legacy is a fan destination, not an official affiliation. Athletica is built for a friend who runs an affiliate business — client work.
+
+## Full project inventory
+
+15 counted non-forked public repositories; 20 forks and 1 empty repository excluded (not presented as work).
+
+Additional public work: new-portfolio (template-derived, FireSage Studio), eliphany-ng, eliphany-admin, Admin-demo, odin-landing-page (first hand-written CSS page), freecodecamp_project_4, online-store (template-derived, unreleased), youtube-analytics (experiment), agentic-video-system (in progress), interior-deco-cms (in progress), lordwhitefire profile README.
+
+Athletica is confirmed client work (built for a friend's affiliate business). No other client relationships, revenue, user counts, awards, or launch dates are verified and none are claimed.
+
+## Site
+
+- Home: https://makuo-ifedike.vercel.app/ (live)
+- Sitemap: https://makuo-ifedike.vercel.app/sitemap.xml
+- Robots: https://makuo-ifedike.vercel.app/robots.txt
+- llms.txt: https://makuo-ifedike.vercel.app/llms.txt

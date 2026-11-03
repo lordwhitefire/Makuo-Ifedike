@@ -83,13 +83,13 @@ export const identity: Identity = {
 };
 
 /**
- * Build the Person JSON-LD object for the portfolio head.
+ * Build the Person node for the portfolio JSON-LD @graph.
+ * The graph owns the top-level @context.
  * The legal name appears in structured data only — never as page title/H1.
  * No phone/WhatsApp anywhere.
  */
 export function buildPersonJsonLd() {
   return {
-    "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${identity.url}#person`,
     name: identity.name,
