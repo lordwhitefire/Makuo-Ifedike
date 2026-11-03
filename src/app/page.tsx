@@ -10,7 +10,7 @@ import EngagementLayer from "@/components/EngagementLayer";
 import ContactLauncher from "@/components/ContactLauncher";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { projects, displayOrder } from "@/content/projects";
+import { WORK_TABS, filterProjects, type WorkTabId } from "@/lib/project-filters";
 import { identity } from "@/content/identity";
 
 const stacks = [
@@ -24,12 +24,11 @@ const stacks = [
   { name: "Vitest", src: "vitest" },
 ];
 
-const workTabs = ["All", "marketing site", "web app", "in-progress"];
-
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(1);
-  const [activeWorkTab, setActiveWorkTab] = useState(0);
+  const [activeWorkTab, setActiveWorkTab] = useState<WorkTabId>("all");
+  const visibleProjects = filterProjects(activeWorkTab);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -285,14 +284,16 @@ export default function Home() {
             </div>
             <div className="work-tabs-col">
               <ul className="work-tabs">
-                {workTabs.map((tab, i) => (
-                  <li key={tab} className="work-tab-item">
+                {WORK_TABS.map((tab) => (
+                  <li key={tab.id} className="work-tab-item">
                     <button
                       type="button"
-                      className={`work-tab${activeWorkTab === i ? " active" : ""}`}
-                      onClick={() => setActiveWorkTab(i)}
+                      className={`work-tab${activeWorkTab === tab.id ? " active" : ""}`}
+                      onClick={() => setActiveWorkTab(tab.id)}
+                      aria-pressed={activeWorkTab === tab.id}
+                      data-filter={tab.id}
                     >
-                      {tab}
+                      {tab.label}
                     </button>
                   </li>
                 ))}
@@ -303,10 +304,13 @@ export default function Home() {
 
         <div className="work-tab-content">
           <div key={activeWorkTab} className="work-pane">
+            {/*
+              Four records max; Swiper loop needs more than four slides at
+              the 4-up breakpoint. Loop stays off so each project exists once.
+            */}
             <Swiper
               modules={[Navigation]}
               navigation
-              loop
               slidesPerView={4}
               spaceBetween={1}
               breakpoints={{
@@ -318,34 +322,34 @@ export default function Home() {
               }}
               className="work-carousel"
             >
-              {[0, 1, 2].flatMap((copy) =>
-                displayOrder.map((slug) => {
-                  const p = projects[slug];
-                  return (
-                    <SwiperSlide key={`${p.name}-${copy}`}>
-                      <article className="work-card">
-                        <a
-                          className="work-card-thumb"
-                          href={p.liveUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img className="work-card-img" src={p.images.card} alt={p.name} />
-                          <span className="work-card-overlay" />
+              {visibleProjects.map((p) => (
+                <SwiperSlide key={p.slug}>
+                  <article
+                    className="work-card"
+                    data-project={p.slug}
+                    data-filter={p.filter}
+                    data-status={p.status}
+                  >
+                    <a
+                      className="work-card-thumb"
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img className="work-card-img" src={p.images.card} alt={p.name} />
+                      <span className="work-card-overlay" />
+                    </a>
+                    <div className="work-card-content">
+                      <p className="work-card-subtitle">{p.category}</p>
+                      <h3 className="work-card-title">
+                        <a href={p.liveUrl} target="_blank" rel="noopener noreferrer">
+                          {p.name}
                         </a>
-                        <div className="work-card-content">
-                          <p className="work-card-subtitle">{p.category}</p>
-                          <h3 className="work-card-title">
-                            <a href={p.liveUrl} target="_blank" rel="noopener noreferrer">
-                              {p.name}
-                            </a>
-                          </h3>
-                        </div>
-                      </article>
-                    </SwiperSlide>
-                  );
-                })
-              )}
+                      </h3>
+                    </div>
+                  </article>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

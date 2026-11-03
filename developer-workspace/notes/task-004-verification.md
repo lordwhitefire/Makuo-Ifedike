@@ -110,3 +110,37 @@ Behaviour:
 - The rate limit is in-memory and per instance. On multiple or serverless instances it is
   weaker than five per window; the plan explicitly asks for best-effort in-memory.
 
+## Task 3 — real Work filters
+
+Date: 2026-11-03
+
+Files changed:
+- `src/lib/project-filters.ts` — new pure helper: `WORK_TABS` and `filterProjects(tab)`.
+- `src/app/page.tsx` — tabs render from `WORK_TABS`, state is a `WorkTabId`, Swiper renders
+  the filtered array once, cards carry `data-project` / `data-filter` / `data-status`, tab
+  buttons carry `data-filter` and `aria-pressed`.
+
+Behaviour:
+- All → interior-deco, truespec, athletica, cp3-legacy.
+- marketing site → interior-deco.
+- web app → truespec, athletica, cp3-legacy.
+- in-progress → athletica, cp3-legacy.
+- Cards are derived from `displayOrder`; each project appears once.
+- Swiper `loop` is off: with four records and a 4-up breakpoint, Swiper needs more than four
+  slides for loop, so enabling it would warn or duplicate. Navigation still works at 1/2/3/4
+  cards.
+- No hidden text added; filter/status labels are data attributes.
+
+### Verification
+
+- `npx tsc --noEmit` pass; `npm run validate:content` pass; `npx next build` pass.
+- Visible Chrome, each tab clicked:
+  - all: 4 cards, order interior-deco, truespec, athletica, cp3-legacy, unique 4.
+  - marketing-site: 1 card, interior-deco.
+  - web-app: 3 cards, truespec, athletica, cp3-legacy.
+  - in-progress: 2 cards, athletica, cp3-legacy.
+  - Active tab correct; no duplicate card; 0 hidden label nodes; no console warnings/errors.
+- Tab buttons keep `work-tab` classes and text; only `active`, `data-filter`, `aria-pressed`
+  change.
+
+
