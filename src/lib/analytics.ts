@@ -1,4 +1,5 @@
 import { track } from "@vercel/analytics";
+import type { AnalyticsEvent } from "@/content/inquiries";
 
 /**
  * Track a custom analytics event safely.
@@ -11,7 +12,7 @@ import { track } from "@vercel/analytics";
  * No nested objects. No personal data (no names, emails, IPs).
  */
 export function trackEvent(
-  name: string,
+  name: AnalyticsEvent,
   properties?: Record<string, string | number | boolean | null>
 ) {
   if (typeof window === "undefined") {

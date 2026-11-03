@@ -75,27 +75,16 @@ export const INQUIRY_STATUS_FLOW: Record<InquiryStatus, InquiryStatus[]> = {
   lost: [],
 };
 
-export const CORE_ANALYTICS_EVENTS = [
+export const ANALYTICS_EVENTS = [
   "page_view",
-  "project_card_click",
-  "project_modal_open",
-  "external_link_click",
-  "contact_email_click",
-  "nav_scroll",
+  "project_view",
+  "cta_click",
+  "inquiry_start",
+  "inquiry_submit",
+  "outbound_project_click",
 ] as const;
 
-export const ENGAGEMENT_ANALYTICS_EVENTS = [
-  "scroll_milestone",
-  "time_spent",
-  "filter_applied",
-  "tab_switched",
-  "project_image_load",
-  "return_visit",
-] as const;
-
-export type AnalyticsEvent =
-  | (typeof CORE_ANALYTICS_EVENTS)[number]
-  | (typeof ENGAGEMENT_ANALYTICS_EVENTS)[number];
+export type AnalyticsEvent = (typeof ANALYTICS_EVENTS)[number];
 
 export interface AnalyticsEventRecord {
   name: AnalyticsEvent;
