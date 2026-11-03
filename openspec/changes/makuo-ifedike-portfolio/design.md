@@ -26,7 +26,7 @@ The portfolio currently exists only as a packed static page inside `andle-portfo
 - **Notifications**: Google Sheet is the record; email is backup with `[PORTFOLIO]` subject; WhatsApp is the second alert channel starting `[PORTFOLIO] New inquiry`; auto-reply "Thanks — I'll reply within one business day." Alternative — email only — rejected because inbox noise makes it unreliable.
 - **Engagement queue**: shared active-prompt state, 20s cooldown, once-per-session, priority exit → scroll → idle → footer; exit intent desktop only. Alternative — independent timers — rejected because prompts stacked in the current build.
 - **Stack**: Next.js 16 App Router, React, TypeScript, Tailwind; remove Prisma, next-auth, TanStack Query/Table, unused Radix, Recharts, MDX editor after verifying no usage. `typescript.ignoreBuildErrors: false`. One icon system (Simple Icons white SVGs self-hosted in `public/logos/`; Playwright official mark recoloured white or Vitest substitute); two typefaces max.
-- **Information layer**: JSON-LD `@graph` in `<head>`, `llms.txt`, sitemap, robots, canonical, OG/Twitter from content-workspace/pieces/ as-is; no CSS-hidden text. Domain `makuo-ifedike.vercel.app` pending owner spelling confirmation.
+- **Information layer**: JSON-LD `@graph` in `<head>`, `llms.txt`, sitemap, robots, canonical, OG/Twitter from content-workspace/pieces/ as-is; no CSS-hidden text. Domain `https://makuo-ifedike.vercel.app/` confirmed live (owner-confirmed, 2026-11-02).
 - **Build-time assets**: owner-supplied black-background portrait → `public/images/portrait.png`; Truespec back-office and Athletica admin screenshots optional (owner screenshots/demo login or public pages only).
 
 ## Risks / Trade-offs
@@ -50,8 +50,8 @@ Rollback: redeploy the previous Vercel preview; git is not yet initialized so in
 
 ## Open Questions
 
-None — all open questions resolved by the owner on 2026-10-28:
-- Domain: `makuo-ifedike.vercel.app`
+None — all open questions resolved:
+- Domain: `https://makuo-ifedike.vercel.app/` (confirmed live, owner-confirmed 2026-11-02; C-04 closed)
 - My Stack: Vitest replaces Playwright
-- Graduation: B.Eng Chemical Engineering, Nnamdi Azikiwe University, 2019–2025
+- Graduation: B.Eng Chemical Engineering, Nnamdi Azikiwe University, Aug 2019–Aug 2025 (confirmed by LinkedIn data export; C-04 closed)
 - Location: Onitsha and Awka, Anambra State, Nigeria

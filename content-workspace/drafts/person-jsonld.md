@@ -3,10 +3,14 @@
 Sources: product-management/research/profile-data.json; product-management/decisions.md (identity addendum, 2026-10-27); product-management/architect-handoff.md (§5.10).
 
 Open items flagged:
-- Domain spelling pending owner confirmation: makuo-ifedike.vercel.app vs makuoifedike.vercel.app (underscores invalid in hostnames). Draft uses makuo-ifedike.vercel.app.
+- Domain confirmed: https://makuo-ifedike.vercel.app/ (live, owner's chosen canonical, 2026-11-02). All canonical URLs use this domain.
+- Duplicate domain `ifedikemakuo.vercel.app` also serves the same site (a stray deployment the developer created). It is NOT canonical: it must 301 redirect to `makuo-ifedike.vercel.app` and must never appear in canonical tags, Open Graph URLs, sitemap, robots, or JSON-LD @id/url values.
 - Portrait supplied: `/home/lordwhitefire/Downloads/Professional Portrait on Black.png` (PNG, 1122×1402). Builder copies to `public/images/portrait.png`; JSON-LD `image` points to `https://makuo-ifedike.vercel.app/images/portrait.png`.
-- Graduation year: owner ruling says 2025; research marked C-04 open. alumniOf carries the university only, no year, to avoid overclaiming.
+- Graduation year: 2025 confirmed by LinkedIn data export (Nnamdi Azikiwe University, Bachelor of Engineering, Aug 2019–Aug 2025). alumniOf carries the university only; no year field exists on that type.
 - Work email published in JSON-LD only because the owner confirmed it as public.
+- X profile (verified from Twitter data export 2026-10-28): username lwhitefire, display name Makuo Ifedike, bio "Web Developer | BOS Brigade", location Nigeria, account created July 2024. X website field links to the old FireSage Studio template site (new-portfolio); the canonical site is https://makuo-ifedike.vercel.app/.
+- X export contains a private account email (ifedikevmakuo2002@gmail.com) — account data, not published.
+- Athletica is client/friend work — built for a friend's affiliate business (per owner, 2026-11-02).
 
 ```json
 {
@@ -28,7 +32,7 @@ Open items flagged:
       "url": "https://makuo-ifedike.vercel.app/",
       "image": "https://makuo-ifedike.vercel.app/images/portrait.png",
       "jobTitle": "Frontend Engineer — Freelance",
-      "description": "Self-taught developer in Onitsha, Anambra State, Nigeria, building for the web since July 2022 with Next.js, Remix, TypeScript, Sanity and Postgres.",
+      "description": "Web Developer | BOS Brigade. Self-taught developer in Onitsha, Anambra State, Nigeria, building for the web since July 2022 with Next.js, Remix, TypeScript, Sanity and Postgres. X: @lwhitefire.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Onitsha and Awka",
@@ -47,6 +51,13 @@ Open items flagged:
         "https://www.linkedin.com/in/makuoifedike/"
       ],
       "email": "mifedike@gmail.com",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "X profile",
+          "value": "Web Developer | BOS Brigade — x.com/lwhitefire (account created July 2024, located in Nigeria)"
+        }
+      ],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Nnamdi Azikiwe University"
@@ -108,7 +119,7 @@ Open items flagged:
       "name": "Athletica",
       "applicationCategory": "E-commerce",
       "applicationSubCategory": "Football store with affiliate commerce",
-      "description": "Football store and affiliate commerce platform: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
+      "description": "Football store and affiliate commerce platform built for a friend's affiliate business: public storefront with catalogue, cart, checkout, accounts and orders; private admin for products, media, orders and affiliate settings.",
       "url": "https://athletica-blond.vercel.app/",
       "codeRepository": "https://github.com/lordwhitefire/athletica",
       "creator": { "@id": "https://makuo-ifedike.vercel.app/#person" },
@@ -116,7 +127,19 @@ Open items flagged:
       "operatingSystem": "Web",
       "isAccessibleForFree": true,
       "dateCreated": "2026-03-31",
-      "audience": "Football customers and affiliate partners",
+      "audience": "Football customers and affiliate partners (built for a friend's affiliate business)",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Client relationship",
+          "value": "Built for a friend who runs an affiliate business — client work, not the owner's own product."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Status",
+          "value": "Live preview"
+        }
+      ],
       "featureList": [
         "Storefront catalogue with brands, categories and models",
         "Search, cart, checkout, order history",
@@ -125,12 +148,7 @@ Open items flagged:
         "Bulk catalogue import",
         "Traffic, product and affiliate analytics",
         "Amazon affiliate settings and generated URLs"
-      ],
-      "additionalProperty": {
-        "@type": "PropertyValue",
-        "name": "Status",
-        "value": "Live preview"
-      }
+      ]
     },
     {
       "@type": "CreativeWork",
@@ -176,8 +194,11 @@ Open items flagged:
 ```
 
 Notes:
-- No `image` — the owner's portrait is a build-time asset, not yet supplied; no stock portrait used.
-- No phone/WhatsApp anywhere.
+- Portrait supplied: `/home/lordwhitefire/Downloads/Professional Portrait on Black.png` (PNG, 1122×1402). Builder copies to `public/images/portrait.png`; JSON-LD `image` points to `https://makuo-ifedike.vercel.app/images/portrait.png`.
+- No phone/WhatsApp anywhere (a work number exists in the LinkedIn export but is private and not published).
+- No outcome numbers.
+- `Ifedike Victor` survives only in `alternateName` and never as `name`.
+- `sameAs` carries GitHub, X and LinkedIn `makuoifedike` only; rejected LinkedIn slugs excluded.
 - No client names, testimonials, or outcome numbers.
 - `Ifedike Victor` survives only in `alternateName` and never as `name`.
 - `sameAs` carries GitHub, X and LinkedIn `makuoifedike` only; rejected LinkedIn slugs excluded.

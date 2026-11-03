@@ -1,15 +1,16 @@
 # Draft — llms.txt (site root)
 
-Sources: product-management/research/profile-data.json; product-management/decisions.md; product-management/architect-handoff.md (§5.10).
+Sources: product-management/research/profile-data.json; product-management/decisions.md; product-management/architect-handoff.md (§5.10); LinkedIn data export Complete_LinkedInDataExport_10-28-2026 (owner-supplied, extracted in project root).
 
-Open items flagged:
-- Domain spelling pending owner confirmation: makuo-ifedike.vercel.app vs makuoifedike.vercel.app.
-- Long bio in owner's own words is [FILL IN] in research; draft below is written from verified facts, not the owner's voice — flagged for replacement.
-- Graduation year 2025 per owner ruling in decisions.md; research marked C-04 open.
+- Domain confirmed: https://makuo-ifedike.vercel.app/ (live, owner's chosen canonical, 2026-11-02). The duplicate `ifedikemakuo.vercel.app` must 301 to it and never appear in this file.
+- Long bio below is the owner's own LinkedIn summary (verified source).
+- Education: Nnamdi Azikiwe University, B.Eng Chemical Engineering, Aug 2019–Aug 2025 (confirmed by LinkedIn data export).
+- Athletica is client/friend work — built for a friend's affiliate business (per owner, 2026-11-02).
+- Phone number from LinkedIn export is private and not published.
 
 # Makuo Ifedike — Portfolio
 
-Self-taught frontend engineer in Onitsha, Anambra State, Nigeria, building for the web since July 2022. I build and fix software for small businesses — marketing sites, web apps, and systems that are slow or half-built.
+I find real problems and build working solutions fast. I look for people stuck on a real workflow problem, then design and build a functional prototype, usually in days, so you can see exactly how it would work before committing to anything. My core stack: React, Next.js, Remix, TypeScript, and Tailwind CSS on the frontend, with Supabase and Sanity CMS for backend and content. Most of what I build is fully working, not just a visual mockup. Two live projects I built and shipped myself: Athletica, a product showcase platform for an Amazon affiliate marketer who was losing sales to DM-based selling. Customers browse a real catalog, pick sizes, and build a cart. The Amazon affiliate handoff is the final piece, still in development. The owner manages everything from a drag-and-drop admin panel: https://athletica-blond.vercel.app — Interior Decorators, a 30-page design agency site built to show what a premium interior decoration website should look like. CMS-driven, fast, and accessible: https://interior-deco-kappa.vercel.app I work independently and I'm currently building custom tools for teams and founders who have a specific workflow problem worth solving. If that's you, let's talk.
 
 ## About me
 
@@ -17,30 +18,33 @@ Self-taught frontend engineer in Onitsha, Anambra State, Nigeria, building for t
 - **Location:** Onitsha and Awka, Anambra State, Nigeria
 - **Work email:** mifedike@gmail.com
 - **Building for the web since:** July 2022
-- **Education:** B.Eng Chemical Engineering, Nnamdi Azikiwe University (2025 — owner stated year; research marked open)
-- **Headline:** Frontend Engineer — Freelance
-- **One-line:** Self-taught developer in Onitsha, Anambra State, Nigeria, building for the web since July 2022 with Next.js, Remix, TypeScript, Sanity and Postgres.
+- **X bio:** Web Developer | BOS Brigade (x.com/lwhitefire, account created July 2024)
+- **Education:** B.Eng Chemical Engineering, Nnamdi Azikiwe University (Aug 2019–Aug 2025)
+- **Headline:** Frontend Engineer at Athletica — Freelance
+- **Certifications:** Responsive Web Design, freeCodeCamp (Mar 2023)
+- **Languages:** Hindi (elementary proficiency); Korean, German, French (listed, level unstated)
+- **One-line:** Self-taught developer in Onitsha, Anambra State, Nigeria, building for the web since July 2022 with Next.js, Remix, TypeScript, Sanity and Postgres. X: @lwhitefire.
 
 ## Profiles
 
 - GitHub: https://github.com/lordwhitefire
-- X: https://x.com/lwhitefire
+- X: https://x.com/lwhitefire (bio: "Web Developer | BOS Brigade"; website field links to the old FireSage Studio template site — the canonical site is https://makuo-ifedike.vercel.app/)
 - LinkedIn: https://www.linkedin.com/in/makuoifedike/
 
 ## My stack
 
-Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, next-auth, Vercel, Astro, Python, FastAPI, LangGraph, HTML, CSS, JavaScript
+Systems Design, React.js, TypeScript, Next.js, Node.js, React Remix, Framer Motion, Lighthouse, Playwriting, React Testing Library, Web Accessibility, PostgreSQL, REST APIs, Sanity CMS, Python / FastAPI, Context Management, Prompt Engineering, Multi-agent Systems, Workflow Automation, LLM Orchestration, AI Product Engineering, Event-driven, HTML, CSS, JavaScript
 
-Stack evidenced in public repositories; HTML, CSS and JavaScript claimed from the public resume (medium confidence).
+Stack evidenced in public repositories and LinkedIn profile.
 
 ## Featured work (4 projects)
 
 - **Truespec** — Dealership system: public showroom + private office for a Nigerian vehicle-import business. Live — flagship. https://truespec-k4y6.vercel.app/ — https://github.com/lordwhitefire/truespec
-- **Athletica** — Football store and affiliate commerce platform. Live preview. https://athletica-blond.vercel.app/ — https://github.com/lordwhitefire/athletica
+- **Athletica** — Football store and affiliate commerce platform built for a friend's affiliate business. Live preview. https://athletica-blond.vercel.app/ — https://github.com/lordwhitefire/athletica
 - **Interior-deco** — CMS-driven marketing site for the Whitefire Interior brand. Live. https://interior-deco-kappa.vercel.app/ — https://github.com/lordwhitefire/interior-deco
 - **CP3-legacy** — Chris Paul fan site / sports experience. Live. https://cp3-legacy.vercel.app/ — https://github.com/lordwhitefire/cp3-legacy
 
-Whitefire Interior is the Interior-deco project's brand, not the owner's studio and not a confirmed client engagement. CP3-legacy is a fan destination, not an official affiliation.
+Whitefire Interior is the Interior-deco project's brand, not the owner's studio and not a confirmed client engagement. CP3-legacy is a fan destination, not an official affiliation. Athletica is built for a friend who runs an affiliate business — client work.
 
 ## Full project inventory
 
@@ -48,11 +52,11 @@ Whitefire Interior is the Interior-deco project's brand, not the owner's studio 
 
 Additional public work: new-portfolio (template-derived, FireSage Studio), eliphany-ng, eliphany-admin, Admin-demo, odin-landing-page (first hand-written CSS page), freecodecamp_project_4, online-store (template-derived, unreleased), youtube-analytics (experiment), agentic-video-system (in progress), interior-deco-cms (in progress), lordwhitefire profile README.
 
-No client relationships, revenue, user counts, awards, or launch dates are verified and none are claimed.
+Athletica is confirmed client work (built for a friend's affiliate business). No other client relationships, revenue, user counts, awards, or launch dates are verified and none are claimed.
 
 ## Site
 
-- Home: https://makuo-ifedike.vercel.app/ [pending owner confirmation of final spelling]
+- Home: https://makuo-ifedike.vercel.app/ (live)
 - Sitemap: https://makuo-ifedike.vercel.app/sitemap.xml
 - Robots: https://makuo-ifedike.vercel.app/robots.txt
 - llms.txt: https://makuo-ifedike.vercel.app/llms.txt

@@ -15,6 +15,6 @@
 - Journey started July 2022; "building for the web since 2022"; 4 years 3 months as of 2026-10-27.
 - Four featured projects: Interior-deco, Truespec, Athletica, CP3-legacy. 15 counted non-forked repos; 20 forks + 1 empty excluded.
 - No client logos, no testimonials, no numbers in outcomes, no phone/WhatsApp, no home address beyond city/state.
-- Domain: makuo-ifedike.vercel.app (pending owner spelling confirmation; underscores invalid in hostnames).
+- Domain: https://makuo-ifedike.vercel.app/ (owner's canonical, confirmed 2026-11-02). The duplicate deployment domain `ifedikemakuo.vercel.app` must 301 redirect here and must not appear in any tag.
 
 **Open items flagged in drafts:** long bio in owner's own words ([FILL IN] in research), final domain spelling, portrait asset not yet supplied.

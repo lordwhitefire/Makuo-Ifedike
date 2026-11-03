@@ -3,7 +3,7 @@
 Sources: product-management/research/profile-data.json; product-management/decisions.md; product-management/architect-handoff.md (§5.6 SEO).
 
 Open items flagged:
-- Domain spelling pending owner confirmation. Draft uses makuo-ifedike.vercel.app.
+- Domain confirmed: https://makuo-ifedike.vercel.app/ (live, owner's chosen canonical, 2026-11-02). The duplicate `ifedikemakuo.vercel.app` must 301 to it and never appear in metadata.
 - Open Graph image: `https://makuo-ifedike.vercel.app/images/portrait.png` (portrait supplied; builder copies to `public/images/portrait.png`).
 
 ## Home page (`/`)

@@ -32,12 +32,12 @@ The Person JSON-LD SHALL carry address locality "Onitsha and Awka", address regi
 - **WHEN** the Person JSON-LD is parsed
 - **THEN** addressLocality is "Onitsha and Awka" and addressCountry is "Nigeria"
 
-### Requirement: Education is B.Eng Chemical Engineering, Nnamdi Azikiwe University, 2019–2025
-The Person JSON-LD `alumniOf` SHALL name Nnamdi Azikiwe University with education dates 2019–2025.
+### Requirement: Education is B.Eng Chemical Engineering, Nnamdi Azikiwe University, Aug 2019–Aug 2025
+The Person JSON-LD `alumniOf` SHALL name Nnamdi Azikiwe University. Education dates Aug 2019–Aug 2025 confirmed by LinkedIn data export (C-04 closed; 2025 graduation confirmed).
 
 #### Scenario: Alumni record carries the university and date range
 - **WHEN** the Person JSON-LD `alumniOf` is inspected
-- **THEN** institution is "Nnamdi Azikiwe University" and dates are "2019–2025"
+- **THEN** institution is "Nnamdi Azikiwe University" and education dates are confirmed Aug 2019–Aug 2025
 
 ### Requirement: Whitefire is not the owner's studio
 Interior-deco SHALL be described as branded Whitefire Interior, the project's brand. Copy SHALL NOT state that Whitefire is the owner's studio or a confirmed client engagement.

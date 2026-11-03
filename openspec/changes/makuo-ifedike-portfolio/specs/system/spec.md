@@ -19,11 +19,11 @@ The site SHALL be a Next.js 16 App Router app in TypeScript with one deploy. No 
 - **THEN** typecheck and link check pass and `ignoreBuildErrors` is `false`
 
 ### Requirement: Vercel hosting and domain
-The site SHALL be hosted on Vercel at `makuo-ifedike.vercel.app` (owner-confirmed spelling, 2026-10-28), over HTTPS, with preview deploys.
+The site SHALL be hosted on Vercel at `makuo-ifedike.vercel.app` (owner-confirmed, live), over HTTPS, with preview deploys.
 
 #### Scenario: Site is reachable at the confirmed domain
 - **WHEN** the site is deployed
-- **THEN** it is reachable at `makuo-ifedike.vercel.app` over HTTPS
+- **THEN** it is reachable at `https://makuo-ifedike.vercel.app/` over HTTPS
 
 ### Requirement: No unused dependencies
 Prisma, next-auth, TanStack Query/Table, unused Radix components, Recharts, and MDX editor SHALL be removed after verifying no usage. No new unused dependencies SHALL be added.
