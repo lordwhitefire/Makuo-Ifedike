@@ -27,13 +27,19 @@
 - [x] Sheet rows read back via the API (11 columns, `consent=yes`, `status=new`)
 - [ ] Owner to confirm inbox + WhatsApp receipt (human check)
 
-Three submissions, one per state:
+Four submissions:
 
 | # | time (UTC) | inquiry id | delivered | note |
 |---|---|---|---|---|
 | 1 | 17:29:46 | `ad8bc70f-1210-40fb-b5ec-af510345385e` | owner-email, whatsapp, auto-reply | Sheets failed — tab was `Sheet1` |
-| 2 | 18:24:05 | `144f3c5a-1e34-4afd-b47a-ef9dfc6d5d0b` | google-sheets, whatsapp, auto-reply | owner-email hit a transient `fetch failed` |
+| 2 | 18:24:05 | `144f3c5a-1e34-4afd-b47a-ef9dfc6d5d0b` | google-sheets, whatsapp, auto-reply | owner-email `fetch failed` |
 | 3 | 18:24:56 | `591a9817-c7e5-4b7d-968f-6956a440441d` | **all four** | clean |
+| 4 | 18:43:02 | `646bc516-134b-447a-ae64-f4eb703497b8` | google-sheets, whatsapp, auto-reply | owner-email `fetch failed` again |
+
+**Known flakiness — owner-email.** 2 of 4 runs failed on the first Resend call after a
+long idle period, with a network-level `fetch failed` (no HTTP response). Runs where the
+connection was fresh or recently used succeeded. Consistent with a stale keep-alive
+socket in Node's fetch; `sendResend` has no retry. Not fixed — awaiting owner direction.
 
 Sheet readback (`'Portfolio Inquiries'!A1:K`): 2 data rows (`144f3c5a`, `591a9817`),
 11 columns each, `consent=yes`, `status=new`. A header row was added on 2026-11-03
@@ -62,3 +68,4 @@ Note: local runs only prove dispatch. `@vercel/analytics` dev mode logs and send
 - **2026-11-03** — plan + tracker created; steps 1–3 verified; step 4 held per owner instruction ("then do no #4").
 - **2026-11-03 17:29Z** — step 4 released and fired once; `200`, 3/4 adapters delivered (`owner-email`, `whatsapp`, `auto-reply`); Sheets rejected tab name `Portfolio Inquiries` because the workbook's only tab is `Sheet1`; awaiting rename authorization.
 - **2026-11-03 18:24Z** — owner renamed the tab; re-runs at 18:24:05 and 18:24:56 delivered Sheets; the 18:24:56 run delivered all four (`google-sheets`, `owner-email`, `whatsapp`, `auto-reply`); 2 rows read back from the sheet. Step 4 complete.
+- **2026-11-03 18:43Z** — header row added; test run `646bc516` delivered sheets + whatsapp + auto-reply, owner-email failed with `fetch failed` (2nd such failure). Pattern recorded: first Resend call after idle. Awaiting direction on a retry fix.
