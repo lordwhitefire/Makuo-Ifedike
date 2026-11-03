@@ -36,8 +36,9 @@ Three submissions, one per state:
 | 3 | 18:24:56 | `591a9817-c7e5-4b7d-968f-6956a440441d` | **all four** | clean |
 
 Sheet readback (`'Portfolio Inquiries'!A1:K`): 2 data rows (`144f3c5a`, `591a9817`),
-11 columns each, `consent=yes`, `status=new`. The tab has **no header row** — columns
-are unlabelled.
+11 columns each, `consent=yes`, `status=new`. A header row was added on 2026-11-03
+(`id, created, name, email, need, budget, timeline, message, link, consent, status`),
+inserted above the existing rows so no data was overwritten.
 
 **Defect found and closed:** Google rejected `'Portfolio Inquiries'!A1` while the tab
 was `Sheet1` (400 INVALID_ARGUMENT). Closed by renaming the tab; no code change.

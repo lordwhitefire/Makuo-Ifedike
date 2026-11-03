@@ -70,7 +70,7 @@ expects the tab name `Portfolio Inquiries` exactly.
 `delivered: ["google-sheets","owner-email","whatsapp","auto-reply"]`, and two rows were
 read back from `'Portfolio Inquiries'!A1:K` (11 columns, `consent=yes`, `status=new`).
 An intermediate run's transient `fetch failed` on `owner-email` did not recur.
-The tab has no header row; columns are unlabelled.
+A header row was added above the data on 2026-11-03, so the columns are labelled.
 
 **Prerequisites:** 1–3. **Owner:** confirm inbox/WhatsApp receipt.
 
