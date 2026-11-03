@@ -2,7 +2,7 @@
 
 **Plan:** `developer-workspace/plans/go-live-keys-plan.md`
 **Started:** 2026-11-03
-**Status:** steps 1–3 done, step 4 held on owner gate, steps 5–7 awaiting owner
+**Status:** steps 1–4 done (live sends verified), steps 5–7 awaiting owner
 
 ## 1. Restart dev server with filled keys — [x] DONE
 - [x] Server reports `Environments: .env.local`
@@ -19,24 +19,28 @@
 - [x] rate limit → hit 6 `429` `retryAfter:600`
 - [x] `/privacy` → `200`
 
-## 4. Live-send test — [FIRED] 3 of 4 adapters sent; Sheets defect
+## 4. Live-send test — [x] COMPLETE — all four adapters delivered
 - [x] Owner go-ahead — given
 - [x] Visitor address — owner email (per owner instruction)
-- [x] Valid submission → `200`, `delivered: ["owner-email","whatsapp","auto-reply"]`
-- [ ] Sheet row — **blocked: tab-name defect** (below)
-- [ ] Owner email / WhatsApp / auto-reply observed at destination — owner to confirm
+- [x] Rename sheet tab `Sheet1` → `Portfolio Inquiries` (owner, 2026-11-03)
+- [x] Valid submission → `200`, `delivered: ["google-sheets","owner-email","whatsapp","auto-reply"]`
+- [x] Sheet rows read back via the API (11 columns, `consent=yes`, `status=new`)
+- [ ] Owner to confirm inbox + WhatsApp receipt (human check)
 
-Run at `2026-11-03T17:29:46.888Z`, inquiry id `ad8bc70f-1210-40fb-b5ec-af510345385e`.
+Three submissions, one per state:
 
-**Defect — Google Sheets tab name.** Google rejected the range, not the credentials:
-`Unable to parse range: 'Portfolio Inquiries'!A1` (400 INVALID_ARGUMENT). Read-only
-diagnosis via the same service account: the spreadsheet is titled **"Inquiries"** and
-its only tab is **"Sheet1"**. `SHEET_TAB` (`src/lib/inquiries/adapters.ts:31`) expects
-a tab named exactly `Portfolio Inquiries`.
-**Fix options:** (a) rename the tab `Sheet1` → `Portfolio Inquiries` (no code change);
-(b) change the constant (code change). Recommended: (a).
-**Next:** on authorization, rename the tab, then re-run once and expect all four
-adapters in `delivered`.
+| # | time (UTC) | inquiry id | delivered | note |
+|---|---|---|---|---|
+| 1 | 17:29:46 | `ad8bc70f-1210-40fb-b5ec-af510345385e` | owner-email, whatsapp, auto-reply | Sheets failed — tab was `Sheet1` |
+| 2 | 18:24:05 | `144f3c5a-1e34-4afd-b47a-ef9dfc6d5d0b` | google-sheets, whatsapp, auto-reply | owner-email hit a transient `fetch failed` |
+| 3 | 18:24:56 | `591a9817-c7e5-4b7d-968f-6956a440441d` | **all four** | clean |
+
+Sheet readback (`'Portfolio Inquiries'!A1:K`): 2 data rows (`144f3c5a`, `591a9817`),
+11 columns each, `consent=yes`, `status=new`. The tab has **no header row** — columns
+are unlabelled.
+
+**Defect found and closed:** Google rejected `'Portfolio Inquiries'!A1` while the tab
+was `Sheet1` (400 INVALID_ARGUMENT). Closed by renaming the tab; no code change.
 
 ## 5. Add keys to Vercel project env — [ ] OWNER, NOT DONE
 - [ ] All ten names set for Preview
@@ -56,3 +60,4 @@ Note: local runs only prove dispatch. `@vercel/analytics` dev mode logs and send
 ## Log
 - **2026-11-03** — plan + tracker created; steps 1–3 verified; step 4 held per owner instruction ("then do no #4").
 - **2026-11-03 17:29Z** — step 4 released and fired once; `200`, 3/4 adapters delivered (`owner-email`, `whatsapp`, `auto-reply`); Sheets rejected tab name `Portfolio Inquiries` because the workbook's only tab is `Sheet1`; awaiting rename authorization.
+- **2026-11-03 18:24Z** — owner renamed the tab; re-runs at 18:24:05 and 18:24:56 delivered Sheets; the 18:24:56 run delivered all four (`google-sheets`, `owner-email`, `whatsapp`, `auto-reply`); 2 rows read back from the sheet. Step 4 complete.

@@ -44,7 +44,7 @@ undelegated actions that belong to the owner (Vercel env settings, the deploy).
 **Acceptance:** invalid → `400` + field errors; honeypot → `200` and no adapter fires;
 rate limit → `429` `retryAfter:600` on the sixth hit; `/privacy` → `200`.
 
-### 4. Live-send test — FIRED 2026-11-03; one defect found (Sheets tab name)
+### 4. Live-send test — COMPLETE 2026-11-03 (all four adapters delivered)
 **What it would do:** one genuine inquiry submission, which writes a real row to the
 `Portfolio Inquiries` sheet tab, sends the owner `[PORTFOLIO] New inquiry — {name}`
 email, sends the Twilio WhatsApp `[PORTFOLIO] New inquiry` alert, and delivers the
@@ -65,8 +65,14 @@ Read-only diagnosis with the same service account: the spreadsheet is titled **"
 and holds a single tab named **"Sheet1"**. `SHEET_TAB` (`src/lib/inquiries/adapters.ts:31`)
 expects the tab name `Portfolio Inquiries` exactly.
 
-**Remaining blocker for step 4's acceptance:** rename the tab, then re-run once.
-**Prerequisites:** 1–3. **Owner:** rename authorization.
+**Resolved.** The owner renamed the tab. The clean run
+`591a9817-c7e5-4b7d-968f-6956a440441d` (`18:24:56Z`) returned
+`delivered: ["google-sheets","owner-email","whatsapp","auto-reply"]`, and two rows were
+read back from `'Portfolio Inquiries'!A1:K` (11 columns, `consent=yes`, `status=new`).
+An intermediate run's transient `fetch failed` on `owner-email` did not recur.
+The tab has no header row; columns are unlabelled.
+
+**Prerequisites:** 1–3. **Owner:** confirm inbox/WhatsApp receipt.
 
 ### 5. Add the same ten keys to the Vercel project env — OWNER, NOT DONE
 **Why:** `.env.local` is local and gitignored. Until the names exist in the Vercel
