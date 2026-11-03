@@ -44,7 +44,7 @@ undelegated actions that belong to the owner (Vercel env settings, the deploy).
 **Acceptance:** invalid → `400` + field errors; honeypot → `200` and no adapter fires;
 rate limit → `429` `retryAfter:600` on the sixth hit; `/privacy` → `200`.
 
-### 4. Live-send test — HELD (owner gate)
+### 4. Live-send test — FIRED 2026-11-03; one defect found (Sheets tab name)
 **What it would do:** one genuine inquiry submission, which writes a real row to the
 `Portfolio Inquiries` sheet tab, sends the owner `[PORTFOLIO] New inquiry — {name}`
 email, sends the Twilio WhatsApp `[PORTFOLIO] New inquiry` alert, and delivers the
@@ -52,14 +52,21 @@ visitor auto-reply `Thanks — I'll reply within one business day.`
 **Acceptance (when released):** `POST /api/inquiries` returns `200` with a `delivered`
 list naming the adapters that fired, and the row/email/WhatsApp are observed at the
 destination.
-**Blocked on two prerequisites, both owner-provided:**
-1. Explicit go-ahead to send real email and WhatsApp.
-2. The visitor email address that receives the auto-reply (must be a live mailbox the
-   owner controls, because Resend will actually send to it).
+**Released by the owner and fired once, 2026-11-03. Result:**
+`200` `{"ok":true,"id":"ad8bc70f-1210-40fb-b5ec-af510345385e","delivered":["owner-email","whatsapp","auto-reply"]}`
+— three of four adapters fired. Google Sheets failed:
 
-**Prerequisites:** 1–3. **Owner:** the caller (go-ahead) and the owner (address).
-**Scope:** one submission. Optional variant: exercise one adapter at a time
-(Sheets-only, or Resend-only) instead of all four.
+```
+[inquiries] google-sheets failed — Google Sheets append failed (400):
+  "Unable to parse range: 'Portfolio Inquiries'!A1"  (INVALID_ARGUMENT)
+```
+
+Read-only diagnosis with the same service account: the spreadsheet is titled **"Inquiries"**
+and holds a single tab named **"Sheet1"**. `SHEET_TAB` (`src/lib/inquiries/adapters.ts:31`)
+expects the tab name `Portfolio Inquiries` exactly.
+
+**Remaining blocker for step 4's acceptance:** rename the tab, then re-run once.
+**Prerequisites:** 1–3. **Owner:** rename authorization.
 
 ### 5. Add the same ten keys to the Vercel project env — OWNER, NOT DONE
 **Why:** `.env.local` is local and gitignored. Until the names exist in the Vercel
