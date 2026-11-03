@@ -30,12 +30,12 @@
 ## Phase 3 — Gate
 
 - [x] Task 6: Content validator checks
-- [ ] Task 7: Full verification + honest report
+- [x] Task 7: Full verification + honest report
 
 ### Final
-- [ ] `npx tsc --noEmit`
-- [ ] `npm run validate:content`
-- [ ] `npx next build`
-- [ ] Dev-server route checks
-- [ ] Browser pass
-- [ ] Report written; live sends marked NOT VERIFIED
+- [x] `npx tsc --noEmit`
+- [x] `npm run validate:content`
+- [x] `npx next build`
+- [x] Dev-server route checks
+- [x] Browser pass
+- [x] Report written; live sends marked NOT VERIFIED
