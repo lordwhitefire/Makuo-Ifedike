@@ -8,6 +8,11 @@ import {
   type ChangeEvent,
   type FormEvent,
 } from "react";
+import {
+  INQUIRY_BUDGETS,
+  INQUIRY_NEED_TYPES,
+  INQUIRY_TIMELINES,
+} from "@/content/inquiries";
 
 type FormState = {
   name: string;
@@ -32,16 +37,6 @@ const EMPTY_FORM: FormState = {
   consent: false,
   company: "",
 };
-
-const NEED_TYPES = ["marketing site", "web app", "fix"];
-const BUDGETS = [
-  "Under ₦500k",
-  "₦500k–₦1.5m",
-  "₦1.5m–₦3m",
-  "Over ₦3m",
-  "Not sure",
-];
-const TIMELINES = ["ASAP", "1–3 months", "3–6 months", "Not sure"];
 
 const FALLBACK_EMAIL = "mifedike@gmail.com";
 const COOLDOWN_MS = 20_000;
@@ -373,9 +368,9 @@ export default function ContactLauncher() {
                         aria-invalid={Boolean(errors.needType)}
                       >
                         <option value="">Choose one</option>
-                        {NEED_TYPES.map((value) => (
-                          <option key={value} value={value}>
-                            {value}
+                        {INQUIRY_NEED_TYPES.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
                           </option>
                         ))}
                       </select>
@@ -396,9 +391,9 @@ export default function ContactLauncher() {
                         aria-invalid={Boolean(errors.budget)}
                       >
                         <option value="">Choose a range</option>
-                        {BUDGETS.map((value) => (
-                          <option key={value} value={value}>
-                            {value}
+                        {INQUIRY_BUDGETS.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
                           </option>
                         ))}
                       </select>
@@ -422,9 +417,9 @@ export default function ContactLauncher() {
                         aria-invalid={Boolean(errors.timeline)}
                       >
                         <option value="">Choose one</option>
-                        {TIMELINES.map((value) => (
-                          <option key={value} value={value}>
-                            {value}
+                        {INQUIRY_TIMELINES.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
                           </option>
                         ))}
                       </select>

@@ -6,7 +6,7 @@
 
 - [x] Task 0: Plan, brief, notes, baseline commit
 - [x] Task 1: Hide engagement, remove card tooltips, add contact launcher + privacy + honest 503
-- [ ] Task 2: Inquiry model, validation, adapters, env example, wire route
+- [x] Task 2: Inquiry model, validation, adapters, env example, wire route
 
 ### Checkpoint A
 - [x] Form opens, validates, submits (503 with fallback when unconfigured)
