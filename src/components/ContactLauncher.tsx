@@ -13,6 +13,7 @@ import {
   INQUIRY_NEED_TYPES,
   INQUIRY_TIMELINES,
 } from "@/content/inquiries";
+import { trackEvent } from "@/lib/analytics";
 
 type FormState = {
   name: string;
@@ -138,6 +139,8 @@ export default function ContactLauncher() {
   const openDialog = () => {
     if (cooldown || submitted) return;
     setOpen(true);
+    trackEvent("cta_click");
+    trackEvent("inquiry_start");
   };
 
   const update =
@@ -181,6 +184,7 @@ export default function ContactLauncher() {
         }
         setSubmitted(true);
         setStatus("success");
+        trackEvent("inquiry_submit");
         return;
       }
 
