@@ -143,4 +143,59 @@ Behaviour:
 - Tab buttons keep `work-tab` classes and text; only `active`, `data-filter`, `aria-pressed`
   change.
 
+## Task 4 — SEO metadata, 404, robots, sitemap
+
+Date: 2026-11-03
+
+Files changed:
+- `src/app/layout.tsx` — `metadataBase` and canonical from `identity.url`; corrected home
+  description (two live: Interior-deco, Truespec; two in progress: Athletica, CP3-legacy);
+  Open Graph (`title`, `description`, `url`, `siteName`, `locale: en_GB`, `type: website`,
+  `images` with 1122×1402 and alt); Twitter (`card: summary_large_image`, `title`,
+  `description`, `creator: @lwhitefire`, `images`); authors/application name.
+- `src/app/not-found.tsx` — new custom 404 with exact title, canonical `/404`, OG/Twitter
+  overrides, and a home link.
+- `src/app/robots.ts` — new; allow all, no disallow, `llms.txt` reference via `other`,
+  sitemap URL.
+- `src/app/sitemap.ts` — new; home URL only, monthly, priority 1.
+
+Behaviour:
+- Home title: `Makuo Ifedike — I build and fix software for small businesses`.
+- Home meta description explicitly says two live and two in progress.
+- Canonical host is `https://makuo-ifedike.vercel.app`; Next normalizes the wrote-with-slash
+  `identity.url` by removing the trailing slash because `trailingSlash` is false. Host and
+  path are exact. Enabling `trailingSlash` would change routing/redirects, so it was not
+  enabled.
+- Root `robots` metadata was removed. With it present, the 404 inherited `index, follow`
+  while Next auto-injected `noindex`, producing contradictory tags. Home and privacy now
+  emit no robots meta (crawlable), and the 404 emits only Next's automatic `noindex`.
+- `robots.txt` emits `llms.txt: https://makuo-ifedike.vercel.app/llms.txt` as a non-standard
+  directive through `other`. `/llms.txt` itself is Task 5.
+
+### Verification
+
+- `npx tsc --noEmit` pass; `npm run validate:content` pass; `npx next build` pass.
+- Home HTML: title exact; description contains “Two live projects: Interior-deco and
+  Truespec; two in progress: Athletica and CP3-legacy”; canonical
+  `https://makuo-ifedike.vercel.app`; OG title/description/url/site_name
+  `Makuo Ifedike — Portfolio`/locale `en_GB`/image
+  `https://makuo-ifedike.vercel.app/images/portrait.png` at 1122×1402; Twitter card
+  `summary_large_image`, creator `@lwhitefire`, same absolute image; no robots meta.
+- 404 (`/this-page-does-not-exist`): HTTP `404`; title exact
+  `404 — Page not found — Makuo Ifedike`; canonical
+  `https://makuo-ifedike.vercel.app/404`; one `<meta name="robots" content="noindex">`;
+  H1 “Page not found” and “Back to the portfolio” link visible; body contains
+  “Page not found”. Console had only the expected 404 resource error.
+- `/robots.txt`: `User-Agent: *`, `Allow: /`, `llms.txt` reference, `Sitemap:
+  https://makuo-ifedike.vercel.app/sitemap.xml`; no `Disallow` line.
+- `/sitemap.xml`: exactly one `<url>` for `https://makuo-ifedike.vercel.app/`, monthly,
+  priority 1.
+- `/privacy`: title `Privacy — Makuo Ifedike`, canonical
+  `https://makuo-ifedike.vercel.app/privacy`, no robots meta.
+- `grep -rn "ifedikemakuo" src public` → none.
+- `/images/portrait.png` → `200`, `image/png`.
+- Build route list still shows the internal `/_not-found`; the custom `not-found.tsx` is what
+  the dev server serves for unmatched URLs.
+
+
 

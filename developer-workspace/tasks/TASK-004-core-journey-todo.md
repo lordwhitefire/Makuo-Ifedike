@@ -17,12 +17,12 @@
 ## Phase 2 — Visible data + discovery
 
 - [x] Task 3: Real work filters, one card per view
-- [ ] Task 4: SEO metadata, 404, robots, sitemap
+- [x] Task 4: SEO metadata, 404, robots, sitemap
 - [ ] Task 5: JSON-LD graph and llms.txt
 
 ### Checkpoint B
 - [x] Filters verified in browser
-- [ ] 404 / robots / sitemap verified
+- [x] 404 / robots / sitemap verified
 - [ ] JSON-LD parses with 7 nodes
 - [ ] llms.txt verified
 - [ ] Typecheck and build pass

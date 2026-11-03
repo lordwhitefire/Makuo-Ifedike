@@ -3,6 +3,7 @@ import { Inter, Poppins, Zilla_Slab } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/navigation";
+import { identity } from "@/content/identity";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -24,10 +25,22 @@ const zillaSlab = Zilla_Slab({
   display: "swap",
 });
 
+const siteName = "Makuo Ifedike — Portfolio";
+const homeTitle =
+  "Makuo Ifedike — I build and fix software for small businesses";
+const homeDescription =
+  "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build marketing sites, web apps, and fix slow or half-built systems for small businesses. Two live projects: Interior-deco and Truespec; two in progress: Athletica and CP3-legacy.";
+const openGraphDescription =
+  "Self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build and fix software for small businesses — marketing sites, web apps, and systems that are slow or half-built.";
+const twitterDescription =
+  "Self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022.";
+
 export const metadata: Metadata = {
-  title: "Makuo Ifedike — I build and fix software for small businesses",
-  description:
-    "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build marketing sites, web apps, and fix slow or half-built systems for small businesses.",
+  metadataBase: new URL(identity.url),
+  title: homeTitle,
+  description: homeDescription,
+  applicationName: siteName,
+  authors: [{ name: identity.name, url: identity.url }],
   keywords: [
     "Makuo Ifedike",
     "portfolio",
@@ -36,18 +49,31 @@ export const metadata: Metadata = {
     "marketing sites",
     "web apps",
   ],
-  authors: [{ name: "Makuo Ifedike" }],
+  alternates: {
+    canonical: identity.url,
+  },
   openGraph: {
-    title: "Makuo Ifedike — I build and fix software for small businesses",
-    description:
-      "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022. I build marketing sites, web apps, and fix slow or half-built systems for small businesses.",
+    title: homeTitle,
+    description: openGraphDescription,
+    url: identity.url,
+    siteName,
+    locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: identity.image,
+        width: 1122,
+        height: 1402,
+        alt: identity.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Makuo Ifedike — Portfolio",
-    description:
-      "Makuo Ifedike is a self-taught frontend engineer in Onitsha, Nigeria, building for the web since 2022.",
+    title: homeTitle,
+    description: twitterDescription,
+    creator: "@lwhitefire",
+    images: [identity.image],
   },
 };
 
