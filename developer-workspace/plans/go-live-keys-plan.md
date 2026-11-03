@@ -74,19 +74,19 @@ A header row was added above the data on 2026-11-03, so the columns are labelled
 
 **Prerequisites:** 1–3. **Owner:** confirm inbox/WhatsApp receipt.
 
-### 5. Add the same ten keys to the Vercel project env — OWNER, NOT DONE
+### 5. Add the same ten keys to the Vercel project env — UNCONFIRMED
 **Why:** `.env.local` is local and gitignored. Until the names exist in the Vercel
 project environment the deployed site keeps returning the honest `503` fallback.
 **Acceptance:** the ten names are set in the Vercel project for Preview and
 Production.
 **Prerequisites:** 1–3. **Owner:** owner (dashboard only; not reachable from here).
 
-### 6. Push and deploy — GATED
+### 6. Push and deploy — DONE 2026-11-04
 **Why:** analytics can only be proven to land against a Vercel deployment.
 **Acceptance:** a Vercel deployment from current `main` succeeds.
 **Prerequisites:** 5. **Owner:** caller — no push without explicit instruction.
 
-### 7. Confirm analytics actually lands — after 6
+### 7. Confirm analytics actually lands — VERIFIED for 4 of 6 events, 2026-11-04
 **Why:** correctly, `@vercel/analytics` runs its **development** script on localhost,
 logs events, and sends nothing to the server. Local runs prove dispatch only; they
 cannot prove receipt. Receipt is only observable on the deployed domain through

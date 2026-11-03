@@ -2,7 +2,7 @@
 
 **Plan:** `developer-workspace/plans/go-live-keys-plan.md`
 **Started:** 2026-11-03
-**Status:** steps 1–4 done (live sends verified), steps 5–7 awaiting owner
+**Status:** steps 1–4 done (live sends verified), 6 done (pushed + deployed), 7 verified for 4 of 6 events; step 5 unconfirmed
 
 ## 1. Restart dev server with filled keys — [x] DONE
 - [x] Server reports `Environments: .env.local`
@@ -51,20 +51,28 @@ inserted above the existing rows so no data was overwritten.
 **Defect found and closed:** Google rejected `'Portfolio Inquiries'!A1` while the tab
 was `Sheet1` (400 INVALID_ARGUMENT). Closed by renaming the tab; no code change.
 
-## 5. Add keys to Vercel project env — [ ] OWNER, NOT DONE
+## 5. Keys in the Vercel project env — [ ] UNCONFIRMED
 - [ ] All ten names set for Preview
 - [ ] All ten names set for Production
-Note: `.env.local` is local and gitignored; deployed site stays `503` until done.
+Not observable from outside without a real submission. The honeypot probe returns
+`200 {ok:true}` on the live site, so the route is deployed — but it short-circuits before
+any adapter config check. A valid submission would return `503` (keys absent) or `200`
+with `delivered` (keys present); not run, because a valid submission performs live sends.
 
-## 6. Push and deploy — [ ] GATED on 5 + owner instruction
-- [ ] Owner says go
-- [ ] Deployment from `main` succeeds
-Currently `main` is 3 commits ahead of `origin/main`; nothing pushed.
+## 6. Push and deploy — [x] DONE
+- [x] Push — `origin/main` == local `e334fef`, 0 ahead
+- [x] Deployment live — `/`, `/privacy`, `/sitemap.xml`, `/robots.txt` all `200`
 
-## 7. Confirm analytics lands on the deployed site — [ ] after 6
-- [ ] Web Analytics enabled for the Vercel project (owner reports done)
-- [ ] Vercel dashboard shows `page_view`, `project_view`, `cta_click`, `inquiry_start`, `inquiry_submit`, `outbound_project_click`
-Note: local runs only prove dispatch. `@vercel/analytics` dev mode logs and sends nothing, so receipt is only observable on the deploy.
+## 7. Analytics on the deployed site — [x] VERIFIED (4 of 6 events)
+- [x] `/_vercel/insights/script.js` served `200`
+- [x] `page_view` → `POST /_vercel/insights/event` `200`
+- [x] `project_view` ×4 (two live + two in-progress cards) → `200`
+- [x] `cta_click` and `inquiry_start` on launcher click → `200`
+- [ ] `inquiry_submit` — not exercised live (needs a real submission)
+- [ ] `outbound_project_click` — not exercised live (needs clicking through to a project)
+Evidence: attached the running Chrome, loaded the deployed site, captured the network
+requests. Payloads carry only origin, SDK info, and the event name — no personal data.
+Dashboard confirmation remains the owner's.
 
 ## Log
 - **2026-11-03** — plan + tracker created; steps 1–3 verified; step 4 held per owner instruction ("then do no #4").
@@ -72,3 +80,4 @@ Note: local runs only prove dispatch. `@vercel/analytics` dev mode logs and send
 - **2026-11-03 18:24Z** — owner renamed the tab; re-runs at 18:24:05 and 18:24:56 delivered Sheets; the 18:24:56 run delivered all four (`google-sheets`, `owner-email`, `whatsapp`, `auto-reply`); 2 rows read back from the sheet. Step 4 complete.
 - **2026-11-03 18:43Z** — header row added; test run `646bc516` delivered sheets + whatsapp + auto-reply, owner-email failed with `fetch failed` (2nd such failure). Pattern recorded: first Resend call after idle. Awaiting direction on a retry fix.
 - **2026-11-03 23:07Z** — retry fix applied to `sendResend` (2 retries on transient network errors) plus `Idempotency-Key`; tsc + build pass; run `201e9168` delivered all four on the first attempt, so the retry branch itself is still unexercised.
+- **2026-11-04** — owner pushed. `origin/main` == local `e334fef`. Live site: `/`, `/privacy`, `/sitemap.xml`, `/robots.txt` all `200`; `/api/inquiries` invalid → `400`, honeypot → `200`. Analytics verified on the deployed site from a real browser: `page_view`, `project_view` ×4, `cta_click`, `inquiry_start` all `POST /_vercel/insights/event` with `200`. `inquiry_submit` and `outbound_project_click` not exercised live.
