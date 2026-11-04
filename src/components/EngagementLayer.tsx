@@ -48,7 +48,7 @@ type Piece = {
  * The gate and the prompts stay intact — flipping this to true brings the
  * whole engagement layer back.
  */
-const ENGAGEMENT_ENABLED = false;
+const ENGAGEMENT_ENABLED = true;
 
 /**
  * Prompts are mounted only while active (so their links are never tabbable
