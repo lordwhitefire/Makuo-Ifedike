@@ -287,8 +287,12 @@ function EngagementLayerInner() {
           if (!entry.isIntersecting) continue;
           if (!tryShow("footer")) continue;
           io.disconnect();
-          setConfetti(makeConfetti());
-          window.setTimeout(() => setConfetti([]), 2000);
+          if (
+            !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ) {
+            setConfetti(makeConfetti());
+            window.setTimeout(() => setConfetti([]), 2000);
+          }
         }
       },
       { threshold: 0.6 },
