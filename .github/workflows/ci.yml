@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   ci:
-    name: Install, typecheck, build, link check
+    name: Install, typecheck, build, validate, link check, smoke test
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -62,3 +62,11 @@ jobs:
             --recurse \
             --skip "^(?!http://localhost:3000)" \
             --verbosity error
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Browser smoke test
+        # playwright.config.ts starts the production build itself on 3100;
+        # port 3000 stays free for the link check above.
+        run: npx playwright test

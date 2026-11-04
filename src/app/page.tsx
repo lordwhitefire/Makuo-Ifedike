@@ -366,6 +366,7 @@ export default function Home() {
                     data-project={p.slug}
                     data-filter={p.filter}
                     data-status={p.status}
+                    data-featured={p.featured ? "true" : undefined}
                   >
                     <a
                       className="work-card-thumb"

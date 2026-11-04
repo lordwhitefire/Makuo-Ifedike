@@ -8,6 +8,7 @@
     "start": "NODE_ENV=production bun .next/standalone/server.js 2>&1 | tee server.log",
     "lint": "eslint .",
     "validate:content": "node scripts/validate-content.mjs",
+    "test:e2e": "playwright test",
     "db:push": "prisma db push --accept-data-loss",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -23,6 +24,7 @@
     "swiper": "^11.2.10"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^26.6.6",
     "@types/react": "^19",

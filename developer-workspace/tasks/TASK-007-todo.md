@@ -60,13 +60,13 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [x] Build green; Lighthouse numbers recorded; reporter verified
 
 ## 5. `smoke` — Playwright
-- [ ] `@playwright/test` added; `test:e2e` script
-- [ ] `playwright.config.ts`, port 3100 production `webServer`
-- [ ] `data-featured` on the Truespec card
-- [ ] 8 checks in `tests/smoke.spec.ts`
-- [ ] Break Athletica URL → check 7 fails → revert
-- [ ] CI step + timeout checked
-- [ ] Commit `TASK-007: browser smoke test in CI`
+- [x] `@playwright/test` added; `test:e2e` script
+- [x] `playwright.config.ts`, port 3100 production `webServer`
+- [x] `data-featured` on the Truespec card
+- [x] 8 checks in `tests/smoke.spec.ts`
+- [x] Break Athletica URL → check 7 fails → revert
+- [x] CI step + timeout checked
+- [x] Commit `TASK-007: browser smoke test in CI`
 
 ## 6. `docs` — README + workflow
 - [ ] `README.md` per spec, links `SETUP.md` (unmodified)
