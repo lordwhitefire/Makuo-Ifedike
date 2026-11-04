@@ -192,7 +192,7 @@ export default function Home() {
       >
         <div
           aria-hidden="true"
-          className="relative mx-auto mb-10 h-[323px] w-[320px] bg-[url('/images/portrait.png')] bg-contain bg-no-repeat bg-[position:100%_100%] min-[576px]:h-[545px] min-[576px]:w-[540px] md:h-[727px] md:w-[720px] lg:absolute lg:bottom-0 lg:left-0 lg:mb-0 lg:h-[595px] lg:w-1/2"
+          className="relative mx-auto mb-10 h-[323px] w-[320px] bg-[url('/images/portrait.webp')] bg-contain bg-no-repeat bg-[position:100%_100%] min-[576px]:h-[545px] min-[576px]:w-[540px] md:h-[727px] md:w-[720px] lg:absolute lg:bottom-0 lg:left-0 lg:mb-0 lg:h-[595px] lg:w-1/2"
         />
         <div className="mx-auto w-full max-w-[1185px]">
           <div className="flex justify-end">

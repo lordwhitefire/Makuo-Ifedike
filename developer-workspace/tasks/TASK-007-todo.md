@@ -40,12 +40,12 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [ ] axe counts and keyboard results recorded
 
 ## 3. `perf` — portrait + budget
-- [ ] `content-workspace/assets/` created; original + `.bak` moved out of `public/`
-- [ ] `public/images/portrait.webp` <300 KB, hero points at it
-- [ ] `public/images/portrait.png` re-encoded <300 KB at the same path (OG/JSON-LD untouched)
-- [ ] Hero crop/position unchanged at 390 and 1440
-- [ ] Lighthouse mobile ×3 median + desktop: LCP / CLS / score recorded
-- [ ] Commit `TASK-007: bring the portrait and the budget inside limits`
+- [x] `content-workspace/assets/` created; original + `.bak` moved out of `public/`
+- [x] `public/images/portrait.webp` <300 KB, hero points at it
+- [x] `public/images/portrait.png` re-encoded <300 KB at the same path (OG/JSON-LD untouched)
+- [x] Hero crop/position unchanged at 390 and 1440
+- [x] Lighthouse mobile ×3 median + desktop: LCP / CLS / score recorded
+- [x] Commit `TASK-007: bring the portrait and the budget inside limits`
 
 ## 4. `monitoring` — error logging
 - [ ] `src/app/error.tsx` + `global-error.tsx` (fallback, reload link, console.error + report POST)
