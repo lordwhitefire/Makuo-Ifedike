@@ -36,8 +36,8 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [x] Commit `TASK-007: accessibility to WCAG AA`
 
 ## Checkpoint: after 1–2
-- [ ] `tsc`, `validate:content`, `build` green
-- [ ] axe counts and keyboard results recorded
+- [x] `tsc`, `validate:content`, `build` green
+- [x] axe counts and keyboard results recorded
 
 ## 3. `perf` — portrait + budget
 - [x] `content-workspace/assets/` created; original + `.bak` moved out of `public/`
@@ -69,11 +69,11 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [x] Commit `TASK-007: browser smoke test in CI`
 
 ## 6. `docs` — README + workflow
-- [ ] `README.md` per spec, links `SETUP.md` (unmodified)
-- [ ] `docs/content-workflow.md` (16 checks, how to add one)
-- [ ] Every README command run as written
-- [ ] Commit `TASK-007: README and content workflow`
+- [x] `README.md` per spec, links `SETUP.md` (unmodified)
+- [x] `docs/content-workflow.md` (18 checks, how to add one — spec said 16, code says 18)
+- [x] Every README command run as written
+- [x] Commit `TASK-007: README and content workflow`
 
 ## Final
-- [ ] Full `testing.md` run recorded in the report (pass/fail, raw numbers, commit tested)
-- [ ] Working tree clean apart from owner files
+- [x] Full `testing.md` run recorded in the report (pass/fail, raw numbers, commit tested)
+- [x] Working tree clean apart from owner files

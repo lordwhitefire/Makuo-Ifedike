@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
 import { reportClientError } from "@/lib/report-client-error";
 
 /**
@@ -25,12 +26,12 @@ export default function RouteError({
       <h1 className="font-display text-3xl font-bold text-[#f58344]">
         Something went wrong
       </h1>
-      <a
+      <Link
         href="/"
         className="mt-8 inline-block bg-[#f58344] px-5 py-3 text-sm font-semibold text-[#1a1613]"
       >
         Reload the page
-      </a>
+      </Link>
     </main>
   );
 }

@@ -43,6 +43,9 @@ export default function GlobalError({ error }: { error: unknown }) {
           <h1 style={{ margin: 0, color: "#f58344", fontSize: "30px" }}>
             Something went wrong
           </h1>
+          {/* A plain anchor, not next/link: this file replaces the root
+              layout and must render when the router itself is unusable. */}
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- reload must not depend on the router being healthy */}
           <a
             href="/"
             style={{
