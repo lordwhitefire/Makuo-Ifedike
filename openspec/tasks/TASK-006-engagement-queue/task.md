@@ -80,7 +80,7 @@ Wrap `EngagementLayer` and `ContactLauncher` in the provider. `BackToTop` stays 
 
 **Footer toast + confetti.** One prompt, one gate, one session key (`footer_shown`). If `tryShow` returns `false`, neither the toast nor the confetti appears. The confetti is suppressed under `prefers-reduced-motion: reduce`; the toast still appears.
 
-Keep `ENGAGEMENT_ENABLED = false` in committed code.
+Keep `ENGAGEMENT_ENABLED = false` while building and testing. The owner authorized enabling the layer on 2026-11-04 (`afdbcd5`), so `true` is the accepted value in the final tree.
 
 ### 4. `src/components/ContactLauncher.tsx`
 
@@ -122,7 +122,7 @@ After this change, all of these must be true:
 10. **Launcher during cooldown.** Dismiss a prompt, then click the launcher. The form opens. The ring is not draining, and the button is not disabled by the 120-second cooldown.
 11. **Reload.** Prompts already shown stay shown. A prompt that was skipped before the reload is still eligible. There is no cap on how many prompts can appear in a session.
 12. **Reduced motion.** With `prefers-reduced-motion: reduce`, the footer toast appears and no confetti falls.
-13. **Final diff.** `ENGAGEMENT_ENABLED` is `false`; no work-card tooltip was restored; the time-of-day greeting in the hero is unchanged; there is no pending/queue list anywhere in the code; the TASK-005b visuals are intact.
+13. **Final diff.** `ENGAGEMENT_ENABLED` was `false` for the build and test, then the owner enabled it (`afdbcd5`, 2026-11-04); no work-card tooltip was restored; the time-of-day greeting in the hero is unchanged; there is no pending/queue list anywhere in the code; the TASK-005b visuals are intact.
 
 ## Out of scope
 

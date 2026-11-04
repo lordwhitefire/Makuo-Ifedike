@@ -40,9 +40,11 @@
 
 ## 6. Engagement queue
 
-- [ ] 6.1 Build the shared prompt queue: one prompt at a time, 20-second cooldown, once per session, no session cap
-- [ ] 6.2 Wire all nine touchpoints with their timings (first bubble 8s, scroll banner, idle panel, exit modal, footer toast, tooltip, time-of-day, referrer opener)
-- [ ] 6.3 Suppress all prompts while the form is open; submit ends engagement for the session
+- [ ] 6.1 Build the shared engagement gate: one prompt at a time, a trigger that fires while busy is skipped (never queued), 120s cooldown, once per session, no session cap
+- [ ] 6.2 Wire the five prompts with their triggers (bubble 8s, 50% scroll, 45s idle, exit intent, footer toast + confetti); the time-of-day greeting stays in the hero and the work-card tooltip stays removed
+- [ ] 6.3 Write a prompt's session key only when it actually appears; a skipped attempt leaves it unmarked
+- [ ] 6.4 Suppress all prompts while the form is open; opening the form dismisses the active prompt; closing starts the 120s cooldown; submit ends engagement for the session
+- [ ] 6.5 Keep the launcher's 20s guard and ring separate from the 120s prompt cooldown
 
 ## 7. Polish and ops
 

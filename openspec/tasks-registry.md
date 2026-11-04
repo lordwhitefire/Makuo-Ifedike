@@ -50,11 +50,14 @@ Plain list of the individual pieces of work needed so the real project catches u
 
 - [x] 20s cooldown ring around the contact button; hide the form scrollbar (`110bd8c`)
 
-## 6. Engagement queue
+## 6. Engagement gate
 
-- [ ] Shared prompt queue (one at a time, 20-second cooldown, once per session, no session cap)
-- [ ] Wire all nine touchpoints with timings (first bubble 8 seconds)
-- [ ] Suppress prompts while form open; submit ends engagement for the session
+Task and test plan: `openspec/tasks/TASK-006-engagement-queue/`
+
+- [x] One shared gate: one prompt at a time; a trigger that fires while busy is skipped, never queued; 120-second cooldown; once per session, key written only when the prompt actually appears; no session cap
+- [x] Wire the five prompts with their triggers (first bubble 8 seconds, 50% scroll, 45s idle, exit intent 20s+ desktop-only, footer toast + confetti)
+- [x] Keep the launcher's 20-second ring separate from the 120-second prompt cooldown
+- [x] Suppress prompts while the form is open; closing starts the cooldown; submitting ends engagement for the session
 
 ## 7. Polish and ops
 
