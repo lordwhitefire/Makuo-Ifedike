@@ -9,7 +9,7 @@ If the builder runs this list instead of a separate tester, run every part anywa
 1. `npx tsc --noEmit` — clean.
 2. `npm run validate:content` — passes.
 3. `npm run build` — succeeds.
-4. `npm run start` (production build, port 3000). Use `http://localhost:3000/`, not `127.0.0.1`.
+4. `npm run start` (production build, port 3000). Use `http://localhost:3000/`, not `127.0.0.1`. Port 3000 is often busy with the owner's dev server — stop it for the run and restart it afterwards.
 5. Note the commit you are testing.
 
 Parts 1 and 2 must run against the **production build**, not the dev server.
@@ -19,6 +19,8 @@ Parts 1 and 2 must run against the **production build**, not the dev server.
 ## Part 0 — Truespec live URL
 
 - `curl -s -o /dev/null -w "%{http_code}\n" -L https://truespec.duckdns.org/` returns `200`.
+- If it does not resolve, mark **this part blocked** and run the rest. Do not fail the whole task over it.
+- `content-workspace/drafts/` still contains the old URL — that is allowed and must not be reported as a failure.
 - The Truespec card and its case-study live link point to `https://truespec.duckdns.org/`.
 - The JSON-LD node for Truespec has `"url": "https://truespec.duckdns.org/"`.
 - `public/llms.txt` shows the new Truespec URL.
@@ -41,7 +43,9 @@ npx @axe-core/cli http://localhost:3000 --viewport 390x844
 npx @axe-core/cli http://localhost:3000 --viewport 1440x900
 ```
 
-**Pass:** zero violations of impact `serious` or `critical`. Record the full count per severity. A `moderate` violation must be named and justified in the report.
+If `@axe-core/cli` will not run, run the same checks inside Playwright and say which tool produced the result.
+
+**Pass:** zero violations of impact `serious` or `critical`. Record the full count per severity. Every `moderate` or `minor` violation left unfixed is named in the report with its reason.
 
 ### Skip link
 
@@ -118,11 +122,13 @@ Record the raw numbers, not just pass/fail.
 
 ### Portrait
 
-- The served portrait file is under 300 KB.
+- `public/images/portrait.webp` is under 300 KB and is the file the page requests.
+- `public/images/portrait.png` still exists at the same path, is under 300 KB, and is what the social preview and JSON-LD point at.
+- `public/images/` holds no `.bak` or oversized original; the originals are in `content-workspace/assets/`.
 - Load the page at 390×844 and 1440×900 and compare the hero against the previous build side by side. Same crop, same position, same visible result.
 - No layout shift when it loads.
 
-**Pass:** size and visual match both hold.
+**Pass:** every line holds.
 
 ---
 
@@ -134,7 +140,9 @@ Record the raw numbers, not just pass/fail.
 - The fallback renders with the reload link, not a white screen or a stack trace.
 - The server log contains the error.
 
-**Pass:** fallback shown, error logged, nothing sensitive shown.
+An error the app shows the visitor also reaches `/api/client-errors` — check the server log for the report.
+
+**Pass:** fallback shown, error logged, the app's own error reports through the route, nothing sensitive shown.
 
 ### Reporter route
 
@@ -183,12 +191,12 @@ npm run test:e2e
 
 against a fresh production build.
 
-**Pass:** all seven checks run and pass:
+**Pass:** all eight checks run and pass:
 
 1. `/` returns 200 with the correct title.
-2. The four project cards are present and Truespec is featured.
+2. The four project cards are present and the Truespec card has a `data-featured` attribute.
 3. The launcher opens the form.
-4. Empty submit sends no request and shows the validation message.
+4. Empty submit is blocked by the browser's native validation and no request is sent.
 5. Escape closes the form and focus returns to the launcher.
 6. No `ifedikemakuo.vercel.app` and no `localhost` anywhere in the project links.
 7. Athletica links to `athletica-blond.vercel.app`.
@@ -216,6 +224,7 @@ Temporarily change the Athletica URL to `https://example.com`, run the test, and
 - Each works exactly as written. No missing script, wrong port, or invented flag.
 - The environment variable table matches `.env.example`.
 - Folder map paths all exist.
+- The README links to `SETUP.md`, and `SETUP.md` is unchanged.
 
 ### Workflow doc
 
@@ -239,6 +248,7 @@ grep -rn "ifedikemakuo" src/ || echo clean
 ## Final diff
 
 - No copy, section order, card, counter, milestone, or My Stack change.
+- `content-workspace/` changed only in `pieces/llms-txt.md` and `pieces/person-jsonld.md`; `drafts/` untouched.
 - The mobile menu, the scrapped modal, and the work-card tooltip are untouched.
 - `@playwright/test` is the only new dependency.
 - No credentials or DSNs committed.

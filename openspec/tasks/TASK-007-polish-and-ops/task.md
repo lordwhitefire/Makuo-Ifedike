@@ -15,7 +15,7 @@ None of it changes what the site says or how it is laid out. Fix only what a mea
 
 ## Order and commits
 
-Do them in this order, one commit each, each green on its own (`tsc`, `validate:content`, `build`):
+Commit your plan first — a single `plan` commit with your own plan for this task (`task.md` and `testing.md` are already committed) — then one commit per part, each green on its own (`tsc`, `validate:content`, `build`):
 
 0. `domain` — Truespec live URL
 1. `a11y` — accessibility
@@ -24,7 +24,7 @@ Do them in this order, one commit each, each green on its own (`tsc`, `validate:
 4. `smoke` — Playwright
 5. `docs` — README and content workflow
 
-Do not push.
+Seven commits in total. Do not push. Do not deploy.
 
 ---
 
@@ -39,11 +39,13 @@ Change, in this order:
 3. `public/llms.txt` — the Truespec URL.
 4. `src/content/structured-data.ts` reads `project.liveUrl`, so JSON-LD follows automatically. Confirm it, do not hard-code the URL there.
 
+**Only those two files in `content-workspace/`.** Do not touch anything else there. `content-workspace/drafts/` holds earlier copies of the same pieces and keeps the old URL — the source of truth is `pieces/`, so drafts stay as they are.
+
 **Do not rewrite historical records.** Reports, notes, plans, parity captures, `scrape-workspace/` captures and `product-management/research/` record what was true when they were written. Leave them.
 
 **The portfolio's own canonical domain is unchanged:** `https://makuo-ifedike.vercel.app/`. Do not touch `identity.url`, `identity.image`, the metadata base, `sitemap.ts`, or `robots.ts`.
 
-Verify before changing anything: `curl -I https://truespec.duckdns.org/` returns 200 and the page is the Truespec site. If it does not resolve, stop and report.
+Verify before changing anything: `curl -I https://truespec.duckdns.org/` returns 200 and the page is the Truespec site. If it does not resolve, skip this step, do the other five, and report it as blocked.
 
 ### Benchmarks
 
@@ -58,7 +60,11 @@ Verify before changing anything: `curl -I https://truespec.duckdns.org/` returns
 
 ### What to do
 
-**Skip link.** Add "Skip to content" as the first focusable element on the page. It targets `<main>` (add `id="main"` or `tabIndex={-1}` to it). It is visually hidden until focused, then appears as a small bar at the top left.
+**Skip link.** The `<header>` and `<SiteNav>` currently sit inside `<main>` (`src/app/page.tsx`), so a skip link would skip nothing. Move the header outside `<main>` first — it is `position: fixed`, so the page looks identical. Then:
+
+- add `id="main"` and `tabIndex={-1}` to `<main>`;
+- add "Skip to content" as the first focusable element in the document, targeting `#main`;
+- it is visually hidden until focused, then appears as a small bar at the top left.
 
 **Focus indicators.** Every interactive element must show a visible focus ring when reached by keyboard. Add one global rule in `globals.css` (`:focus-visible`) rather than per-component classes. It must be visible against both the dark background and the orange buttons. Do not remove focus outlines anywhere.
 
@@ -86,11 +92,14 @@ Keep the palette. Raise opacity or switch to an existing token — do not introd
 - the existing reveal and carousel guards stay as they are;
 - the confetti guard from TASK-006 stays.
 
+**If the audit tool will not run.** Run the same checks inside Playwright instead — it is added in section 4 — with no extra package. Say in the report which tool produced the result.
+
 ### Constraints
 
 - No copy changes, no section reordering, no new visible boxes.
 - The hidden/disabled mobile menu stays as it is.
 - The skip link is the only new visible element, and only while focused.
+- Fix every serious and critical violation and every contrast failure. Any moderate or minor item left unfixed is named in the report with its reason. Do not redesign to clear a listing.
 
 ### Benchmarks
 
@@ -105,12 +114,12 @@ Keep the palette. Raise opacity or switch to an existing token — do not introd
 
 ### What to do
 
-**Portrait.** `public/images/portrait.png` is 1.3 MB and is the hero background (`src/app/page.tsx`, the `bg-[url('/images/portrait.png')]` block). Compress it:
+**Portrait — replace, do not delete.**
 
-- convert to WebP at the displayed sizes, keeping a PNG fallback only if the WebP is not smaller;
-- target **under 300 KB**;
-- keep the exact same crop, position, and visible result;
-- update the one CSS `url()` and `src/content/identity.ts` if the filename changes.
+- `public/images/portrait.webp` — the hero background. Under 300 KB, same crop and position, used by the `bg-[url(...)]` block in `src/app/page.tsx`.
+- `public/images/portrait.png` — a **small PNG at the same path**, under 300 KB, kept for Open Graph and JSON-LD. `identity.image` already points at `/images/portrait.png`; do not change that path.
+- Move the 1.3 MB original and the existing `public/images/portrait.png.bak` to `content-workspace/assets/` (create the folder). Both are content and brand source files; `developer-workspace/` is a log of work, not an asset store.
+- Nothing large stays in `public/`. `npm run build` copies all of `public/` into the deployment, so the `.bak` file is currently shipping to production.
 
 **Measure, then fix.** Run Lighthouse mobile against the production build (`npm run build && npm run start`) on `/`. Record LCP, CLS, and the top opportunities. Fix only what the report shows, in this order: the portrait, render-blocking work, and any late-loading font.
 
@@ -140,7 +149,7 @@ Use Vercel logs — no new account and no dependency. If the owner later supplie
 - returns `204`;
 - never accepts form values, names, emails, or anything typed by the visitor.
 
-Add a small client listener (mounted once, e.g. in `layout.tsx` or a tiny client component) that posts on `window.error` and `unhandledrejection`. Cap it at 5 reports per page load.
+Add a small client listener (mounted once, e.g. in `layout.tsx` or a tiny client component) that posts on `window.error` and `unhandledrejection`. Cap it at 5 reports per page load. Any error the app shows the visitor also posts through this reporter, so it appears in Vercel logs. Never send form values.
 
 **Server route.** In `src/app/api/inquiries/route.ts`, make sure an unexpected failure logs the error with context before returning 500. Do not log the submitted form contents.
 
@@ -161,12 +170,13 @@ The link check already runs in `.github/workflows/ci.yml`. Keep it. Add a browse
 
 - Add `@playwright/test` as a dev dependency.
 - Add `playwright.config.ts` with `webServer` running the production build on port 3100, one Chromium project, base URL `http://localhost:3100`.
+- Add `data-featured` to the Truespec work card in the markup: a plain hidden attribute, no badge, no label, no visible change.
 - Add `tests/smoke.spec.ts` covering exactly:
 
 1. `/` loads with status 200 and the correct `<title>`.
-2. The four project cards are present (Interior-deco, Truespec, Athletica, CP3-legacy), and Truespec carries the featured marker.
+2. The four project cards are present (Interior-deco, Truespec, Athletica, CP3-legacy), and the Truespec card carries a hidden `data-featured` attribute — no badge, no copy.
 3. The orange launcher opens the contact form.
-4. Submitting the empty form does not send a request and shows the validation message.
+4. Submitting the empty form is blocked by the browser's own validation and sends no request.
 5. Escape closes the form and focus returns to the launcher.
 6. The page contains no `ifedikemakuo.vercel.app` and no `localhost` in any project link.
 7. The Athletica card links to `athletica-blond.vercel.app`.
@@ -197,7 +207,8 @@ No modal tests — the case-study modal is scrapped by owner decision.
 - environment variables from `.env.example`, and which are required per environment;
 - how to deploy (Vercel, `makuo-ifedike.vercel.app` is the only canonical domain);
 - the folder map: `src/app`, `src/components`, `src/content`, `src/lib`, `content-workspace`, `openspec`, `developer-workspace`, `design-workspace`.
-- a short "where to change what" table: project records, identity, milestones, inquiry options, engagement copy.
+- a short "where to change what" table: project records, identity, milestones, inquiry options, engagement copy;
+- a link to the existing `SETUP.md`, which stays untouched.
 
 **`docs/content-workflow.md`**:
 
