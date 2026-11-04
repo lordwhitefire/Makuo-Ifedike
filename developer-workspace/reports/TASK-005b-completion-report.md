@@ -93,3 +93,20 @@ achieves what the benchmark asks: one height for all controls.
 - `openspec/tasks/TASK-005b-engagement-ui-polish/` and the `openspec/tasks-registry.md` edit were
   left out of the styling commits.
 - Nothing pushed. `main` is ahead of `origin/main` by the four commits above.
+
+## Follow-up (owner request, after TASK-005b)
+
+Two changes outside TASK-005b scope, requested once the first three were shipped:
+
+1. **20s cooldown ring.** The orange button previously locked for 20 seconds after the form
+   closed, with no visible countdown — only a hover tooltip, which does not exist on a phone.
+   An SVG ring now hugs the button (`-inset-[5px]`, `pathLength=100`) and drains clockwise over
+   `COOLDOWN_MS`, then vanishes. Duration comes from the same constant, so it cannot drift.
+   Measured: `stroke-dashoffset` 0 → 35.7px at ~9s → 83.2px at ~19s → gone at 22s;
+   `aria-disabled` flips back to `false`; a click then opens the dialog (23s after closing).
+2. **Form scrollbar hidden.** The dialog keeps `overflow-y-auto` but reserves no gutter:
+   `offsetWidth - clientWidth = 2px`, which is exactly the 1px border on each side —
+   scrollbar contribution is 0 while `scrollHeight 886 > clientHeight 774` at 390×844.
+
+Committed separately as `110bd8c`. Both are behaviour-adjacent, so they are not part of the
+styling-only diff described above.
