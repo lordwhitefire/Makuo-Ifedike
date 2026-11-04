@@ -184,8 +184,11 @@ documented), `npm run validate:content` (green), `npm run test:e2e` (8 passed).
 
 ## Not verified / open
 
-1. **CI has not run.** No push. Every step it performs was reproduced locally, but the
-   workflow itself is unproven until someone pushes.
+1. ~~**CI has not run.**~~ **Closed on 2026-11-04:** CI run
+   [41871395263](https://github.com/lordwhitefire/Makuo-Ifedike/actions/runs/41871395263)
+   on commit `83f4b4b` finished **success** in 84 s, every step green including the
+   Playwright install and smoke test. See `ci-run-2026-11-04.md`. Per-test output was
+   not readable without a GitHub token; the step's success is the evidence.
 2. **Mobile Lighthouse 66 is below budget** — real numbers above; no design change made.
 3. `npm run lint` exits 1 with the five pre-existing errors listed above.
 4. The tester's checklist was executed by the developer, not independently by the tester.
