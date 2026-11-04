@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type FocusEvent } from "react";
 import { useEngagement } from "@/components/EngagementProvider";
 
 /**
@@ -77,6 +77,84 @@ function makeConfetti(): Piece[] {
   }));
 }
 
+/**
+ * Freeze the auto-dismiss timer while the pointer is over a prompt or focus is
+ * inside it, and resume with the remaining time — not a fresh full timer.
+ */
+function usePausableDismiss(
+  active: boolean,
+  duration: number,
+  onDone: () => void,
+) {
+  const remaining = useRef(duration);
+  const startedAt = useRef(0);
+  const timer = useRef<number | null>(null);
+  const hovered = useRef(false);
+  const focused = useRef(false);
+
+  const clear = () => {
+    if (timer.current !== null) {
+      window.clearTimeout(timer.current);
+      timer.current = null;
+    }
+  };
+
+  const arm = useCallback(() => {
+    clear();
+    startedAt.current = Date.now();
+    timer.current = window.setTimeout(onDone, remaining.current);
+  }, [onDone]);
+
+  const freeze = () => {
+    if (timer.current === null) return;
+    remaining.current = Math.max(
+      0,
+      remaining.current - (Date.now() - startedAt.current),
+    );
+    clear();
+  };
+
+  const resume = () => {
+    if (!active || hovered.current || focused.current) return;
+    if (timer.current !== null) return;
+    arm();
+  };
+
+  useEffect(() => {
+    if (!active) {
+      clear();
+      remaining.current = duration;
+      hovered.current = false;
+      focused.current = false;
+      return;
+    }
+    remaining.current = duration;
+    arm();
+    return clear;
+  }, [active, duration, arm]);
+
+  return {
+    onPointerEnter: () => {
+      hovered.current = true;
+      freeze();
+    },
+    onPointerLeave: () => {
+      hovered.current = false;
+      resume();
+    },
+    onFocus: () => {
+      focused.current = true;
+      freeze();
+    },
+    onBlur: (event: FocusEvent<HTMLElement>) => {
+      const next = event.relatedTarget as Node | null;
+      if (next && event.currentTarget.contains(next)) return;
+      focused.current = false;
+      resume();
+    },
+  };
+}
+
 function EngagementLayerInner() {
   const { activePrompt, tryShow, closePrompt, requestOpenForm } = useEngagement();
 
@@ -89,6 +167,17 @@ function EngagementLayerInner() {
   const bannerRevealed = useReveal(activePrompt === "scroll50");
   const panelRevealed = useReveal(activePrompt === "idle");
   const exitRevealed = useReveal(activePrompt === "exit_intent");
+
+  const bubbleDismiss = usePausableDismiss(
+    activePrompt === "bubble",
+    14000,
+    closePrompt,
+  );
+  const exitDismiss = usePausableDismiss(
+    activePrompt === "exit_intent",
+    20000,
+    closePrompt,
+  );
 
   // Visit count + bubble message (#1, #2, #9) and the 8s trigger.
   useEffect(() => {
@@ -183,18 +272,6 @@ function EngagementLayerInner() {
 
   // Auto-dismiss is a close path for the prompts that have one.
   useEffect(() => {
-    if (activePrompt !== "bubble") return;
-    const timer = window.setTimeout(closePrompt, 14000);
-    return () => window.clearTimeout(timer);
-  }, [activePrompt, closePrompt]);
-
-  useEffect(() => {
-    if (activePrompt !== "exit_intent") return;
-    const timer = window.setTimeout(closePrompt, 20000);
-    return () => window.clearTimeout(timer);
-  }, [activePrompt, closePrompt]);
-
-  useEffect(() => {
     if (activePrompt !== "footer") return;
     const timer = window.setTimeout(closePrompt, 8000);
     return () => window.clearTimeout(timer);
@@ -226,6 +303,7 @@ function EngagementLayerInner() {
       {activePrompt === "bubble" && (
         <div
           id="engagement-bubble"
+          {...bubbleDismiss}
           className={`fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] border border-white/15 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
             bubbleRevealed
               ? "eng-bubble--visible translate-x-0"
@@ -365,6 +443,7 @@ function EngagementLayerInner() {
             className={`eng-exit--visible relative w-full max-w-[440px] bg-[#1a1613] p-8 text-white shadow-2xl transition-opacity duration-200 ${
               exitRevealed ? "opacity-100" : "opacity-0"
             }`}
+            {...exitDismiss}
             onClick={(e) => e.stopPropagation()}
           >
             <button
