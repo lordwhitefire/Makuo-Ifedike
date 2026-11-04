@@ -45,15 +45,18 @@ Commits (local only, nothing pushed):
 | `ac965bf` | keep the footer toast, drop the confetti under reduced motion |
 | `1d68d4e` | keep the success panel open after a submit |
 | report | this file and the ticked task list |
+| `afdbcd5` | enable the engagement layer (owner's instruction, after acceptance) |
 
 ## Final values in the committed tree
 
-- `ENGAGEMENT_ENABLED = false` (`src/components/EngagementLayer.tsx:51`)
+- `ENGAGEMENT_ENABLED = true` (`src/components/EngagementLayer.tsx:51`) — turned on
+  by `afdbcd5`, after the scenario run below was done with it temporarily on
 - `PROMPT_COOLDOWN_MS = 120_000` (`src/components/EngagementProvider.tsx:26`)
 - `COOLDOWN_MS = 20_000` (launcher ring, unchanged)
 
-Both temporary flips were reverted before the last build; `git diff` is empty for
-those files.
+Both temporary test flips (flag on, cooldown `5_000`) were reverted before the last
+commit of the build-up sequence; `afdbcd5` then set the flag to `true` on purpose.
+`PROMPT_COOLDOWN_MS` is `120_000` in the committed tree.
 
 ## How it was verified
 
