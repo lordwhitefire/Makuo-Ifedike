@@ -147,9 +147,10 @@ export function EngagementProvider({ children }: { children: ReactNode }) {
   }, [commit]);
 
   const notifySubmitted = useCallback(() => {
+    // The success panel stays open until the visitor closes it; only the gate
+    // flips to "never prompt again this session".
     commit({
       submitted: true,
-      formOpen: false,
       activePrompt: null,
       pendingNeedType: null,
     });
