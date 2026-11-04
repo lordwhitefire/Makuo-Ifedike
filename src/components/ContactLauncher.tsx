@@ -14,6 +14,7 @@ import {
   INQUIRY_TIMELINES,
 } from "@/content/inquiries";
 import { trackEvent } from "@/lib/analytics";
+import { useEngagement } from "@/components/EngagementProvider";
 
 type FormState = {
   name: string;
@@ -51,7 +52,15 @@ const labelClass =
 type Status = "idle" | "sending" | "success" | "error";
 
 export default function ContactLauncher() {
-  const [open, setOpen] = useState(false);
+  const {
+    formOpen: open,
+    requestOpenForm,
+    notifyFormClosed,
+    notifySubmitted,
+    pendingNeedType,
+    consumePendingNeedType,
+  } = useEngagement();
+
   const [cooldown, setCooldown] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState<FormState>(EMPTY_FORM);
@@ -63,14 +72,49 @@ export default function ContactLauncher() {
   const panelRef = useRef<HTMLDivElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
   const cooldownTimer = useRef<number | null>(null);
+  // Remembers a need type that arrived with an open request, so it can be
+  // cleared later only if the visitor never touched the dropdown.
+  const presetMemory = useRef<string | null>(null);
+  const wasOpen = useRef(false);
 
+  // TASK-006: tell the gate when this session already submitted, before any
+  // prompt trigger can fire.
   useEffect(() => {
     try {
-      if (sessionStorage.getItem(SUBMITTED_KEY) === "1") setSubmitted(true);
+      if (sessionStorage.getItem(SUBMITTED_KEY) === "1") {
+        setSubmitted(true);
+        notifySubmitted();
+      }
     } catch {
       /* storage unavailable */
     }
-  }, []);
+  }, [notifySubmitted]);
+
+  // Apply a preset need type once per opening; clear an untouched preset on a
+  // later open that carries none. The rest of the form keeps its values.
+  useEffect(() => {
+    if (!open) {
+      wasOpen.current = false;
+      return;
+    }
+    if (wasOpen.current) return;
+    wasOpen.current = true;
+
+    if (pendingNeedType) {
+      setForm((prev) => ({ ...prev, needType: pendingNeedType }));
+      presetMemory.current = pendingNeedType;
+      consumePendingNeedType();
+      return;
+    }
+
+    if (presetMemory.current) {
+      const preset = presetMemory.current;
+      setForm((prev) =>
+        prev.needType === preset ? { ...prev, needType: "" } : prev,
+      );
+      presetMemory.current = null;
+    }
+  }, [open, pendingNeedType, consumePendingNeedType]);
 
   useEffect(
     () => () => {
@@ -80,14 +124,14 @@ export default function ContactLauncher() {
   );
 
   const closeDialog = useCallback(() => {
-    setOpen(false);
+    notifyFormClosed();
     setCooldown(true);
     if (cooldownTimer.current) window.clearTimeout(cooldownTimer.current);
     cooldownTimer.current = window.setTimeout(
       () => setCooldown(false),
       COOLDOWN_MS,
     );
-  }, []);
+  }, [notifyFormClosed]);
 
   // Focus, scroll lock, Escape, and a simple focus trap while the dialog is open.
   useEffect(() => {
@@ -138,9 +182,7 @@ export default function ContactLauncher() {
 
   const openDialog = () => {
     if (cooldown || submitted) return;
-    setOpen(true);
-    trackEvent("cta_click");
-    trackEvent("inquiry_start");
+    requestOpenForm();
   };
 
   const update =
@@ -185,6 +227,7 @@ export default function ContactLauncher() {
         setSubmitted(true);
         setStatus("success");
         trackEvent("inquiry_submit");
+        notifySubmitted();
         return;
       }
 
@@ -392,7 +435,10 @@ export default function ContactLauncher() {
                         name="needType"
                         required
                         value={form.needType}
-                        onChange={update("needType")}
+                        onChange={(event) => {
+                          presetMemory.current = null;
+                          update("needType")(event);
+                        }}
                         className={inputClass}
                         aria-invalid={Boolean(errors.needType)}
                       >

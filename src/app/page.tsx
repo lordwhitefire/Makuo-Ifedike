@@ -8,6 +8,7 @@ import Reveal from "@/components/Reveal";
 import BackToTop from "@/components/BackToTop";
 import EngagementLayer from "@/components/EngagementLayer";
 import ContactLauncher from "@/components/ContactLauncher";
+import { EngagementProvider } from "@/components/EngagementProvider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { WORK_TABS, filterProjects, type WorkTabId } from "@/lib/project-filters";
@@ -521,8 +522,10 @@ export default function Home() {
         </div>
       </footer>
       <BackToTop />
-      <EngagementLayer />
-      <ContactLauncher />
+      <EngagementProvider>
+        <EngagementLayer />
+        <ContactLauncher />
+      </EngagementProvider>
     </main>
   );
 }

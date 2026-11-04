@@ -1,29 +1,28 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useEngagement } from "@/components/EngagementProvider";
 
 /**
- * Engagement layer — the reference's nine touchpoints, reproduced:
- *  1. chat bubble after 3s (once per session, auto-dismiss 14s)
- *  2. returning-visitor message (visits > 1)
- *  3. time-of-day greeting (lives in the Athletica hero slide — HeroCarousel)
- *  4. 50%-scroll banner (once per session)
- *  5. 45s-idle panel (once per session)
- *  6. exit-intent modal (once per session, Escape closes)
- *  7. footer confetti + toast (footer-info-box 60% visible)
- *  8. work-card title tooltips (removed from page.tsx in TASK-004)
- *  9. referrer-aware bubble opener
+ * Engagement layer — five prompts, one gate.
  *
- * Persistence matches the reference:
+ *  #1/#2/#9 chat bubble — 8s, once per session, auto-dismiss 14s
+ *  #4      50%-scroll banner — 1.5s check + scroll, once
+ *  #5      45s-idle panel, once
+ *  #6      exit-intent modal — desktop only, after 20s, auto-dismiss 20s
+ *  #7      footer confetti + toast, once
+ *
+ * Every prompt calls tryShow(id) when its trigger fires and renders only if it
+ * returns true. Every close path calls closePrompt(). Nothing is queued.
+ *
  *  localStorage.ifedike_visit_count — incremented every load
- *  sessionStorage.greeting_shown / scroll50_shown / idle_shown / exit_intent_shown
- *  sessionStorage.bubble_shown — bubble once per session
+ *  sessionStorage.{bubble,scroll50,idle,exit_intent,footer}_shown
  */
 
 const BUBBLE_DEFAULT =
   "Hey — quick question: are you here for a marketing site, a web app, or fixing something that's broken?";
 const BUBBLE_RETURNING =
-  "Welcome back. Athletica went into preview since you last visited.";
+  "Welcome back. Are you here to see the work, or talk about a project?";
 
 function referrerMessage(): string | null {
   const ref = document.referrer.toLowerCase();
@@ -46,61 +45,85 @@ type Piece = {
 
 /**
  * Owner switch (TASK-004 Q24/Q26): every prompt is hidden for now.
- * The inner component and all of its code stay intact — flipping this to
- * true brings the whole engagement layer back exactly as it was.
+ * The gate and the prompts stay intact — flipping this to true brings the
+ * whole engagement layer back.
  */
 const ENGAGEMENT_ENABLED = false;
 
-function EngagementLayerInner() {
-  const [bubbleVisible, setBubbleVisible] = useState(false);
-  const [bubbleMessage, setBubbleMessage] = useState(BUBBLE_DEFAULT);
-  const [bannerVisible, setBannerVisible] = useState(false);
-  const [panelVisible, setPanelVisible] = useState(false);
-  const [exitVisible, setExitVisible] = useState(false);
-  const [confetti, setConfetti] = useState<Piece[]>([]);
-  const [toastVisible, setToastVisible] = useState(false);
-
-  const idleFired = useRef(false);
-  const confettiFired = useRef(false);
-
-  // Visit count + bubble message + bubble timing (#1, #2, #9)
+/**
+ * Prompts are mounted only while active (so their links are never tabbable
+ * when hidden). One frame off-screen keeps the existing slide-in transition.
+ */
+function useReveal(active: boolean): boolean {
+  const [revealed, setRevealed] = useState(false);
   useEffect(() => {
-    let prev = 0;
-    try {
-      prev = parseInt(localStorage.getItem("ifedike_visit_count") || "0", 10);
-      localStorage.setItem("ifedike_visit_count", String(prev + 1));
-    } catch {
-      /* storage unavailable */
+    if (!active) {
+      setRevealed(false);
+      return;
+    }
+    const frame = window.requestAnimationFrame(() => setRevealed(true));
+    return () => window.cancelAnimationFrame(frame);
+  }, [active]);
+  return revealed;
+}
+
+function makeConfetti(): Piece[] {
+  return Array.from({ length: 60 }, () => ({
+    left: Math.random() * 100,
+    delay: Math.random() * 0.5,
+    dur: 1.2 + Math.random() * 0.8,
+    color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+    rot: Math.random() * 360,
+  }));
+}
+
+function EngagementLayerInner() {
+  const { activePrompt, tryShow, closePrompt, requestOpenForm } = useEngagement();
+
+  const [bubbleMessage, setBubbleMessage] = useState(BUBBLE_DEFAULT);
+  const [confetti, setConfetti] = useState<Piece[]>([]);
+  // StrictMode runs effects twice in dev; count the visit once per mount.
+  const visitCounted = useRef(false);
+
+  const bubbleRevealed = useReveal(activePrompt === "bubble");
+  const bannerRevealed = useReveal(activePrompt === "scroll50");
+  const panelRevealed = useReveal(activePrompt === "idle");
+  const exitRevealed = useReveal(activePrompt === "exit_intent");
+
+  // Visit count + bubble message (#1, #2, #9) and the 8s trigger.
+  useEffect(() => {
+    if (!visitCounted.current) {
+      visitCounted.current = true;
+      let prev = 0;
+      try {
+        prev = parseInt(localStorage.getItem("ifedike_visit_count") || "0", 10);
+        localStorage.setItem("ifedike_visit_count", String(prev + 1));
+      } catch {
+        /* storage unavailable */
+      }
+
+      const refMsg = referrerMessage();
+      setBubbleMessage(
+        prev >= 1 ? BUBBLE_RETURNING : (refMsg ?? BUBBLE_DEFAULT),
+      );
     }
 
-    const refMsg = referrerMessage();
-    setBubbleMessage(refMsg ?? (prev >= 1 ? BUBBLE_RETURNING : BUBBLE_DEFAULT));
-
-    if (sessionStorage.getItem("bubble_shown") === "1") return;
-
     const show = window.setTimeout(() => {
-      setBubbleVisible(true);
-      sessionStorage.setItem("bubble_shown", "1");
-      window.setTimeout(() => setBubbleVisible(false), 14000);
-    }, 3000);
-
+      tryShow("bubble");
+    }, 8000);
     return () => window.clearTimeout(show);
-  }, []);
+  }, [tryShow]);
 
-  // 50%-scroll banner (#4)
+  // 50%-scroll banner (#4). A skip does not set `fired` and writes no key, so a
+  // later crossing can still show it.
   useEffect(() => {
-    if (sessionStorage.getItem("scroll50_shown") === "1") return;
     let fired = false;
     const check = () => {
       if (fired) return;
       const doc = document.documentElement;
       const ratio =
         (window.scrollY + window.innerHeight) / (doc.scrollHeight || 1);
-      if (ratio >= 0.5) {
-        fired = true;
-        setBannerVisible(true);
-        sessionStorage.setItem("scroll50_shown", "1");
-      }
+      if (ratio >= 0.5 && tryShow("scroll50")) fired = true;
     };
     const t = window.setTimeout(check, 1500);
     window.addEventListener("scroll", check, { passive: true });
@@ -110,19 +133,17 @@ function EngagementLayerInner() {
       window.removeEventListener("scroll", check);
       window.removeEventListener("resize", check);
     };
-  }, []);
+  }, [tryShow]);
 
-  // 45s-idle panel (#5)
+  // 45s-idle panel (#5). A skip keeps the listeners so it can fire again.
   useEffect(() => {
-    if (sessionStorage.getItem("idle_shown") === "1") return;
     let timer = 0;
+    let fired = false;
     const reset = () => {
-      if (idleFired.current) return;
+      if (fired) return;
       window.clearTimeout(timer);
       timer = window.setTimeout(() => {
-        idleFired.current = true;
-        setPanelVisible(true);
-        sessionStorage.setItem("idle_shown", "1");
+        if (tryShow("idle")) fired = true;
       }, 45000);
     };
     const events = ["scroll", "mousemove", "click", "keydown", "touchstart"];
@@ -132,199 +153,224 @@ function EngagementLayerInner() {
       window.clearTimeout(timer);
       events.forEach((e) => window.removeEventListener(e, reset));
     };
-  }, []);
+  }, [tryShow]);
 
-  // Exit-intent modal (#6)
+  // Exit-intent modal (#6) — desktop only, never before 20 seconds.
   useEffect(() => {
-    if (sessionStorage.getItem("exit_intent_shown") === "1") return;
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      return;
+    }
+    const mountedAt = Date.now();
     const onOut = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !e.relatedTarget) {
-        setExitVisible(true);
-        sessionStorage.setItem("exit_intent_shown", "1");
-        document.removeEventListener("mouseout", onOut);
-      }
+      if (e.clientY > 0 || e.relatedTarget) return;
+      if (Date.now() - mountedAt < 20000) return;
+      if (!tryShow("exit_intent")) return;
+      document.removeEventListener("mouseout", onOut);
     };
     document.addEventListener("mouseout", onOut);
     return () => document.removeEventListener("mouseout", onOut);
-  }, []);
+  }, [tryShow]);
 
-  // Escape closes the exit modal
+  // Escape closes the exit modal and counts as a close.
   useEffect(() => {
-    if (!exitVisible) return;
+    if (activePrompt !== "exit_intent") return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setExitVisible(false);
+      if (e.key === "Escape") closePrompt();
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [exitVisible]);
+  }, [activePrompt, closePrompt]);
 
-  // Footer confetti + toast (#7)
+  // Auto-dismiss is a close path for the prompts that have one.
+  useEffect(() => {
+    if (activePrompt !== "bubble") return;
+    const timer = window.setTimeout(closePrompt, 14000);
+    return () => window.clearTimeout(timer);
+  }, [activePrompt, closePrompt]);
+
+  useEffect(() => {
+    if (activePrompt !== "exit_intent") return;
+    const timer = window.setTimeout(closePrompt, 20000);
+    return () => window.clearTimeout(timer);
+  }, [activePrompt, closePrompt]);
+
+  useEffect(() => {
+    if (activePrompt !== "footer") return;
+    const timer = window.setTimeout(closePrompt, 8000);
+    return () => window.clearTimeout(timer);
+  }, [activePrompt, closePrompt]);
+
+  // Footer toast + confetti (#7) — one prompt, one gate, one key.
   useEffect(() => {
     const box = document.querySelector(".footer-info-box");
     if (!box) return;
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting && !confettiFired.current) {
-            confettiFired.current = true;
-            const pieces = Array.from({ length: 60 }, () => ({
-              left: Math.random() * 100,
-              delay: Math.random() * 0.5,
-              dur: 1.2 + Math.random() * 0.8,
-              color:
-                CONFETTI_COLORS[
-                  Math.floor(Math.random() * CONFETTI_COLORS.length)
-                ],
-              rot: Math.random() * 360,
-            }));
-            setConfetti(pieces);
-            setToastVisible(true);
-            io.disconnect();
-            window.setTimeout(() => setConfetti([]), 2000);
-            window.setTimeout(() => setToastVisible(false), 8000);
-          }
+          if (!entry.isIntersecting) continue;
+          if (!tryShow("footer")) continue;
+          io.disconnect();
+          setConfetti(makeConfetti());
+          window.setTimeout(() => setConfetti([]), 2000);
         }
       },
       { threshold: 0.6 },
     );
     io.observe(box);
     return () => io.disconnect();
-  }, []);
+  }, [tryShow]);
 
   return (
     <>
       {/* #1 / #2 / #9 — chat bubble */}
-      <div
-        id="engagement-bubble"
-        aria-hidden={!bubbleVisible}
-        className={`fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] border border-white/15 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
-          bubbleVisible ? "eng-bubble--visible translate-x-0" : "translate-x-[120%]"
-        }`}
-        style={{ pointerEvents: bubbleVisible ? "auto" : "none" }}
-      >
-        <div className="flex items-center justify-between px-5 pt-5">
-          <span className="font-display text-lg font-bold text-[#f58344]">
-            Ifedike
-          </span>
-          <button
-            type="button"
-            aria-label="Close chat"
-            onClick={() => setBubbleVisible(false)}
-            className="text-xl leading-none text-white/60 transition-colors hover:text-white"
-          >
-            &times;
-          </button>
-        </div>
-        <p className="px-5 pt-3 text-sm leading-6 text-white/75">
-          {bubbleMessage}
-        </p>
-        <div className="flex flex-wrap gap-2 px-5 pb-5 pt-4">
-          <a
-            href="#work"
-            className="rounded bg-[#f58344] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-[#1a1613]"
-          >
-            See the work
-          </a>
-          <a
-            href="#about"
-            className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
-          >
-            About me
-          </a>
-          <a
-            href="#contact"
-            className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
-          >
-            Talk
-          </a>
-        </div>
-      </div>
-
-      {/* #4 — 50%-scroll banner */}
-      <div
-        id="engagement-banner"
-        className={`fixed inset-x-0 bottom-0 z-[9998] transition-transform duration-[350ms] ease-out ${
-          bannerVisible
-            ? "eng-banner--visible translate-y-0"
-            : "translate-y-full"
-        }`}
-      >
-        <div className="mx-auto flex min-h-[68px] w-full max-w-[1185px] items-center justify-between gap-4 border-t border-[rgba(245,131,68,0.25)] bg-[#1a1613] px-6 py-4">
-          <p className="text-sm text-white/75">
-            Halfway through. Want me to just show you the work?
-          </p>
-          <div className="flex items-center gap-4">
-            <a href="#work" className="text-sm font-semibold text-[#f58344]">
-              Jump to projects &rarr;
-            </a>
+      {activePrompt === "bubble" && (
+        <div
+          id="engagement-bubble"
+          className={`fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] border border-white/15 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
+            bubbleRevealed
+              ? "eng-bubble--visible translate-x-0"
+              : "translate-x-[120%]"
+          }`}
+          style={{ pointerEvents: bubbleRevealed ? "auto" : "none" }}
+        >
+          <div className="flex items-center justify-between px-5 pt-5">
+            <span className="font-display text-lg font-bold text-[#f58344]">
+              Ifedike
+            </span>
             <button
               type="button"
-              aria-label="Close banner"
-              onClick={() => setBannerVisible(false)}
+              aria-label="Close chat"
+              onClick={closePrompt}
               className="text-xl leading-none text-white/60 transition-colors hover:text-white"
             >
               &times;
             </button>
           </div>
+          <p className="px-5 pt-3 text-sm leading-6 text-white/75">
+            {bubbleMessage}
+          </p>
+          <div className="flex flex-wrap gap-2 px-5 pb-5 pt-4">
+            <a
+              href="#work"
+              onClick={closePrompt}
+              className="rounded bg-[#f58344] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-[#1a1613]"
+            >
+              See the work
+            </a>
+            <a
+              href="#about"
+              onClick={closePrompt}
+              className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
+            >
+              About me
+            </a>
+            <button
+              type="button"
+              onClick={() => requestOpenForm()}
+              className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
+            >
+              Talk
+            </button>
+          </div>
         </div>
-      </div>
+      )}
+
+      {/* #4 — 50%-scroll banner */}
+      {activePrompt === "scroll50" && (
+        <div
+          id="engagement-banner"
+          className={`fixed inset-x-0 bottom-0 z-[9998] transition-transform duration-[350ms] ease-out ${
+            bannerRevealed
+              ? "eng-banner--visible translate-y-0"
+              : "translate-y-full"
+          }`}
+        >
+          <div className="mx-auto flex min-h-[68px] w-full max-w-[1185px] items-center justify-between gap-4 border-t border-[rgba(245,131,68,0.25)] bg-[#1a1613] px-6 py-4">
+            <p className="text-sm text-white/75">
+              Halfway through. Want me to just show you the work?
+            </p>
+            <div className="flex items-center gap-4">
+              <a
+                href="#work"
+                onClick={closePrompt}
+                className="text-sm font-semibold text-[#f58344]"
+              >
+                Jump to projects &rarr;
+              </a>
+              <button
+                type="button"
+                aria-label="Close banner"
+                onClick={closePrompt}
+                className="text-xl leading-none text-white/60 transition-colors hover:text-white"
+              >
+                &times;
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* #5 — idle panel */}
-      <div
-        id="engagement-panel"
-        className={`fixed right-6 top-1/2 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] -translate-y-1/2 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out ${
-          panelVisible
-            ? "eng-panel--visible translate-x-0"
-            : "translate-x-[120%]"
-        }`}
-      >
-        <div className="flex items-center justify-between px-5 pt-5">
-          <span className="font-display text-lg font-bold text-[#f58344]">
-            Still here?
-          </span>
-          <button
-            type="button"
-            aria-label="Close panel"
-            onClick={() => setPanelVisible(false)}
-            className="text-xl leading-none text-white/60 transition-colors hover:text-white"
-          >
-            &times;
-          </button>
+      {activePrompt === "idle" && (
+        <div
+          id="engagement-panel"
+          className={`fixed right-6 top-1/2 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] -translate-y-1/2 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out ${
+            panelRevealed
+              ? "eng-panel--visible translate-x-0"
+              : "translate-x-[120%]"
+          }`}
+        >
+          <div className="flex items-center justify-between px-5 pt-5">
+            <span className="font-display text-lg font-bold text-[#f58344]">
+              Still here?
+            </span>
+            <button
+              type="button"
+              aria-label="Close panel"
+              onClick={closePrompt}
+              className="text-xl leading-none text-white/60 transition-colors hover:text-white"
+            >
+              &times;
+            </button>
+          </div>
+          <p className="px-5 pt-3 text-sm leading-6 text-white/75">
+            Want me to walk you through the work in 30 seconds?
+          </p>
+          <div className="flex flex-wrap gap-2 px-5 pb-5 pt-4">
+            <a
+              href="#work"
+              onClick={closePrompt}
+              className="rounded bg-[#f58344] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-[#1a1613]"
+            >
+              Yes, show me
+            </a>
+            <button
+              type="button"
+              onClick={closePrompt}
+              className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
+            >
+              No thanks
+            </button>
+          </div>
         </div>
-        <p className="px-5 pt-3 text-sm leading-6 text-white/75">
-          Want me to walk you through the work in 30 seconds?
-        </p>
-        <div className="flex flex-wrap gap-2 px-5 pb-5 pt-4">
-          <a
-            href="#work"
-            className="rounded bg-[#f58344] px-3 py-2 text-xs font-semibold uppercase tracking-wide text-[#1a1613]"
-          >
-            Yes, show me
-          </a>
-          <button
-            type="button"
-            onClick={() => setPanelVisible(false)}
-            className="rounded border border-white/20 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-white"
-          >
-            No thanks
-          </button>
-        </div>
-      </div>
+      )}
 
       {/* #6 — exit-intent modal */}
-      {exitVisible && (
+      {activePrompt === "exit_intent" && (
         <div
           className="fixed inset-0 z-[10000] flex items-center justify-center bg-black/70 p-4"
-          onClick={() => setExitVisible(false)}
+          onClick={closePrompt}
         >
           <div
-            className="eng-exit--visible relative w-full max-w-[440px] bg-[#1a1613] p-8 text-white shadow-2xl"
+            className={`eng-exit--visible relative w-full max-w-[440px] bg-[#1a1613] p-8 text-white shadow-2xl transition-opacity duration-200 ${
+              exitRevealed ? "opacity-100" : "opacity-0"
+            }`}
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
               aria-label="Close"
-              onClick={() => setExitVisible(false)}
+              onClick={closePrompt}
               className="absolute right-4 top-4 text-2xl leading-none text-white/60 transition-colors hover:text-white"
             >
               &times;
@@ -336,12 +382,22 @@ function EngagementLayerInner() {
               If you&rsquo;ve got a half-built thing, drop a link &mdash;
               I&rsquo;ll take a look.
             </p>
-            <a
-              href="mailto:mifedike@gmail.com"
-              className="mt-5 inline-block rounded bg-[#f58344] px-4 py-2 text-sm font-semibold text-[#1a1613]"
-            >
-              mifedike@gmail.com
-            </a>
+            <div className="mt-5 flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={() => requestOpenForm({ needType: "fix" })}
+                className="rounded bg-[#f58344] px-4 py-2 text-sm font-semibold text-[#1a1613]"
+              >
+                Tell me what&rsquo;s broken
+              </button>
+              <a
+                href="mailto:mifedike@gmail.com"
+                onClick={closePrompt}
+                className="rounded border border-white/20 px-4 py-2 text-sm font-semibold text-white"
+              >
+                Email instead
+              </a>
+            </div>
             <p className="mt-4 text-xs uppercase tracking-widest text-white/50">
               One person, start to finish.
             </p>
@@ -369,14 +425,14 @@ function EngagementLayerInner() {
       )}
 
       {/* #7 — footer toast */}
-      <div
-        aria-live="polite"
-        className={`fixed bottom-24 left-1/2 z-[10001] w-max max-w-[calc(100vw-3rem)] -translate-x-1/2 bg-[#1a1613] px-5 py-3 text-center text-sm text-white shadow-2xl transition-opacity duration-300 ${
-          toastVisible ? "opacity-100" : "pointer-events-none opacity-0"
-        }`}
-      >
-        You saw everything. The contact strip is just above &uarr;
-      </div>
+      {activePrompt === "footer" && (
+        <div
+          aria-live="polite"
+          className="fixed bottom-24 left-1/2 z-[10001] w-max max-w-[calc(100vw-3rem)] -translate-x-1/2 bg-[#1a1613] px-5 py-3 text-center text-sm text-white shadow-2xl transition-opacity duration-300"
+        >
+          You saw everything. The contact strip is just above &uarr;
+        </div>
+      )}
     </>
   );
 }
