@@ -63,8 +63,13 @@ Task and test plan: `openspec/tasks/TASK-006-engagement-queue/`
 
 Task and test plan: `openspec/tasks/TASK-007-polish-and-ops/`
 
-- [ ] Accessibility (WCAG AA, focus management, keyboard paths, reduced motion)
-- [ ] Performance (LCP under 2.5s, CLS under 0.1, compressed images)
-- [ ] Error monitoring (Sentry free tier or Vercel logs)
-- [ ] Playwright smoke test plus link checker
-- [ ] README and content-workflow documentation
+- [x] Accessibility (WCAG AA, focus management, keyboard paths, reduced motion)
+- [x] Performance (LCP under 2.5s, CLS under 0.1, compressed images)
+- [x] Error monitoring (Sentry free tier or Vercel logs)
+- [x] Playwright smoke test plus link checker
+- [x] README and content-workflow documentation
+
+Accepted 2026-11-04 at `83f4b4b`; CI run 41871395263 green. Two exceptions, reported rather than hidden:
+
+- Mobile Lighthouse performance score is **66**, not ≥ 90. LCP 1.0 s and CLS 0 pass. The gap is main-thread time (TBT 790–1420 ms), not loading. Owner ruled: report the real numbers, do not change the design to win the score.
+- `npm run lint` exits 1 with five pre-existing errors (four set-state-in-effect, one anchor instead of `Link`). Documented in the README as it behaves; CI does not gate on lint.
