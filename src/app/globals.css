@@ -800,3 +800,55 @@ html::-webkit-scrollbar {
     stroke-dashoffset: 100;
   }
 }
+
+/* ------------------------------------------------------------------
+   Accessibility — skip link, one focus ring, reduced motion.
+   ------------------------------------------------------------------ */
+
+/* First focusable element in the document; hidden until it takes focus. */
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  padding: 10px 16px;
+  background: #f58344;
+  color: #1a1613;
+  font-weight: 600;
+  transform: translateY(-120%);
+  transition: transform 150ms ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* One ring for every keyboard stop. Element+pseudo-class specificity beats
+   Tailwind's `outline-none` utilities, so no component can silence it. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex="0"]:focus-visible {
+  outline: 2px solid #f58344;
+  outline-offset: 2px;
+}
+
+/* The skip target takes programmatic focus; it is not an interactive stop. */
+main:focus,
+main:focus-visible {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link,
+  .eng-motion {
+    transition: none !important;
+  }
+  /* The cooldown ring stays drawn as a static state instead of draining. */
+  [data-contact-ring] {
+    animation: none !important;
+  }
+}

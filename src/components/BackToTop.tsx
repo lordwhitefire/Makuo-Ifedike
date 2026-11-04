@@ -37,7 +37,7 @@ export default function BackToTop() {
       type="button"
       onClick={toTop}
       aria-label="Back to top"
-      className={`fixed bottom-[20px] right-[20px] z-[28] flex h-[35px] w-[35px] items-center justify-center bg-[#090909] text-white shadow-[0_0_7px_rgba(255,255,255,0.1)] transition-all duration-200 hover:bg-[#89715b] min-[576px]:bottom-[50px] min-[576px]:right-[50px] min-[576px]:h-[50px] min-[576px]:w-[50px] ${
+      className={`fixed bottom-[20px] right-[20px] z-[28] flex h-[35px] w-[35px] items-center justify-center bg-[#090909] text-white shadow-[0_0_7px_rgba(255,255,255,0.1)] transition-all duration-200 before:absolute before:-inset-[5px] before:content-[''] hover:bg-[#89715b] min-[576px]:bottom-[50px] min-[576px]:right-[50px] min-[576px]:h-[50px] min-[576px]:w-[50px] ${
         visible ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
       }`}
     >

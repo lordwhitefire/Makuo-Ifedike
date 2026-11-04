@@ -45,7 +45,7 @@ const COOLDOWN_MS = 20_000;
 const SUBMITTED_KEY = "ifedike_inquiry_submitted";
 
 const inputClass =
-  "mt-1 min-h-[42px] w-full rounded border border-white/20 bg-black/30 px-3 py-2 text-sm text-white outline-none transition-colors placeholder:text-white/30 focus:border-[#f58344]";
+  "mt-1 min-h-[42px] w-full rounded border border-white/20 bg-black/30 px-3 py-2 text-sm text-white outline-none transition-colors placeholder:text-white/50 focus:border-[#f58344]";
 const labelClass =
   "block text-[11px] font-semibold uppercase tracking-widest text-white/55";
 
@@ -270,6 +270,7 @@ export default function ContactLauncher() {
         <button
           ref={triggerRef}
           type="button"
+          id="contact-launcher"
           onClick={openDialog}
           aria-disabled={cooldown}
           aria-haspopup="dialog"
@@ -292,6 +293,7 @@ export default function ContactLauncher() {
               cx="50"
               cy="50"
               r="47"
+              data-contact-ring
               fill="none"
               stroke="#f58344"
               strokeWidth="3"
@@ -368,7 +370,7 @@ export default function ContactLauncher() {
                     type="button"
                     onClick={closeDialog}
                     aria-label="Close contact form"
-                    className="-mt-1 text-2xl leading-none text-white/60 transition-colors hover:text-white"
+                    className="relative -mt-1 text-2xl leading-none text-white/60 transition-colors after:absolute after:-inset-4 after:content-[''] hover:text-white"
                   >
                     &times;
                   </button>
@@ -507,7 +509,7 @@ export default function ContactLauncher() {
                     <label className="block">
                       <span className={labelClass}>
                         Project link{" "}
-                        <span className="normal-case tracking-normal text-white/35">
+                        <span className="normal-case tracking-normal text-white/55">
                           (optional)
                         </span>
                       </span>

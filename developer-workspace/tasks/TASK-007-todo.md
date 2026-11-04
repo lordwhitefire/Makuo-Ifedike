@@ -7,33 +7,33 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [x] Grilling rounds complete; decisions recorded
 - [x] Plan written
 - [x] Task list written
-- [ ] Commit `TASK-007: plan and task breakdown`
+- [x] Commit `TASK-007: plan and task breakdown`
 
 ## 1. `domain` — Truespec live URL
-- [ ] `curl -sI https://truespec.duckdns.org/` → 200 + Truespec page
-- [ ] `content-workspace/pieces/llms-txt.md` updated
-- [ ] `content-workspace/pieces/person-jsonld.md` updated
-- [ ] `src/content/projects.ts` — `liveUrl` + `caseStudy.liveLink`
-- [ ] `public/llms.txt` updated
-- [ ] `structured-data.ts` confirmed derived, not edited
-- [ ] `grep -rn "truespec-k4y6" src/ public/ content-workspace/pieces/` empty
-- [ ] Canonical / identity / sitemap / robots unchanged; drafts + history untouched
-- [ ] Commit `TASK-007: move Truespec to its live domain`
+- [x] `curl -sI https://truespec.duckdns.org/` → 200 + Truespec page
+- [x] `content-workspace/pieces/llms-txt.md` updated
+- [x] `content-workspace/pieces/person-jsonld.md` updated
+- [x] `src/content/projects.ts` — `liveUrl` + `caseStudy.liveLink`
+- [x] `public/llms.txt` updated
+- [x] `structured-data.ts` confirmed derived, not edited
+- [x] `grep -rn "truespec-k4y6" src/ public/ content-workspace/pieces/` empty
+- [x] Canonical / identity / sitemap / robots unchanged; drafts + history untouched
+- [x] Commit `TASK-007: move Truespec to its live domain`
 
 ## 2. `a11y` — WCAG AA
 ### structure, focus, motion
-- [ ] `<header>`/`SiteNav` moved outside `<main>`; `id="main"` + `tabIndex={-1}`
-- [ ] Skip link first focusable, hidden until focused, visible on focus
-- [ ] One global `:focus-visible` rule, visible on dark and orange; no outline removed
-- [ ] Prompt close returns focus to the launcher (all paths)
-- [ ] Reduced motion: static ring, instant prompt transitions
+- [x] `<header>`/`SiteNav` moved outside `<main>`; `id="main"` + `tabIndex={-1}`
+- [x] Skip link first focusable, hidden until focused, visible on focus
+- [x] One global `:focus-visible` rule, visible on dark and orange; no outline removed
+- [x] Prompt close returns focus to the launcher (all paths)
+- [x] Reduced motion: static ring, instant prompt transitions
 ### contrast, hit areas
-- [ ] axe desktop + mobile baseline recorded
-- [ ] Flagged contrast fixed with existing tokens; no new colours
-- [ ] Prompt ×, launcher, BackToTop, form × ≥44×44 with glyph unchanged
-- [ ] axe re-run: zero serious/critical
-- [ ] Keyboard walk + skip link + focus visibility verified
-- [ ] Commit `TASK-007: accessibility to WCAG AA`
+- [x] axe desktop + mobile baseline recorded
+- [x] Flagged contrast fixed with existing tokens; no new colours
+- [x] Prompt ×, launcher, BackToTop, form × ≥44×44 with glyph unchanged
+- [x] axe re-run: zero serious/critical
+- [x] Keyboard walk + skip link + focus visibility verified
+- [x] Commit `TASK-007: accessibility to WCAG AA`
 
 ## Checkpoint: after 1–2
 - [ ] `tsc`, `validate:content`, `build` green

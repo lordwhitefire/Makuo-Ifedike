@@ -149,7 +149,10 @@ export default function Home() {
   }, [activeWorkTab]);
 
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-[#111]" : "bg-transparent"}`}>
         <div className={`mx-auto w-full max-w-[1185px] px-4 transition-all duration-300 ${scrolled ? "py-[22px]" : "py-[53px]"}`}>
@@ -162,6 +165,11 @@ export default function Home() {
         </div>
       </header>
 
+      <main
+        id="main"
+        tabIndex={-1}
+        className="min-h-screen bg-background text-foreground"
+      >
       {/* Hero — featured-projects showreel (reference treatment) */}
       <HeroCarousel />
 
@@ -522,10 +530,11 @@ export default function Home() {
         </div>
       </footer>
       <BackToTop />
-      <EngagementProvider>
-        <EngagementLayer />
-        <ContactLauncher />
-      </EngagementProvider>
-    </main>
+        <EngagementProvider>
+          <EngagementLayer />
+          <ContactLauncher />
+        </EngagementProvider>
+      </main>
+    </>
   );
 }

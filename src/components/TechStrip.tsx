@@ -36,6 +36,9 @@ export default function TechStrip({ stacks }: { stacks: Stack[] }) {
   return (
     <div
       ref={trackRef}
+      tabIndex={0}
+      role="region"
+      aria-label="Tech stack — scrollable"
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}

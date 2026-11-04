@@ -158,6 +158,17 @@ function usePausableDismiss(
 function EngagementLayerInner() {
   const { activePrompt, tryShow, closePrompt, requestOpenForm } = useEngagement();
 
+  // Closing from a control inside a prompt: the prompt unmounts, so put focus
+  // back on the launcher rather than letting it fall to the page body.
+  const closeAndReturnFocus = useCallback(() => {
+    closePrompt();
+    window.requestAnimationFrame(() => {
+      document
+        .getElementById("contact-launcher")
+        ?.focus({ preventScroll: true });
+    });
+  }, [closePrompt]);
+
   const [bubbleMessage, setBubbleMessage] = useState(BUBBLE_DEFAULT);
   const [confetti, setConfetti] = useState<Piece[]>([]);
   // StrictMode runs effects twice in dev; count the visit once per mount.
@@ -260,15 +271,15 @@ function EngagementLayerInner() {
     return () => document.removeEventListener("mouseout", onOut);
   }, [tryShow]);
 
-  // Escape closes the exit modal and counts as a close.
+  // Escape closes whichever prompt is up, and returns focus to the launcher.
   useEffect(() => {
-    if (activePrompt !== "exit_intent") return;
+    if (!activePrompt) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") closePrompt();
+      if (e.key === "Escape") closeAndReturnFocus();
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [activePrompt, closePrompt]);
+  }, [activePrompt, closeAndReturnFocus]);
 
   // Auto-dismiss is a close path for the prompts that have one.
   useEffect(() => {
@@ -308,7 +319,7 @@ function EngagementLayerInner() {
         <div
           id="engagement-bubble"
           {...bubbleDismiss}
-          className={`fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] border border-white/15 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
+          className={`eng-motion fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] border border-white/15 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
             bubbleRevealed
               ? "eng-bubble--visible translate-x-0"
               : "translate-x-[120%]"
@@ -322,8 +333,8 @@ function EngagementLayerInner() {
             <button
               type="button"
               aria-label="Close chat"
-              onClick={closePrompt}
-              className="text-xl leading-none text-white/60 transition-colors hover:text-white"
+              onClick={closeAndReturnFocus}
+              className="relative text-xl leading-none text-white/60 transition-colors after:absolute after:-inset-4 after:content-[''] hover:text-white"
             >
               &times;
             </button>
@@ -361,7 +372,7 @@ function EngagementLayerInner() {
       {activePrompt === "scroll50" && (
         <div
           id="engagement-banner"
-          className={`fixed inset-x-0 bottom-0 z-[9998] transition-transform duration-[350ms] ease-out ${
+          className={`eng-motion fixed inset-x-0 bottom-0 z-[9998] transition-transform duration-[350ms] ease-out ${
             bannerRevealed
               ? "eng-banner--visible translate-y-0"
               : "translate-y-full"
@@ -382,8 +393,8 @@ function EngagementLayerInner() {
               <button
                 type="button"
                 aria-label="Close banner"
-                onClick={closePrompt}
-                className="text-xl leading-none text-white/60 transition-colors hover:text-white"
+                onClick={closeAndReturnFocus}
+                className="relative text-xl leading-none text-white/60 transition-colors after:absolute after:-inset-4 after:content-[''] hover:text-white"
               >
                 &times;
               </button>
@@ -396,7 +407,7 @@ function EngagementLayerInner() {
       {activePrompt === "idle" && (
         <div
           id="engagement-panel"
-          className={`fixed right-6 top-1/2 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] -translate-y-1/2 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out ${
+          className={`eng-motion fixed right-6 top-1/2 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] -translate-y-1/2 bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out ${
             panelRevealed
               ? "eng-panel--visible translate-x-0"
               : "translate-x-[120%]"
@@ -409,8 +420,8 @@ function EngagementLayerInner() {
             <button
               type="button"
               aria-label="Close panel"
-              onClick={closePrompt}
-              className="text-xl leading-none text-white/60 transition-colors hover:text-white"
+              onClick={closeAndReturnFocus}
+              className="relative text-xl leading-none text-white/60 transition-colors after:absolute after:-inset-4 after:content-[''] hover:text-white"
             >
               &times;
             </button>
@@ -444,7 +455,7 @@ function EngagementLayerInner() {
           onClick={closePrompt}
         >
           <div
-            className={`eng-exit--visible relative w-full max-w-[440px] bg-[#1a1613] p-8 text-white shadow-2xl transition-opacity duration-200 ${
+            className={`eng-motion eng-exit--visible relative w-full max-w-[440px] bg-[#1a1613] p-8 text-white shadow-2xl transition-opacity duration-200 ${
               exitRevealed ? "opacity-100" : "opacity-0"
             }`}
             {...exitDismiss}
@@ -453,8 +464,8 @@ function EngagementLayerInner() {
             <button
               type="button"
               aria-label="Close"
-              onClick={closePrompt}
-              className="absolute right-4 top-4 text-2xl leading-none text-white/60 transition-colors hover:text-white"
+              onClick={closeAndReturnFocus}
+              className="absolute right-4 top-4 text-2xl leading-none text-white/60 transition-colors after:absolute after:-inset-4 after:content-[''] hover:text-white"
             >
               &times;
             </button>
