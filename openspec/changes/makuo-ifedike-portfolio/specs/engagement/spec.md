@@ -1,15 +1,15 @@
 ## Purpose
 
-Runs all nine engagement touchpoints through one shared gate so they never stack. A prompt shows only when nothing else is showing and the cooldown has expired; a trigger that fires when it may not show is skipped, not held back. The first bubble appears at 8 seconds, every close starts a 120-second cooldown, and the popup form opens from the orange contact launcher, the bubble's Talk action, or the exit-intent CTA.
+Runs all five prompted touchpoints through one shared gate so they never stack. A prompt shows only when nothing else is showing and the cooldown has expired; a trigger that fires when it may not show is skipped, not held back. The first bubble appears at 8 seconds, every close starts a 120-second cooldown, and the popup form opens from the orange contact launcher, the bubble's Talk action, or the exit-intent CTA.
 
 ## ADDED Requirements
 
-### Requirement: All nine touchpoints stay, once per session
-All nine touchpoints SHALL remain in the portfolio. Each prompted touchpoint SHALL appear at most once per session. A prompt's session key SHALL be written only when the prompt actually appears; a skipped attempt SHALL NOT mark it. There SHALL be no three-prompt session cap and no cap on the number of prompts a visitor may see in one session.
+### Requirement: All five prompted touchpoints stay, once per session
+The five prompts — first bubble, 50% scroll banner, 45-second idle panel, exit intent, and footer toast with confetti — SHALL remain in the portfolio. Each prompt SHALL appear at most once per session. A prompt's session key SHALL be written only when the prompt actually appears; a skipped attempt SHALL NOT mark it. There SHALL be no three-prompt session cap and no cap on the number of prompts a visitor may see in one session.
 
 #### Scenario: No session cap removes a touchpoint
 - **WHEN** a visitor completes a session
-- **THEN** all nine touchpoint types remain eligible (none are capped out early)
+- **THEN** all five prompt types remain eligible (none are capped out early)
 
 #### Scenario: A skipped attempt does not consume the prompt
 - **WHEN** a prompt's trigger fires while another prompt is showing or during the cooldown

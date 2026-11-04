@@ -12,11 +12,11 @@ The site SHALL be a Next.js 16 App Router app in TypeScript with one deploy. No 
 - **THEN** it succeeds and no `public/andle-portfolio.html` is served as the visible product
 
 ### Requirement: Typecheck enforced
-`typescript.ignoreBuildErrors` SHALL be `false`. CI SHALL run install, typecheck, build, and link check.
+`typescript.ignoreBuildErrors` SHALL be `false`. CI SHALL run install, build, typecheck, content validation, link check, and a Playwright browser smoke test.
 
-#### Scenario: CI runs typecheck and link check
+#### Scenario: CI runs every gate
 - **WHEN** CI runs
-- **THEN** typecheck and link check pass and `ignoreBuildErrors` is `false`
+- **THEN** every step passes and `ignoreBuildErrors` is `false`
 
 ### Requirement: Vercel hosting and domain
 The site SHALL be hosted on Vercel at `makuo-ifedike.vercel.app` (owner-confirmed, live), over HTTPS, with preview deploys.
@@ -39,9 +39,9 @@ Vercel Analytics plus custom events SHALL be present: `page_view`, `project_view
 - **WHEN** visitor actions occur
 - **THEN** the listed custom events fire and errors are monitored
 
-### Requirement: Build-time portrait asset
-The owner-supplied black-background portrait SHALL be copied to `public/images/portrait.png` at build time. JSON-LD and Open Graph image SHALL point to `https://makuo-ifedike.vercel.app/images/portrait.png`. No stock portrait SHALL be used.
+### Requirement: Portrait assets
+The owner-supplied black-background portrait SHALL be served from `public/images/`. The page SHALL request `portrait.webp`, under 300 KB. `portrait.png` SHALL remain at the same path, under 300 KB, as the JSON-LD and Open Graph image at `https://makuo-ifedike.vercel.app/images/portrait.png`. The full-size originals SHALL live in `content-workspace/assets/`, not in `public/`. No stock portrait SHALL be used.
 
-#### Scenario: Portrait is supplied at build time
-- **WHEN** the owner supplies the portrait
-- **THEN** it is copied to `public/images/portrait.png` and referenced by JSON-LD and Open Graph
+#### Scenario: The page and social preview both get the portrait
+- **WHEN** the home page loads and the JSON-LD is parsed
+- **THEN** the hero requests `portrait.webp`, the social image is `portrait.png`, and both are under 300 KB

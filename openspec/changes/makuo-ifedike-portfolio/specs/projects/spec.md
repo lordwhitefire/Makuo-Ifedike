@@ -39,16 +39,16 @@ Athletica SHALL be described as built for a friend's affiliate business — clie
 - **WHEN** the Athletica project record is read
 - **THEN** it states Athletica was built for a friend who runs an affiliate business — client work, not the owner's own product
 
-### Requirement: My Stack grid
-The My Stack section SHALL be a static 6x2 grid on desktop (4 columns tablet, 2 mobile) with 28px monochrome marks and visible labels. The stack SHALL be Next.js, React, Remix, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Prisma, Clerk, Vercel, Vitest. No marquee and no client logos.
+### Requirement: My Stack logo strip
+The My Stack section SHALL be a bare horizontal logo strip with no heading and no cards: eight monochrome marks — Next.js, TypeScript, Tailwind CSS, Sanity, Supabase, Neon Postgres, Clerk, and Vitest — shown five per view on desktop, four at the tablet breakpoint, three at 576px, and two on mobile, at 50% opacity until hover. The strip SHALL scroll by mouse drag, touch swipe, or keyboard. There SHALL be no autoplay, no loop, no dots, and no client logos.
 
-#### Scenario: My Stack renders as a static grid
+#### Scenario: My Stack renders as a bare strip
 - **WHEN** the My Stack section loads
-- **THEN** twelve marks appear in a 6x2 desktop grid with visible labels and no moving marquee
+- **THEN** eight named marks appear in a scrollable strip with no heading, no cards, no autoplay, and no client logos
 
 ### Requirement: No unverified proof
-The public site SHALL contain no client logos, no testimonials, no stock office photos, no counters, and no numeric outcome claims or invented metrics.
+The public site SHALL contain no client logos, no testimonials, no stock office photos, and no invented metrics or unverified outcome claims.
 
 #### Scenario: Public surfaces carry no fake proof
 - **WHEN** any page of the site renders
-- **THEN** there are no client logos, testimonials, counters, or numeric outcome claims
+- **THEN** there are no client logos, testimonials, or unverified outcome claims
