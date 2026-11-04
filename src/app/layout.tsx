@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { identity } from "@/content/identity";
 import { buildStructuredData } from "@/content/structured-data";
 import Analytics from "@/components/Analytics";
+import ErrorReporter from "@/components/ErrorReporter";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -101,6 +102,7 @@ export default function RootLayout({
         className={`${inter.variable} ${poppins.variable} ${zillaSlab.variable} antialiased bg-background text-foreground`}
       >
         <Analytics />
+        <ErrorReporter />
         {children}
       </body>
     </html>

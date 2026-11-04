@@ -48,16 +48,16 @@ Seven commits, no push, no deploy. Every commit green on `tsc` + `validate:conte
 - [x] Commit `TASK-007: bring the portrait and the budget inside limits`
 
 ## 4. `monitoring` — error logging
-- [ ] `src/app/error.tsx` + `global-error.tsx` (fallback, reload link, console.error + report POST)
-- [ ] `src/app/api/client-errors/route.ts` (204 / 413 / 400, one JSON line, four fields)
-- [ ] `src/components/ErrorReporter.tsx`, mounted in `layout.tsx`, max 5 per load
-- [ ] Inquiry route failure path logs context without visitor data
-- [ ] Deliberate throw → fallback + one JSON line in the server log
-- [ ] Curls: valid 204, 9 KB 413, no `message` 400
-- [ ] Commit `TASK-007: error monitoring on Vercel logs`
+- [x] `src/app/error.tsx` + `global-error.tsx` (fallback, reload link, console.error + report POST)
+- [x] `src/app/api/client-errors/route.ts` (204 / 413 / 400, one JSON line, four fields)
+- [x] `src/components/ErrorReporter.tsx`, mounted in `layout.tsx`, max 5 per load
+- [x] Inquiry route failure path logs context without visitor data
+- [x] Deliberate throw → fallback + one JSON line in the server log
+- [x] Curls: valid 204, 9 KB 413, no `message` 400
+- [x] Commit `TASK-007: error monitoring on Vercel logs`
 
 ## Checkpoint: after 3–4
-- [ ] Build green; Lighthouse numbers recorded; reporter verified
+- [x] Build green; Lighthouse numbers recorded; reporter verified
 
 ## 5. `smoke` — Playwright
 - [ ] `@playwright/test` added; `test:e2e` script

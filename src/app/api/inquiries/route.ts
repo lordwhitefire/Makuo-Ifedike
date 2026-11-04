@@ -48,6 +48,19 @@ function checkRateLimit(
 }
 
 export async function POST(request: Request) {
+  try {
+    return await handlePost(request);
+  } catch (error) {
+    // Context without contents: the error itself, never the submitted form.
+    console.error(
+      "[inquiries] unexpected failure",
+      error instanceof Error ? `${error.name}: ${error.message}` : String(error),
+    );
+    return NextResponse.json({ error: "server_error" }, { status: 500 });
+  }
+}
+
+async function handlePost(request: Request) {
   const limited = checkRateLimit(clientKey(request));
   if (!limited.ok) {
     return NextResponse.json(
