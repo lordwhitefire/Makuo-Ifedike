@@ -44,7 +44,7 @@ const COOLDOWN_MS = 20_000;
 const SUBMITTED_KEY = "ifedike_inquiry_submitted";
 
 const inputClass =
-  "mt-1 w-full rounded border border-white/20 bg-black/30 px-3 py-2 text-sm text-white outline-none transition-colors placeholder:text-white/30 focus:border-[#f58344]";
+  "mt-1 min-h-[42px] w-full rounded border border-white/20 bg-black/30 px-3 py-2 text-sm text-white outline-none transition-colors placeholder:text-white/30 focus:border-[#f58344]";
 const labelClass =
   "block text-[11px] font-semibold uppercase tracking-widest text-white/55";
 
@@ -266,7 +266,7 @@ export default function ContactLauncher() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="contact-form-title"
-            className="relative max-h-[92vh] w-full max-w-[560px] overflow-y-auto bg-[#1a1613] p-6 text-white shadow-2xl sm:p-8"
+            className="relative max-h-[92vh] w-full max-w-[560px] overflow-y-auto border border-white/15 bg-[#1a1613] p-6 text-white shadow-2xl sm:p-8"
           >
             {status === "success" ? (
               <div role="status">
