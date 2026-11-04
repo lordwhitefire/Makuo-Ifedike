@@ -61,6 +61,8 @@ Task and test plan: `openspec/tasks/TASK-006-engagement-queue/`
 
 ## 7. Polish and ops
 
+Task and test plan: `openspec/tasks/TASK-007-polish-and-ops/`
+
 - [ ] Accessibility (WCAG AA, focus management, keyboard paths, reduced motion)
 - [ ] Performance (LCP under 2.5s, CLS under 0.1, compressed images)
 - [ ] Error monitoring (Sentry free tier or Vercel logs)
