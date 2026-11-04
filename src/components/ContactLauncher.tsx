@@ -237,6 +237,31 @@ export default function ContactLauncher() {
             cooldown ? "cursor-not-allowed opacity-50" : "hover:scale-105"
           }`}
         >
+          {/* 20s cooldown ring — drains clockwise, then the button works again. */}
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 100 100"
+            className={`pointer-events-none absolute -inset-[5px] h-[calc(100%+10px)] w-[calc(100%+10px)] -rotate-90 transition-opacity duration-200 ${
+              cooldown ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="47"
+              fill="none"
+              stroke="#f58344"
+              strokeWidth="3"
+              strokeLinecap="round"
+              pathLength={100}
+              strokeDasharray="100"
+              style={
+                cooldown
+                  ? { animation: `contact-ring-drain ${COOLDOWN_MS}ms linear forwards` }
+                  : undefined
+              }
+            />
+          </svg>
           <svg
             width="24"
             height="24"
@@ -266,7 +291,7 @@ export default function ContactLauncher() {
             role="dialog"
             aria-modal="true"
             aria-labelledby="contact-form-title"
-            className="relative max-h-[92vh] w-full max-w-[560px] overflow-y-auto border border-white/15 bg-[#1a1613] p-6 text-white shadow-2xl sm:p-8"
+            className="relative max-h-[92vh] w-full max-w-[560px] overflow-y-auto border border-white/15 bg-[#1a1613] p-6 text-white shadow-2xl [scrollbar-width:none] sm:p-8 [&::-webkit-scrollbar]:hidden"
           >
             {status === "success" ? (
               <div role="status">

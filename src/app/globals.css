@@ -780,3 +780,13 @@ html::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+
+/* Contact launcher: the cooldown ring drains from full to empty. */
+@keyframes contact-ring-drain {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 100;
+  }
+}
