@@ -1,8 +1,11 @@
 # TASK-005b — Engagement UI polish — Completion Report
 
 **Branch:** `main`
-**Commits:** `b2aa340` (popup move), `a58c34f` (popup border), `12aa12e` (form), plus this report
-**Status:** done — all three changes verified with measured rectangles; nothing pushed.
+**Commits:** `b2aa340` (popup move), `a58c34f` (popup border), `12aa12e` (form), `110bd8c` (ring +
+form scrollbar), `e8986d6` and this report's commit (docs)
+**Pushed:** yes — `origin/main` == `e8986d6`; deployed at https://makuo-ifedike.vercel.app
+**Status:** done — every change verified locally with measured rectangles, then re-checked on the
+deployed site.
 
 ## What changed
 
@@ -92,7 +95,24 @@ achieves what the benchmark asks: one height for all controls.
   slightly out of date. Left untouched, as agreed.
 - `openspec/tasks/TASK-005b-engagement-ui-polish/` and the `openspec/tasks-registry.md` edit were
   left out of the styling commits.
-- Nothing pushed. `main` is ahead of `origin/main` by the four commits above.
+- Pushed and deployed. `main` == `origin/main` == `e8986d6`; `/` returns `200`.
+
+## 7. Live verification (deployed site)
+
+Re-checked on https://makuo-ifedike.vercel.app at 390×844 in the attached Chrome:
+
+| Check | Live result |
+|---|---|
+| Dialog opens | yes |
+| Dialog border gutter | `2px` (the two 1px borders) — scrollbar contribution **0** |
+| Dialog still scrolls | yes (`scrollHeight > clientHeight`) |
+| Name input height | **42px** |
+| Need dropdown height | **42px** |
+| Cooldown ring after close | present, opacity `1`, animation `contact-ring-drain` running (`stroke-dashoffset 4.67` one second in) |
+| `aria-disabled` during cooldown | `true` |
+
+The 19px popup clearance and the popup border were measured locally with the flag flipped on;
+the deployed build carries the same two class strings.
 
 ## Follow-up (owner request, after TASK-005b)
 
