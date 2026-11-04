@@ -2,8 +2,9 @@
 
 ## What this is
 
-The last group. Five pieces of work that make the finished site measurable, observable, and documented:
+The last group. Six pieces of work that make the finished site measurable, observable, and documented:
 
+0. Truespec's live URL moves to `truespec.duckdns.org`.
 1. Accessibility to WCAG AA.
 2. Performance inside the budget.
 3. Error monitoring.
@@ -16,6 +17,7 @@ None of it changes what the site says or how it is laid out. Fix only what a mea
 
 Do them in this order, one commit each, each green on its own (`tsc`, `validate:content`, `build`):
 
+0. `domain` — Truespec live URL
 1. `a11y` — accessibility
 2. `perf` — performance
 3. `monitoring` — error monitoring
@@ -23,6 +25,32 @@ Do them in this order, one commit each, each green on its own (`tsc`, `validate:
 5. `docs` — README and content workflow
 
 Do not push.
+
+---
+
+## 0. Truespec live URL
+
+Truespec now lives at `https://truespec.duckdns.org/`, not `https://truespec-k4y6.vercel.app/`.
+
+Change, in this order:
+
+1. `content-workspace/pieces/llms-txt.md` and `content-workspace/pieces/person-jsonld.md` — the source of truth. Every Truespec live URL.
+2. `src/content/projects.ts` — `truespec.liveUrl` and `truespec.caseStudy.liveLink`.
+3. `public/llms.txt` — the Truespec URL.
+4. `src/content/structured-data.ts` reads `project.liveUrl`, so JSON-LD follows automatically. Confirm it, do not hard-code the URL there.
+
+**Do not rewrite historical records.** Reports, notes, plans, parity captures, `scrape-workspace/` captures and `product-management/research/` record what was true when they were written. Leave them.
+
+**The portfolio's own canonical domain is unchanged:** `https://makuo-ifedike.vercel.app/`. Do not touch `identity.url`, `identity.image`, the metadata base, `sitemap.ts`, or `robots.ts`.
+
+Verify before changing anything: `curl -I https://truespec.duckdns.org/` returns 200 and the page is the Truespec site. If it does not resolve, stop and report.
+
+### Benchmarks
+
+- The Truespec card and its case-study live link open `https://truespec.duckdns.org/`.
+- `grep -rn "truespec-k4y6" src/ public/ content-workspace/pieces/` returns nothing.
+- The Truespec JSON-LD `url` and `llms.txt` both show the new domain.
+- The portfolio canonical is still `https://makuo-ifedike.vercel.app/`.
 
 ---
 
@@ -142,6 +170,7 @@ The link check already runs in `.github/workflows/ci.yml`. Keep it. Add a browse
 5. Escape closes the form and focus returns to the launcher.
 6. The page contains no `ifedikemakuo.vercel.app` and no `localhost` in any project link.
 7. The Athletica card links to `athletica-blond.vercel.app`.
+8. The Truespec card links to `truespec.duckdns.org`.
 
 No modal tests — the case-study modal is scrapped by owner decision.
 

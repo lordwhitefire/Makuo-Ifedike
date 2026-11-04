@@ -16,6 +16,20 @@ Parts 1 and 2 must run against the **production build**, not the dev server.
 
 ---
 
+## Part 0 — Truespec live URL
+
+- `curl -s -o /dev/null -w "%{http_code}\n" -L https://truespec.duckdns.org/` returns `200`.
+- The Truespec card and its case-study live link point to `https://truespec.duckdns.org/`.
+- The JSON-LD node for Truespec has `"url": "https://truespec.duckdns.org/"`.
+- `public/llms.txt` shows the new Truespec URL.
+- `grep -rn "truespec-k4y6" src/ public/ content-workspace/pieces/` returns nothing.
+- The portfolio's own canonical is unchanged everywhere: `<link rel="canonical">`, `sitemap.xml`, `robots.txt` all still say `https://makuo-ifedike.vercel.app/`.
+- Historical files (reports, notes, plans, parity captures, `scrape-workspace/`, `product-management/research/`) still contain the old URL. **That is correct** — do not flag it.
+
+**Pass:** all of the above.
+
+---
+
 ## Part 1 — Accessibility
 
 ### axe
@@ -178,6 +192,7 @@ against a fresh production build.
 5. Escape closes the form and focus returns to the launcher.
 6. No `ifedikemakuo.vercel.app` and no `localhost` anywhere in the project links.
 7. Athletica links to `athletica-blond.vercel.app`.
+8. Truespec links to `truespec.duckdns.org`.
 
 ### It can fail
 
