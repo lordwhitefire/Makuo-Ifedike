@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Scan the app, not the prose. Specs, plans and design notes quote class
+   names in backticks (e.g. `bg-[url(...)]`), and Tailwind would compile them
+   into real utilities — a placeholder URL then fails the Turbopack build. */
+@source not "../../openspec";
+@source not "../../developer-workspace";
+@source not "../../design-workspace";
+@source not "../../content-workspace";
+@source not "../../scrape-workspace";
+@source not "../../product-management";
+
 /* ------------------------------------------------------------------
    Design system — mirror of the reference (andle-portfolio).
    Dark theme, Poppins base / Inter paragraphs / Zilla Slab display.

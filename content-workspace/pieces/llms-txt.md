@@ -39,7 +39,7 @@ Stack evidenced in public repositories and LinkedIn profile.
 
 ## Featured work (4 projects)
 
-- **Truespec** — Dealership system: public showroom + private office for a Nigerian vehicle-import business. Live — flagship. https://truespec-k4y6.vercel.app/ — https://github.com/lordwhitefire/truespec
+- **Truespec** — Dealership system: public showroom + private office for a Nigerian vehicle-import business. Live — flagship. https://truespec.duckdns.org/ — https://github.com/lordwhitefire/truespec
 - **Athletica** — Football store and affiliate commerce platform built for a friend's affiliate business. Live preview. https://athletica-blond.vercel.app/ — https://github.com/lordwhitefire/athletica
 - **Interior-deco** — CMS-driven marketing site for the Whitefire Interior brand. Live. https://interior-deco-kappa.vercel.app/ — https://github.com/lordwhitefire/interior-deco
 - **CP3-legacy** — Chris Paul fan site / sports experience. Live. https://cp3-legacy.vercel.app/ — https://github.com/lordwhitefire/cp3-legacy

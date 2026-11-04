@@ -88,7 +88,7 @@ Open items flagged:
       "applicationCategory": "Dealership system",
       "applicationSubCategory": "Vehicle-import business system",
       "description": "Public showroom plus a single-owner private office for inventory, enquiries, costs and profit, for a Nigerian vehicle-import business. Documented migration history, back office, auth and PDF enquiries.",
-      "url": "https://truespec-k4y6.vercel.app/",
+      "url": "https://truespec.duckdns.org/",
       "codeRepository": "https://github.com/lordwhitefire/truespec",
       "creator": { "@id": "https://makuo-ifedike.vercel.app/#person" },
       "author": { "@id": "https://makuo-ifedike.vercel.app/#person" },

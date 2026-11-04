@@ -23,7 +23,7 @@ export const projects: Record<ProjectSlug, Project> = {
     dates: { created: "2026-10-16" },
     stack: ["Next.js", "React", "TypeScript", "Neon Postgres", "Clerk", "Sanity", "Vercel"],
     repoUrl: "https://github.com/lordwhitefire/truespec",
-    liveUrl: "https://truespec-k4y6.vercel.app/",
+    liveUrl: "https://truespec.duckdns.org/",
     images: {
       card: "/projects/work/truespec.png",
       hero: "/projects/truespec.png",
@@ -47,7 +47,7 @@ export const projects: Record<ProjectSlug, Project> = {
       ],
       outcome:
         "Working dealership system — public showroom + private office — live as the flagship project.",
-      liveLink: "https://truespec-k4y6.vercel.app/",
+      liveLink: "https://truespec.duckdns.org/",
     },
   },
   "interior-deco": {
