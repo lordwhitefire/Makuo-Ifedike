@@ -37,10 +37,18 @@ Plain list of the individual pieces of work needed so the real project catches u
 
 ## 5. Business logic — inquiries
 
-- [ ] Form validation and spam protection (honeypot plus rate limit)
-- [ ] Route submissions: Google Sheet row + email + WhatsApp + auto-reply ([PORTFOLIO] label)
-- [ ] Privacy page linked from consent checkbox
-- [ ] Analytics events (page_view, project_view, cta_click, inquiry_start, inquiry_submit, outbound_project_click)
+- [x] Form validation and spam protection (honeypot plus rate limit)
+- [x] Route submissions: Google Sheet row + email + WhatsApp + auto-reply ([PORTFOLIO] label)
+- [x] Privacy page linked from consent checkbox
+- [x] Analytics events (page_view, project_view, cta_click, inquiry_start, inquiry_submit, outbound_project_click)
+
+## 5b. Engagement UI polish
+
+- [x] Fix the popup/orange-button overlap; thin border on the popup; border and matching field height on the contact form
+
+## 5c. Engagement follow-ups (owner-requested)
+
+- [x] 20s cooldown ring around the contact button; hide the form scrollbar (`110bd8c`)
 
 ## 6. Engagement queue
 
