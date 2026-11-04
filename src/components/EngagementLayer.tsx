@@ -197,7 +197,7 @@ function EngagementLayerInner() {
       <div
         id="engagement-bubble"
         aria-hidden={!bubbleVisible}
-        className={`fixed bottom-6 right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out ${
+        className={`fixed bottom-[145px] right-6 z-[9999] w-[340px] max-w-[calc(100vw-3rem)] bg-[#1a1613] text-white shadow-2xl transition-transform duration-[350ms] ease-out min-[576px]:bottom-[190px] ${
           bubbleVisible ? "eng-bubble--visible translate-x-0" : "translate-x-[120%]"
         }`}
         style={{ pointerEvents: bubbleVisible ? "auto" : "none" }}
